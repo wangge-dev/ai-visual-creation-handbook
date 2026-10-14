@@ -2,7 +2,9 @@
 
 面向实际交付的作图、修图与工作流手册。电商是最大专题，覆盖跨境电商、品牌物料、内容配图、人物、空间、信息图、插画与视频。设计画布、ComfyUI节点和PS／Krita图层按任务衔接。
 
-首批包含14章完整建设目录、基础方法、电商核心流程、8条完整原创模板与有出处的资源卡。模板尚未执行图像任务，平台粘贴与PS操作也不冒充已实测；真实案例持续补充。
+[在线阅读](https://wangge-dev.github.io/ai-visual-creation-handbook/) · [完整建设目录](https://wangge-dev.github.io/ai-visual-creation-handbook/outline) · [资源资料卡](https://wangge-dev.github.io/ai-visual-creation-handbook/resources/)
+
+首批包含14章完整建设目录、18篇基础方法、电商核心流程、8条完整原创模板与11张仓库资料卡。模板尚未执行图像任务，平台粘贴与PS操作也不冒充已实测；真实案例持续补充。
 
 - [阅读目录](docs/outline.md)
 - [第一张可用图](docs/start/first-image.md)

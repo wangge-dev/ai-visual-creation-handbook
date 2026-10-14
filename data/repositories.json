@@ -7,13 +7,16 @@
     "use": "输入、节点、模型与输出的可复用流程。",
     "limitation": "工作流文件不证明当前依赖已跑通。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 589831718,
     "branch": "master",
     "license": "GPL-3.0",
-    "archived": false
+    "archived": false,
+    "inputs": "图像／文字、工作流、模型与节点",
+    "outputs": "按工作流得到图像或其他媒体",
+    "entry": "README与官方示例；依赖需实际安装核对"
   },
   {
     "id": "invokeai",
@@ -23,13 +26,16 @@
     "use": "作为画布与生成流程研究入口。",
     "limitation": "当前版本操作和本项目运行结果尚未核验。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 525592995,
     "branch": "main",
     "license": "Apache-2.0",
-    "archived": false
+    "archived": false,
+    "inputs": "图像、生成任务与画布操作",
+    "outputs": "图像与项目工作流",
+    "entry": "README及当前安装说明，先核对后端与模型"
   },
   {
     "id": "krita-diffusion",
@@ -39,13 +45,16 @@
     "use": "图层软件与生成后端的协作路径。",
     "limitation": "需核对Krita、插件、后端与模型版本。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 686161611,
     "branch": "main",
     "license": "GPL-3.0",
-    "archived": false
+    "archived": false,
+    "inputs": "Krita画布、选择区、提示词与兼容后端",
+    "outputs": "画布中的生成／编辑候选结果",
+    "entry": "插件官方文档；核对Krita与后端兼容"
   },
   {
     "id": "rembg",
@@ -55,13 +64,16 @@
     "use": "批量或单图背景移除的研究入口。",
     "limitation": "透明物、毛发、反光边缘需要对照原图精修。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 286500101,
     "branch": "main",
     "license": "MIT",
-    "archived": false
+    "archived": false,
+    "inputs": "真实商品或其他图像",
+    "outputs": "背景移除后的图像",
+    "entry": "README里的CLI／库入口，先做一张边缘检查"
   },
   {
     "id": "birefnet",
@@ -71,13 +83,16 @@
     "use": "前景分割与主体处理的研究入口。",
     "limitation": "模型、代码、权重和调用方式需分别核对。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 525717745,
     "branch": "main",
     "license": "MIT",
-    "archived": false
+    "archived": false,
+    "inputs": "输入图像、兼容环境与模型",
+    "outputs": "分割结果，按调用实现形成抠图素材",
+    "entry": "README推理说明；代码与权重许可分别查看"
   },
   {
     "id": "mermaid",
@@ -87,13 +102,16 @@
     "use": "用文本表达节点、关系与流程。",
     "limitation": "结构关系必须来自准确原始资料。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 26066727,
     "branch": "develop",
     "license": "MIT",
-    "archived": false
+    "archived": false,
+    "inputs": "准确节点、关系与图表定义",
+    "outputs": "渲染图与可编辑文本定义",
+    "entry": "README与官方编辑器，先检查逻辑再输出"
   },
   {
     "id": "excalidraw",
@@ -103,13 +121,16 @@
     "use": "用于协作草图和讲解关系。",
     "limitation": "草图与可执行软件交付分开。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 231283452,
     "branch": "master",
     "license": "MIT",
-    "archived": false
+    "archived": false,
+    "inputs": "节点、草图、文字和布局",
+    "outputs": "可编辑白板与导出图",
+    "entry": "官方编辑器与README"
   },
   {
     "id": "footwear-skills",
@@ -119,13 +140,16 @@
     "use": "鞋类简报、主图、详情与SKU生产分工。",
     "limitation": "既有核查未见生成脚本与LICENSE；只提供独立方法概述，不复制其Skill。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 1316745621,
     "branch": "master",
     "license": null,
-    "archived": false
+    "archived": false,
+    "inputs": "真实鞋类素材、已核实事实及业务简报",
+    "outputs": "规划与任务组织；生成结果取决于外部实际工具",
+    "entry": "先读README与配置示例；既有核查未见独立生成脚本"
   },
   {
     "id": "aihot",
@@ -135,13 +159,16 @@
     "use": "借鉴来源登记、预筛、归组和增量维护。",
     "limitation": "公开示例来源不等于线上全部信源；不复制私有配置。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 1393965829,
     "branch": "main",
     "license": "MIT",
-    "archived": false
+    "archived": false,
+    "inputs": "来源登记、公开内容与行业主题",
+    "outputs": "候选、精选与主题组织，需自行实际部署验证",
+    "entry": "README与公开示例；复用方法而非复制私有来源网络"
   },
   {
     "id": "image-prompt-library",
@@ -151,12 +178,60 @@
     "use": "按视觉任务关联完整提示词资源。",
     "limitation": "保持独立维护；具体模型与执行状态见原卡。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读；未安装运行",
+    "evidence": "README与文件树已读取；未安装运行",
     "last_reviewed_at": "2026-10-14",
     "watch": true,
     "github_id": 1362072312,
     "branch": "main",
-    "license": "NOASSERTION",
-    "archived": false
+    "license": "GitHub未自动识别；见原项目许可",
+    "archived": false,
+    "inputs": "真实素材、用途与可替换变量",
+    "outputs": "完整任务词；实际生图由用户工具执行",
+    "entry": "按任务到原库选卡，保留其执行状态"
+  },
+  {
+    "id": "ecommerce-skills",
+    "name": "dlazy-ai/ecommerce-skills",
+    "url": "https://github.com/dlazy-ai/ecommerce-skills",
+    "github_id": 1336921056,
+    "branch": "main",
+    "license": "MIT",
+    "archived": false,
+    "type": "业务流程Skill",
+    "use": "26项电商技能覆盖商品图、修图、跨境本地化与批量；作为方法和实现候选。",
+    "inputs": "真实商品图、商品清单、准确文案、品牌规范与目标市场",
+    "outputs": "任务方案、生成适配与检查脚本；运行结果依赖实际后端",
+    "entry": "先阅读对应技能，再核对shared/scripts或技能目录下的scripts路径；不直接在仓库根目录照抄相对命令",
+    "limitation": "本项目只读来源未执行生成。跨境规则、尺码表及区域偏好需要当前站点和真实商品依据；作者示例与本项目结果分开。",
+    "status": "已收录；实现待试用",
+    "evidence": "README、跨境与批量Skill、脚本片段已读；未安装或运行",
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "README",
+        "url": "https://github.com/dlazy-ai/ecommerce-skills/blob/main/README.md"
+      },
+      {
+        "title": "跨境Skill",
+        "url": "https://github.com/dlazy-ai/ecommerce-skills/blob/main/skills/cross-border-localize/skill.md"
+      },
+      {
+        "title": "批量Skill",
+        "url": "https://github.com/dlazy-ai/ecommerce-skills/blob/main/skills/batch-image/skill.md"
+      },
+      {
+        "title": "生成入口",
+        "url": "https://github.com/dlazy-ai/ecommerce-skills/blob/main/shared/scripts/gen.mjs"
+      },
+      {
+        "title": "图片检查",
+        "url": "https://github.com/dlazy-ai/ecommerce-skills/blob/main/shared/scripts/check_listing.py"
+      },
+      {
+        "title": "批量脚本",
+        "url": "https://github.com/dlazy-ai/ecommerce-skills/blob/main/shared/scripts/batch.mjs"
+      }
+    ]
   }
 ]

@@ -1,18 +1,20 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import { withBase } from 'vitepress';
 import repos from '../../../data/repositories.json';
 import tools from '../../../data/tools.json';
 import rules from '../../../data/platform-rules.json';
 const query = ref('');
+const ready = ref(false);
+onMounted(() => { ready.value = true; });
 const type = ref('全部');
 const types = ['全部', ...new Set(repos.map(r => r.type))];
 const filtered = computed(() => repos.filter(r => (type.value === '全部' || type.value === r.type) && `${r.name} ${r.use} ${r.type}`.toLowerCase().includes(query.value.toLowerCase())));
 </script>
 <template>
   <div class="resource-filter">
-    <label>搜索资源<input v-model="query" placeholder="任务、仓库或关键词" /></label>
-    <label>类型<select v-model="type"><option v-for="t in types" :key="t">{{t}}</option></select></label>
+    <label>搜索资源<input v-model="query" :disabled="!ready" placeholder="任务、仓库或关键词" /></label>
+    <label>类型<select v-model="type" :disabled="!ready"><option v-for="t in types" :key="t">{{t}}</option></select></label>
   </div>
   <p role="status">找到 {{ filtered.length }} 条资源</p>
   <div class="resource-grid">

@@ -40,8 +40,9 @@ export async function maintain(args = process.argv.slice(2)) {
         const result = await api(`/search/${isCode ? 'code' : 'repositories'}?q=${encodeURIComponent(q.query)}${isCode ? '' : '&sort=updated&order=desc'}&per_page=30&page=${page}`);
         for (const item of result.items) {
           const repo = isCode ? item.repository : item;
-          const candidate = { ...summarize(repo), query_id: q.id, discovered_at: started, status: '待读来源', ...(isCode ? {matched_path:item.path,matched_url:item.html_url}: {}) };
-          if (!state.candidates.some(x => x.id === repo.id)) report.new_candidates.push(candidate);
+          const curated = resources.some(r => r.github_id === repo.id);
+          const candidate = { ...summarize(repo), query_id: q.id, discovered_at: started, status: curated ? '已收录' : '待读来源', ...(isCode ? {matched_path:item.path,matched_url:item.html_url}: {}) };
+          if (!curated && !state.candidates.some(x => x.id === repo.id)) report.new_candidates.push(candidate);
           upsertCandidate(state.candidates, candidate);
         }
         const more = page * 30 < Math.min(1000, result.total_count);
@@ -80,6 +81,17 @@ export async function maintain(args = process.argv.slice(2)) {
       await writeJSON(path.join(directory, 'source-pool.json'), pool);
       report.source_pool = { total: pool.total, selected: pool.selected.length, mode: 'read_only' };
     } catch(e) { report.failures.push({ source:'existing_source_pool', message:e.message }); }
+  }
+  if (args.includes('--monthly')) {
+    const sources = (await Promise.all(['tools','platform-rules','source-directory'].map(name => readJSON(path.join(root,'data',name+'.json'))))).flat();
+    report.source_health = await Promise.all(sources.map(async source => {
+      try {
+        const response = await fetch(source.url, { method:'GET', signal:AbortSignal.timeout(12000) });
+        await response.body?.cancel();
+        return {id:source.id,url:source.url,status:response.status,final_url:response.url,needs_review:!response.ok};
+      } catch(e) {return {id:source.id,url:source.url,error:e.name,needs_review:true};}
+    }));
+    report.pending.push(...report.source_health.filter(s=>s.needs_review).map(s=>({source:s.id,reason:'入口需要复核；请求失败不直接判定失效'})));
   }
   for (const c of report.changes) {
     report.impacts.push({ resource_id: c.resource_id, name: c.name, pages: list.filter(p => p.data.resource_ids?.includes(c.resource_id)).map(p => p.relative) });

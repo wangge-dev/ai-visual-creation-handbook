@@ -5,7 +5,7 @@ chapter: "12"
 status: 已公开
 evidence_status: "方法已整理，未执行图像任务"
 last_modified: 2026-10-14
-resource_ids: ["footwear-skills"]
+resource_ids: ["footwear-skills","ecommerce-skills"]
 order: 42
 ---
 
@@ -18,3 +18,7 @@ order: 42
 外部Skill可以帮助组织简报或清单，但它是否有生成适配器、实际脚本和示例结果需要读代码与产物。README承诺、流程图和本项目运行分别注明。
 
 用[P08](/prompts/P08)规划画布与交付。保持原任务ID；每次扩批先检查相关输入角色和失败类型，不对所有无关任务重复测试。
+
+## 业务Skill的具体检查
+
+新资源可借鉴视觉规范段与SKU变量段分开、逐项状态和失败续跑的实现思路。实际脚本路径与工作目录先核对；只读到脚本不表示并发、恢复或生成结果已在本项目验证。

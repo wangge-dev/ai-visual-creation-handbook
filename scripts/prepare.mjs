@@ -11,7 +11,10 @@ for (const r of resources) {
   const related = all.filter(p => p.data.resource_ids?.includes(r.id));
   const lines = [`# ${r.name}`, '', `用途：${r.use}`, '', `类型：${r.type}。状态：${r.status}。`, '', `证据：${r.evidence}。`, '', `限制与待核：${r.limitation}`, '', `[原始仓库](${r.url})`, '',
     `最后内容复核：${r.last_reviewed_at || '待核'}；许可：${r.license || '未见／待核'}；默认分支：${r.branch || '待核'}。`, '',
-    r.archived === true ? '**当前已归档，请核对替代路径。**' : '', '', '## 关联内容', '', ...related.map(p => `- [${p.data.title}](/${p.relative.replace(/\.md$/, '')})`), ''];
+    r.archived === true ? '**当前已归档，请核对替代路径。**' : '', '',
+    '## 输入、输出与上手', '', `输入：${r.inputs || '按原项目文档补充'}。`, '', `输出：${r.outputs || '按实际运行能力确认'}。`, '', `入口：${r.entry || '先读README，再核对当前依赖'}。`, '',
+    '## 核查来源', '', ...(r.sources || [{title:'README',url:r.url+'/blob/'+r.branch+'/README.md'}]).map(s=>`- [${s.title}](${s.url})`), '',
+    '## 关联内容', '', ...related.map(p => `- [${p.data.title}](/${p.relative.replace(/\.md$/, '')})`), ''];
   await fs.writeFile(path.join(cards, r.id + '.md'), lines.join('\n'));
 }
 const nav = all.filter(p => p.data.title).map(p => ({ title: p.data.title, chapter: p.data.chapter, link: '/' + p.relative.replace(/\.md$/, ''), evidence: p.data.evidence_status }));
