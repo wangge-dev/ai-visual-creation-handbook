@@ -11,7 +11,8 @@
     "dev": "npm run prepare:content && vitepress dev docs --host 127.0.0.1",
     "build": "npm run prepare:content && npm run check && vitepress build docs && node scripts/export.mjs",
     "preview": "vitepress preview docs --host 127.0.0.1",
-    "maintain": "node scripts/maintenance.mjs"
+    "maintain": "node scripts/maintenance.mjs",
+    "publish:site": "npm run build && node scripts/publish.mjs"
   },
   "devDependencies": {
     "vitepress": "1.6.4",

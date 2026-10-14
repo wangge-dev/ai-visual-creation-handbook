@@ -22,9 +22,12 @@ npm ci
 npm run dev
 npm run build
 npm run preview
+npm run publish:site
 ```
 
 `npm run build`从同一份正文生成阅读站、整本Markdown、独立阅读HTML及公众号内联正文。下载件在`docs/.vitepress/dist/downloads/`，不手工编辑生成件。
+
+当前Pages从gh-pages分支发布，`npm run publish:site`先构建，再用普通Git推送生成件。源码在main；可选Actions模板保存在maintenance/templates/，只有具备对应权限时才启用。
 
 ## 维护
 
