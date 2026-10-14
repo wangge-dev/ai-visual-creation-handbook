@@ -2,22 +2,108 @@
   {
     "id": "amazon",
     "name": "Amazon图片与A+",
-    "url": "https://sellercentral.amazon.com/help/hub",
-    "scope": "按站点、图片位置、模块与账户核对",
-    "note": "数值与具体限制待登录当前官方页面后登记；本库不统一写死旧尺寸。"
+    "url": "https://sell.amazon.com/blog/product-photos",
+    "scope": "Amazon公开图片指导；具体站点、类目和A+模块另核",
+    "last_reviewed_at": "2026-10-14",
+    "verification_status": "公开指导正文已读；未登录账户核对或上传",
+    "note": "公开指导的建议、示例与当前类目要求分开；A+像素按实际模块确定，不把普通主图要求套给所有模块。",
+    "details": [
+      {
+        "position": "普通商品摄影指导",
+        "text": "公开摄影文章建议白底与主体占画面85%或更多；这是指导出处，类目特殊要求仍到Seller Central核对。"
+      },
+      {
+        "position": "公开图片FAQ",
+        "text": "文章列最长边500—10000像素，以及JPEG、TIFF、PNG、非动画GIF等格式；页面内容已读，不宣称已经完成账户端验证。"
+      },
+      {
+        "position": "A+设计指导",
+        "text": "按模块要求安排图文；公开指南提到图像不大于2MB并强调手机文字可读。各模块实际槽位像素、可用功能以编辑器为准。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Amazon商品摄影指导（文章发布于2024-12-04）",
+        "url": "https://sell.amazon.com/blog/product-photos"
+      },
+      {
+        "title": "Amazon A+设计指导（文章发布于2025-09-24）",
+        "url": "https://sell.amazon.com/blog/a-plus-content-design-guide"
+      },
+      {
+        "title": "Seller Central当前站点帮助入口",
+        "url": "https://sellercentral.amazon.com/help/hub"
+      }
+    ]
   },
   {
     "id": "shopify",
-    "name": "Shopify产品媒体",
-    "url": "https://help.shopify.com/en/manual/products/product-media",
-    "scope": "产品媒体、主题布局与实际裁切",
-    "note": "查看当前官方说明与所用主题的实际呈现。"
+    "name": "Shopify产品媒体、主题图片与alt text",
+    "url": "https://help.shopify.com/en/manual/products/product-media/product-media-types",
+    "scope": "产品／集合媒体、主题通用图片与准确文字分别核对",
+    "last_reviewed_at": "2026-10-14",
+    "verification_status": "三个官方说明正文已读；未验证实际商店主题",
+    "note": "产品媒体文档与通用上传文档列出不同像素限制；按上传位置使用，主题裁切仍需实际预览。",
+    "details": [
+      {
+        "position": "产品／集合图片",
+        "text": "当前该文档列最大5000×5000像素或25MP，文件小于20MB；2048×2048方图是展示建议，非所有区块强制尺寸。"
+      },
+      {
+        "position": "通用图片上传",
+        "text": "当前该文档在上传限制段列20MP与20MB，并注明产品图片有不同限制；不要把两份说明合并成同一规则。"
+      },
+      {
+        "position": "alt text",
+        "text": "官方说明列上限512字符，建议125字符或更少；描述实际图片内容，不堆关键词。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "产品媒体类型",
+        "url": "https://help.shopify.com/en/manual/products/product-media/product-media-types"
+      },
+      {
+        "title": "通用图片上传",
+        "url": "https://help.shopify.com/en/manual/online-store/images/theme-images"
+      },
+      {
+        "title": "媒体alt text",
+        "url": "https://help.shopify.com/en/manual/products/product-media/add-alt-text"
+      }
+    ]
   },
   {
     "id": "shopee",
-    "name": "Shopee卖家入口",
-    "url": "https://seller.shopee.com/",
-    "scope": "各市场、图片位置与编辑器要求",
-    "note": "地区入口与规则待目标市场确定后核对，不照搬另一市场。"
+    "name": "Shopee SG商品页图片指导",
+    "url": "https://ads.shopee.sg/learn/faq/520/172",
+    "scope": "新加坡公开商品页指导；其他市场、Mall及后台限制另核",
+    "last_reviewed_at": "2026-10-14",
+    "verification_status": "SG官方公开图片指导已读；未进入卖家后台上传",
+    "note": "以可读取的SG官方指导替代无法请求的通用入口。指导建议不自动扩展成全市场统一硬限制，上传数量与体积等仍按当地后台核对。",
+    "details": [
+      {
+        "position": "图片建议",
+        "text": "该SG页面建议至少1024×1024的1:1方图、清晰实际商品和纯白封面；这是该文档指导，不填成全市场规则。"
+      },
+      {
+        "position": "内容建议",
+        "text": "指导强调规格、配件、使用与变体信息；图片不应展示未包含在购买中的配件，也应避免水印或干扰图形。"
+      },
+      {
+        "position": "待核范围",
+        "text": "实际文件体积、上传张数、店铺类型与其他市场要求未在本轮后台验证；不根据旧Mall PDF补齐。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "SG官方商品详情页指导",
+        "url": "https://ads.shopee.sg/learn/faq/520/172"
+      },
+      {
+        "title": "SG Seller Education Hub（动态入口）",
+        "url": "https://seller.shopee.sg/edu/"
+      }
+    ]
   }
 ]

@@ -6,7 +6,7 @@ import tools from '../../../data/tools.json';
 import rules from '../../../data/platform-rules.json';
 const { frontmatter } = useData();
 const related = computed(() => records.filter(r => frontmatter.value.resource_ids?.includes(r.id)));
-const other = computed(()=>[...tools.filter(t=>frontmatter.value.tool_ids?.includes(t.id)),...rules.filter(r=>frontmatter.value.platform_rule_ids?.includes(r.id))]);
+const other = computed(()=>[...tools.filter(t=>frontmatter.value.tool_ids?.includes(t.id)),...rules.filter(r=>frontmatter.value.platform_rule_ids?.includes(r.id)).map(r=>({...r,url:withBase('/resources/platforms/'+r.id)}))]);
 </script>
 <template>
   <aside v-if="frontmatter.evidence_status || related.length || other.length" class="resource-links">

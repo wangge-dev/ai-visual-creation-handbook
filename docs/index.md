@@ -25,9 +25,20 @@ features:
 
 ## 首批能做什么
 
-先准备真实素材，跟着核心方法规划单图或套图，再填写完整模板。目录涵盖14章，已整理18篇基础方法和8条模板；真实生图、PS文件和平台导入案例持续补充。
+先准备真实素材，跟着核心方法规划单图或套图，再填写完整模板。
+
+<HandbookStats />
 
 [电商套图](/ecommerce/image-set) · [跨境交付](/ecommerce/cross-border) · [三类画布](/workflows/canvases) · [最新变化](/changelog)
+
+## 跨境电商按这个顺序做
+
+1. [整理事实与渠道任务](/ecommerce/cross-border)，填写[P09简报](/prompts/P09)。
+2. 做[Amazon主副图](/ecommerce/amazon-listing)和[A+模块](/ecommerce/amazon-a-plus)，使用P10—P12。
+3. 做[Shopify产品媒体](/ecommerce/shopify-product)和[桌面／手机横幅](/ecommerce/shopify-hero)，使用P13—P14。
+4. 做[Shopee SG封面与规格图](/ecommerce/shopee-localization)，使用P15。
+5. 核对[英文、日文和单位](/ecommerce/localization)，使用P16—P18。
+6. 建立[SKU交付清单](/ecommerce/cross-border-sku-delivery)，用P19—P20规划和检查；需要组合制作时看[跨境画布](/ecommerce/cross-border-canvas)。
 
 ## 下载与协作
 

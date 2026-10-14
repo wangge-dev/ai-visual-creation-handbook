@@ -4,11 +4,12 @@
 
 [在线阅读](https://wangge-dev.github.io/ai-visual-creation-handbook/) · [完整建设目录](https://wangge-dev.github.io/ai-visual-creation-handbook/outline) · [资源资料卡](https://wangge-dev.github.io/ai-visual-creation-handbook/resources/)
 
-首批包含14章完整建设目录、18篇基础方法、电商核心流程、8条完整原创模板与11张仓库资料卡。模板尚未执行图像任务，平台粘贴与PS操作也不冒充已实测；真实案例持续补充。
+当前包含14章建设目录、26篇方法与教程、20条完整原创模板和18张仓库资料卡。跨境部分已展开Amazon、Shopify、Shopee SG、本地化、SKU与画布流程。模板尚未执行图像任务，平台粘贴与PS操作也不冒充已实测；真实案例持续补充。
 
 - [阅读目录](docs/outline.md)
 - [第一张可用图](docs/start/first-image.md)
 - [电商套图](docs/ecommerce/image-set.md)／[跨境交付](docs/ecommerce/cross-border.md)
+- [Amazon主副图](docs/ecommerce/amazon-listing.md)／[A+](docs/ecommerce/amazon-a-plus.md)／[Shopify产品媒体](docs/ecommerce/shopify-product.md)／[Shopee SG](docs/ecommerce/shopee-localization.md)
 - [三类画布](docs/workflows/canvases.md)／[Codex协作PS](docs/workflows/codex-ps.md)
 - [完整模板](docs/prompts/index.md)
 - [维护与贡献](maintenance/README.md)
@@ -26,6 +27,8 @@ npm run publish:site
 ```
 
 `npm run build`从同一份正文生成阅读站、整本Markdown、独立阅读HTML及公众号内联正文。下载件在`docs/.vitepress/dist/downloads/`，不手工编辑生成件。
+
+跨境专项另生成cross-border.md和cross-border.html，包含9篇流程／教程与12条专项模板，同源构建而不是另外手工维护。
 
 当前Pages从gh-pages分支发布，`npm run publish:site`先构建，再用普通Git推送生成件。源码在main；可选Actions模板保存在maintenance/templates/，只有具备对应权限时才启用。
 

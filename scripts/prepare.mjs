@@ -18,6 +18,16 @@ for (const r of resources) {
   await fs.writeFile(path.join(cards, r.id + '.md'), lines.join('\n'));
 }
 const nav = all.filter(p => p.data.title).map(p => ({ title: p.data.title, chapter: p.data.chapter, link: '/' + p.relative.replace(/\.md$/, ''), evidence: p.data.evidence_status }));
+const platforms = await readJSON(path.join(root,'data/platform-rules.json'));
+const platformDir = path.join(root,'docs/resources/platforms');
+await fs.mkdir(platformDir,{recursive:true});
+for (const r of platforms) {
+  const lines=[`# ${r.name}`,'',`适用范围：${r.scope}`,'',`核对状态：${r.verification_status || '待按具体位置核对'}；核对日：${r.last_reviewed_at || '待核'}。`,'',r.note,'',
+    '## 已读取的具体说明','',...(r.details || []).map(d=>`- **${d.position}**：${d.text}`),'','## 原始来源','',
+    ...(r.sources || [{title:r.name,url:r.url}]).map(s=>`- [${s.title}](${s.url})`),'','## 关联教程与模板','',
+    ...all.filter(p=>p.data.platform_rule_ids?.includes(r.id)).map(p=>`- [${p.data.title}](/${p.relative.replace(/\.md$/,'')})`),''];
+  await fs.writeFile(path.join(platformDir,r.id+'.md'),lines.join('\n'));
+}
 await writeJSON(path.join(root, 'docs/.vitepress/navigation.json'), nav);
 for (const [source, dest] of [['CHANGELOG.md', 'docs/changelog.md'], ['maintenance/README.md', 'docs/maintenance.md']]) await fs.copyFile(path.join(root, source), path.join(root, dest));
 console.log(`Prepared ${resources.length} resource cards and ${nav.length} navigation entries.`);

@@ -3,6 +3,7 @@ docs/.vitepress/dist/
 docs/.vitepress/cache/
 docs/.generated/
 docs/resources/cards/
+docs/resources/platforms/
 docs/.vitepress/navigation.json
 docs/changelog.md
 docs/maintenance.md

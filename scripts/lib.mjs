@@ -9,7 +9,7 @@ export const writeJSON = async (p, value) => { await fs.mkdir(path.dirname(p), {
 export async function pages(dir = path.join(root, 'docs')) {
   const out = [];
   for (const e of await fs.readdir(dir, { withFileTypes: true })) {
-    if (e.name.startsWith('.') || (path.basename(dir) === 'resources' && e.name === 'cards')) continue;
+    if (e.name.startsWith('.') || (path.basename(dir) === 'resources' && ['cards','platforms'].includes(e.name))) continue;
     const p = path.join(dir, e.name);
     if (e.isDirectory()) out.push(...await pages(p));
     else if (e.name.endsWith('.md')) {

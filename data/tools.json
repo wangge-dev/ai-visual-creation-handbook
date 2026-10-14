@@ -18,10 +18,10 @@
   {
     "id": "photoshop",
     "name": "Adobe Photoshop",
-    "url": "https://helpx.adobe.com/photoshop/user-guide.html",
+    "url": "https://helpx.adobe.com/photoshop/desktop.html",
     "type": "图层精修",
-    "note": "文案、蒙版、主体保护与源文件按实际软件检查。",
-    "evidence": "本项目尚未操作"
+    "note": "官方桌面手册入口已核对；文案、蒙版、主体保护与源文件按实际软件检查。",
+    "evidence": "官方入口已读；本项目尚未操作"
   },
   {
     "id": "krita",

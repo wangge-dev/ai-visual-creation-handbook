@@ -12,7 +12,7 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     logo: undefined, siteTitle: 'AI视觉创作',
-    nav: [{ text: '完整目录', link: '/outline' }, { text: '资料库', link: '/resources/' }, { text: '更新', link: '/changelog' }],
+    nav: [{ text: '跨境教程', link: '/ecommerce/cross-border' }, { text: '完整目录', link: '/outline' }, { text: '资料库', link: '/resources/' }, { text: '更新', link: '/changelog' }],
     sidebar: groups.map(([text, chapters]) => ({ text, collapsed: text !== '开始与共用基础', items: entries.filter(p => chapters.includes(p.chapter)).map(p => ({text:p.title,link:p.link})) })),
     outline: { level: [2, 3], label: '本页内容' }, search: { provider: 'local', options: { translations: { button: { buttonText: '搜索', buttonAriaLabel: '搜索文章' }, modal: { displayDetails:'显示详细信息', resetButtonTitle:'清空搜索', backButtonTitle:'返回', noResultsText:'没有找到结果', footer: {selectText:'选择',selectKeyAriaLabel:'回车',navigateText:'切换',navigateUpKeyAriaLabel:'向上',navigateDownKeyAriaLabel:'向下',closeText:'关闭',closeKeyAriaLabel:'Esc'} } } } },
     sidebarMenuLabel:'目录', returnToTopLabel:'回到顶部', darkModeSwitchLabel:'外观', lightModeSwitchTitle:'浅色', darkModeSwitchTitle:'深色',

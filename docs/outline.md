@@ -95,11 +95,11 @@ order: 1
 
 ### 03.5 跨境电商适配
 
-- 03.5.1 Amazon主图与副图：产品展示、场景、尺寸、功能与配件
-- 03.5.2 Amazon Basic A+／Premium A+：模块规划与素材衔接
+- 03.5.1 [Amazon主图与副图：产品展示、场景、尺寸、功能与配件](/ecommerce/amazon-listing)
+- 03.5.2 [Amazon Basic A+／Premium A+：模块规划与素材衔接](/ecommerce/amazon-a-plus)
 - 03.5.3 Amazon Brand Story：品牌故事、系列与产品关联
-- 03.5.4 Shopify：产品页、集合页、首页Banner与手机裁切
-- 03.5.5 Shopee／Lazada：站点语言、卖点、规格与促销素材
+- 03.5.4 Shopify：[产品页与集合媒体](/ecommerce/shopify-product)、[首页Banner与手机裁切](/ecommerce/shopify-hero)
+- 03.5.5 [Shopee SG：站点语言、卖点、规格与变体素材](/ecommerce/shopee-localization)；Lazada专篇待补
 - 03.5.6 TikTok Shop：商品图、内容封面与视频素材的衔接
 - 03.5.7 AliExpress／eBay等：按实际平台任务补充
 - 03.5.8 平台图片要求：站点、用途、类目与更新时间分开记录

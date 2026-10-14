@@ -233,5 +233,250 @@
         "url": "https://github.com/dlazy-ai/ecommerce-skills/blob/main/shared/scripts/batch.mjs"
       }
     ]
+  },
+  {
+    "id": "cross-border-knowledge",
+    "name": "kangise/ecommerce-ai-skills",
+    "url": "https://github.com/kangise/ecommerce-ai-skills",
+    "github_id": 1052758769,
+    "branch": "main",
+    "license": "CC0-1.0",
+    "archived": false,
+    "type": "跨境知识与方法",
+    "use": "跨境视觉章节、多语言方法、完整提示词组织与适用范围记录。",
+    "inputs": "商品事实、目标市场、任务与准确素材",
+    "outputs": "知识章节、模板与任务规划；运行组件是另一个实际系统",
+    "entry": "从README_ZH与视觉Pipeline章节阅读；不把全套运营安装作为读教程的前提",
+    "limitation": "本项目只核对来源。作者的目录数量、检查通过与演示不证明所有平台规则适用于现在；运行系统的接口、约束与声明需另核，不采用其哈希或冻结规则。",
+    "status": "方法参考",
+    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "resource_mode": "方法参考",
+    "run_verified": false,
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "中文入口",
+        "url": "https://github.com/kangise/ecommerce-ai-skills/blob/main/README_ZH.md"
+      },
+      {
+        "title": "视觉Pipeline",
+        "url": "https://github.com/kangise/ecommerce-ai-skills/blob/main/dist/knowledge/chapters/b-developers__b9-ai-image-pipeline.md"
+      },
+      {
+        "title": "Skill总入口",
+        "url": "https://github.com/kangise/ecommerce-ai-skills/blob/main/dist/SKILL.md"
+      }
+    ]
+  },
+  {
+    "id": "detail-image-workflow",
+    "name": "jovanjianga/ecommerce-detail-images",
+    "url": "https://github.com/jovanjianga/ecommerce-detail-images",
+    "github_id": 1416782966,
+    "branch": "main",
+    "license": "MIT",
+    "archived": false,
+    "type": "业务流程Skill",
+    "use": "商品详情图的逐页规划、风格一致性、局部返工与双语说明。",
+    "inputs": "真实商品照片或明确标为概念的描述、事实与风格",
+    "outputs": "逐页方案、完整任务词与宿主图像工具的结果；源库有作者示例",
+    "entry": "先读根SKILL与README，明确任务范围和宿主实际图像能力",
+    "limitation": "当前13文件、1份Skill、0独立脚本；作者图片示例未由本项目复现，不把工作流文档当独立生图软件。",
+    "status": "方法参考",
+    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "resource_mode": "方法参考",
+    "run_verified": false,
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "README",
+        "url": "https://github.com/jovanjianga/ecommerce-detail-images/blob/main/README.md"
+      },
+      {
+        "title": "任务流程",
+        "url": "https://github.com/jovanjianga/ecommerce-detail-images/blob/main/SKILL.md"
+      }
+    ]
+  },
+  {
+    "id": "kv-marketing-workflow",
+    "name": "Design0809/KV-design-ecommerce-marketing",
+    "url": "https://github.com/Design0809/KV-design-ecommerce-marketing",
+    "github_id": 1415775878,
+    "branch": "main",
+    "license": "MIT",
+    "archived": false,
+    "type": "业务流程Skill",
+    "use": "商品KV、广告横幅与中英文版式的素材识别和定向修改方法。",
+    "inputs": "真实商品、品牌素材、准确文案、用途与目标尺寸",
+    "outputs": "方向、任务词与依赖宿主工具的样图／延展",
+    "entry": "阅读根SKILL，按实际用途区分广告KV和商品主图",
+    "limitation": "当前8文件、1份Skill、0独立脚本；审查和尺寸约束是来源作者流程，不作为本项目通用门禁；广告文字不自动适用于Amazon主图。",
+    "status": "方法参考",
+    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "resource_mode": "方法参考",
+    "run_verified": false,
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "README",
+        "url": "https://github.com/Design0809/KV-design-ecommerce-marketing/blob/main/README.md"
+      },
+      {
+        "title": "KV流程",
+        "url": "https://github.com/Design0809/KV-design-ecommerce-marketing/blob/main/SKILL.md"
+      }
+    ]
+  },
+  {
+    "id": "ad-production-kit",
+    "name": "oscarlora/ad-production-kit",
+    "url": "https://github.com/oscarlora/ad-production-kit",
+    "github_id": 1353956967,
+    "branch": "main",
+    "license": "MIT",
+    "archived": false,
+    "type": "广告制作流程",
+    "use": "跨境广告的研究、角度、画面、短片与素材编辑组织。",
+    "inputs": "品牌资料、真实商品、目标受众、准确文案、获准素材",
+    "outputs": "广告任务方案、图像／视频适配脚本及制作界面",
+    "entry": "优先读make-image-ad和generate-image入口，确认当前实际后端与素材流程",
+    "limitation": "当前130文件、27份Skill、87脚本，是文件统计。本项目未运行；来源的服务路由、元信息清理和产物保留方式需另核，作者绩效不作为效果证明。",
+    "status": "实现候选",
+    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "resource_mode": "实现候选",
+    "run_verified": false,
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "README",
+        "url": "https://github.com/oscarlora/ad-production-kit/blob/main/README.md"
+      },
+      {
+        "title": "图片广告流程",
+        "url": "https://github.com/oscarlora/ad-production-kit/blob/main/skills/make-image-ad/SKILL.md"
+      },
+      {
+        "title": "图像适配入口",
+        "url": "https://github.com/oscarlora/ad-production-kit/blob/main/tools/generate-image.mjs"
+      }
+    ]
+  },
+  {
+    "id": "ecommerce-image-toolkit",
+    "name": "xianyu110/ecommerce-image-skills",
+    "url": "https://github.com/xianyu110/ecommerce-image-skills",
+    "github_id": 1403836744,
+    "branch": "main",
+    "license": "MIT",
+    "archived": false,
+    "type": "业务流程与脚本",
+    "use": "Amazon白底／A+、商品套图与后期图片检查、模块切分。",
+    "inputs": "真实商品、准确文案、当前平台参数与已配置工具",
+    "outputs": "任务词、检查／拼接脚本与依赖实际接口的图像结果",
+    "entry": "先看白底检查和A+目录，再核对源项目的服务配置",
+    "limitation": "当前53文件、12份Skill、36脚本。本项目未调用；型号别名和第三方接口需另核，检查脚本的默认阈值不代替当前平台规则。",
+    "status": "实现候选",
+    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "resource_mode": "实现候选",
+    "run_verified": false,
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "README",
+        "url": "https://github.com/xianyu110/ecommerce-image-skills/blob/main/README.md"
+      },
+      {
+        "title": "白底检查脚本",
+        "url": "https://github.com/xianyu110/ecommerce-image-skills/blob/main/scripts/check_main_image.py"
+      },
+      {
+        "title": "生成适配入口",
+        "url": "https://github.com/xianyu110/ecommerce-image-skills/blob/main/scripts/generate.py"
+      },
+      {
+        "title": "A+目录",
+        "url": "https://github.com/xianyu110/ecommerce-image-skills/blob/main/skills/amazon-a-plus/SKILL.md"
+      }
+    ]
+  },
+  {
+    "id": "visual-copywriting",
+    "name": "feichanggege/ecommerce-visual-copywriting-skill",
+    "url": "https://github.com/feichanggege/ecommerce-visual-copywriting-skill",
+    "github_id": 1211089620,
+    "branch": "main",
+    "license": "MIT",
+    "archived": false,
+    "type": "业务流程Skill",
+    "use": "跨境Listing／A+的逐图职责、准确文案、素材与完整生图任务词规划。",
+    "inputs": "商品事实、包装、已确认资料、目标平台与风格",
+    "outputs": "逐图画面简报、准确文字、任务词与待核主张",
+    "entry": "先读根SKILL，按策划、审稿和修改任务使用",
+    "limitation": "当前26文件、1份Skill、1脚本；该脚本用于检查Skill结构，不是生成引擎。来源参考规则仍需官方核对，本项目未生图。",
+    "status": "方法参考",
+    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "resource_mode": "方法参考",
+    "run_verified": false,
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "README",
+        "url": "https://github.com/feichanggege/ecommerce-visual-copywriting-skill/blob/main/README.md"
+      },
+      {
+        "title": "策划流程",
+        "url": "https://github.com/feichanggege/ecommerce-visual-copywriting-skill/blob/main/SKILL.md"
+      },
+      {
+        "title": "Skill检查脚本",
+        "url": "https://github.com/feichanggege/ecommerce-visual-copywriting-skill/blob/main/tools/verify-skill.py"
+      }
+    ]
+  },
+  {
+    "id": "background-replacement-workflow",
+    "name": "meap158/ComfyUI-Background-Replacement",
+    "url": "https://github.com/meap158/ComfyUI-Background-Replacement",
+    "github_id": 732656686,
+    "branch": "main",
+    "license": "MIT",
+    "archived": false,
+    "type": "节点工作流",
+    "use": "真实主体、背景替换、深度与合成的节点结构研究。",
+    "inputs": "真实图像、兼容ComfyUI、节点、模型与依赖",
+    "outputs": "背景替换／合成结果及可研究的示例工作流",
+    "entry": "阅读background_replacement.py和随库工作流JSON，先核对全部依赖",
+    "limitation": "当前19文件、9脚本与真实工作流JSON存在；示例采用旧SDXL-Turbo／ControlNet路径，当前兼容、边缘与主体保留未验证。代码MIT不等于模型权重同一许可。",
+    "status": "历史工作流",
+    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "resource_mode": "历史工作流",
+    "run_verified": false,
+    "last_reviewed_at": "2026-10-14",
+    "watch": true,
+    "sources": [
+      {
+        "title": "README",
+        "url": "https://github.com/meap158/ComfyUI-Background-Replacement/blob/main/README.md"
+      },
+      {
+        "title": "节点实现",
+        "url": "https://github.com/meap158/ComfyUI-Background-Replacement/blob/main/background_replacement.py"
+      },
+      {
+        "title": "依赖",
+        "url": "https://github.com/meap158/ComfyUI-Background-Replacement/blob/main/requirements.txt"
+      },
+      {
+        "title": "工作流文件",
+        "url": "https://github.com/meap158/ComfyUI-Background-Replacement/blob/main/workflow_background_replacement_sdxl_turbo.json"
+      }
+    ]
   }
 ]

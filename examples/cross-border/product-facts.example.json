@@ -1,0 +1,37 @@
+{
+  "status": "fictional_practice_data",
+  "image_generation": false,
+  "photos_attached": false,
+  "product": "DeskNest DN01",
+  "size_mm": {
+    "length": 220,
+    "width": 150,
+    "height": 120
+  },
+  "material": "ABS",
+  "package": {
+    "box": 1,
+    "lid": 1,
+    "divider": 1
+  },
+  "unknown": [
+    "capacity",
+    "heat_resistance",
+    "load_capacity",
+    "waterproof",
+    "food_contact",
+    "certification"
+  ],
+  "variants": [
+    {
+      "sku": "DN01-W",
+      "color": "white",
+      "photo": "replace-with-real-white-photo"
+    },
+    {
+      "sku": "DN01-G",
+      "color": "grey",
+      "photo": "replace-with-real-grey-photo"
+    }
+  ]
+}

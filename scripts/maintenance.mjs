@@ -10,6 +10,11 @@ export function recordSuccess(previous, next, now) {
 export function recordFailure(previous, error, now) {
   return { ...previous, last_attempt: now, error };
 }
+export function queryPosition(previous, query) {
+  const changed = previous.query_text !== undefined && (previous.query_text !== query.query || previous.query_kind !== query.kind);
+  return changed ? {next_page:1,query_text:query.query,query_kind:query.kind,previous_query:previous.query_text,previous_success:previous.last_success}
+    : {...previous,query_text:query.query,query_kind:query.kind};
+}
 export function upsertCandidate(list, item) {
   const index = list.findIndex(x => x.id === item.id);
   if (index < 0) list.push(item); else list[index] = { ...list[index], ...item };
@@ -33,7 +38,7 @@ export async function maintain(args = process.argv.slice(2)) {
   if (args.includes('--discover')) {
     for (let n = 0; n < Math.min(limit, queries.length); n++) {
       const q = queries[(state.rotation + n) % queries.length];
-      const previous = state.queries[q.id] || { next_page: 1 };
+      const previous = queryPosition(state.queries[q.id] || { next_page: 1 },q);
       try {
         const page = previous.next_page || 1;
         const isCode = q.kind === 'code';
@@ -41,7 +46,8 @@ export async function maintain(args = process.argv.slice(2)) {
         for (const item of result.items) {
           const repo = isCode ? item.repository : item;
           const curated = resources.some(r => r.github_id === repo.id);
-          const candidate = { ...summarize(repo), query_id: q.id, discovered_at: started, status: curated ? '已收录' : '待读来源', ...(isCode ? {matched_path:item.path,matched_url:item.html_url}: {}) };
+          const reviewed = state.candidates.find(x=>x.id===repo.id)?.review_status;
+          const candidate = { ...summarize(repo), query_id: q.id, discovered_at: started, status: curated ? '已收录' : reviewed || '待读来源', ...(isCode ? {matched_path:item.path,matched_url:item.html_url}: {}) };
           if (!curated && !state.candidates.some(x => x.id === repo.id)) report.new_candidates.push(candidate);
           upsertCandidate(state.candidates, candidate);
         }
