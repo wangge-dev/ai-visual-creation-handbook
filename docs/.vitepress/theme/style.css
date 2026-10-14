@@ -10,6 +10,7 @@
 .vp-doc [class*='language-'] code { line-height: 1.9; }
 .vp-doc div[class*='language-'] pre code { white-space:pre-wrap;overflow-wrap:anywhere;width:auto; }
 .vp-doc div[class*='language-'] code .line { white-space:pre-wrap;overflow-wrap:anywhere; }
+.vp-doc .language-text pre code { font-family:var(--vp-font-family-base);font-size:15px;color:var(--vp-c-text-1); }
 .resource-links { border-top: 1px solid #e6e6e6; padding-top: 18px; margin-top: 32px; color: #666; font-size: 14px; }
 .resource-filter { display:flex;gap:16px;flex-wrap:wrap;margin:24px 0 12px; }
 .resource-filter label { display:grid;gap:6px; flex:1; min-width:160px; }

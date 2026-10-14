@@ -4,37 +4,72 @@ title: "Shopify产品页：媒体顺序与准确文字"
 chapter: "03"
 topic: cross-border
 status: 已公开
-evidence_status: "原创教程与规划示范，尚未执行图像任务或后台上传"
+evidence_status: "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传"
 last_modified: 2026-10-14
 resource_ids: ["ecommerce-skills","detail-image-workflow","cross-border-knowledge"]
 platform_rule_ids: ["shopify"]
 order: 23.3
+content_kind: "操作教程"
 ---
 
-# Shopify产品页：媒体顺序与准确文字
+# Shopify产品页，制作媒体序列并检查变体
 
-Shopify产品媒体承担商品解释，主题决定显示方式。先做一套商品媒体，再看产品页、集合页和手机；不要把首页横幅的上传限制直接套到产品图片。
+本节把一套商品图放进Shopify产品页的制作流程，得到媒体顺序表、准确alt text、变体对应表与桌面/手机检查记录。练习使用虚构DN01收纳盒；实际后台操作需要你的店铺账户，本项目尚未上传。
 
-## 第1步：分清上传入口
+## 1. 先定商品媒体顺序
 
-当前官方产品媒体文档列出产品／集合图片的尺寸与体积要求，推荐方图可用2048×2048；具体显示取决于主题。[产品媒体说明](https://help.shopify.com/en/manual/products/product-media/product-media-types)。本教程把2048方图作为练习母版，不宣称它适用于所有图片区块。
+打开同类产品页思考读者先需要什么。封面先认商品，第二张解释用途，第三张看结构，第四张读尺寸，第五张看发货。首页大横幅另有主题裁切逻辑，不能直接拿来当商品封面。
 
-通用图片说明另列上传限制，还注明产品图片存在不同限制。核对时记录是产品媒体、集合图片，还是主题中的首页／幻灯片素材。[通用图片说明](https://help.shopify.com/en/manual/online-store/images/theme-images)。
+| 顺序 | 素材 | 文件/说明 |
+| --- | --- | --- |
+| 01 | 白色完整商品 | DN01_white_01-front_en.jpg |
+| 02 | 桌面场景 | 无字背景＋真实商品 |
+| 03 | 开盖/隔板 | 对应结构实拍 |
+| 04 | 外尺寸 | 矢量数字，明确L×W×H |
+| 05 | 发货平铺 | 盒体1、盖子1、隔板1 |
 
-## 第2步：安排图片顺序
+本练习用2048×2048方形母版便于统一媒体序列，它是常见制作选择，主题可能有不同显示比例。产品媒体支持范围和限制查[官方媒体类型](https://help.shopify.com/en/manual/products/product-media/product-media-types)，不要把普通主题图片限制混为产品媒体限制。
 
-DN01可以按“整体识别→开盖结构→书桌场景→尺寸→发货内容→使用”排列。这是教程示范顺序，张数和第一张选择按你的买家任务与主题检查。商品主体在整套里保持颜色、结构和比例。
+## 2. 制作场景媒体
 
-使用[P13产品媒体](/prompts/P13)生成逐张任务、准确短文案和alt text。第一张缩略图要能识别商品；细节图需要真实近照，不能用生成的隐藏结构充数。
+已经做过[Amazon副图](./amazon-listing.md)可复用真实商品和适用场景，但去掉不适合主题的烘焙文字。Shopify页面标题、价格、购买按钮由网页表达，媒体负责商品与使用环境。
 
-## 第3步：把文字放到合适的位置
+```text
+为白色桌面收纳盒制作Shopify产品页场景底图。真实商品照片是唯一外观依据，保留盒体、盖子、比例、颜色和标识。明亮书桌，浅木台面，奶油白背景，柔和左侧窗光，简洁日常摄影。
+商品处于画面中央偏下，四周留合理裁切空间。文具只作少量场景道具，不暗示随商品发货。不生成标题、折扣、按钮、数字、认证或水印，不制造新隔板。商品被改变时只生成空桌面背景，真实主体后期合成。
+```
 
-较长规格和使用说明放在产品文本、主题区块或可编辑表格中。图片中文字只保留必要的尺寸或结构标签，手机缩小后仍能看清。产品变体使用各自真实照片，不能把白色版本重染成未经确认的灰色SKU。
+导出原图后检查商品。不要让画布截图里的边框、节点线和选择框进入媒体。
 
-alt text描述图片实际内容，不堆关键词。示例：“White DeskNest DN01 desk organizer with lid and one removable divider.”这句话仅用于虚构练习；正式内容依照实际商品和图中对象填写。[官方alt text说明](https://help.shopify.com/en/manual/products/product-media/add-alt-text)。
+## 3. 在产品后台上传并排顺序
 
-## 第4步：实际主题预览
+进入Products，打开目标商品，在Media区域添加文件。上传后按任务表调整顺序；官方文档说明媒体可重新排列，具体界面按当前后台。[添加产品媒体](https://help.shopify.com/en/manual/products/product-media/add-media)。
 
-在产品页与集合页检查：首图缩略、同排图片的比例、放大查看、图文区块顺序、变体切换、手机裁切和读取。准确的母版在主题里仍可能被裁掉，调整图片焦点或重新安排构图。
+先保存一款测试商品或当前授权的草稿，再查看前台。没有实际上传授权时，可以完成全部文件和媒体表，把后台步骤留给运营执行；不能用本地预览冒充上线。
 
-交付包括媒体顺序、各张图片、准确文案、alt text表和主题预览记录。尚未进入实际Shopify商店时，不把本地HTML预览写成主题验证完成。
+## 4. 逐张填写alt text
+
+打开一张媒体，找到编辑alt text的入口，描述画面实际内容。DN01例子可写如下，正式使用改真实商品名和颜色。[官方alt text说明](https://help.shopify.com/en/manual/products/product-media/add-alt-text)。
+
+```text
+01: White lidded desk organizer, front view.
+02: White desk organizer on a wooden desk with stationery nearby.
+03: Open desk organizer showing one removable divider.
+04: External dimensions of the organizer: 220 x 150 x 120 mm.
+05: Box body, lid and one divider included with the organizer.
+```
+
+alt text用于描述图片。不要每张重复堆“best cheap storage box”等关键词，也不要把同一段长广告塞进所有媒体。图中包含必要尺寸信息时，文字描述与事实表一致。
+
+## 5. 关联变体并看三个位置
+
+白色、灰色SKU分别使用真实颜色照片。按当前后台变体媒体入口指定对应图。切换变体时看主媒体有没有一起变化，颜色名称有没有与图片相反。再查看产品页、集合卡片和手机画廊，确认主题裁切没有切掉盒盖与参数。
+
+| 现象 | 处理 |
+| --- | --- |
+| 集合页裁掉商品顶部 | 调主体位置或改主题媒体比例 |
+| 变体切换仍是旧颜色图 | 查变体媒体关联与主题支持 |
+| 方图里文字手机很小 | 移到网页文字区，保留图像说明 |
+| 加载慢 | 保留清晰母版，另导出适当像素与压缩版本 |
+
+最终交付媒体排序CSV、图片、alt text文本和变体映射。后台实际表现另记录。完整任务模板见[P13](../prompts/P13.md)，首页横幅继续[桌面/手机排版](./shopify-hero.md)。

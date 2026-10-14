@@ -4,16 +4,28 @@
     "name": "Lovart",
     "url": "https://www.lovart.ai/",
     "type": "设计画布",
-    "note": "作为设计画布入口；实际按钮、连接与交付能力需在当前版本核对。",
-    "evidence": "本项目尚未操作"
+    "note": "官方项目文档已核对，正文说明上传素材、参考角色与按图迭代；具体可用功能按当前界面。",
+    "evidence": "官方文档已读；本项目尚未操作",
+    "sources": [
+      {
+        "title": "Design your first project",
+        "url": "https://www.lovart.ai/docs/getting-started/design-your-first-project"
+      }
+    ]
   },
   {
     "id": "tapnow",
     "name": "TapNow",
-    "url": "https://www.tapnow.ai/",
+    "url": "https://app.tapnow.ai/",
     "type": "设计画布",
-    "note": "作为任务组织候选入口；当前访问和具体功能待实操核对。",
-    "evidence": "待核当前入口"
+    "note": "官方图像文档已核对，正文说明Add图像节点、参考输入、Redraw与下载；具体可用工具按当前界面。",
+    "evidence": "官方文档已读；本项目尚未操作",
+    "sources": [
+      {
+        "title": "Generate and edit images",
+        "url": "https://docs.tapnow.ai/en/docs/canvas/generate-and-edit-images"
+      }
+    ]
   },
   {
     "id": "photoshop",
@@ -30,5 +42,27 @@
     "type": "图层精修",
     "note": "读取官方手册并按实际插件和版本检查。",
     "evidence": "本项目尚未操作"
+  },
+  {
+    "id": "photopea",
+    "name": "Photopea",
+    "url": "https://www.photopea.com/",
+    "type": "图层精修",
+    "note": "官方打开/保存、蒙版、文字与变换资料已读，正文给出合成与排版步骤。",
+    "evidence": "官方文档已读；本项目尚未操作",
+    "sources": [
+      {
+        "title": "Opening and saving",
+        "url": "https://www.photopea.com/learn/opening-saving"
+      },
+      {
+        "title": "Masks",
+        "url": "https://www.photopea.com/learn/masks"
+      },
+      {
+        "title": "Text",
+        "url": "https://www.photopea.com/learn/text"
+      }
+    ]
   }
 ]

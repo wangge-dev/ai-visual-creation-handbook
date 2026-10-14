@@ -7,7 +7,7 @@
   "scripts": {
     "prepare:content": "node scripts/prepare.mjs",
     "check": "node scripts/check.mjs",
-    "test": "node --test scripts/maintenance.test.mjs",
+    "test": "node --test scripts/maintenance.test.mjs scripts/links.test.mjs",
     "dev": "npm run prepare:content && vitepress dev docs --host 127.0.0.1",
     "build": "npm run prepare:content && npm run check && vitepress build docs && node scripts/export.mjs",
     "preview": "vitepress preview docs --host 127.0.0.1",

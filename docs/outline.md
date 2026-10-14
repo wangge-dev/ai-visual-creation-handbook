@@ -11,7 +11,9 @@ order: 1
 
 # 完整建设目录（14章）
 
-这份目录定义完整建设范围。已有方法与模板可从侧栏进入；未关联正文的条目仍待补，不表示教程已完成。
+这份目录定义完整建设范围。操作教程、方法说明与任务入门可从侧栏进入；未关联正文的条目仍待补，目录不表示全部教程完成。
+
+跟做入口：[第一张商品图](./start/first-image.md) → [完整套图](./ecommerce/image-set.md) → [逐屏详情页](./ecommerce/detail-page.md)。路线选择见[网站、图层、节点与API](./start/tool-routes.md)，品类差异见[食品/美妆/家居/3C/服装提示词](./ecommerce/category-prompts.md)。
 
 电商是最大应用专题，其他视觉创作独立成章。共用方法集中讲一次，再由具体任务引用；工具与模型作为实现路径，不用型号名称决定整个知识库的目录。
 
@@ -95,11 +97,11 @@ order: 1
 
 ### 03.5 跨境电商适配
 
-- 03.5.1 [Amazon主图与副图：产品展示、场景、尺寸、功能与配件](/ecommerce/amazon-listing)
-- 03.5.2 [Amazon Basic A+／Premium A+：模块规划与素材衔接](/ecommerce/amazon-a-plus)
+- 03.5.1 [Amazon主图与副图：产品展示、场景、尺寸、功能与配件](./ecommerce/amazon-listing.md)
+- 03.5.2 [Amazon Basic A+／Premium A+：模块规划与素材衔接](./ecommerce/amazon-a-plus.md)
 - 03.5.3 Amazon Brand Story：品牌故事、系列与产品关联
-- 03.5.4 Shopify：[产品页与集合媒体](/ecommerce/shopify-product)、[首页Banner与手机裁切](/ecommerce/shopify-hero)
-- 03.5.5 [Shopee SG：站点语言、卖点、规格与变体素材](/ecommerce/shopee-localization)；Lazada专篇待补
+- 03.5.4 Shopify：[产品页与集合媒体](./ecommerce/shopify-product.md)、[首页Banner与手机裁切](./ecommerce/shopify-hero.md)
+- 03.5.5 [Shopee SG：站点语言、卖点、规格与变体素材](./ecommerce/shopee-localization.md)；Lazada专篇待补
 - 03.5.6 TikTok Shop：商品图、内容封面与视频素材的衔接
 - 03.5.7 AliExpress／eBay等：按实际平台任务补充
 - 03.5.8 平台图片要求：站点、用途、类目与更新时间分开记录
@@ -310,4 +312,4 @@ order: 1
 
 章节按实际任务逐步补齐；实操案例另记录真实输入、过程和产物。
 
-实施与贡献请阅读[维护说明](/maintenance)。
+实施与贡献请阅读[维护说明](./maintenance.md)。

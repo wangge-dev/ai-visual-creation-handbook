@@ -17,7 +17,7 @@ for (const r of resources) {
     '## 关联内容', '', ...related.map(p => `- [${p.data.title}](/${p.relative.replace(/\.md$/, '')})`), ''];
   await fs.writeFile(path.join(cards, r.id + '.md'), lines.join('\n'));
 }
-const nav = all.filter(p => p.data.title).map(p => ({ title: p.data.title, chapter: p.data.chapter, link: '/' + p.relative.replace(/\.md$/, ''), evidence: p.data.evidence_status }));
+const nav = all.filter(p => p.data.title).map(p => ({ title: p.data.title, chapter: p.data.chapter, kind: p.data.content_kind, link: '/' + p.relative.replace(/\.md$/, ''), evidence: p.data.evidence_status }));
 const platforms = await readJSON(path.join(root,'data/platform-rules.json'));
 const platformDir = path.join(root,'docs/resources/platforms');
 await fs.mkdir(platformDir,{recursive:true});
