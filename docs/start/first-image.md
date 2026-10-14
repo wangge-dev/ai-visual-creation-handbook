@@ -59,6 +59,8 @@ tool_ids: ["tapnow", "photopea", "photoshop"]
 3. 选商品层，用Edit → Free Transform调整大小和位置，保持长宽比例。商品底座落在台面上，避免悬空；画面透视不匹配时换背景，别把杯子拉扁来迁就台面。
 4. 在商品层下面新增 `SHADOW`。用柔边低透明度黑色画笔画一块接触阴影，底座附近较紧，远处较淡。光从左侧来，阴影相应向右后方延伸。
 
+第一次使用蒙版时，选中商品层，从Layer → Raster Mask → Add添加蒙版。商品图层旁会出现新的缩略图，点击蒙版缩略图再用画笔处理。黑色隐藏原拍摄背景，白色恢复误隐藏的商品；先处理大片背景，再放大处理边缘。画完切回商品缩略图移动主体，避免误把蒙版单独移动。
+
 拖入图像、蒙版和变换的界面说明可见[打开与保存](https://www.photopea.com/learn/opening-saving)、[蒙版](https://www.photopea.com/learn/masks)、[自由变换](https://www.photopea.com/learn/free-transform)。透明杯体不能按不透明白盒处理，抠图后若出现黑边或失去透光，要保留合适的原背景局部或重新拍摄。
 
 ## 4. 加一句能读清的标题
