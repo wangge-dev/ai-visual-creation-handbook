@@ -1,0 +1,42 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import MarkdownIt from 'markdown-it';
+import { root, pages, readJSON, escapeHTML } from './lib.mjs';
+const md = new MarkdownIt({ html: false, linkify: true });
+const publicURL = 'https://wangge-dev.github.io/ai-visual-creation-handbook';
+const list = (await pages()).filter(p => p.data.id && p.data.id !== 'outline' && p.data.id !== 'prompts');
+const outline = (await pages()).find(p => p.data.id === 'outline');
+const resources = await readJSON(path.join(root, 'data/repositories.json'));
+const absoluteLinks = text => text.replace(/\]\(\/([^)]*)\)/g, `](${publicURL}/$1)`).replace(/\]\(\.\/(P\d{2})\)/g, `](${publicURL}/prompts/$1)`);
+const chapters = list.map(p => `${absoluteLinks(p.content.trim())}\n\n证据状态：${p.data.evidence_status || '见正文'}。\n`);
+const registry = '# 资源资料卡\n\n' + resources.map(r => `## ${r.name}\n\n${r.use}\n\n类型：${r.type}；证据：${r.evidence}。\n\n限制：${r.limitation}\n\n许可：${r.license || '待核／未见'}；核对日：${r.last_reviewed_at || '待核'}。\n\n[原始仓库](${r.url})\n`).join('\n');
+const text = '# AI视觉创作实战知识库\n\n电商是最大专题，同时覆盖其他视觉创作、完整提示词与三类画布。模板尚未执行图像任务，方法与实际结果分别记录。\n\n' + absoluteLinks(outline.content) + '\n\n' + chapters.join('\n\n---\n\n') + '\n\n' + registry;
+const target = path.join(root, 'docs/.vitepress/dist/downloads');
+await fs.mkdir(target, { recursive: true });
+await fs.writeFile(path.join(target, 'handbook.md'), text);
+await fs.writeFile(path.join(target, 'handbook.html'), `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI视觉创作实战知识库</title><style>body{margin:0;background:#fafafa;color:#222;font-family:'Microsoft YaHei',sans-serif}main{max-width:820px;margin:auto;padding:30px 22px;background:white}h1{font-size:26px;line-height:1.5}h2{font-size:22px;border-bottom:1px solid #e6e6e6;padding-bottom:8px}p,li{font-size:16px;line-height:1.9}a{color:#ad420f}pre{padding:16px;background:#fff8f1;white-space:pre-wrap;overflow-wrap:anywhere;font-size:15px;line-height:1.9}table{border-collapse:collapse;display:block;overflow:auto}td,th{border:1px solid #ddd;padding:10px;line-height:1.8}</style><main>${md.render(text)}</main></html>`);
+const inline = new MarkdownIt({ html: false, linkify: true });
+const normal = 'font-size:16px;line-height:30px;color:#222;letter-spacing:0px;';
+const styles = { p: normal+'margin:0px 0px 14px;padding:0px;', h1:'font-size:24px;line-height:40px;margin:0px 0px 20px;padding:0px 0px 12px;border-bottom:2px solid #ff5b1a;color:#222;',
+  h2:'font-size:20px;line-height:36px;margin:24px 0px 12px;color:#222;', h3:'font-size:18px;line-height:34px;margin:20px 0px 10px;color:#222;',
+  ul:normal+'padding-left:24px;margin:0px 0px 14px;',ol:normal+'padding-left:24px;margin:0px 0px 14px;',li:normal+'margin:0px 0px 6px;',
+  a:normal+'color:#ad420f;text-decoration:underline;',strong:normal+'font-weight:bold;', em:normal+'font-style:italic;', blockquote:normal+'margin:14px 0px;padding:8px 12px;border-left:2px solid #ff5b1a;background:#fffdfb;' };
+for (const rule of ['paragraph_open','heading_open','bullet_list_open','ordered_list_open','list_item_open','link_open','strong_open','em_open','blockquote_open']) {
+  const original = inline.renderer.rules[rule] || ((tokens, i, options, env, self) => self.renderToken(tokens, i, options));
+  inline.renderer.rules[rule] = (tokens,i,options,env,self) => {tokens[i].attrJoin('style',styles[tokens[i].tag] || normal);return original(tokens,i,options,env,self);};
+}
+inline.renderer.rules.fence = (tokens, i) => '<section style="'+normal+'margin:14px 0px;padding:12px;border-left:2px solid #ff5b1a;background:#fffdfb;">' + tokens[i].content.trimEnd().split('\n').map(line => `<p style="${normal}margin:0px;padding:0px;">${line.trim() ? escapeHTML(line).replace(/^\s*- /,'• ') : '<br />'}</p>`).join('') + '</section>\n';
+inline.renderer.rules.code_inline = (tokens,i) => `<span style="${normal}">${escapeHTML(tokens[i].content)}</span>`;
+inline.renderer.rules.hr = () => '<section style="height:1px;margin:18px 0px;background:#e6e6e6;"></section>';
+// Tables become stacked rows so mobile copy does not depend on editor table CSS.
+for (const [open,close] of [['table_open','table_close'],['thead_open','thead_close'],['tbody_open','tbody_close']]) {inline.renderer.rules[open]=()=>'';inline.renderer.rules[close]=()=>'';}
+inline.renderer.rules.tr_open=()=>`<section style="${normal}margin:8px 0px;padding:10px;border-left:2px solid #e6e6e6;">`;
+inline.renderer.rules.tr_close=()=>'</section>';
+for(const key of ['th_open','td_open'])inline.renderer.rules[key]=()=>`<p style="${normal}margin:0px;padding:0px;">`;
+for(const key of ['th_close','td_close'])inline.renderer.rules[key]=()=>'</p>';
+const article = `<section id="article" style="${normal}margin:0px;padding:0px;background:#fff;">${inline.render(text)}</section>`;
+await fs.writeFile(path.join(target, 'wechat-body.html'), article);
+await fs.writeFile(path.join(target, 'wechat-preview.html'), `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>公众号正文复制</title><style>body{margin:0;padding:20px;background:#fafafa;font-family:'Microsoft YaHei',sans-serif}main{max-width:720px;margin:auto;padding:22px;background:#fff}header{max-width:720px;margin:0 auto 16px;font-size:14px;line-height:1.8}button{padding:10px 16px;border:0;background:#ff5b1a;color:white;cursor:pointer;border-radius:5px}a{color:#ad420f}</style><header><button id="copy">复制公众号正文</button> <span id="status" role="status">仅复制下方正文，按钮和说明不进入内容。</span><p>复制后粘贴到公众号正文编辑器。平台实际粘贴尚待核验；飞书可使用整本Markdown。</p></header><main>${article}</main><script>document.getElementById('copy').onclick=async()=>{const node=document.getElementById('article');try{await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([node.outerHTML],{type:'text/html'}),'text/plain':new Blob([node.innerText],{type:'text/plain'})})]);document.getElementById('status').textContent='正文已复制';}catch(e){const r=document.createRange();r.selectNodeContents(node);const s=getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('status').textContent='自动复制不可用，正文已选中，请按Ctrl+C';}};</script></html>`);
+const count = [...text.matchAll(/```text\r?\n/g)].length;
+if (count !== 8) throw Error('Export lost full prompts');
+console.log(`Exported ${list.length} source pages, ${count} full prompts and ${resources.length} resource cards to ${target}`);

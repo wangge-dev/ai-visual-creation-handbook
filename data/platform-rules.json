@@ -1,0 +1,23 @@
+[
+  {
+    "id": "amazon",
+    "name": "Amazon图片与A+",
+    "url": "https://sellercentral.amazon.com/help/hub",
+    "scope": "按站点、图片位置、模块与账户核对",
+    "note": "数值与具体限制待登录当前官方页面后登记；本库不统一写死旧尺寸。"
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify产品媒体",
+    "url": "https://help.shopify.com/en/manual/products/product-media",
+    "scope": "产品媒体、主题布局与实际裁切",
+    "note": "查看当前官方说明与所用主题的实际呈现。"
+  },
+  {
+    "id": "shopee",
+    "name": "Shopee卖家入口",
+    "url": "https://seller.shopee.com/",
+    "scope": "各市场、图片位置与编辑器要求",
+    "note": "地区入口与规则待目标市场确定后核对，不照搬另一市场。"
+  }
+]

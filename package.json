@@ -1,0 +1,21 @@
+{
+  "name": "ai-visual-creation-handbook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "prepare:content": "node scripts/prepare.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test scripts/maintenance.test.mjs",
+    "dev": "npm run prepare:content && vitepress dev docs --host 127.0.0.1",
+    "build": "npm run prepare:content && npm run check && vitepress build docs && node scripts/export.mjs",
+    "preview": "vitepress preview docs --host 127.0.0.1",
+    "maintain": "node scripts/maintenance.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4",
+    "gray-matter": "4.0.3",
+    "markdown-it": "15.0.2"
+  }
+}

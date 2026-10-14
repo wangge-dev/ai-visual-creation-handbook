@@ -1,0 +1,13 @@
+name: 内容纠错
+description: 报告失效入口、事实错误或不完整步骤
+body:
+  - type: textarea
+    attributes:
+      label: 页面与问题
+      description: 页面链接、问题位置、实际情况和复现条件。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 来源与建议
+      description: 提供原始来源或可公开的结果，说明建议修订。

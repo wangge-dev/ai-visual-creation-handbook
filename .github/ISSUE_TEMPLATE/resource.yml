@@ -1,0 +1,15 @@
+name: 推荐资源
+description: 提供与视觉任务有关的仓库或工具线索
+body:
+  - type: textarea
+    attributes:
+      label: 原始入口与任务
+      description: 给出原始网址、解决的任务、输入和输出。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 证据与限制
+      description: 已读哪些文件？有无实际运行？许可、依赖和未确认事项是什么？
+    validations:
+      required: true

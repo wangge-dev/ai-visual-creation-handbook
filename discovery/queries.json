@@ -1,0 +1,110 @@
+[
+  {
+    "id": "Q01",
+    "query": "ecommerce skills",
+    "kind": "repository",
+    "chapter": "电商／业务Skill"
+  },
+  {
+    "id": "Q02",
+    "query": "footwear visual",
+    "kind": "repository",
+    "chapter": "鞋类／品类流程"
+  },
+  {
+    "id": "Q03",
+    "query": "ComfyUI product photography",
+    "kind": "repository",
+    "chapter": "商品摄影／节点"
+  },
+  {
+    "id": "Q04",
+    "query": "Amazon A+ skill in:name,description,readme",
+    "kind": "repository",
+    "chapter": "Amazon A+"
+  },
+  {
+    "id": "Q05",
+    "query": "Shopify product image workflow in:readme",
+    "kind": "repository",
+    "chapter": "Shopify图片流程"
+  },
+  {
+    "id": "Q06",
+    "query": "brand packaging design skill in:readme",
+    "kind": "repository",
+    "chapter": "品牌／包装"
+  },
+  {
+    "id": "Q07",
+    "query": "social media image skills in:readme",
+    "kind": "repository",
+    "chapter": "内容卡片／封面"
+  },
+  {
+    "id": "Q08",
+    "query": "virtual try on workflow in:readme",
+    "kind": "repository",
+    "chapter": "人物／服装"
+  },
+  {
+    "id": "Q09",
+    "query": "infographic diagram skill in:readme",
+    "kind": "repository",
+    "chapter": "信息图／教学"
+  },
+  {
+    "id": "Q10",
+    "query": "interior architecture image workflow in:readme",
+    "kind": "repository",
+    "chapter": "空间／建筑"
+  },
+  {
+    "id": "Q11",
+    "query": "illustration storyboard skill in:readme",
+    "kind": "repository",
+    "chapter": "插画／漫画"
+  },
+  {
+    "id": "Q12",
+    "query": "product video workflow in:readme",
+    "kind": "repository",
+    "chapter": "视频／动态"
+  },
+  {
+    "id": "Q13",
+    "query": "Photoshop automation jsx in:name,description,readme",
+    "kind": "repository",
+    "chapter": "PS批量"
+  },
+  {
+    "id": "Q14",
+    "query": "Krita image workflow in:readme",
+    "kind": "repository",
+    "chapter": "Krita图层"
+  },
+  {
+    "id": "Q15",
+    "query": "filename:SKILL.md ecommerce",
+    "kind": "code",
+    "chapter": "业务Skill正文"
+  },
+  {
+    "id": "Q16",
+    "query": "filename:skill.md \"product image\"",
+    "kind": "code",
+    "chapter": "生成／修图Skill"
+  },
+  {
+    "id": "Q17",
+    "query": "filename:plugin.json visual",
+    "kind": "code",
+    "chapter": "插件线索"
+  },
+  {
+    "id": "Q18",
+    "query": "user:fanfan520dhb-star",
+    "kind": "repository",
+    "chapter": "作者扩展"
+  }
+]

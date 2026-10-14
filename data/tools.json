@@ -1,0 +1,34 @@
+[
+  {
+    "id": "lovart",
+    "name": "Lovart",
+    "url": "https://www.lovart.ai/",
+    "type": "设计画布",
+    "note": "作为设计画布入口；实际按钮、连接与交付能力需在当前版本核对。",
+    "evidence": "本项目尚未操作"
+  },
+  {
+    "id": "tapnow",
+    "name": "TapNow",
+    "url": "https://www.tapnow.ai/",
+    "type": "设计画布",
+    "note": "作为任务组织候选入口；当前访问和具体功能待实操核对。",
+    "evidence": "待核当前入口"
+  },
+  {
+    "id": "photoshop",
+    "name": "Adobe Photoshop",
+    "url": "https://helpx.adobe.com/photoshop/user-guide.html",
+    "type": "图层精修",
+    "note": "文案、蒙版、主体保护与源文件按实际软件检查。",
+    "evidence": "本项目尚未操作"
+  },
+  {
+    "id": "krita",
+    "name": "Krita",
+    "url": "https://docs.krita.org/",
+    "type": "图层精修",
+    "note": "读取官方手册并按实际插件和版本检查。",
+    "evidence": "本项目尚未操作"
+  }
+]

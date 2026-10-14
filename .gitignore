@@ -1,0 +1,14 @@
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.generated/
+docs/resources/cards/
+docs/.vitepress/navigation.json
+docs/changelog.md
+docs/maintenance.md
+.maintenance/
+.serena/
+.env
+.env.*
+*.log
+local.config.json

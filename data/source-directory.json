@@ -1,0 +1,58 @@
+[
+  {
+    "id": "S01",
+    "name": "GitHub任务词仓库搜索",
+    "url": "https://github.com/search?type=repositories",
+    "role": "仓库发现",
+    "coverage": "各专题任务词＋Skill／workflow／工具形式",
+    "status": "发现渠道；非完整运行网络"
+  },
+  {
+    "id": "S02",
+    "name": "GitHub文件与内容检索",
+    "url": "https://github.com/search?type=code",
+    "role": "仓库发现",
+    "coverage": "SKILL.md、skill.md、plugin.json、工作流与脚本",
+    "status": "发现渠道；非完整运行网络"
+  },
+  {
+    "id": "S03",
+    "name": "作者与组织项目",
+    "url": "https://github.com/fanfan520dhb-star",
+    "role": "扩展发现",
+    "coverage": "已选项目作者、合作组织、项目合集",
+    "status": "发现渠道；非完整运行网络"
+  },
+  {
+    "id": "S04",
+    "name": "README引用与资源目录",
+    "url": "https://github.com/topics/agent-skills",
+    "role": "扩展发现",
+    "coverage": "Skills、ComfyUI、PS／Krita、视觉资源",
+    "status": "发现渠道；非完整运行网络"
+  },
+  {
+    "id": "S05",
+    "name": "官方文档与选中仓库更新",
+    "url": "https://github.com/KKKKhazix/AIHOT/blob/main/docs/sources.md",
+    "role": "变化追踪",
+    "coverage": "模型、工具、节点和重点仓库变化",
+    "status": "发现渠道；非完整运行网络"
+  },
+  {
+    "id": "S06",
+    "name": "AIHOT作图主题",
+    "url": "https://aihot.news/topics/image-gen",
+    "role": "讨论线索",
+    "coverage": "图像生成工具、开源动态和实践线索",
+    "status": "发现渠道；非完整运行网络"
+  },
+  {
+    "id": "S07",
+    "name": "用户推荐与真实实践",
+    "url": "https://github.com/fanfan520dhb-star/footwear-visual-production-skills",
+    "role": "人工线索",
+    "coverage": "低热度业务Skill和具体品类流程",
+    "status": "发现渠道；非完整运行网络"
+  }
+]
