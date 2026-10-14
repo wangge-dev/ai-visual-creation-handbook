@@ -92,12 +92,14 @@ export async function maintain(args = process.argv.slice(2)) {
       } catch(e) {return {id:source.id,url:source.url,error:e.name,needs_review:true};}
     }));
     report.pending.push(...report.source_health.filter(s=>s.needs_review).map(s=>({source:s.id,reason:'入口需要复核；请求失败不直接判定失效'})));
+    state.last_monthly_attempt = started.slice(0,7);
+    for(const source of report.source_health.filter(s=>s.needs_review)) report.impacts.push({source:source.id,pages:list.filter(p=>p.data.tool_ids?.includes(source.id)||p.data.platform_rule_ids?.includes(source.id)).map(p=>p.relative)});
   }
   for (const c of report.changes) {
     report.impacts.push({ resource_id: c.resource_id, name: c.name, pages: list.filter(p => p.data.resource_ids?.includes(c.resource_id)).map(p => p.relative) });
   }
   report.finished_at = new Date().toISOString();
-  report.result = report.failures.length ? 'partial_failure' : report.new_candidates.length || report.changes.length ? 'review_required' : 'no_content_change';
+  report.result = report.failures.length ? 'partial_failure' : report.new_candidates.length || report.changes.length ? 'review_required' : report.pending.length ? 'pending_review' : 'no_content_change';
   const name = started.replace(/[:.]/g, '-') + '.json';
   await writeJSON(path.join(directory, 'runs', name), report);
   await writeJSON(path.join(directory, 'latest.json'), report);

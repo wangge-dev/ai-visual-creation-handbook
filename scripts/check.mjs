@@ -3,12 +3,16 @@ import path from 'node:path';
 import { root, pages, readJSON } from './lib.mjs';
 const all = await pages();
 const resources = await readJSON(path.join(root, 'data/repositories.json'));
+const tools = await readJSON(path.join(root, 'data/tools.json'));
+const rules = await readJSON(path.join(root, 'data/platform-rules.json'));
 const ids = new Set(), resourceIds = new Set();
 const errors = [];
 for (const r of resources) { if (resourceIds.has(r.id)) errors.push(`duplicate resource: ${r.id}`); resourceIds.add(r.id); }
 for (const p of all) {
   if (p.data.id) { if (ids.has(p.data.id)) errors.push(`duplicate page: ${p.data.id}`); ids.add(p.data.id); }
   for (const id of p.data.resource_ids || []) if (!resourceIds.has(id)) errors.push(`${p.relative}: unknown resource ${id}`);
+  for (const id of p.data.tool_ids || []) if (!tools.some(x=>x.id===id)) errors.push(`${p.relative}: unknown tool ${id}`);
+  for (const id of p.data.platform_rule_ids || []) if (!rules.some(x=>x.id===id)) errors.push(`${p.relative}: unknown platform rule ${id}`);
   if (/^[A-Z]:[\\/]/m.test(p.content) || /(?:D|C):[\\/](?:Users|guge|Obsidian|codexo|codex)/i.test(p.content)) errors.push(`${p.relative}: local path in public text`);
   if (/^P\d{2}$/.test(p.data.id || '')) {
     const blocks = [...p.content.matchAll(/```text\r?\n([\s\S]*?)```/g)];

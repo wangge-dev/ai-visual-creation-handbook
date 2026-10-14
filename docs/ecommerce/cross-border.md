@@ -6,6 +6,7 @@ status: 已公开
 evidence_status: "方法已整理，未执行图像任务"
 last_modified: 2026-10-14
 resource_ids: ["ecommerce-skills"]
+platform_rule_ids: ["amazon","shopify","shopee"]
 order: 23
 ---
 
