@@ -37,7 +37,7 @@ class Document(HTMLParser):
 
 def normalized(value):return re.sub(r'\s+',' ',value).strip()
 
-def markdown(source, link_map=None):
+def markdown(source, link_map=None, preserve_heading_ids=False):
     links=link_map or {}
     def render(node):
         if isinstance(node,str):return re.sub(r'\s+',' ',node)
@@ -66,7 +66,9 @@ def markdown(source, link_map=None):
                 lines=text.splitlines() or [''];parts.append(marker+lines[0]+''.join('\n  '+line for line in lines[1:]))
             return '\n\n'+'\n'.join(parts)+'\n\n'
         text=''.join(render(x) for x in node.children)
-        if re.fullmatch(r'h[1-6]',tag):return '\n\n'+'#'*int(tag[1])+' '+normalized(text)+'\n\n'
+        if re.fullmatch(r'h[1-6]',tag):
+            marker='<!--heading:'+escape(node.attrs['id'])+'-->\n\n' if preserve_heading_ids and node.attrs.get('id') else ''
+            return '\n\n'+marker+'#'*int(tag[1])+' '+normalized(text)+'\n\n'
         if tag in {'p','section','div','article','details','summary'}:return '\n\n'+text.strip()+'\n\n'
         if tag=='br':return '<br>'
         if tag=='hr':return '\n\n---\n\n'

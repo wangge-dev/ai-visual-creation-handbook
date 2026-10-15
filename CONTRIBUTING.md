@@ -11,12 +11,12 @@
 
 ## 用Markdown贡献教程
 
-无需直接写HTML。先编辑一篇对应的Markdown，例如`docs/ecommerce/amazon-a-plus.md`，然后在构建之前导入：
+无需直接写HTML。[原稿20章](docs/chapters/README.md)和补充教程均可逐篇编辑。先修改对应Markdown，例如`docs/chapters/guide-02.md`或`docs/ecommerce/amazon-a-plus.md`，然后在构建之前导入：
 
 ```sh
 npm ci
-node scripts/import-markdown.mjs docs/ecommerce/amazon-a-plus.md
-python scripts/build_guide.py
+node scripts/import-markdown.mjs docs/chapters/guide-02.md
+python scripts/build.py
 ```
 
 导入使用仓库已有的markdown-it；仅该贡献转换步骤需要Node。导入后HTML片段仍是唯一正文源，构建再次生成Markdown，避免两套文稿同时维护。PR应包含Markdown改动、导入后的源片段和构建产物。不要先构建覆盖尚未导入的Markdown修改。
@@ -25,7 +25,9 @@ P02—P20也可逐页编辑并导入，例如`docs/prompts/P12.md`。P01已并�
 
 含数据表的教程可以导入正文修改；表格保持与JSON相符。若要改表格，先改相应JSON并构建，再编辑Markdown正文；导入器恢复catalog插入点，不把JSON表格变成手写副本。遇到表格变化会指出应编辑的JSON文件。
 
-整本、模型表和平台表等汇总Markdown是下载件，不能作为单篇导入。原稿20章仍分别在src/content/；原15节写作词在src/prompts/，不与作图任务混算。
+整本、模型表和平台表等汇总Markdown是下载件，不能作为单篇导入。原稿20章对应`docs/chapters/guide-02.md`至`guide-21.md`，导入后写回`src/content/`。标题前的`<!--heading:原锚点-->`保留旧链接，改标题时保留该注释；新增小节可用普通Markdown标题。原15节写作词在`src/prompts/`，不与作图任务混算。
+
+`scripts/build.py`与既有`build_guide.py`调用同一构建实现，不是两套构建。完整四项任务与原文件等价范围见[验收表](maintenance/checklist-4-tasks.md)。
 
 修改后运行：
 

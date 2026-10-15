@@ -1,0 +1,18 @@
+{
+  "roundtrip_20_chapters": "passed",
+  "markdown_edit_propagation": [
+    "src/content/guide-02.html",
+    "index.html",
+    "dist/index.html",
+    "docs/handbook.md",
+    "docs/chapters/guide-02.md"
+  ],
+  "json_edit_propagation": [
+    "index.html",
+    "dist/index.html",
+    "docs/model-comparison.md",
+    "dist/downloads/model-comparison.md",
+    "docs/chapters/guide-08.md"
+  ],
+  "temporary_source_changes_restored": true
+}

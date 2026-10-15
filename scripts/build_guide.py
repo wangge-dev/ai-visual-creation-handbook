@@ -74,6 +74,14 @@ def build():
     extra_md=markdown(extra_prompts,anchor_map)
     full_markdown=markdown(guide,anchor_map)+'\n---\n\n'+markdown(prompts,anchor_map)+'\n---\n\n'+supplement_md
     write(download/'handbook.md',full_markdown);write(ROOT/'docs/handbook.md',full_markdown)
+    # Chapter Markdown is an explicit contribution view, imported before rebuild.
+    # Stable heading markers keep existing navigation and prompt references intact.
+    chapter_index='# 逐章编辑原稿\n\n编辑单篇后先导入，再构建；不要先构建覆盖未导入的修改。详见[贡献说明](../../CONTRIBUTING.md)。标题前的 heading 注释保留已有链接，表格记录仍修改 JSON。\n\n'
+    for entry in manifest['guide'][2:22]:
+        filename=Path(entry['file']).stem+'.md'
+        write(ROOT/'docs/chapters'/filename,markdown(fragment(entry['file']),anchor_map,preserve_heading_ids=True))
+        chapter_index+='- ['+entry['title']+']('+filename+')\n'
+    write(ROOT/'docs/chapters/README.md',chapter_index)
     # Companion Markdown is generated from the HTML source, so the two formats
     # cannot diverge when a maintainer updates a tutorial.
     for entry in manifest['additions']+manifest['extra_prompts']:
