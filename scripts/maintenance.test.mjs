@@ -2,6 +2,20 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { recordFailure, recordSuccess, upsertCandidate, changedFields, queryPosition } from './maintenance.mjs';
 import { inventory } from './github.mjs';
+import { contentSources, originalSourceLinks } from './lib.mjs';
+
+test('maintenance points to editable HTML rather than generated Markdown', async()=>{
+  const sources=await contentSources();
+  const related=sources.filter(p=>p.data.resource_ids?.includes('ecommerce-skills'));
+  assert.ok(related.some(p=>p.relative==='src/supplements/image-set.html'));
+  assert.ok(related.every(p=>p.relative.startsWith('src/')&&p.relative.endsWith('.html')));
+});
+test('monthly health includes original table URLs and their editable owner', async()=>{
+  const links=await originalSourceLinks();
+  const entry=links.find(x=>x.url.includes('chatgpt.com'));
+  assert.ok(entry);assert.ok(entry.source_files.every(x=>x.startsWith('src/content/')));
+  assert.equal(new Set(links.map(x=>x.url)).size,links.length);
+});
 test('failed source retains successful page for retry; next success advances it', () => {
   const previous = { next_page: 4, last_success: 'earlier' };
   const failed = recordFailure(previous, 'HTTP 503', 'now');

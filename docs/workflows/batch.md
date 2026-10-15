@@ -1,11 +1,11 @@
 ---
-id: batch
+id: "batch"
 title: "批量任务与返工记录"
 chapter: "12"
-status: 已公开
+status: "已公开"
 evidence_status: "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传"
-last_modified: 2026-10-14
-resource_ids: ["footwear-skills","ecommerce-skills"]
+last_modified: "2026-10-14T00:00:00.000Z"
+resource_ids: ["footwear-skills", "ecommerce-skills"]
 order: 42
 content_kind: "方法说明"
 ---
@@ -14,7 +14,7 @@ content_kind: "方法说明"
 
 批量前先做完一个真实任务，再扩大清单。本节做出任务表与返工记录，适用于商品图、品牌KV、内容卡和语言版本。生成服务的任务回执、已经下载的图片、已核对的成品、已上传平台的内容分别记录。
 
-## 1. 一行一项任务
+### 1. 一行一项任务
 
 用task_id关联素材和结果，每行列输入文件、提示词版本、用途、输出文件、实际状态与问题。图片制作不一定调用生成，有的直接在图层软件处理。失败时保持原任务ID，别因为生成慢就重复提交。
 
@@ -24,7 +24,7 @@ JB01-01-main,JB01_white_front.jpg,main,JB01_white_01-main_zh_v01.jpg,planned,
 JB01-02-scene,JB01_white_front.jpg,scene,JB01_white_02-scene_zh_v01.jpg,planned,
 ```
 
-## 2. 记录一次具体返工
+### 2. 记录一次具体返工
 
 假设场景图左上水果遮住标题，返工写“02-scene，背景层左上区域，移水果，保持商品和光向”。然后做v02，查看标题区域和真实商品有没有一起变。若整图模型改了产品，回真实商品层合成。
 
@@ -33,7 +33,7 @@ JB01-02-scene,JB01_white_front.jpg,scene,JB01_white_02-scene_zh_v01.jpg,planned,
 没有实际文件的任务不标完成。下载失败优先重试原结果下载，不重新生成。产品结构错误回真实素材，参数错误改文字层，裁切错误改输出尺寸。保留原任务ID与旧版本，避免重复执行成功任务。
 ```
 
-## 3. 检查输出而非只看任务数
+### 3. 检查输出而非只看任务数
 
 逐行核文件存在、能打开、宽高、颜色/变体、文字和图片位置。输出文件名不同不代表图像内容不同，五张重复背景也不算五种用途。交付选用版本和清单，源文件缺失明确写未交付。
 

@@ -1,10 +1,10 @@
 ---
-id: first-image
+id: "first-image"
 title: "第一张可用图"
 chapter: "00"
-status: 已公开
+status: "已公开"
 evidence_status: "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传"
-last_modified: 2026-10-14
+last_modified: "2026-10-14T00:00:00.000Z"
 resource_ids: ["rembg"]
 order: 10
 content_kind: "操作教程"
@@ -17,7 +17,7 @@ tool_ids: ["tapnow", "photopea", "photoshop"]
 
 沿用原稿的便携榨汁杯练习。奶油白和薄荷绿是示例颜色，你实际上传哪个SKU，就只做哪个颜色。本页没有提供实拍和实测成品，下面的文案与布局用于演示操作；功率、容量、充电方式和安全功能要用自己的资料填写。
 
-## 1. 先拍一张能用的照片
+### 1. 先拍一张能用的照片
 
 把杯子放在浅色无纹理纸或桌面上，靠窗拍摄，光从侧前方进来。关掉美颜和滤镜，擦掉杯身指纹，镜头与商品保持正常距离，再裁掉多余背景。不要用超广角贴近拍，它会把杯口和底座拍成不同大小。正面或略带侧面的照片更适合作为第一张合成素材。
 
@@ -32,7 +32,7 @@ tool_ids: ["tapnow", "photopea", "photoshop"]
 不添加：未核实的容量、功率、充电方式、认证和配件
 ```
 
-## 2. 先做背景，再决定是否采用整图生成
+### 2. 先做背景，再决定是否采用整图生成
 
 以TapNow当前官方文档中的画布为操作例子。新建项目，在Add菜单建立图像节点，把产品照片作为参考输入；填写参考图用途、构图和光线，再选择画幅、模型和结果数量。先做一个方向，完成后打开全尺寸查看。[TapNow图像操作文档](https://docs.tapnow.ai/en/docs/canvas/generate-and-edit-images)。
 
@@ -52,7 +52,7 @@ tool_ids: ["tapnow", "photopea", "photoshop"]
 
 下载原图，保存成 `JB01_scene_background_v01.png`。不要把画布截图当原文件。可见结果应当是一张有空台面、有明确光向、没有假商品的背景。
 
-## 3. 在Photopea里放回真实商品
+### 3. 在Photopea里放回真实商品
 
 1. 打开[Photopea](https://www.photopea.com/)，用File → Open打开背景。拖入产品照片到正在编辑的画面里，形成单独图层。
 2. 给商品层命名 `PRODUCT_REAL`。选取商品，给选区添加图层蒙版，隐藏原照片背景。放大到100%修杯盖和底座边缘；操作的是蒙版，商品原像素保留。
@@ -63,13 +63,13 @@ tool_ids: ["tapnow", "photopea", "photoshop"]
 
 拖入图像、蒙版和变换的界面说明可见[打开与保存](https://www.photopea.com/learn/opening-saving)、[蒙版](https://www.photopea.com/learn/masks)、[自由变换](https://www.photopea.com/learn/free-transform)。透明杯体不能按不透明白盒处理，抠图后若出现黑边或失去透光，要保留合适的原背景局部或重新拍摄。
 
-## 4. 加一句能读清的标题
+### 4. 加一句能读清的标题
 
 选择文字工具，在左上留白拖出文本框，输入示例标题“把水果饮品带进日常”。这句话不声明未确认的性能；正式使用前确认商品适用性。标题和产品分层，副标题最多一行，颜色从产品或品牌已有颜色里选。
 
 本练习可以用1600×1600像素工作画布，标题约90像素作为起始值。这是排版建议。把预览缩到约375像素宽，再看标题是否能读、商品是否清楚；太小就缩短标题和删文字，别继续加装饰。[Photopea文字工具](https://www.photopea.com/learn/text)。
 
-## 5. 保存后重新打开
+### 5. 保存后重新打开
 
 File → Save as PSD保存 `JB01_scene_v01.psd`，再用File → Export As → JPG导出预览。重新打开PSD，确认文字仍能编辑、商品蒙版存在；重新打开JPG，确认边缘、标题和颜色。Photoshop对应步骤也是商品层、蒙版、阴影层、文字层，具体入口参见[合成图像](https://helpx.adobe.com/photoshop/desktop/crop-resize-transform/transform-manipulate-reshape/combine-images-in-photoshop.html)。
 

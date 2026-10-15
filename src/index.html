@@ -1,0 +1,65 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>电商AI作图出图完整攻略｜2026年10月通用版</title><style>{{styles}}</style></head><body><div class="page">
+<header class="top-pills"><span class="pill hot">原稿 2026.10 · 持续维护</span><span class="pill">ECOMMERCE VISUALS</span><span class="pill">BEGINNER-FRIENDLY</span><span class="pill">API · TOOLS · WEBSITES</span></header>
+<section class="hero"><div><h1 class="hero-title"><span class="cn">电商AI作图</span><span class="en">in the age of <span class="accent">AI shelves.</span></span></h1><p class="hero-sub">一份给小白和电商团队的作图手册。覆盖 <mark>主图、详情页、A+图、API与工具选择</mark> —— 先跑通一张图，再沉淀成团队SOP。</p><div class="tag-row"><span class="tag">GPT Image 2.5</span><span class="tag">Flux 3</span><span class="tag">可灵3.0</span><span class="tag">虚拟试穿</span><span class="tag">Amazon A+</span><span class="tag">Shopee</span><span class="tag">Shopify</span></div></div><aside class="toc-card"><div class="toc-card-head"><small>本手册一共</small><span class="num">20</span></div><nav class="toc-list"><a href="#目录"><span>00</span>目录</a>
+<a href="#一小白先看电商ai作图从哪里开始"><span>01</span>一、小白先看：电商AI作图从哪里开始</a>
+<a href="#二你现在手上有什么资料就按什么流程做"><span>02</span>二、你现在手上有什么资料，就按什么流程做</a>
+<a href="#三ai能做哪些电商图"><span>03</span>三、AI能做哪些电商图</a>
+<a href="#四三种路线网站版工具版api版"><span>04</span>四、三种路线：网站版、工具版、API版</a>
+<a href="#五apiapi-key订阅会员和额度说明"><span>05</span>五、API、API Key、订阅会员和额度说明</a>
+<a href="#六codexagent在电商作图里到底负责什么"><span>06</span>六、Codex/Agent在电商作图里到底负责什么</a>
+<a href="#七主流模型与工具选择"><span>07</span>七、主流模型与工具选择</a>
+<a href="#八ai电商作图专题平台"><span>08</span>八、AI电商作图专题平台</a>
+<a href="#九github提示词库与开源资源"><span>09</span>九、GitHub提示词库与开源资源</a>
+<a href="#十comfyui电商工作流专区"><span>10</span>十、ComfyUI电商工作流专区</a>
+<a href="#十一国内电商平台ai图合规边界"><span>11</span>十一、国内电商平台AI图合规边界</a>
+<a href="#十二跨境平台方案amazonshopeeshopify"><span>12</span>十二、跨境平台方案：Amazon、Shopee、Shopify</a>
+<a href="#十三标准电商ai作图sop"><span>13</span>十三、标准电商AI作图SOP</a>
+<a href="#十四各平台图片规格速查表"><span>14</span>十四、各平台图片规格速查表</a>
+<a href="#十五从一张产品图到完整详情页案例"><span>15</span>十五、从一张产品图到完整详情页案例</a>
+<a href="#十六amazon-a图ai辅助方案"><span>16</span>十六、Amazon A+图AI辅助方案</a>
+<a href="#十七ai虚拟试穿与服装电商"><span>17</span>十七、AI虚拟试穿与服装电商</a>
+<a href="#十八电商ai作图提示词模板库"><span>18</span>十八、电商AI作图提示词模板库</a>
+<a href="#十九质检清单与常见问题"><span>19</span>十九、质检清单与常见问题</a>
+<a href="#二十新手与团队上手路线"><span>20</span>二十、新手与团队上手路线</a>
+<a href="#结语"><span>21</span>结语</a></nav></aside></section>
+<div class="controls"><div class="tabs"><button class="tab active" data-target="guide">攻略正文</button><button class="tab" data-target="prompt">提示词包</button><button class="tab" data-target="supplement">跨境与画布补充</button></div><div class="search-group"><input id="searchBox" class="search" placeholder="搜索全文与提示词" aria-label="搜索全文与提示词" /><div class="search-actions"><span id="searchStatus" role="status"></span><button type="button" id="searchPrev" aria-label="上一个搜索结果">↑</button><button type="button" id="searchNext" aria-label="下一个搜索结果">↓</button></div></div></div>
+<div class="reader-links"><a href="downloads/index.html" download="电商AI作图完整攻略.html">下载单文件HTML</a><a href="downloads/handbook.md" download>下载整本Markdown</a><button type="button" id="copyPromptPack">复制原稿提示词包</button><a href="#版本核对说明">版本与核对说明</a></div><p class="reader-version">正文按2026年10月原稿保留；模型、平台与原稿成本的动态核对见<a href="#版本核对说明">核对说明</a>。</p><section class="quick-cards"><div class="quick-card"><b>START</b>小白先用真实产品图跑通一张图，不要一开始研究API。</div><div class="quick-card"><b>RULE</b>AI负责场景和效率，人工负责产品真实性和合规。</div><div class="quick-card"><b>PROMPTS</b>正文和提示词包都可复制，适合沉淀成团队模板。</div></section>
+<div class="layout"><main class="article"><article id="guideDoc" class="doc">{{guide}}</article><article id="promptDoc" class="doc hidden">{{prompts}}</article><div class="footer">正文与提示词包完整保留，补充阅读可在上方页签进入。</div><article id="supplementDoc" class="doc article hidden"><div class="markdown-body">{{additions}}</div></article></main><aside id="guideIndex" class="side-index"><div class="side-index-title">正文目录</div><nav><a href="#目录"><span>00</span>目录</a>
+<a href="#一小白先看电商ai作图从哪里开始"><span>01</span>一、小白先看：电商AI作图从哪里开始</a>
+<a href="#二你现在手上有什么资料就按什么流程做"><span>02</span>二、你现在手上有什么资料，就按什么流程做</a>
+<a href="#三ai能做哪些电商图"><span>03</span>三、AI能做哪些电商图</a>
+<a href="#四三种路线网站版工具版api版"><span>04</span>四、三种路线：网站版、工具版、API版</a>
+<a href="#五apiapi-key订阅会员和额度说明"><span>05</span>五、API、API Key、订阅会员和额度说明</a>
+<a href="#六codexagent在电商作图里到底负责什么"><span>06</span>六、Codex/Agent在电商作图里到底负责什么</a>
+<a href="#七主流模型与工具选择"><span>07</span>七、主流模型与工具选择</a>
+<a href="#八ai电商作图专题平台"><span>08</span>八、AI电商作图专题平台</a>
+<a href="#九github提示词库与开源资源"><span>09</span>九、GitHub提示词库与开源资源</a>
+<a href="#十comfyui电商工作流专区"><span>10</span>十、ComfyUI电商工作流专区</a>
+<a href="#十一国内电商平台ai图合规边界"><span>11</span>十一、国内电商平台AI图合规边界</a>
+<a href="#十二跨境平台方案amazonshopeeshopify"><span>12</span>十二、跨境平台方案：Amazon、Shopee、Shopify</a>
+<a href="#十三标准电商ai作图sop"><span>13</span>十三、标准电商AI作图SOP</a>
+<a href="#十四各平台图片规格速查表"><span>14</span>十四、各平台图片规格速查表</a>
+<a href="#十五从一张产品图到完整详情页案例"><span>15</span>十五、从一张产品图到完整详情页案例</a>
+<a href="#十六amazon-a图ai辅助方案"><span>16</span>十六、Amazon A+图AI辅助方案</a>
+<a href="#十七ai虚拟试穿与服装电商"><span>17</span>十七、AI虚拟试穿与服装电商</a>
+<a href="#十八电商ai作图提示词模板库"><span>18</span>十八、电商AI作图提示词模板库</a>
+<a href="#十九质检清单与常见问题"><span>19</span>十九、质检清单与常见问题</a>
+<a href="#二十新手与团队上手路线"><span>20</span>二十、新手与团队上手路线</a>
+<a href="#结语"><span>21</span>结语</a></nav></aside><aside id="promptIndex" class="side-index index hidden"><div class="side-index-title">原稿15节提示词</div><nav><a href="#1-总控提示词"><span>01</span>1. 总控提示词</a>
+<a href="#2-小白入口提示词"><span>02</span>2. 小白入口提示词</a>
+<a href="#3-按输入资料选择流程提示词"><span>03</span>3. 按输入资料选择流程提示词</a>
+<a href="#4-codexagent定位提示词"><span>04</span>4. Codex/Agent定位提示词</a>
+<a href="#5-api与订阅说明提示词"><span>05</span>5. API与订阅说明提示词</a>
+<a href="#6-工具选择提示词"><span>06</span>6. 工具选择提示词</a>
+<a href="#7-国内平台合规提示词"><span>07</span>7. 国内平台合规提示词</a>
+<a href="#8-跨境平台提示词"><span>08</span>8. 跨境平台提示词</a>
+<a href="#9-电商图生成sop提示词"><span>09</span>9. 电商图生成SOP提示词</a>
+<a href="#10-完整案例提示词"><span>10</span>10. 完整案例提示词</a>
+<a href="#11-提示词模板库提示词"><span>11</span>11. 提示词模板库提示词</a>
+<a href="#12-github提示词库提示词"><span>12</span>12. GitHub提示词库提示词</a>
+<a href="#13-comfyui工作流提示词"><span>13</span>13. ComfyUI工作流提示词</a>
+<a href="#14-虚拟试穿提示词"><span>14</span>14. 虚拟试穿提示词</a>
+<a href="#15-最终整合提示词"><span>15</span>15. 最终整合提示词</a></nav><div class="side-index-title" style="margin-top:24px">补充作图任务词</div><nav>{{task-prompt-nav}}</nav></aside><aside id="supplementIndex" class="side-index index hidden"><div class="side-index-title">补充阅读</div><nav>{{addition-nav}}</nav></aside></div>
+</div>
+
+<footer class="page footer" id="维护与贡献"><a href="https://github.com/wangge-dev/ai-visual-creation-handbook">开源仓库</a> · <a href="https://github.com/wangge-dev/ai-visual-creation-handbook/blob/main/CONTRIBUTING.md">维护与贡献</a> · 原创文档CC BY-SA 4.0，构建代码MIT。单文件可离线阅读。</footer><script>{{scripts}}</script></body></html>

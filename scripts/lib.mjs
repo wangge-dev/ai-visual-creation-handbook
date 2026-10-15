@@ -6,6 +6,28 @@ import matter from 'gray-matter';
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const readJSON = async p => JSON.parse(await fs.readFile(p, 'utf8'));
 export const writeJSON = async (p, value) => { await fs.mkdir(path.dirname(p), { recursive: true }); await fs.writeFile(p, JSON.stringify(value, null, 2) + '\n'); };
+export async function contentSources() {
+  const manifest = await readJSON(path.join(root,'src/guide.json'));
+  return [...manifest.guide,...manifest.prompts,...manifest.additions,...manifest.extra_prompts].map(p=>({
+    file:path.join(root,'src',p.file), relative:'src/'+p.file,
+    data:{...(p.metadata || {}),title:p.title},anchor:p.anchor
+  }));
+}
+export async function originalSourceLinks() {
+  const catalogs=await readJSON(path.join(root,'data/guide-catalogs.json'));
+  const manifest=await readJSON(path.join(root,'src/guide.json'));
+  const files=await Promise.all(manifest.guide.map(async p=>({file:'src/'+p.file,text:await fs.readFile(path.join(root,'src',p.file),'utf8')})));
+  const links=new Map();
+  for(const [key,table] of Object.entries(catalogs)) {
+    const owners=files.filter(p=>p.text.includes('<!--catalog:'+key+'-->')).map(p=>p.file);
+    for(const match of table.rows.flat().join('\n').matchAll(/href="(https?:[^"\s]+)"/g)) {
+      const url=match[1].replaceAll('&amp;','&');
+      const previous=links.get(url);
+      links.set(url,{id:'guide-link:'+url,url,source_files:[...new Set([...(previous?.source_files || []),...owners])]});
+    }
+  }
+  return [...links.values()];
+}
 export async function pages(dir = path.join(root, 'docs')) {
   const out = [];
   for (const e of await fs.readdir(dir, { withFileTypes: true })) {

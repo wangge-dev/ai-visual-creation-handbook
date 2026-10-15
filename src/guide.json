@@ -1,0 +1,1259 @@
+{
+  "source_label": "index (2).html",
+  "source_date": "2026-10-14",
+  "guide": [
+    {
+      "file": "content/guide-00.html",
+      "title": "电商AI作图出图完整攻略：主图、详情页、A+图、API版、工具版、网站版与跨境平台实战指南｜2026年10月通用版",
+      "anchor": "电商ai作图出图完整攻略主图详情页a图api版工具版网站版与跨境平台实战指南2026年10月通用版"
+    },
+    {
+      "file": "content/guide-01.html",
+      "title": "目录",
+      "anchor": "目录"
+    },
+    {
+      "file": "content/guide-02.html",
+      "title": "一、小白先看：电商AI作图从哪里开始",
+      "anchor": "一小白先看电商ai作图从哪里开始"
+    },
+    {
+      "file": "content/guide-03.html",
+      "title": "二、你现在手上有什么资料，就按什么流程做",
+      "anchor": "二你现在手上有什么资料就按什么流程做"
+    },
+    {
+      "file": "content/guide-04.html",
+      "title": "三、AI能做哪些电商图",
+      "anchor": "三ai能做哪些电商图"
+    },
+    {
+      "file": "content/guide-05.html",
+      "title": "四、三种路线：网站版、工具版、API版",
+      "anchor": "四三种路线网站版工具版api版"
+    },
+    {
+      "file": "content/guide-06.html",
+      "title": "五、API、API Key、订阅会员和额度说明",
+      "anchor": "五apiapi-key订阅会员和额度说明"
+    },
+    {
+      "file": "content/guide-07.html",
+      "title": "六、Codex/Agent在电商作图里到底负责什么",
+      "anchor": "六codexagent在电商作图里到底负责什么"
+    },
+    {
+      "file": "content/guide-08.html",
+      "title": "七、主流模型与工具选择",
+      "anchor": "七主流模型与工具选择",
+      "metadata": {
+        "tool_ids": [
+          "tapnow",
+          "photoshop"
+        ]
+      }
+    },
+    {
+      "file": "content/guide-09.html",
+      "title": "八、AI电商作图专题平台",
+      "anchor": "八ai电商作图专题平台"
+    },
+    {
+      "file": "content/guide-10.html",
+      "title": "九、GitHub提示词库与开源资源",
+      "anchor": "九github提示词库与开源资源"
+    },
+    {
+      "file": "content/guide-11.html",
+      "title": "十、ComfyUI电商工作流专区",
+      "anchor": "十comfyui电商工作流专区",
+      "metadata": {
+        "resource_ids": [
+          "comfyui"
+        ]
+      }
+    },
+    {
+      "file": "content/guide-12.html",
+      "title": "十一、国内电商平台AI图合规边界",
+      "anchor": "十一国内电商平台ai图合规边界"
+    },
+    {
+      "file": "content/guide-13.html",
+      "title": "十二、跨境平台方案：Amazon、Shopee、Shopify",
+      "anchor": "十二跨境平台方案amazonshopeeshopify",
+      "metadata": {
+        "platform_rule_ids": [
+          "amazon",
+          "shopify",
+          "shopee"
+        ]
+      }
+    },
+    {
+      "file": "content/guide-14.html",
+      "title": "十三、标准电商AI作图SOP",
+      "anchor": "十三标准电商ai作图sop"
+    },
+    {
+      "file": "content/guide-15.html",
+      "title": "十四、各平台图片规格速查表",
+      "anchor": "十四各平台图片规格速查表",
+      "metadata": {
+        "platform_rule_ids": [
+          "amazon",
+          "shopify",
+          "shopee"
+        ]
+      }
+    },
+    {
+      "file": "content/guide-16.html",
+      "title": "十五、从一张产品图到完整详情页案例",
+      "anchor": "十五从一张产品图到完整详情页案例",
+      "metadata": {
+        "tool_ids": [
+          "photopea",
+          "photoshop"
+        ]
+      }
+    },
+    {
+      "file": "content/guide-17.html",
+      "title": "十六、Amazon A+图AI辅助方案",
+      "anchor": "十六amazon-a图ai辅助方案",
+      "metadata": {
+        "platform_rule_ids": [
+          "amazon"
+        ]
+      }
+    },
+    {
+      "file": "content/guide-18.html",
+      "title": "十七、AI虚拟试穿与服装电商",
+      "anchor": "十七ai虚拟试穿与服装电商"
+    },
+    {
+      "file": "content/guide-19.html",
+      "title": "十八、电商AI作图提示词模板库",
+      "anchor": "十八电商ai作图提示词模板库"
+    },
+    {
+      "file": "content/guide-20.html",
+      "title": "十九、质检清单与常见问题",
+      "anchor": "十九质检清单与常见问题"
+    },
+    {
+      "file": "content/guide-21.html",
+      "title": "二十、新手与团队上手路线",
+      "anchor": "二十新手与团队上手路线"
+    },
+    {
+      "file": "content/guide-22.html",
+      "title": "结语",
+      "anchor": "结语"
+    }
+  ],
+  "prompts": [
+    {
+      "file": "prompts/prompt-00.html",
+      "title": "电商AI作图攻略完整提示词包｜2026年10月通用版",
+      "anchor": "电商ai作图攻略完整提示词包2026年10月通用版"
+    },
+    {
+      "file": "prompts/prompt-01.html",
+      "title": "1. 总控提示词",
+      "anchor": "1-总控提示词"
+    },
+    {
+      "file": "prompts/prompt-02.html",
+      "title": "2. 小白入口提示词",
+      "anchor": "2-小白入口提示词"
+    },
+    {
+      "file": "prompts/prompt-03.html",
+      "title": "3. 按输入资料选择流程提示词",
+      "anchor": "3-按输入资料选择流程提示词"
+    },
+    {
+      "file": "prompts/prompt-04.html",
+      "title": "4. Codex/Agent定位提示词",
+      "anchor": "4-codexagent定位提示词"
+    },
+    {
+      "file": "prompts/prompt-05.html",
+      "title": "5. API与订阅说明提示词",
+      "anchor": "5-api与订阅说明提示词"
+    },
+    {
+      "file": "prompts/prompt-06.html",
+      "title": "6. 工具选择提示词",
+      "anchor": "6-工具选择提示词"
+    },
+    {
+      "file": "prompts/prompt-07.html",
+      "title": "7. 国内平台合规提示词",
+      "anchor": "7-国内平台合规提示词"
+    },
+    {
+      "file": "prompts/prompt-08.html",
+      "title": "8. 跨境平台提示词",
+      "anchor": "8-跨境平台提示词"
+    },
+    {
+      "file": "prompts/prompt-09.html",
+      "title": "9. 电商图生成SOP提示词",
+      "anchor": "9-电商图生成sop提示词"
+    },
+    {
+      "file": "prompts/prompt-10.html",
+      "title": "10. 完整案例提示词",
+      "anchor": "10-完整案例提示词"
+    },
+    {
+      "file": "prompts/prompt-11.html",
+      "title": "11. 提示词模板库提示词",
+      "anchor": "11-提示词模板库提示词"
+    },
+    {
+      "file": "prompts/prompt-12.html",
+      "title": "12. GitHub提示词库提示词",
+      "anchor": "12-github提示词库提示词"
+    },
+    {
+      "file": "prompts/prompt-13.html",
+      "title": "13. ComfyUI工作流提示词",
+      "anchor": "13-comfyui工作流提示词"
+    },
+    {
+      "file": "prompts/prompt-14.html",
+      "title": "14. 虚拟试穿提示词",
+      "anchor": "14-虚拟试穿提示词"
+    },
+    {
+      "file": "prompts/prompt-15.html",
+      "title": "15. 最终整合提示词",
+      "anchor": "15-最终整合提示词"
+    }
+  ],
+  "additions": [
+    {
+      "file": "supplements/tool-routes.html",
+      "title": "网站、图层、节点与API：选择并跑通制作路线",
+      "anchor": "补充-tool-routes",
+      "former_doc": "start/tool-routes.md",
+      "metadata": {
+        "id": "tool-routes",
+        "title": "网站、图层、节点与API：选择并跑通制作路线",
+        "chapter": "00",
+        "status": "已公开",
+        "content_kind": "方法说明",
+        "evidence_status": "沿原稿制作路线重写并核对官方文档；未调用生成服务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "comfyui",
+          "invokeai",
+          "rembg"
+        ],
+        "tool_ids": [
+          "lovart",
+          "tapnow",
+          "photoshop",
+          "krita"
+        ],
+        "order": 4
+      }
+    },
+    {
+      "file": "supplements/first-image.html",
+      "title": "第一张可用图",
+      "anchor": "补充-first-image",
+      "former_doc": "start/first-image.md",
+      "metadata": {
+        "id": "first-image",
+        "title": "第一张可用图",
+        "chapter": "00",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "rembg"
+        ],
+        "order": 10,
+        "content_kind": "操作教程",
+        "tool_ids": [
+          "tapnow",
+          "photopea",
+          "photoshop"
+        ]
+      }
+    },
+    {
+      "file": "supplements/references.html",
+      "title": "参考图与文件角色",
+      "anchor": "补充-references",
+      "former_doc": "start/references.md",
+      "metadata": {
+        "id": "references",
+        "title": "参考图与文件角色",
+        "chapter": "01",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 11,
+        "content_kind": "方法说明"
+      }
+    },
+    {
+      "file": "supplements/prompt-writing.html",
+      "title": "完整提示词怎么写",
+      "anchor": "补充-prompt-writing",
+      "former_doc": "start/prompt-writing.md",
+      "metadata": {
+        "id": "prompt-writing",
+        "title": "完整提示词怎么写",
+        "chapter": "02",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 12,
+        "content_kind": "方法说明"
+      }
+    },
+    {
+      "file": "supplements/product-brief.html",
+      "title": "商品事实与素材简报",
+      "anchor": "补充-product-brief",
+      "former_doc": "ecommerce/product-brief.md",
+      "metadata": {
+        "id": "product-brief",
+        "title": "商品事实与素材简报",
+        "chapter": "03",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "footwear-skills"
+        ],
+        "order": 20,
+        "content_kind": "操作教程"
+      }
+    },
+    {
+      "file": "supplements/image-set.html",
+      "title": "从单图到一套商品图",
+      "anchor": "补充-image-set",
+      "former_doc": "ecommerce/image-set.md",
+      "metadata": {
+        "id": "image-set",
+        "title": "从单图到一套商品图",
+        "chapter": "03",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "rembg",
+          "birefnet",
+          "footwear-skills",
+          "ecommerce-skills"
+        ],
+        "order": 21,
+        "content_kind": "操作教程",
+        "tool_ids": [
+          "lovart",
+          "tapnow",
+          "photopea",
+          "photoshop"
+        ]
+      }
+    },
+    {
+      "file": "supplements/detail-page.html",
+      "title": "便携榨汁杯详情页：逐屏制作再拼接",
+      "anchor": "补充-detail-page",
+      "former_doc": "ecommerce/detail-page.md",
+      "metadata": {
+        "id": "detail-page",
+        "title": "便携榨汁杯详情页：逐屏制作再拼接",
+        "chapter": "03",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 22,
+        "content_kind": "操作教程",
+        "tool_ids": [
+          "photopea",
+          "photoshop"
+        ]
+      }
+    },
+    {
+      "file": "supplements/cross-border.html",
+      "title": "跨境出图：从商品事实到渠道交付",
+      "anchor": "补充-cross-border",
+      "former_doc": "ecommerce/cross-border.md",
+      "metadata": {
+        "id": "cross-border",
+        "title": "跨境出图：从商品事实到渠道交付",
+        "chapter": "03",
+        "content_kind": "专题导航",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "原创教程与规划示范，尚未执行图像任务或后台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "footwear-skills",
+          "cross-border-knowledge",
+          "visual-copywriting"
+        ],
+        "platform_rule_ids": [
+          "amazon",
+          "shopify",
+          "shopee"
+        ],
+        "order": 23
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/amazon-listing.html",
+      "title": "Amazon主图与副图：一步一步制作",
+      "anchor": "补充-amazon-listing",
+      "former_doc": "ecommerce/amazon-listing.md",
+      "metadata": {
+        "id": "amazon-listing",
+        "title": "Amazon主图与副图：一步一步制作",
+        "chapter": "03",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "rembg",
+          "birefnet",
+          "ecommerce-image-toolkit",
+          "visual-copywriting"
+        ],
+        "platform_rule_ids": [
+          "amazon"
+        ],
+        "order": 23.1,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/amazon-a-plus.html",
+      "title": "Amazon A+：把图片改成模块化说明",
+      "anchor": "补充-amazon-a-plus",
+      "former_doc": "ecommerce/amazon-a-plus.md",
+      "metadata": {
+        "id": "amazon-a-plus",
+        "title": "Amazon A+：把图片改成模块化说明",
+        "chapter": "03",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "ecommerce-image-toolkit",
+          "visual-copywriting"
+        ],
+        "platform_rule_ids": [
+          "amazon"
+        ],
+        "order": 23.2,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/shopify-product.html",
+      "title": "Shopify产品页：媒体顺序与准确文字",
+      "anchor": "补充-shopify-product",
+      "former_doc": "ecommerce/shopify-product.md",
+      "metadata": {
+        "id": "shopify-product",
+        "title": "Shopify产品页：媒体顺序与准确文字",
+        "chapter": "03",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "detail-image-workflow",
+          "cross-border-knowledge"
+        ],
+        "platform_rule_ids": [
+          "shopify"
+        ],
+        "order": 23.3,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/shopify-hero.html",
+      "title": "Shopify横幅：桌面与手机分别排版",
+      "anchor": "补充-shopify-hero",
+      "former_doc": "ecommerce/shopify-hero.md",
+      "metadata": {
+        "id": "shopify-hero",
+        "title": "Shopify横幅：桌面与手机分别排版",
+        "chapter": "03",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "kv-marketing-workflow",
+          "ad-production-kit"
+        ],
+        "platform_rule_ids": [
+          "shopify"
+        ],
+        "order": 23.4,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/shopee-localization.html",
+      "title": "Shopee SG：封面、规格与变体套图",
+      "anchor": "补充-shopee-localization",
+      "former_doc": "ecommerce/shopee-localization.md",
+      "metadata": {
+        "id": "shopee-localization",
+        "title": "Shopee SG：封面、规格与变体套图",
+        "chapter": "03",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "visual-copywriting",
+          "cross-border-knowledge"
+        ],
+        "platform_rule_ids": [
+          "shopee"
+        ],
+        "order": 23.5,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/localization.html",
+      "title": "跨境本地化：英文、日文、单位与准确文字",
+      "anchor": "补充-localization",
+      "former_doc": "ecommerce/localization.md",
+      "metadata": {
+        "id": "localization",
+        "title": "跨境本地化：英文、日文、单位与准确文字",
+        "chapter": "03",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "visual-copywriting",
+          "cross-border-knowledge"
+        ],
+        "platform_rule_ids": [],
+        "order": 23.6,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/cross-border-sku-delivery.html",
+      "title": "跨境SKU批量：从清单到交付目录",
+      "anchor": "补充-cross-border-sku-delivery",
+      "former_doc": "ecommerce/cross-border-sku-delivery.md",
+      "metadata": {
+        "id": "cross-border-sku-delivery",
+        "title": "跨境SKU批量：从清单到交付目录",
+        "chapter": "03",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "footwear-skills",
+          "ecommerce-image-toolkit",
+          "detail-image-workflow"
+        ],
+        "platform_rule_ids": [
+          "amazon",
+          "shopify",
+          "shopee"
+        ],
+        "order": 23.7,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/cross-border-canvas.html",
+      "title": "跨境画布：设计、节点与图层怎样衔接",
+      "anchor": "补充-cross-border-canvas",
+      "former_doc": "ecommerce/cross-border-canvas.md",
+      "metadata": {
+        "id": "cross-border-canvas",
+        "title": "跨境画布：设计、节点与图层怎样衔接",
+        "chapter": "03",
+        "topic": "cross-border",
+        "tool_ids": [
+          "lovart",
+          "tapnow",
+          "photoshop",
+          "krita"
+        ],
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "comfyui",
+          "invokeai",
+          "krita-diffusion",
+          "ecommerce-skills",
+          "background-replacement-workflow",
+          "ad-production-kit"
+        ],
+        "platform_rule_ids": [
+          "amazon",
+          "shopify",
+          "shopee"
+        ],
+        "order": 23.8,
+        "content_kind": "操作教程"
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "supplements/sku.html",
+      "title": "SKU系列与导出检查",
+      "anchor": "补充-sku",
+      "former_doc": "ecommerce/sku.md",
+      "metadata": {
+        "id": "sku",
+        "title": "SKU系列与导出检查",
+        "chapter": "03",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "footwear-skills"
+        ],
+        "order": 24,
+        "content_kind": "操作教程"
+      }
+    },
+    {
+      "file": "supplements/category-prompts.html",
+      "title": "食品、家居、美妆、3C与服装：品类提示词练习",
+      "anchor": "补充-category-prompts",
+      "former_doc": "ecommerce/category-prompts.md",
+      "metadata": {
+        "id": "category-prompts",
+        "title": "食品、家居、美妆、3C与服装：品类提示词练习",
+        "chapter": "03",
+        "status": "已公开",
+        "content_kind": "操作教程",
+        "evidence_status": "沿原稿品类模板重写；尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 24.5
+      }
+    },
+    {
+      "file": "supplements/brand.html",
+      "title": "品牌KV、包装与广告入口",
+      "anchor": "补充-brand",
+      "former_doc": "brand-content/brand.md",
+      "metadata": {
+        "id": "brand",
+        "title": "品牌KV、包装与广告入口",
+        "chapter": "04",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 30,
+        "content_kind": "任务入门"
+      }
+    },
+    {
+      "file": "supplements/content.html",
+      "title": "封面、知识卡与出版配图",
+      "anchor": "补充-content",
+      "former_doc": "brand-content/content.md",
+      "metadata": {
+        "id": "content",
+        "title": "封面、知识卡与出版配图",
+        "chapter": "05",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 31,
+        "content_kind": "任务入门"
+      }
+    },
+    {
+      "file": "supplements/people.html",
+      "title": "人物、服装与IP一致性",
+      "anchor": "补充-people",
+      "former_doc": "people-space/people.md",
+      "metadata": {
+        "id": "people",
+        "title": "人物、服装与IP一致性",
+        "chapter": "06",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 32,
+        "content_kind": "任务入门"
+      }
+    },
+    {
+      "file": "supplements/space.html",
+      "title": "摄影、场景与空间表现",
+      "anchor": "补充-space",
+      "former_doc": "people-space/space.md",
+      "metadata": {
+        "id": "space",
+        "title": "摄影、场景与空间表现",
+        "chapter": "07",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 33,
+        "content_kind": "任务入门"
+      }
+    },
+    {
+      "file": "supplements/information.html",
+      "title": "信息图、教学演示与UI",
+      "anchor": "补充-information",
+      "former_doc": "information-creative/information.md",
+      "metadata": {
+        "id": "information",
+        "title": "信息图、教学演示与UI",
+        "chapter": "08",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "mermaid",
+          "excalidraw"
+        ],
+        "order": 34,
+        "content_kind": "任务入门"
+      }
+    },
+    {
+      "file": "supplements/illustration.html",
+      "title": "插画、漫画与创意项目",
+      "anchor": "补充-illustration",
+      "former_doc": "information-creative/illustration.md",
+      "metadata": {
+        "id": "illustration",
+        "title": "插画、漫画与创意项目",
+        "chapter": "09",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 35,
+        "content_kind": "任务入门"
+      }
+    },
+    {
+      "file": "supplements/storyboard.html",
+      "title": "从图像到短片分镜",
+      "anchor": "补充-storyboard",
+      "former_doc": "video/storyboard.md",
+      "metadata": {
+        "id": "storyboard",
+        "title": "从图像到短片分镜",
+        "chapter": "10",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 36,
+        "content_kind": "任务入门"
+      }
+    },
+    {
+      "file": "supplements/canvases.html",
+      "title": "三类画布怎么接入电商出图",
+      "anchor": "补充-canvases",
+      "former_doc": "workflows/canvases.md",
+      "metadata": {
+        "id": "canvases",
+        "title": "三类画布怎么接入电商出图",
+        "chapter": "11",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "comfyui",
+          "invokeai",
+          "krita-diffusion"
+        ],
+        "tool_ids": [
+          "lovart",
+          "tapnow",
+          "photoshop",
+          "krita"
+        ],
+        "order": 40,
+        "content_kind": "操作教程"
+      }
+    },
+    {
+      "file": "supplements/codex-ps.html",
+      "title": "用Codex协作PS作图修图",
+      "anchor": "补充-codex-ps",
+      "former_doc": "workflows/codex-ps.md",
+      "metadata": {
+        "id": "codex-ps",
+        "title": "用Codex协作PS作图修图",
+        "chapter": "12",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 41,
+        "content_kind": "操作教程",
+        "tool_ids": [
+          "photoshop"
+        ]
+      }
+    },
+    {
+      "file": "supplements/batch.html",
+      "title": "批量任务与返工记录",
+      "anchor": "补充-batch",
+      "former_doc": "workflows/batch.md",
+      "metadata": {
+        "id": "batch",
+        "title": "批量任务与返工记录",
+        "chapter": "12",
+        "status": "已公开",
+        "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "footwear-skills",
+          "ecommerce-skills"
+        ],
+        "order": 42,
+        "content_kind": "方法说明"
+      }
+    }
+  ],
+  "extra_prompts": [
+    {
+      "file": "task-prompts/P01.html",
+      "title": "商品场景图",
+      "anchor": "补充-P01",
+      "former_doc": "prompts/P01.md",
+      "metadata": {
+        "id": "P01",
+        "title": "商品场景图",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "rembg",
+          "birefnet"
+        ],
+        "order": 101
+      }
+    },
+    {
+      "file": "task-prompts/P02.html",
+      "title": "品牌主视觉KV",
+      "anchor": "补充-P02",
+      "former_doc": "prompts/P02.md",
+      "metadata": {
+        "id": "P02",
+        "title": "品牌主视觉KV",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 102
+      }
+    },
+    {
+      "file": "task-prompts/P03.html",
+      "title": "内容封面与知识卡片",
+      "anchor": "补充-P03",
+      "former_doc": "prompts/P03.md",
+      "metadata": {
+        "id": "P03",
+        "title": "内容封面与知识卡片",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 103
+      }
+    },
+    {
+      "file": "task-prompts/P04.html",
+      "title": "信息图／教学图",
+      "anchor": "补充-P04",
+      "former_doc": "prompts/P04.md",
+      "metadata": {
+        "id": "P04",
+        "title": "信息图／教学图",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "mermaid",
+          "excalidraw"
+        ],
+        "order": 104
+      }
+    },
+    {
+      "file": "task-prompts/P05.html",
+      "title": "人物／IP系列的一张图",
+      "anchor": "补充-P05",
+      "former_doc": "prompts/P05.md",
+      "metadata": {
+        "id": "P05",
+        "title": "人物／IP系列的一张图",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 105
+      }
+    },
+    {
+      "file": "task-prompts/P06.html",
+      "title": "只改一处的局部修图",
+      "anchor": "补充-P06",
+      "former_doc": "prompts/P06.md",
+      "metadata": {
+        "id": "P06",
+        "title": "只改一处的局部修图",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "krita-diffusion"
+        ],
+        "order": 106
+      }
+    },
+    {
+      "file": "task-prompts/P07.html",
+      "title": "从素材到短片分镜",
+      "anchor": "补充-P07",
+      "former_doc": "prompts/P07.md",
+      "metadata": {
+        "id": "P07",
+        "title": "从素材到短片分镜",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 107
+      }
+    },
+    {
+      "file": "task-prompts/P08.html",
+      "title": "画布组织与可编辑交付",
+      "anchor": "补充-P08",
+      "former_doc": "prompts/P08.md",
+      "metadata": {
+        "id": "P08",
+        "title": "画布组织与可编辑交付",
+        "chapter": "13",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "comfyui",
+          "invokeai"
+        ],
+        "order": 108
+      }
+    },
+    {
+      "file": "task-prompts/P09.html",
+      "title": "跨境商品简报与渠道任务表",
+      "anchor": "补充-P09",
+      "former_doc": "prompts/P09.md",
+      "metadata": {
+        "id": "P09",
+        "title": "跨境商品简报与渠道任务表",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "visual-copywriting"
+        ],
+        "order": 109
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P10.html",
+      "title": "Amazon普通商品白底主图",
+      "anchor": "补充-P10",
+      "former_doc": "prompts/P10.md",
+      "metadata": {
+        "id": "P10",
+        "title": "Amazon普通商品白底主图",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "rembg",
+          "birefnet",
+          "ecommerce-image-toolkit"
+        ],
+        "order": 110
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P11.html",
+      "title": "Amazon副图分工与逐张制作指令",
+      "anchor": "补充-P11",
+      "former_doc": "prompts/P11.md",
+      "metadata": {
+        "id": "P11",
+        "title": "Amazon副图分工与逐张制作指令",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "visual-copywriting"
+        ],
+        "order": 111
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P12.html",
+      "title": "Amazon A+模块简报与图文交付",
+      "anchor": "补充-P12",
+      "former_doc": "prompts/P12.md",
+      "metadata": {
+        "id": "P12",
+        "title": "Amazon A+模块简报与图文交付",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "visual-copywriting",
+          "ecommerce-image-toolkit"
+        ],
+        "order": 112
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P13.html",
+      "title": "Shopify产品媒体顺序与alt text",
+      "anchor": "补充-P13",
+      "former_doc": "prompts/P13.md",
+      "metadata": {
+        "id": "P13",
+        "title": "Shopify产品媒体顺序与alt text",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "detail-image-workflow"
+        ],
+        "order": 113
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P14.html",
+      "title": "Shopify桌面与手机横幅",
+      "anchor": "补充-P14",
+      "former_doc": "prompts/P14.md",
+      "metadata": {
+        "id": "P14",
+        "title": "Shopify桌面与手机横幅",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "kv-marketing-workflow"
+        ],
+        "order": 114
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P15.html",
+      "title": "Shopee SG封面与规格套图",
+      "anchor": "补充-P15",
+      "former_doc": "prompts/P15.md",
+      "metadata": {
+        "id": "P15",
+        "title": "Shopee SG封面与规格套图",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "visual-copywriting"
+        ],
+        "order": 115
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P16.html",
+      "title": "英文本地化：准确文案与回译",
+      "anchor": "补充-P16",
+      "former_doc": "prompts/P16.md",
+      "metadata": {
+        "id": "P16",
+        "title": "英文本地化：准确文案与回译",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "cross-border-knowledge"
+        ],
+        "order": 116
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P17.html",
+      "title": "日文本地化：术语、换行与事实复核",
+      "anchor": "补充-P17",
+      "former_doc": "prompts/P17.md",
+      "metadata": {
+        "id": "P17",
+        "title": "日文本地化：术语、换行与事实复核",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "cross-border-knowledge"
+        ],
+        "order": 117
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P18.html",
+      "title": "尺寸图：毫米英寸换算与准确标注",
+      "anchor": "补充-P18",
+      "former_doc": "prompts/P18.md",
+      "metadata": {
+        "id": "P18",
+        "title": "尺寸图：毫米英寸换算与准确标注",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [],
+        "order": 118
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P19.html",
+      "title": "跨境SKU任务清单与批量复用",
+      "anchor": "补充-P19",
+      "former_doc": "prompts/P19.md",
+      "metadata": {
+        "id": "P19",
+        "title": "跨境SKU任务清单与批量复用",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "ecommerce-image-toolkit"
+        ],
+        "order": 119
+      },
+      "topic": "cross-border"
+    },
+    {
+      "file": "task-prompts/P20.html",
+      "title": "跨境图片交付检查与定向返工",
+      "anchor": "补充-P20",
+      "former_doc": "prompts/P20.md",
+      "metadata": {
+        "id": "P20",
+        "title": "跨境图片交付检查与定向返工",
+        "chapter": "13",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "完整模板，尚未执行图像任务或流程验证",
+        "last_modified": "2026-10-14T00:00:00.000Z",
+        "resource_ids": [
+          "ecommerce-skills",
+          "visual-copywriting"
+        ],
+        "order": 120
+      },
+      "topic": "cross-border"
+    }
+  ]
+}

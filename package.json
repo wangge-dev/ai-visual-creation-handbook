@@ -8,11 +8,12 @@
     "prepare:content": "node scripts/prepare.mjs",
     "check": "node scripts/check.mjs",
     "test": "node --test scripts/maintenance.test.mjs scripts/links.test.mjs",
-    "dev": "npm run prepare:content && vitepress dev docs --host 127.0.0.1",
-    "build": "npm run prepare:content && npm run check && vitepress build docs && node scripts/export.mjs",
-    "preview": "vitepress preview docs --host 127.0.0.1",
+    "dev": "python -m http.server 4187 --bind 127.0.0.1 --directory dist",
+    "build": "python scripts/build_guide.py",
+    "build:reference": "npm run prepare:content && npm run check && vitepress build docs && node scripts/export.mjs",
+    "preview": "python -m http.server 4187 --bind 127.0.0.1 --directory dist",
     "maintain": "node scripts/maintenance.mjs",
-    "publish:site": "npm run build && node scripts/publish.mjs"
+    "publish:site": "npm run build && npm run check && node scripts/publish.mjs"
   },
   "devDependencies": {
     "vitepress": "1.6.4",

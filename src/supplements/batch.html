@@ -1,0 +1,17 @@
+<section class="supplement-section" id="补充-batch"><h2>批量任务与返工，先让状态对应实际文件</h2>
+<p>批量前先做完一个真实任务，再扩大清单。本节做出任务表与返工记录，适用于商品图、品牌KV、内容卡和语言版本。生成服务的任务回执、已经下载的图片、已核对的成品、已上传平台的内容分别记录。</p>
+<h3>1. 一行一项任务</h3>
+<p>用task_id关联素材和结果，每行列输入文件、提示词版本、用途、输出文件、实际状态与问题。图片制作不一定调用生成，有的直接在图层软件处理。失败时保持原任务ID，别因为生成慢就重复提交。</p>
+<div class="codebox"><div class="codebar"><span>csv</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-csv">task_id,input,position,output,status,issue
+JB01-01-main,JB01_white_front.jpg,main,JB01_white_01-main_zh_v01.jpg,planned,
+JB01-02-scene,JB01_white_front.jpg,scene,JB01_white_02-scene_zh_v01.jpg,planned,
+</code></pre></div>
+<h3>2. 记录一次具体返工</h3>
+<p>假设场景图左上水果遮住标题，返工写“02-scene，背景层左上区域，移水果，保持商品和光向”。然后做v02，查看标题区域和真实商品有没有一起变。若整图模型改了产品，回真实商品层合成。</p>
+<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">根据任务表和当前文件清单整理返工。只处理有具体问题的行，每行给问题、要修改的区域或图层、保持内容、修改后的文件名和复核项目。
+没有实际文件的任务不标完成。下载失败优先重试原结果下载，不重新生成。产品结构错误回真实素材，参数错误改文字层，裁切错误改输出尺寸。保留原任务ID与旧版本，避免重复执行成功任务。
+</code></pre></div>
+<h3>3. 检查输出而非只看任务数</h3>
+<p>逐行核文件存在、能打开、宽高、颜色/变体、文字和图片位置。输出文件名不同不代表图像内容不同，五张重复背景也不算五种用途。交付选用版本和清单，源文件缺失明确写未交付。</p>
+<p>跨境例子与目录操作见<a href="#%E8%A1%A5%E5%85%85-cross-border-sku-delivery">SKU交付教程</a>，真实商品逐图制作见<a href="#%E8%A1%A5%E5%85%85-image-set">套图教程</a>。本节是文件与状态方法，没有提交真实图像任务。</p>
+</section>

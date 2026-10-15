@@ -1,12 +1,12 @@
 ---
-id: shopee-localization
+id: "shopee-localization"
 title: "Shopee SG：封面、规格与变体套图"
 chapter: "03"
-topic: cross-border
-status: 已公开
+topic: "cross-border"
+status: "已公开"
 evidence_status: "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传"
-last_modified: 2026-10-14
-resource_ids: ["ecommerce-skills","visual-copywriting","cross-border-knowledge"]
+last_modified: "2026-10-14T00:00:00.000Z"
+resource_ids: ["ecommerce-skills", "visual-copywriting", "cross-border-knowledge"]
 platform_rule_ids: ["shopee"]
 order: 23.5
 content_kind: "操作教程"
@@ -16,13 +16,13 @@ content_kind: "操作教程"
 
 本篇以新加坡站DN01收纳盒练习为例，完成封面、场景、结构、尺寸和发货图。SG官方广告学习页提供清晰商品、方形照片和简洁展示建议；这不是所有Shopee市场的统一硬性规格。[Shopee SG官方指导](https://ads.shopee.sg/learn/faq/520/172)。
 
-## 1. 确定站点、用途和变体
+### 1. 确定站点、用途和变体
 
 任务表写站点SG、语言英文、商品类目、白色SKU、图片位置。查看当前卖家后台该位置允许的尺寸、格式和数量。练习采用1600×1600方形母版，实际导出按当前要求；其他市场重新核对，不能只换语言。
 
 准备真实正面、开盖、隔板、配件照片和外尺寸。先做一个SKU，再复制排版给下一个真实颜色。
 
-## 2. 封面先让商品清楚
+### 2. 封面先让商品清楚
 
 用真实主体放入白色或非常浅的干净背景，保持完整。促销活动信息如果允许使用，也要先核对活动、站点和时间，不能随手写“官方最低价”。本练习封面不放活动字。
 
@@ -33,11 +33,11 @@ content_kind: "操作教程"
 
 小尺寸预览时应先看见商品，再看见其他内容。主体太小就删装饰和扩大商品，不靠更艳的底色弥补。
 
-## 3. 场景图说明用途
+### 3. 场景图说明用途
 
-复用[Amazon场景副图](./amazon-listing.md)中真实主体与浅木桌面，换成适用于本店的短句。练习 `For everyday desk organization`，商品用途清楚即可。道具与发货清单分开，整图生成改变盒子时回空背景合成。
+复用[Amazon场景副图](amazon-listing.md)中真实主体与浅木桌面，换成适用于本店的短句。练习 `For everyday desk organization`，商品用途清楚即可。道具与发货清单分开，整图生成改变盒子时回空背景合成。
 
-## 4. 结构、尺寸与数量单独一张
+### 4. 结构、尺寸与数量单独一张
 
 结构图用开盖和隔板实拍，短句 `Removable divider`。尺寸图写 `External size: 220 × 150 × 120 mm (L × W × H)`。发货图写盒体、盖子、隔板数量，不能把场景文具算进去。
 
@@ -48,11 +48,11 @@ content_kind: "操作教程"
 
 这一步的可见结果是三张信息不同、数字准确、手机能读的说明图，不是三张重复“高品质”的海报。
 
-## 5. 复制到第二个颜色SKU
+### 5. 复制到第二个颜色SKU
 
 复制源文件，换成灰色真实商品层，保留文字位置、背景和图层结构。逐项核对灰色SKU是否同尺寸、同配件；有差异就更新文字，不能只做调色。导出 `DN01_gray_shopee-sg_01-cover_en_v01.jpg`，颜色名和实际图片一致。
 
-## 6. 上传后看封面和变体
+### 6. 上传后看封面和变体
 
 按当前后台界面排序图片，核对变体对应。看搜索结果小图、手机商品页和规格选择，检查文字是否被裁切、活动角标是否遮住商品、同一颜色是否串图。没有进行后台上传时，交付清单标“待上传”，不要把本地打开文件当作平台通过。
 
@@ -63,4 +63,4 @@ content_kind: "操作教程"
 | 灰色SKU用白色图片 | 回商品层与变体关联检查 |
 | 手机尺寸表太密 | 拆成外尺寸与发货两张 |
 
-模板入口[P15](../prompts/P15.md)，其他语言处理看[本地化](./localization.md)。
+模板入口[P15](../prompts/P15.md)，其他语言处理看[本地化](localization.md)。

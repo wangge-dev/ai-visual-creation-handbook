@@ -1,14 +1,14 @@
 ---
-id: cross-border
+id: "cross-border"
 title: "跨境出图：从商品事实到渠道交付"
 chapter: "03"
 content_kind: "专题导航"
-topic: cross-border
-status: 已公开
+topic: "cross-border"
+status: "已公开"
 evidence_status: "原创教程与规划示范，尚未执行图像任务或后台上传"
-last_modified: 2026-10-14
-resource_ids: ["ecommerce-skills","footwear-skills","cross-border-knowledge","visual-copywriting"]
-platform_rule_ids: ["amazon","shopify","shopee"]
+last_modified: "2026-10-14T00:00:00.000Z"
+resource_ids: ["ecommerce-skills", "footwear-skills", "cross-border-knowledge", "visual-copywriting"]
+platform_rule_ids: ["amazon", "shopify", "shopee"]
 order: 23
 ---
 
@@ -19,15 +19,15 @@ order: 23
 | 要交付什么 | 从哪里跟做 |
 | --- | --- |
 | 一张图还没有做过 | [第一张图](../start/first-image.md)，先走上传、背景与图层 |
-| 主图与一套商品图 | [六张套图](./image-set.md)，逐图处理素材与信息 |
-| Amazon商品页 | [主图/副图](./amazon-listing.md) → [A+](./amazon-a-plus.md) |
-| Shopify产品页 | [媒体与变体](./shopify-product.md) → [两端横幅](./shopify-hero.md) |
-| Shopee SG | [封面、规格、变体](./shopee-localization.md) |
-| 其他语言与多款商品 | [本地化](./localization.md) → [SKU交付](./cross-border-sku-delivery.md) |
+| 主图与一套商品图 | [六张套图](image-set.md)，逐图处理素材与信息 |
+| Amazon商品页 | [主图/副图](amazon-listing.md) → [A+](amazon-a-plus.md) |
+| Shopify产品页 | [媒体与变体](shopify-product.md) → [两端横幅](shopify-hero.md) |
+| Shopee SG | [封面、规格、变体](shopee-localization.md) |
+| 其他语言与多款商品 | [本地化](localization.md) → [SKU交付](cross-border-sku-delivery.md) |
 
 一套跨境图片先固定商品事实，再按市场、图片位置和语言安排表达。Amazon主图负责真实识别，副图和A+负责解释；Shopify还要适配主题裁切，Shopee需要按市场整理封面、规格与变体。先完成一条商品链路，再扩大SKU。
 
-## 这次练习准备什么
+### 这次练习准备什么
 
 以下所有DN01、DN02名称和参数均为虚构练习数据，用来示范怎么填写任务；正式商品须替换为自己的真实记录。练习未附商品照片，也未执行生图。
 
@@ -44,7 +44,7 @@ order: 23
 
 把真实素材按“对象照片、风格参考、准确文案、尺寸记录”四类整理。参考图只借用背景或布局；商品照片承担外观依据，规格来自记录。复制[P09跨境简报](../prompts/P09.md)，先生成渠道任务表。
 
-## 第1步：建立渠道矩阵
+### 第1步：建立渠道矩阵
 
 | 任务 | 母版职责 | 后续动作 |
 | --- | --- | --- |
@@ -55,26 +55,26 @@ order: 23
 | Shopify首页横幅 | 主题表达与商品引导 | 桌面和手机分别重排构图 |
 | Shopee SG | 清晰封面、规格与变体 | 按当地后台检查上传参数 |
 
-这张表是练习任务分配，不规定每个渠道必须上传固定张数。[平台资料卡](../resources/index.md)集中保留官方来源与适用范围；1024、2048等数字要区分官方建议、当前限制和练习母版。
+这张表是练习任务分配，不规定每个渠道必须上传固定张数。[平台资料卡](#%E8%B5%84%E6%BA%90%E8%B5%84%E6%96%99%E5%BA%93)集中保留官方来源与适用范围；1024、2048等数字要区分官方建议、当前限制和练习母版。
 
-## 第2步：先做一张真实主体母版
+### 第2步：先做一张真实主体母版
 
 选清晰正面或45度实拍，在图层软件抠出主体。原照片、蒙版和商品层保留，记录允许修改的是背景、接触阴影和文案层。没有实拍时可以继续准备简报与版式，不把概念图写成正式商品图。
 
-先按[Amazon主图教程](./amazon-listing.md)完成白底任务，再用同一真实主体建立场景图。模型容易改商品时，只生成背景，在PS／Krita里合成真实主体。检查商品颜色、盖子、隔板与数量后，再扩展其他图。
+先按[Amazon主图教程](amazon-listing.md)完成白底任务，再用同一真实主体建立场景图。模型容易改商品时，只生成背景，在PS／Krita里合成真实主体。检查商品颜色、盖子、隔板与数量后，再扩展其他图。
 
-## 第3步：按位置组织信息
+### 第3步：按位置组织信息
 
 副图不要每张重复同一句卖点。DN01可分成桌面场景、开盖结构、外尺寸、发货内容和使用顺序；“耐高温”“大容量”等未知事实不填。使用[P11副图分工](../prompts/P11.md)获得逐张构图和完整任务词。
 
-[A+教程](./amazon-a-plus.md)把结构、规格和使用拆模块；[Shopify产品页](./shopify-product.md)把相同事实整理成媒体序列；[Shopee教程](./shopee-localization.md)明确市场与变体。准确文字优先用可编辑图层，不反复让整图模型改小字。
+[A+教程](amazon-a-plus.md)把结构、规格和使用拆模块；[Shopify产品页](shopify-product.md)把相同事实整理成媒体序列；[Shopee教程](shopee-localization.md)明确市场与变体。准确文字优先用可编辑图层，不反复让整图模型改小字。
 
-## 第4步：本地化、SKU与交付
+### 第4步：本地化、SKU与交付
 
-先做好一份事实母表，再制作英文或日文版本。场景和表达可调整，商品尺寸、配件和功能不能随市场变化。使用[本地化与单位教程](./localization.md)，再按[SKU交付教程](./cross-border-sku-delivery.md)建立文件清单。
+先做好一份事实母表，再制作英文或日文版本。场景和表达可调整，商品尺寸、配件和功能不能随市场变化。使用[本地化与单位教程](localization.md)，再按[SKU交付教程](cross-border-sku-delivery.md)建立文件清单。
 
-最终交付包含：任务表、准确文案、图片、源文件状态、实际像素、检查结果和未完成项。网页上传成功、文字准确、源文件可编辑分别检查。完整流程还可以放进[三类画布](./cross-border-canvas.md)。
+最终交付包含：任务表、准确文案、图片、源文件状态、实际像素、检查结果和未完成项。网页上传成功、文字准确、源文件可编辑分别检查。完整流程还可以放进[三类画布](cross-border-canvas.md)。
 
-## 完成时实际核对什么
+### 完成时实际核对什么
 
 一张图能对照真实商品核验；对应渠道位置明确；准确文字与单位无误；文件能打开且裁切适用。规划、生成、合成、源文件与后台上传各自记录完成状态。这份导航与教程文稿不表示真实商品案例已经完成。

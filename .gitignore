@@ -1,5 +1,7 @@
 node_modules/
 docs/.vitepress/dist/
+dist/
+__pycache__/
 docs/.vitepress/cache/
 docs/.generated/
 docs/resources/cards/

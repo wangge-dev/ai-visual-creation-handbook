@@ -1,12 +1,12 @@
 ---
-id: shopify-hero
+id: "shopify-hero"
 title: "Shopify横幅：桌面与手机分别排版"
 chapter: "03"
-topic: cross-border
-status: 已公开
+topic: "cross-border"
+status: "已公开"
 evidence_status: "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传"
-last_modified: 2026-10-14
-resource_ids: ["ecommerce-skills","kv-marketing-workflow","ad-production-kit"]
+last_modified: "2026-10-14T00:00:00.000Z"
+resource_ids: ["ecommerce-skills", "kv-marketing-workflow", "ad-production-kit"]
 platform_rule_ids: ["shopify"]
 order: 23.4
 content_kind: "操作教程"
@@ -16,13 +16,13 @@ content_kind: "操作教程"
 
 本节完成桌面背景、手机背景、一份准确标题/按钮文字，以及主题预览检查。横幅背景里保留真实商品，标题和按钮优先由主题文字区表达，方便响应布局、翻译和编辑。
 
-## 1. 先看主题的图片区域
+### 1. 先看主题的图片区域
 
 在主题编辑器选当前横幅section，确认支持单图还是独立手机图，能否调图片高度、文本位置、焦点和遮罩。先用主题副本或预览做布局。不同主题选项不同，没有手机图槽位时不要编一个固定按钮名称。[Shopify图片说明](https://help.shopify.com/en/manual/online-store/images/theme-images)。
 
 本练习用2400×1200桌面图和1200×1600手机图作为设计起点。它们不是Shopify统一规定。用主题实际预览决定最终构图，原图尺寸与显示裁切是两回事。
 
-## 2. 桌面图，右侧商品左侧文字
+### 2. 桌面图，右侧商品左侧文字
 
 DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再放回真实商品层，避免一做大横幅就换了盒型。
 
@@ -33,7 +33,7 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 在图层软件放入真实盒子，留出头顶和底部裁切余量。标题练习 `Make room for everyday essentials`，按钮 `Explore the organizer`。标题是场景表达，不能变成无依据的“Largest capacity”。准确文本单独交给主题编辑器。
 
-## 3. 手机图，重新组织画面
+### 3. 手机图，重新组织画面
 
 竖图里商品放在下半部，上半部留文字。不要只把桌面图从中间裁成竖图，它可能正好裁掉右侧商品。
 
@@ -44,7 +44,7 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 有独立手机槽位就分别上传。只有同一图槽位时，尝试主题焦点与高度设置，让主体处于可保留区域；仍无法同时满足时选支持相应布局的section，或改成图文分开的结构。
 
-## 4. 在三个宽度看可见结果
+### 4. 在三个宽度看可见结果
 
 用主题预览检查桌面、约390像素和约360像素宽的手机画面。看商品是否完整、文字是否压在盒盖上、按钮是否有对比度、标题是否超过三行。以实际页面为准，不凭下载原图推断。
 

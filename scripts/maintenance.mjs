@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { root, pages, readJSON, writeJSON } from './lib.mjs';
+import { root, contentSources, originalSourceLinks, readJSON, writeJSON } from './lib.mjs';
 import { api, inspectRepo, summarize } from './github.mjs';
 
 export function recordSuccess(previous, next, now) {
@@ -78,7 +78,7 @@ export async function maintain(args = process.argv.slice(2)) {
       if (previous) { previous.error = e.message; previous.last_attempt = started; }
     }
   }
-  const list = await pages();
+  const list = await contentSources();
   const poolPath = args.includes('--source-pool') ? args[args.indexOf('--source-pool') + 1] : process.env.SOURCE_POOL_PATH;
   if (poolPath) {
     try {
@@ -89,17 +89,23 @@ export async function maintain(args = process.argv.slice(2)) {
     } catch(e) { report.failures.push({ source:'existing_source_pool', message:e.message }); }
   }
   if (args.includes('--monthly')) {
-    const sources = (await Promise.all(['tools','platform-rules','source-directory'].map(name => readJSON(path.join(root,'data',name+'.json'))))).flat();
+    const known = (await Promise.all(['tools','platform-rules','source-directory'].map(name => readJSON(path.join(root,'data',name+'.json'))))).flat();
+    const unique=new Map(known.map(s=>[s.url,s]));
+    for(const source of await originalSourceLinks()){
+      const previous=unique.get(source.url);
+      unique.set(source.url,{...source,...previous,source_files:[...new Set([...(previous?.source_files || []),...source.source_files])]});
+    }
+    const sources = [...unique.values()];
     report.source_health = await Promise.all(sources.map(async source => {
       try {
         const response = await fetch(source.url, { method:'GET', signal:AbortSignal.timeout(12000) });
         await response.body?.cancel();
-        return {id:source.id,url:source.url,status:response.status,final_url:response.url,needs_review:!response.ok};
-      } catch(e) {return {id:source.id,url:source.url,error:e.name,needs_review:true};}
+        return {id:source.id,url:source.url,source_files:source.source_files,status:response.status,final_url:response.url,needs_review:!response.ok};
+      } catch(e) {return {id:source.id,url:source.url,source_files:source.source_files,error:e.name,needs_review:true};}
     }));
     report.pending.push(...report.source_health.filter(s=>s.needs_review).map(s=>({source:s.id,reason:'入口需要复核；请求失败不直接判定失效'})));
     state.last_monthly_attempt = started.slice(0,7);
-    for(const source of report.source_health.filter(s=>s.needs_review)) report.impacts.push({source:source.id,pages:list.filter(p=>p.data.tool_ids?.includes(source.id)||p.data.platform_rule_ids?.includes(source.id)).map(p=>p.relative)});
+    for(const source of report.source_health.filter(s=>s.needs_review)) report.impacts.push({source:source.id,pages:[...new Set([...(source.source_files || []),...list.filter(p=>p.data.tool_ids?.includes(source.id)||p.data.platform_rule_ids?.includes(source.id)).map(p=>p.relative)])]});
   }
   for (const c of report.changes) {
     report.impacts.push({ resource_id: c.resource_id, name: c.name, pages: list.filter(p => p.data.resource_ids?.includes(c.resource_id)).map(p => p.relative) });

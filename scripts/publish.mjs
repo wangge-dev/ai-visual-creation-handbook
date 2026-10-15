@@ -1,7 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { root } from './lib.mjs';
+import { fileURLToPath } from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const executable = process.env.GIT_BIN || 'git';
 const env = {...process.env,GIT_TERMINAL_PROMPT:'0',GCM_INTERACTIVE:'never'};
 function git(args, allowEmpty = false) {
@@ -11,7 +12,7 @@ function git(args, allowEmpty = false) {
 }
 const remote=git(['remote','get-url','origin']);
 if(!/^https:\/\/github\.com\/[\w.-]+\/[\w.-]+\.git$/.test(remote)) throw Error('Expected a configured GitHub HTTPS origin');
-const dist=path.join(root,'docs/.vitepress/dist');
+const dist=path.join(root,'dist');
 await fs.access(path.join(dist,'index.html'));
 await fs.access(path.join(dist,'downloads/handbook.md'));
 await fs.writeFile(path.join(dist,'.nojekyll'),'');

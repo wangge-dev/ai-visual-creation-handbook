@@ -1,0 +1,316 @@
+<h2 id="一小白先看电商ai作图从哪里开始"><span class="chapter-kicker">CHAPTER · 02</span><a class="anchor" href="#一小白先看电商ai作图从哪里开始" aria-label="定位到本节">#</a>一、小白先看：电商AI作图从哪里开始</h2>
+<p>很多电商小白卡住，不是因为AI工具不够多，而是因为不知道第一步该做什么。</p>
+<p>如果你是新手，不要一开始研究API、ComfyUI、模型参数、工作流节点。先跑通一张图。</p>
+<p>但在跑通之前，有几件前置事项必须先准备好。否则你打开工具也不知道该上传什么、输入什么。</p>
+<h3 id="0-开始之前你需要准备什么"><a class="anchor" href="#0-开始之前你需要准备什么" aria-label="定位到本节">#</a>0. 开始之前：你需要准备什么</h3>
+<h4 id="01-先搞清楚ai作图在你的流程里负责什么"><a class="anchor" href="#01-先搞清楚ai作图在你的流程里负责什么" aria-label="定位到本节">#</a>0.1 先搞清楚：AI作图在你的流程里负责什么</h4>
+<p>AI不是万能美工。在电商作图流程中，AI通常负责：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>✅ 换背景、生成场景
+✅ 统一光影和色调
+✅ 扩图、裁切适配多尺寸
+✅ 批量生成候选图
+✅ 辅助卖点视觉化
+</code></pre></div>
+<p>AI不擅长或不能直接做的：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>❌ 凭空生成一个逼真的正式产品主图（必须基于真实产品图）
+❌ 生成准确的中文长文（文字必须后期排版）
+❌ 生成真实认证标识、检测数据
+❌ 替代人工判断产品是否失真、是否合规
+</code></pre></div>
+<p>理解了这个边界，后面才知道哪些环节用AI、哪些环节必须人工。</p>
+<h4 id="02-资料准备你需要提前整理这些东西"><a class="anchor" href="#02-资料准备你需要提前整理这些东西" aria-label="定位到本节">#</a>0.2 资料准备：你需要提前整理这些东西</h4>
+<p>在打开任何AI作图工具之前，先准备好以下资料。没有这些，你连提示词都写不出来。</p>
+<table>
+<thead>
+<tr>
+  <th>资料</th>
+  <th>说明</th>
+  <th>必须/可选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>产品实拍图/白底图</td>
+  <td>至少1张清晰的产品照片，白底最佳，手机拍也行但要清晰</td>
+  <td>必须</td>
+</tr>
+<tr>
+  <td>产品名称和基础信息</td>
+  <td>名称、颜色、材质、尺寸、重量</td>
+  <td>必须</td>
+</tr>
+<tr>
+  <td>核心卖点3-5条</td>
+  <td>用文字列出你最想表达的卖点，如"无线充电""食品级材质"</td>
+  <td>必须</td>
+</tr>
+<tr>
+  <td>目标平台</td>
+  <td>淘宝/Amazon/Shopee/Shopify等，不同平台图片规范和风格不同</td>
+  <td>必须</td>
+</tr>
+<tr>
+  <td>目标人群</td>
+  <td>如"25-35岁上班族""健身人群""宝妈"，影响场景和风格选择</td>
+  <td>建议有</td>
+</tr>
+<tr>
+  <td>竞品参考图</td>
+  <td>3-5张竞品链接或截图，参考构图和风格（不是照搬）</td>
+  <td>建议有</td>
+</tr>
+<tr>
+  <td>品牌风格关键词</td>
+  <td>如"简约""清新""科技感""高端"，用于统一视觉方向</td>
+  <td>建议有</td>
+</tr>
+<tr>
+  <td>logo源文件</td>
+  <td>如果需要后期加logo，准备PNG透明底或矢量文件</td>
+  <td>可选</td>
+</tr>
+<tr>
+  <td>平台图片规范</td>
+  <td>目标平台对主图、详情页的尺寸和要求（后面章节有整理）</td>
+  <td>可选</td>
+</tr>
+</tbody>
+</table>
+<p>建议用一个简单的文档或表格整理好，后面写提示词、出图、质检都要反复对照。</p>
+<h4 id="03-账号准备这些工具先注册好"><a class="anchor" href="#03-账号准备这些工具先注册好" aria-label="定位到本节">#</a>0.3 账号准备：这些工具先注册好</h4>
+<p>不用一次全注册。按你的需求选2-3个就够起步。</p>
+<table>
+<thead>
+<tr>
+  <th>用途</th>
+  <th>推荐工具</th>
+  <th>是否免费</th>
+  <th>注册方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>写提示词/提炼卖点</td>
+  <td>ChatGPT / 豆包 / Kimi / 通义千问</td>
+  <td>有免费额度</td>
+  <td>官网注册，手机号即可</td>
+</tr>
+<tr>
+  <td>AI生图（中文友好）</td>
+  <td>即梦AI / 豆包 / 通义万相 / 可灵AI</td>
+  <td>有免费额度</td>
+  <td>官网/App注册</td>
+</tr>
+<tr>
+  <td>AI生图（跨境/英文）</td>
+  <td>ChatGPT（GPT Image 2.5）/ Krea / Midjourney</td>
+  <td>ChatGPT有免费额度，其余付费</td>
+  <td>官网注册，部分需梯子</td>
+</tr>
+<tr>
+  <td>抠图/换背景</td>
+  <td>Pic Copilot / remove.bg / 美图设计室</td>
+  <td>有免费功能</td>
+  <td>官网注册</td>
+</tr>
+<tr>
+  <td>排版/加文字/详情页</td>
+  <td>Canva / 创客贴 / 美图设计室</td>
+  <td>有免费模板</td>
+  <td>官网注册</td>
+</tr>
+<tr>
+  <td>电商专用AI商拍</td>
+  <td>WeShop唯象 / 达笔 / AI商拍DesignKit</td>
+  <td>部分免费试用</td>
+  <td>官网注册</td>
+</tr>
+</tbody>
+</table>
+<p>注册建议：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>1. 先用免费额度测试，不要一上来就买会员
+2. 用同一个邮箱注册，方便管理
+3. 跨境工具如果需要梯子，提前确认网络环境稳定
+4. 注册完不要急着研究功能，先跳到"最短路径"跑通一张图再说
+</code></pre></div>
+<h4 id="04-设备和环境要求"><a class="anchor" href="#04-设备和环境要求" aria-label="定位到本节">#</a>0.4 设备和环境要求</h4>
+<p>网站版AI作图对设备要求不高，但以下几点注意：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>✅ 一台能流畅浏览网页的电脑（不需要高配显卡）
+✅ 稳定的网络（AI生图需要上传下载，断网会中断）
+✅ 建议用Chrome或Edge浏览器（兼容性最好）
+✅ 显示器尽量用sRGB色域，避免色差导致产品颜色偏差
+✅ 准备一个文件夹，按SKU建子文件夹，存放产品图、生成图、终稿
+</code></pre></div>
+<p>如果你后续要用ComfyUI等本地工具，才需要考虑显卡（建议8GB显存以上）。起步阶段用网站版完全够用。</p>
+<h4 id="05-确认你的第一个目标"><a class="anchor" href="#05-确认你的第一个目标" aria-label="定位到本节">#</a>0.5 确认你的第一个目标</h4>
+<p>在开始之前，想清楚你这次要做什么。不要一上来就想"做一套完整的详情页"。</p>
+<p>建议第一个目标定为：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>用1个产品，生成3张图：
+  1张白底/干净背景图
+  1张场景图
+  1张加了卖点文字的成品图
+
+目标不是完美，是跑通流程。
+</code></pre></div>
+<p>跑通之后，你就知道：提示词怎么写、AI哪里容易出错、后期要补什么、质检看什么。这比看10篇教程都有用。</p>
+<h4 id="06-资料准备清单可复制"><a class="anchor" href="#06-资料准备清单可复制" aria-label="定位到本节">#</a>0.6 资料准备清单（可复制）</h4>
+<p>复制下面这个清单，每次做新产品图时对照填写：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>【产品AI作图资料卡】
+产品名称：
+产品颜色：
+产品材质：
+产品尺寸/重量：
+核心卖点（3-5条）：
+  1.
+  2.
+  3.
+目标平台：
+目标人群：
+品牌风格关键词：
+竞品参考（链接或截图）：
+产品图存放路径：
+是否需要logo：是/否
+禁止夸大的内容：
+</code></pre></div>
+<p>填完这张卡，你就可以进入下面的正式流程了。</p>
+<h3 id="07-产品拍摄基础指南手机就够"><a class="anchor" href="#07-产品拍摄基础指南手机就够" aria-label="定位到本节">#</a>0.7 产品拍摄基础指南（手机就够）</h3>
+<p>AI作图的质量上限，很大程度取决于你上传的产品图质量。输入糊，输出也糊。这一节教你用手机拍出适合AI处理的产品图。</p>
+<h4 id="拍摄环境"><a class="anchor" href="#拍摄环境" aria-label="定位到本节">#</a>拍摄环境</h4>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>✅ 光线：优先自然光（靠窗位置），避免直射阳光造成硬阴影
+✅ 背景：纯白墙/白纸/白布，或干净的纯色背景
+✅ 桌面：平整、干净、无反光材质（避免玻璃桌面）
+✅ 避免混合光源（同时开日光灯+阳光会导致色温混乱）
+</code></pre></div>
+<h4 id="拍摄角度建议"><a class="anchor" href="#拍摄角度建议" aria-label="定位到本节">#</a>拍摄角度建议</h4>
+<table>
+<thead><tr><th>角度</th><th>适合品类</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>正面平拍</td><td>包装类、平面产品</td><td>镜头与产品正面平行，展示包装正面</td></tr>
+<tr><td>45度俯拍</td><td>大多数产品</td><td>最通用的电商角度，立体感好</td></tr>
+<tr><td>正俯拍（平铺）</td><td>服装、食品、套装</td><td>从上往下拍，适合展示全貌</td></tr>
+<tr><td>侧面</td><td>瓶罐、杯壶</td><td>展示产品轮廓和厚度</td></tr>
+<tr><td>多角度组合</td><td>高客单价产品</td><td>拍4-6个角度，方便AI生成不同视角</td></tr>
+</tbody>
+</table>
+<h4 id="拍摄要点"><a class="anchor" href="#拍摄要点" aria-label="定位到本节">#</a>拍摄要点</h4>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>1. 擦干净产品（指纹、灰尘在高清下很明显）
+2. 手机开启HDR，关闭美颜/滤镜
+3. 对焦到产品主体，手动点击屏幕对焦
+4. 保持镜头稳定（双手持机或用支架）
+5. 拍完立即检查：边缘是否清晰、颜色是否接近实物、logo是否可读
+6. 同一产品拍3-5张不同角度，选最好的1-2张作为主参考图
+</code></pre></div>
+<h4 id="不同品类的拍摄技巧"><a class="anchor" href="#不同品类的拍摄技巧" aria-label="定位到本节">#</a>不同品类的拍摄技巧</h4>
+<table>
+<thead><tr><th>品类</th><th>拍摄要点</th><th>常见坑</th></tr></thead>
+<tbody>
+<tr><td>反光产品（金属、玻璃）</td><td>用柔光布/白纸挡一下直射光，避免强反光</td><td>反光过曝→AI无法还原材质</td></tr>
+<tr><td>黑色/深色产品</td><td>需要更多光线，注意边缘轮廓</td><td>暗部细节丢失→AI补出来的细节是假的</td></tr>
+<tr><td>透明产品（瓶子、杯子）</td><td>背景放一张白纸增加轮廓感</td><td>透明物体抠图困难</td></tr>
+<tr><td>服装/布艺</td><td>熨平褶皱，平铺或挂拍</td><td>褶皱严重→AI生成的模特图也会歪</td></tr>
+<tr><td>小件产品（耳环、戒指）</td><td>用微距模式或靠近拍摄，放硬币做比例参考</td><td>太小看不清细节</td></tr>
+<tr><td>食品</td><td>新鲜食材做点缀，拍完尽快（食物会塌）</td><td>颜色偏差→看起来不新鲜</td></tr>
+</tbody>
+</table>
+<h4 id="拍完自检"><a class="anchor" href="#拍完自检" aria-label="定位到本节">#</a>拍完自检清单</h4>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>[ ] 产品边缘是否清晰（没有模糊/重影）
+[ ] 颜色是否接近实物（和实物放在一起对比）
+[ ] logo和包装文字是否可读
+[ ] 背景是否干净（越干净，AI换背景越准）
+[ ] 产品是否完整（没有被裁掉边角）
+[ ] 图片分辨率是否够大（建议至少2000x2000px）
+[ ] 没有强烈反光或过曝区域
+</code></pre></div>
+<p>拍好这一步，后面AI出图的成功率会大幅提升。如果产品图本身模糊、变形、颜色偏差严重，再好的AI工具也救不回来。</p>
+<hr />
+<h3 id="1-最短路径"><a class="anchor" href="#1-最短路径" aria-label="定位到本节">#</a>1. 最短路径</h3>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>真实产品图 → 抠图/白底图 → AI换背景/生成场景图 → Canva/创客贴加文字 → 人工质检 → 导出平台尺寸
+</code></pre></div>
+<h3 id="2-小白第一张图怎么做"><a class="anchor" href="#2-小白第一张图怎么做" aria-label="定位到本节">#</a>2. 小白第一张图怎么做</h3>
+<h4 id="第一步准备一张真实产品图"><a class="anchor" href="#第一步准备一张真实产品图" aria-label="定位到本节">#</a>第一步：准备一张真实产品图</h4>
+<p>优先级：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>清晰白底图 &gt; 影棚产品图 &gt; 手机拍摄清晰图 &gt; 竞品参考图 &gt; 只有文字卖点
+</code></pre></div>
+<p>注意：正式上架图尽量基于真实产品图，不建议纯靠文字让AI“凭空画一个商品”。</p>
+<h4 id="第二步先做干净产品图"><a class="anchor" href="#第二步先做干净产品图" aria-label="定位到本节">#</a>第二步：先做干净产品图</h4>
+<p>推荐工具：</p>
+<ul>
+<li>Pic Copilot</li>
+<li>美图设计室</li>
+<li>创客贴</li>
+<li>Canva</li>
+<li>remove.bg 类抠图工具</li>
+</ul>
+<p>目标：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>产品边缘干净，背景简洁，颜色接近实物，logo和包装文字清晰。
+</code></pre></div>
+<h4 id="第三步生成3张场景图"><a class="anchor" href="#第三步生成3张场景图" aria-label="定位到本节">#</a>第三步：生成3张场景图</h4>
+<p>一开始不要生成几十张。先生成3张：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>1张白底/浅色背景
+1张生活方式场景图
+1张高端质感图
+</code></pre></div>
+<h4 id="第四步用canva创客贴加文字"><a class="anchor" href="#第四步用canva创客贴加文字" aria-label="定位到本节">#</a>第四步：用Canva/创客贴加文字</h4>
+<p>不要让AI直接生成中文标题、卖点、参数表。中文容易乱码，建议后期排版。</p>
+<h4 id="第五步人工检查"><a class="anchor" href="#第五步人工检查" aria-label="定位到本节">#</a>第五步：人工检查</h4>
+<p>重点检查：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>产品形状有没有变
+颜色有没有偏
+logo有没有错
+包装文字有没有乱
+材质有没有被AI美化过头
+是否暗示了不存在的功能
+</code></pre></div>
+<h4 id="第六步导出尺寸"><a class="anchor" href="#第六步导出尺寸" aria-label="定位到本节">#</a>第六步：导出尺寸</h4>
+<p>常见尺寸：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>1:1 主图
+3:4 竖图
+4:5 移动端/社媒图
+16:9 Banner
+详情页长图
+Amazon A+模块图
+</code></pre></div>
+<h3 id="3-小白最低成本工具组合"><a class="anchor" href="#3-小白最低成本工具组合" aria-label="定位到本节">#</a>3. 小白最低成本工具组合</h3>
+<table>
+<thead>
+<tr>
+  <th>需求</th>
+  <th>低成本组合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>写提示词/提炼卖点</td>
+  <td>ChatGPT、豆包、通义、Kimi等文本工具</td>
+</tr>
+<tr>
+  <td>抠图/换背景</td>
+  <td>Pic Copilot、美图设计室、创客贴、Canva</td>
+</tr>
+<tr>
+  <td>中文场景图</td>
+  <td>即梦AI、豆包、通义万相</td>
+</tr>
+<tr>
+  <td>排版详情页</td>
+  <td>Canva、创客贴、美图设计室</td>
+</tr>
+<tr>
+  <td>跨境品牌图</td>
+  <td>ChatGPT图像能力、Krea、Canva</td>
+</tr>
+<tr>
+  <td>A+图草图</td>
+  <td>ChatGPT图像能力、Canva、PS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-小白不要一开始做什么"><a class="anchor" href="#4-小白不要一开始做什么" aria-label="定位到本节">#</a>4. 小白不要一开始做什么</h3>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>不要一开始上API。
+不要一开始装复杂本地工作流。
+不要纯文字生成正式产品主图。
+不要让AI直接生成中文详情页长文。
+不要照搬竞品图。
+不要跳过人工质检。
+</code></pre></div>
+<hr />

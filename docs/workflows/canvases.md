@@ -1,12 +1,12 @@
 ---
-id: canvases
+id: "canvases"
 title: "三类画布怎么接入电商出图"
 chapter: "11"
-status: 已公开
+status: "已公开"
 evidence_status: "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传"
-last_modified: 2026-10-14
-resource_ids: ["comfyui","invokeai","krita-diffusion"]
-tool_ids: ["lovart","tapnow","photoshop","krita"]
+last_modified: "2026-10-14T00:00:00.000Z"
+resource_ids: ["comfyui", "invokeai", "krita-diffusion"]
+tool_ids: ["lovart", "tapnow", "photoshop", "krita"]
 order: 40
 content_kind: "操作教程"
 ---
@@ -17,7 +17,7 @@ content_kind: "操作教程"
 
 准备真实商品照片、一张能用的无字背景、准确短文案和目标画幅。以榨汁杯厨房图为例，生成环境、保留商品、加文字是三个动作，尽量保留独立产物。
 
-## 1. Lovart或TapNow，组织资料并迭代构图
+### 1. Lovart或TapNow，组织资料并迭代构图
 
 Lovart新项目上传真实商品照片，写明参考文件角色与任务，先要求一个无字场景方向。选中通过的图再做局部编辑或进一步任务；不要一次要求六张完全不同用途的图并指望模型自行核商品。[Lovart项目入门](https://www.lovart.ai/docs/getting-started/design-your-first-project)。
 
@@ -32,7 +32,7 @@ TapNow官方文档的操作路径更明确。Add建立图像节点，接入产�
 
 画布保留输入、候选、选用图、返工图四个区域，给图写用途与问题。下载的是原图文件，画布截图只作过程记录。
 
-## 2. ComfyUI，理解一次局部修背景的节点
+### 2. ComfyUI，理解一次局部修背景的节点
 
 先按当前官方安装说明准备可以运行的ComfyUI。本节使用官方基础inpaint示例理解输入和蒙版，不把SD1.5教学示例称为最新商拍最佳模型，也不要求额外下载不明节点。[官方inpaint教程](https://docs.comfy.org/tutorials/basic/inpaint)。
 
@@ -57,13 +57,13 @@ text, watermark, extra appliances, cluttered background, harsh neon light
 
 如果输入尺寸与输出不同，先定位缩放或裁切节点；如果背景边缘有明显接缝，调整蒙版边界和环境匹配；如果商品被改，回真实主体层合成。固定seed可以减少某些变化，不能保证所有SKU商品一致。
 
-## 3. PS/Photopea/Krita，完成真实主体与准确文字
+### 3. PS/Photopea/Krita，完成真实主体与准确文字
 
 建立四层 `BACKGROUND`、`SHADOW`、`PRODUCT_REAL`、`COPY`。商品层来自实拍，蒙版修边；阴影层在下面；文字层输入审定文案。放大看边缘，缩小看手机阅读，再保存可编辑文件与JPG。PS步骤参考[合成图像](https://helpx.adobe.com/photoshop/desktop/crop-resize-transform/transform-manipulate-reshape/combine-images-in-photoshop.html)。
 
 PNG可以保留透明背景，但不会自动保留可编辑文字和蒙版。PSD或KRA要重新打开检查结构，工具声称“导出PSD”也可能只导出一张平面层。实操按[第一张可用图](../start/first-image.md)逐步完成。
 
-## 4. 三段怎样衔接
+### 4. 三段怎样衔接
 
 | 前一段产物 | 下一段用法 | 交接时检查 |
 | --- | --- | --- |
@@ -71,4 +71,4 @@ PNG可以保留透明背景，但不会自动保留可编辑文字和蒙版。PS
 | 节点生成结果 | 用真实主体遮回需要保护的区域 | 输出尺寸、结构与颜色 |
 | 图层工作文件 | 导出各用途图片 | 文字可编辑、蒙版存在、文件能打开 |
 
-三类软件的官方文档已读，本项目没有实际生成、运行节点或交付PSD。跨境例子继续[画布交接教程](../ecommerce/cross-border-canvas.md)，Codex参与文件和PS工作的具体任务见[Codex协作PS](./codex-ps.md)。
+三类软件的官方文档已读，本项目没有实际生成、运行节点或交付PSD。跨境例子继续[画布交接教程](../ecommerce/cross-border-canvas.md)，Codex参与文件和PS工作的具体任务见[Codex协作PS](codex-ps.md)。

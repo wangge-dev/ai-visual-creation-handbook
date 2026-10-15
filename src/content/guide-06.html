@@ -1,0 +1,135 @@
+<h2 id="五apiapi-key订阅会员和额度说明"><span class="chapter-kicker">CHAPTER · 06</span><a class="anchor" href="#五apiapi-key订阅会员和额度说明" aria-label="定位到本节">#</a>五、API、API Key、订阅会员和额度说明</h2>
+<p>很多小白会误会：开了会员就能免费用API。通常不是。</p>
+<h3 id="1-几个概念"><a class="anchor" href="#1-几个概念" aria-label="定位到本节">#</a>1. 几个概念</h3>
+<table>
+<thead>
+<tr>
+  <th>概念</th>
+  <th>解释</th>
+  <th>小白注意</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>免费版</td>
+  <td>平台给的体验额度</td>
+  <td>适合测试，不适合稳定生产</td>
+</tr>
+<tr>
+  <td>账号订阅/会员</td>
+  <td>网页或App里的付费权益</td>
+  <td>不等于API免费</td>
+</tr>
+<tr>
+  <td>积分包</td>
+  <td>按生成次数或算力扣费</td>
+  <td>注意高清、重绘、放大也可能扣费</td>
+</tr>
+<tr>
+  <td>API Key</td>
+  <td>程序调用接口的钥匙</td>
+  <td>不要泄露，不要写在公开网页里</td>
+</tr>
+<tr>
+  <td>官方API</td>
+  <td>模型官方接口</td>
+  <td>稳定性相对更好，通常按量计费</td>
+</tr>
+<tr>
+  <td>第三方聚合/API中转</td>
+  <td>一个接口接多个模型</td>
+  <td>成本、稳定性、合规和数据安全要评估</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-订阅会员和api的区别"><a class="anchor" href="#2-订阅会员和api的区别" aria-label="定位到本节">#</a>2. 订阅会员和API的区别</h3>
+<table>
+<thead>
+<tr>
+  <th>项目</th>
+  <th>订阅会员</th>
+  <th>API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>使用方式</td>
+  <td>网页/App手动使用</td>
+  <td>程序调用</td>
+</tr>
+<tr>
+  <td>面向对象</td>
+  <td>普通用户</td>
+  <td>开发者/系统团队</td>
+</tr>
+<tr>
+  <td>计费</td>
+  <td>月费/会员/积分</td>
+  <td>按调用量、图片数、模型规格计费</td>
+</tr>
+<tr>
+  <td>批量能力</td>
+  <td>有限制</td>
+  <td>更适合批量</td>
+</tr>
+<tr>
+  <td>是否需要开发</td>
+  <td>不需要</td>
+  <td>通常需要</td>
+</tr>
+<tr>
+  <td>常见误区</td>
+  <td>会员等于API免费</td>
+  <td>实际通常另算钱</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-小白建议"><a class="anchor" href="#3-小白建议" aria-label="定位到本节">#</a>3. 小白建议</h3>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>先别买API。
+先用网站版跑通一个产品。
+确认一套产品大概要生成多少张图、返工几次、哪些图能用。
+再评估API成本。
+</code></pre></div>
+<h3 id="4-api安全提醒"><a class="anchor" href="#4-api安全提醒" aria-label="定位到本节">#</a>4. API安全提醒</h3>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>不要把API Key发到微信群。
+不要交给不可信外包。
+不要写进前端代码。
+设置用量上限。
+保留提示词、模型、生成时间和图片记录。
+</code></pre></div>
+<h3 id="5-api成本参考openrouter实测数据"><a class="anchor" href="#5-api成本参考openrouter实测数据" aria-label="定位到本节">#</a>5. API成本参考：OpenRouter实测数据</h3>
+<p>2026年9月，OpenRouter用相同提示词实测了20个图像生成模型的成本，单张图价格从 <strong>$0.006 到 $0.134</strong>，相差22倍。</p>
+<p>这对需要批量出图的团队很有参考价值：</p>
+<table>
+<thead>
+<tr>
+  <th>成本区间</th>
+  <th>适合场景</th>
+  <th>代表模型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>$0.006-$0.02/张</td>
+  <td>大批量试错、候选图生成</td>
+  <td>开源模型（Qwen-Image-2.1、SD4等）</td>
+</tr>
+<tr>
+  <td>$0.03-$0.06/张</td>
+  <td>日常生产、中等批量</td>
+  <td>Nano Banana 2.1、Flux 3 Image</td>
+</tr>
+<tr>
+  <td>$0.08-$0.13/张</td>
+  <td>高品质需求、关键产品图</td>
+  <td>GPT Image 2.5、Midjourney</td>
+</tr>
+</tbody>
+</table>
+<p>建议：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>1. 先用低成本模型跑通流程、验证提示词
+2. 确认可用后，再用高成本模型出正式图
+3. 批量SKU建议用开源模型本地部署，成本可控
+4. OpenRouter提供统一接口调用多个模型，方便对比测试
+</code></pre></div>
+<hr />

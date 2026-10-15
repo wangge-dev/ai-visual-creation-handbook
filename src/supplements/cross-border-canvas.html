@@ -1,0 +1,70 @@
+<section class="supplement-section" id="补充-cross-border-canvas"><h2>跨境画布，把一个项目交接到三个渠道</h2>
+<p>本节把DN01跨境练习放进一个可复用项目，做出画布分区、图层结构与渠道导出表。具体生成与蒙版入口见<a href="#%E8%A1%A5%E5%85%85-canvases">三类画布操作</a>，这里重点讲跨渠道交接时怎样避免串图。</p>
+<h3>1. 在设计画布放四组资料</h3>
+<p>第一组是事实表与真实照片，按SKU分开；第二组是渠道任务表，列Amazon主图/副图/A+、Shopify媒体/横幅、Shopee SG封面/规格；第三组放候选背景；第四组只放已完成商品核对的图片。别让候选和交付图混在一个区域里。</p>
+<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">整理DN01跨境视觉项目，不生成图片。将商品事实、真实照片、准确文案和渠道任务分区。每张图标记SKU、市场、语言、用途和版本。
+Amazon主图只用真实主体与纯白底；副图解释用途和结构；A+按实际模块尺寸；Shopify横幅区分桌面和手机；Shopee SG单独核站点与变体。
+列出可复用背景、必须替换的商品层和文字层、尚缺的照片与参数。候选图不进入交付清单，规划任务不标为完成。
+</code></pre></div>
+<h3>2. 候选背景只核场景与留白</h3>
+<p>同一桌面背景可以用于不同商品页场景，但要检查用途、尺寸关系和裁切。背景里如果已经生成了假收纳盒，不能继续放真实盒子叠在旁边；先擦除或重新生成空背景。</p>
+<p>用TapNow局部Redraw时只标假商品或多余道具，保留真实主体之外的范围；图层文件里则直接换背景。生成结果下载原文件，命名包括用途，例如 <code>desk_scene_no-product_v01.png</code>，不要写“主图已通过”。</p>
+<h3>3. 图层文件按职责建组</h3>
+<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">DN01_scene_master.psd
+  COPY_EN          审定英文标题
+  PRODUCT_REAL     DN01真实主体＋蒙版
+  SHADOW           接触阴影
+  BACKGROUND       无字桌面环境
+
+DN01_main_master.psd
+  PRODUCT_REAL     真实主体＋蒙版
+  BACKGROUND       纯白底
+</code></pre></div>
+<p>主图文件和场景文件分开，避免误把COPY层留在Amazon主图。多个语言复制文案组，保留同一商品像素；多SKU替换真实照片，不能只改图层名称。</p>
+<h3>4. 建渠道输出表，再裁切</h3>
+<table>
+<thead>
+<tr>
+<th>渠道位置</th>
+<th>使用哪份源文件</th>
+<th>要调整什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon主图</td>
+<td>main_master</td>
+<td>占幅与当前类目要求，无场景文案</td>
+</tr>
+<tr>
+<td>Amazon副图</td>
+<td>scene/detail/size</td>
+<td>逐图职责与准确英文</td>
+</tr>
+<tr>
+<td>Amazon A+</td>
+<td>独立模块文件</td>
+<td>该模块像素与文本槽</td>
+</tr>
+<tr>
+<td>Shopify产品媒体</td>
+<td>商品图序列</td>
+<td>顺序、alt text、主题裁切</td>
+</tr>
+<tr>
+<td>Shopify横幅</td>
+<td>hero-desktop/mobile</td>
+<td>文字安全区与两端构图</td>
+</tr>
+<tr>
+<td>Shopee SG</td>
+<td>cover/spec/in-box</td>
+<td>站点、变体、封面清晰度</td>
+</tr>
+</tbody>
+</table>
+<p>不是每行都从一张背景裁出来。A+结构图需要真实细节，尺寸图需要参数层，主图需要纯白底。源文件适合哪项任务就复用哪部分。</p>
+<h3>5. 返工写到具体文件和层</h3>
+<p>“不好看”先拆成可处理的问题。DN01盒盖被裁，改商品位置与裁切；灰色SKU用了白色主体，换PRODUCT_REAL；日文缺字，换支持字体并重排COPY；主图多了文具，换纯白母版。</p>
+<p>每次修改给新版本，保留问题和处理。交付目录只放当前选用版本，旧候选继续保留在工作区。此教程尚未实际操作画布、节点或PS；完整交接模板见<a href="#%E8%A1%A5%E5%85%85-P08">P08</a>，批量文件操作见<a href="#%E8%A1%A5%E5%85%85-cross-border-sku-delivery">SKU交付</a>。</p>
+</section>

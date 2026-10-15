@@ -1,0 +1,40 @@
+[
+  {
+    "title": "模型版本、名称与能力数字",
+    "note": "模型表完整保留原稿。2026-10-14曾核对部分官方来源，SD4/12B/4096等未取得对应一手依据，仍待核；未把表格完整迁移等同于所有技术主张已核实。AIHOT用于发现动态，具体能力回到原始来源核对。",
+    "sources": [
+      {
+        "title": "AIHOT图像生成线索",
+        "url": "https://aihot.news/topics/image-gen"
+      }
+    ]
+  },
+  {
+    "title": "平台图片规格与本地化",
+    "note": "原稿尺寸表保留。补充教程中的Amazon指导、Shopify产品媒体/主题图片、Shopee SG适用范围分别说明；最终上传按当前站点、位置、类目、主题或模块核对。",
+    "sources": [
+      {
+        "title": "Shopify产品媒体",
+        "url": "https://help.shopify.com/en/manual/products/product-media/product-media-types"
+      },
+      {
+        "title": "Amazon产品摄影",
+        "url": "https://sell.amazon.com/blog/product-photos"
+      },
+      {
+        "title": "Shopee SG指导",
+        "url": "https://ads.shopee.sg/learn/faq/520/172"
+      }
+    ]
+  },
+  {
+    "title": "原稿成本与实测措辞",
+    "note": "原稿中的OpenRouter数字和实测措辞按原文保留，属于原稿引用的第三方记录，不代表本项目新测量、当前报价或本次发生支出。本轮没有调用付费生成服务。",
+    "sources": []
+  },
+  {
+    "title": "提示词与软件执行",
+    "note": "原稿15节写作/维护提示词和113处代码内容完整保留；补充20条作图任务词集中提供。原稿内的命令和提示词供读者阅读，不由构建器执行。生图、节点、PS源文件与后台上传未因本次迁移而获得实测状态。",
+    "sources": []
+  }
+]
