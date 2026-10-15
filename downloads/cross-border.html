@@ -54,6 +54,11 @@ summary{cursor:pointer;font-weight:600;line-height:1.7}
 [id]{scroll-margin-top:140px}
 .tab:focus-visible,.copy-btn:focus-visible,a:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 @media(max-width:680px){.tabs{flex-wrap:wrap}.tab{padding:9px 10px}.search-group{justify-content:flex-start;width:100%}.search{max-width:100%}.markdown-body h1{font-size:32px;line-height:1.4}.markdown-body h2{line-height:1.25}.hero{padding-left:0;padding-right:0;min-width:0}.hero-title .cn{font-size:clamp(40px,13vw,64px)}.hero-title .en{font-size:clamp(30px,9.5vw,48px)}.markdown-body,.article,main{min-width:0}.markdown-body{overflow-wrap:anywhere}.reader-links{font-size:13px}.supplement-section h2:first-child{font-size:29px}}
+/* Task groups use the existing palette and keep navigation shallow. */
+#promptIndex nav strong{display:block;margin:18px 0 6px;color:var(--orange);font-size:14px}
+.template-card{padding:18px 0;border-bottom:1px solid var(--hair)}
+.review-note{padding:10px 14px;border-left:3px solid var(--orange);background:var(--paper2)}
+#原稿写作提示词>summary{cursor:pointer;padding:18px 0;font-weight:bold}
 </style></head><body><div class="page">
 <header class="top-pills"><span class="pill hot">原稿 2026.10 · 持续维护</span><span class="pill">ECOMMERCE VISUALS</span><span class="pill">BEGINNER-FRIENDLY</span><span class="pill">API · TOOLS · WEBSITES</span></header>
 <section class="hero"><div><h1 class="hero-title"><span class="cn">电商AI作图</span><span class="en">in the age of <span class="accent">AI shelves.</span></span></h1><p class="hero-sub">一份给小白和电商团队的作图手册。覆盖 <mark>主图、详情页、A+图、API与工具选择</mark> —— 先跑通一张图，再沉淀成团队SOP。</p><div class="tag-row"><span class="tag">GPT Image 2.5</span><span class="tag">Flux 3</span><span class="tag">可灵3.0</span><span class="tag">虚拟试穿</span><span class="tag">Amazon A+</span><span class="tag">Shopee</span><span class="tag">Shopify</span></div></div><aside class="toc-card"><div class="toc-card-head"><small>本手册一共</small><span class="num">20</span></div><nav class="toc-list"><a href="#目录"><span>00</span>目录</a>
@@ -79,7 +84,7 @@ summary{cursor:pointer;font-weight:600;line-height:1.7}
 <a href="#二十新手与团队上手路线"><span>20</span>二十、新手与团队上手路线</a>
 <a href="#结语"><span>21</span>结语</a></nav></aside></section>
 <div class="controls"><div class="tabs"><button class="tab active" data-target="guide">攻略正文</button><button class="tab" data-target="prompt">提示词包</button><button class="tab" data-target="supplement">跨境与画布补充</button></div><div class="search-group"><input id="searchBox" class="search" placeholder="搜索全文与提示词" aria-label="搜索全文与提示词" /><div class="search-actions"><span id="searchStatus" role="status"></span><button type="button" id="searchPrev" aria-label="上一个搜索结果">↑</button><button type="button" id="searchNext" aria-label="下一个搜索结果">↓</button></div></div></div>
-<div class="reader-links"><a href="https://wangge-dev.github.io/ai-visual-creation-handbook/downloads/index.html" download="电商AI作图完整攻略.html">下载单文件HTML</a><a href="https://wangge-dev.github.io/ai-visual-creation-handbook/downloads/handbook.md" download>下载整本Markdown</a><button type="button" id="copyPromptPack">复制原稿提示词包</button><a href="#版本核对说明">版本与核对说明</a></div><p class="reader-version">正文按2026年10月原稿保留；模型、平台与原稿成本的动态核对见<a href="#版本核对说明">核对说明</a>。</p><section class="quick-cards"><div class="quick-card"><b>START</b>小白先用真实产品图跑通一张图，不要一开始研究API。</div><div class="quick-card"><b>RULE</b>AI负责场景和效率，人工负责产品真实性和合规。</div><div class="quick-card"><b>PROMPTS</b>正文和提示词包都可复制，适合沉淀成团队模板。</div></section>
+<div class="reader-links"><a href="https://wangge-dev.github.io/ai-visual-creation-handbook/downloads/index.html" download="电商AI作图完整攻略.html">下载单文件HTML</a><a href="https://wangge-dev.github.io/ai-visual-creation-handbook/downloads/handbook.md" download>下载整本Markdown</a><button type="button" id="copyPromptPack">复制全部任务模板</button><a href="#版本核对说明">版本与核对说明</a></div><p class="reader-version">正文按2026年10月原稿保留；模型、平台与原稿成本的动态核对见<a href="#版本核对说明">核对说明</a>。</p><section class="quick-cards"><div class="quick-card"><b>START</b>小白先用真实产品图跑通一张图，不要一开始研究API。</div><div class="quick-card"><b>RULE</b>AI负责场景和效率，人工负责产品真实性和合规。</div><div class="quick-card"><b>PROMPTS</b>正文和提示词包都可复制，适合沉淀成团队模板。</div></section>
 <div class="layout"><main class="article"><article id="guideDoc" class="doc"><div class="markdown-body"><h1 id="电商ai作图出图完整攻略主图详情页a图api版工具版网站版与跨境平台实战指南2026年10月通用版"><a class="anchor" href="#电商ai作图出图完整攻略主图详情页a图api版工具版网站版与跨境平台实战指南2026年10月通用版" aria-label="定位到本节">#</a>电商AI作图出图完整攻略：主图、详情页、A+图、API版、工具版、网站版与跨境平台实战指南｜2026年10月通用版</h1>
 <blockquote>
 <p>适用对象：电商AI作图小白、国内电商运营、跨境卖家、Amazon/Shopee卖家、Shopify独立站团队、设计师、老板。<br />
@@ -591,6 +596,8 @@ Amazon A+模块图
 </ul>
 <hr />
 <h2 id="四三种路线网站版工具版api版"><span class="chapter-kicker">CHAPTER · 05</span><a class="anchor" href="#四三种路线网站版工具版api版" aria-label="定位到本节">#</a>四、三种路线：网站版、工具版、API版</h2>
+<p><a href="#补充-method-lab">跟做练习：十一种作图操作与十个提示词动作</a> · <a href="#补充-glossary">术语解释</a></p>
+
 <h3 id="1-网站版小白优先"><a class="anchor" href="#1-网站版小白优先" aria-label="定位到本节">#</a>1. 网站版：小白优先</h3>
 <p>适合：运营、老板、小团队、没有技术背景的人。</p>
 <p>流程：</p>
@@ -1501,6 +1508,8 @@ Canva/PS → Banner和产品页排版
 </code></pre></div>
 <hr />
 <h2 id="十二跨境平台方案amazonshopeeshopify"><span class="chapter-kicker">CHAPTER · 13</span><a class="anchor" href="#十二跨境平台方案amazonshopeeshopify" aria-label="定位到本节">#</a>十二、跨境平台方案：Amazon、Shopee、Shopify</h2>
+<p class="review-note">2026-10-15补充：<a href="#补充-tiktok-shop">新增TikTok Shop US实拍图组教程</a>。下文保留原稿叙述，规格以当前目标站点和模块为准。</p>
+
 <h3 id="1-amazon"><a class="anchor" href="#1-amazon" aria-label="定位到本节">#</a>1. Amazon</h3>
 <h4 id="主图原则"><a class="anchor" href="#主图原则" aria-label="定位到本节">#</a>主图原则</h4>
 <p>Amazon主图要保守：</p>
@@ -1659,6 +1668,8 @@ Canva/PS → Banner和产品页排版
 </code></pre></div>
 <hr />
 <h2 id="十四各平台图片规格速查表"><span class="chapter-kicker">CHAPTER · 15</span><a class="anchor" href="#十四各平台图片规格速查表" aria-label="定位到本节">#</a>十四、各平台图片规格速查表</h2>
+<p class="review-note">2026-10-15补充：<a href="#补充-shopee-localization">规格更新：Shopee SG建议与各站点核对边界</a>。下文保留原稿叙述，规格以当前目标站点和模块为准。</p>
+
 <p>做完了图，上传之前必须确认尺寸和格式。不同平台要求不同，这里整理了主流平台的核心规格。上传前对照一次，避免被压缩、裁切或拒审。</p>
 <h3 id="1-国内电商平台"><a class="anchor" href="#1-国内电商平台" aria-label="定位到本节">#</a>1. 国内电商平台</h3>
 <table>
@@ -1949,6 +1960,8 @@ Banner：控制在300KB以内
 </code></pre></div>
 <hr />
 <h2 id="十六amazon-a图ai辅助方案"><span class="chapter-kicker">CHAPTER · 17</span><a class="anchor" href="#十六amazon-a图ai辅助方案" aria-label="定位到本节">#</a>十六、Amazon A+图AI辅助方案</h2>
+<p class="review-note">2026-10-15补充：<a href="#补充-amazon-a-plus">A+模块尺寸核查、四模块跟做与上传排错</a>。下文保留原稿叙述，规格以当前目标站点和模块为准。</p>
+
 <h3 id="1-a图和普通详情页的区别"><a class="anchor" href="#1-a图和普通详情页的区别" aria-label="定位到本节">#</a>1. A+图和普通详情页的区别</h3>
 <p>普通详情页更偏转化说明，A+图更偏品牌化、模块化和可信表达。</p>
 <p>常见模块：</p>
@@ -2081,6 +2094,8 @@ Banner：控制在300KB以内
 </table>
 <hr />
 <h2 id="十八电商ai作图提示词模板库"><span class="chapter-kicker">CHAPTER · 19</span><a class="anchor" href="#十八电商ai作图提示词模板库" aria-label="定位到本节">#</a>十八、电商AI作图提示词模板库</h2>
+<p><a href="#补充-method-lab">跟做练习：十一种作图操作与十个提示词动作</a> · <a href="#补充-glossary">术语解释</a></p>
+
 <h3 id="1-通用公式"><a class="anchor" href="#1-通用公式" aria-label="定位到本节">#</a>1. 通用公式</h3>
 <div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>参考图约束 + 产品主体 + 场景/背景 + 光线 + 构图 + 风格 + 平台用途 + 禁止事项
 </code></pre></div>
@@ -2097,74 +2112,33 @@ Use a [style] look for [platform/use case], high-resolution commercial product p
 Do not change the product structure. Do not add non-existent accessories. Do not generate text, watermark, logo, or icons.
 </code></pre></div>
 <h3 id="2-白底主图"><a class="anchor" href="#2-白底主图" aria-label="定位到本节">#</a>2. 白底主图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>上传参考图，保持产品外观完全一致。生成干净纯白背景的电商白底产品图，产品居中，边缘清晰，影棚专业灯光，真实阴影，高清锐利。
-不要改变产品颜色、形状、材质、logo和包装文字，不要添加道具、文字、图标、水印。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-P10">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="3-高端质感场景图"><a class="anchor" href="#3-高端质感场景图" aria-label="定位到本节">#</a>3. 高端质感场景图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>上传参考图，保持产品完全一致。将产品放置在浅色大理石台面上，背景为柔和渐变的高级影棚环境，周围少量点缀同色系装饰物。
-柔和漫射光，45度斜侧视角，浅景深，高端商业广告摄影，真实质感，适合电商详情页首屏。
-不要生成文字，不要改变产品结构。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G01">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="4-生活方式图"><a class="anchor" href="#4-生活方式图" aria-label="定位到本节">#</a>4. 生活方式图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的产品完全一致，将产品放在真实家庭生活场景中，画面自然、干净、有日常使用感。
-柔和自然光，轻微背景虚化，真实生活方式摄影，适合详情页和独立站产品页。
-不要改变产品颜色和尺寸比例，不要生成文字。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G02">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="5-科技感图"><a class="anchor" href="#5-科技感图" aria-label="定位到本节">#</a>5. 科技感图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的产品完全一致。将产品置于深色渐变背景中，加入克制的蓝色光线、边缘轮廓光和轻微反射地面。
-未来科技感，商业产品摄影，高对比度，细节锐利，适合3C数码产品主视觉。
-不要添加不存在的屏幕内容、接口或功能，不要生成文字。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G06">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="6-食品图"><a class="anchor" href="#6-食品图" aria-label="定位到本节">#</a>6. 食品图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的食品包装完全一致，将产品放置在自然木质桌面上，周围搭配真实食材和干净餐具。
-温暖自然光，美食摄影风格，真实可口，浅景深，适合电商详情页和社媒种草图。
-不要夸大份量，不要改变包装文字，不要生成额外品牌logo。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G03">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="7-家居图"><a class="anchor" href="#7-家居图" aria-label="定位到本节">#</a>7. 家居图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的家居产品完全一致，将产品放置在现代简约家居空间中，背景干净，有柔和日光和温馨生活氛围。
-真实室内摄影，比例准确，材质自然，适合详情页场景展示。
-不要改变产品尺寸比例，不要生成文字。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G04">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="8-美妆图"><a class="anchor" href="#8-美妆图" aria-label="定位到本节">#</a>8. 美妆图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的美妆产品包装、瓶型、颜色和logo完全一致。将产品放在浅色大理石台面上，周围有水滴、绿叶或同色系丝绸点缀。
-柔和高光，干净高级，美妆商业摄影，高清细节。
-不要改变包装文字，不要生成虚假功效图标，不要添加未授权标识。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G05">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="9-3c数码图"><a class="anchor" href="#9-3c数码图" aria-label="定位到本节">#</a>9. 3C数码图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的数码产品完全一致，将产品放在简洁影棚环境中，背景为深灰或蓝黑渐变，加入轻微轮廓光和真实反射。
-专业3C产品摄影，细节锐利，质感真实，适合主图副图和详情页。
-不要生成不存在的接口、屏幕内容、按钮或配件。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G06">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="10-服装模特图"><a class="anchor" href="#10-服装模特图" aria-label="定位到本节">#</a>10. 服装模特图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>上传服装参考图，保持服装款式、颜色、版型、面料纹理和细节完全一致。
-一位自然健康的成年模特穿着该服装，站在简洁明亮的室内/街拍场景中，自然站姿，全身展示，时尚电商摄影风格。
-不要改变服装设计，不要过度修饰身体比例，不要生成暴露或低俗姿势，不要生成文字。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G07">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="11-详情页首屏图"><a class="anchor" href="#11-详情页首屏图" aria-label="定位到本节">#</a>11. 详情页首屏图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图产品完全一致，生成适合电商详情页首屏的主视觉图。
-产品占画面主体，背景体现[目标场景]，整体风格[品牌风格]，左侧/右侧保留空白用于后期添加标题和卖点。
-高清商业摄影，不要生成文字、数字、图标或水印。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G08">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="12-尺寸图"><a class="anchor" href="#12-尺寸图" aria-label="定位到本节">#</a>12. 尺寸图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持产品外观完全一致，产品正面垂直展示在纯白或浅灰背景中，上下左右留出足够空白用于后期添加尺寸线和参数。
-商业目录风格，边缘清晰，无文字、无尺寸线、无图标。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-P18">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="13-shopify独立站banner"><a class="anchor" href="#13-shopify独立站banner" aria-label="定位到本节">#</a>13. Shopify独立站Banner</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图产品完全一致，生成适合Shopify独立站首页Banner的横向视觉图。
-背景符合品牌风格：[品牌色调/场景]，画面左侧或右侧留出标题按钮区域，整体高级、统一、有品牌感。
-不要生成文字、按钮、logo或水印。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-P14">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="14-shopee促销图"><a class="anchor" href="#14-shopee促销图" aria-label="定位到本节">#</a>14. Shopee促销图</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持产品参考图完全一致，生成适合Shopee商品促销主图的背景图。
-画面明亮、有购买氛围，背景可使用节日/促销色块和干净装饰元素，产品清晰突出，留出区域用于后期添加价格和活动标签。
-不要生成文字、价格、徽章或平台logo。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-P15">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="15-虚拟试穿图服装电商"><a class="anchor" href="#15-虚拟试穿图服装电商" aria-label="定位到本节">#</a>15. 虚拟试穿图（服装电商）</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>上传服装参考图，保持服装款式、颜色、版型、面料纹理完全一致。
-一位自然健康的模特穿着该服装，[站姿/坐姿]，[全身/半身]展示。
-[室内/街拍]场景，自然光线，时尚电商摄影风格。
-不要改变服装设计，不要过度修饰身材，不要生成暴露姿势，不要生成文字。
-</code></pre></div>
+<p>完整提示词已整合到<a href="#template-G07">对应任务模板</a>，包含输入、具体指令与交付检查。</p>
 <h3 id="16-针对不同模型的优化建议"><a class="anchor" href="#16-针对不同模型的优化建议" aria-label="定位到本节">#</a>16. 针对不同模型的优化建议</h3>
 <div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>GPT Image 2.5：支持草图工具，可先画产品轮廓草图再让AI生成场景
 Nano Banana 2.1：支持最多14张参考图，适合多角度产品一致性
@@ -2316,7 +2290,400 @@ Qwen-Image-2.1：开源第一，原生支持透明图像生成，适合需要透
 <div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code>真实产品图做基础，AI负责场景和效率，人工负责真实性和合规。
 </code></pre></div>
 <p>对小白，先用网站版；对设计团队，再上工具版；对SKU多、平台多、语言多的团队，最后再考虑API版。先把主图、详情页、A+图这三件事做稳，比追求复杂系统更实际。</p>
-</div></article><article id="promptDoc" class="doc hidden"><div class="markdown-body"><h1 id="电商ai作图攻略完整提示词包2026年10月通用版"><a class="anchor" href="#电商ai作图攻略完整提示词包2026年10月通用版" aria-label="定位到本节">#</a>电商AI作图攻略完整提示词包｜2026年10月通用版</h1>
+</div></article><article id="promptDoc" class="doc hidden"><div class="markdown-body"><h1 id="作图任务提示词">按用途找完整提示词</h1><p>选择任务，替换商品事实与素材，再复制完整指令。共28项；原稿同类模板与新增任务词已合并。方法建议和文章写作词不计入作图模板数量。</p><h2>通用作图</h2><section class="template-card" id="template-G01"><span id="补充-P01"></span><h3>商品场景：高端台面与真实合成</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>收纳盒在浅色台面；左侧留标题区</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>上传参考图，保持产品完全一致。将产品放置在浅色大理石台面上，背景为柔和渐变的高级影棚环境，周围少量点缀同色系装饰物。
+柔和漫射光，45度斜侧视角，浅景深，高端商业广告摄影，真实质感，适合电商详情页首屏。
+不要生成文字，不要改变产品结构。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><section class="template-card" id="template-G02"><h3>生活方式：产品与使用环境</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>台灯放书桌；文具不随货</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的产品完全一致，将产品放在真实家庭生活场景中，画面自然、干净、有日常使用感。
+柔和自然光，轻微背景虚化，真实生活方式摄影，适合详情页和独立站产品页。
+不要改变产品颜色和尺寸比例，不要生成文字。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><section class="template-card" id="template-G08"><h3>详情页首屏：商品主体与文案留白</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>收纳盒首屏；右侧30%留文字区</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图产品完全一致，生成适合电商详情页首屏的主视觉图。
+产品占画面主体，背景体现[目标场景]，整体风格[品牌风格]，左侧/右侧保留空白用于后期添加标题和卖点。
+高清商业摄影，不要生成文字、数字、图标或水印。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><h2>品类作图</h2><section class="template-card" id="template-G03"><h3>食品与包装：真实份量和配料</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>谷物包装；只摆配料表已有原料</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的食品包装完全一致，将产品放置在自然木质桌面上，周围搭配真实食材和干净餐具。
+温暖自然光，美食摄影风格，真实可口，浅景深，适合电商详情页和社媒种草图。
+不要夸大份量，不要改变包装文字，不要生成额外品牌logo。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><section class="template-card" id="template-G04"><h3>家居：空间比例与落地关系</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>收纳盒放桌面；不改变外部比例</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的家居产品完全一致，将产品放置在现代简约家居空间中，背景干净，有柔和日光和温馨生活氛围。
+真实室内摄影，比例准确，材质自然，适合详情页场景展示。
+不要改变产品尺寸比例，不要生成文字。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><section class="template-card" id="template-G05"><h3>美妆：包装还原与克制质感</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>精华瓶；原标签不得重绘</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的美妆产品包装、瓶型、颜色和logo完全一致。将产品放在浅色大理石台面上，周围有水滴、绿叶或同色系丝绸点缀。
+柔和高光，干净高级，美妆商业摄影，高清细节。
+不要改变包装文字，不要生成虚假功效图标，不要添加未授权标识。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><section class="template-card" id="template-G06"><h3>3C与科技视觉：接口和屏幕真实</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>充电器；只展示实拍接口</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>保持参考图中的数码产品完全一致，将产品放在简洁影棚环境中，背景为深灰或蓝黑渐变，加入轻微轮廓光和真实反射。
+专业3C产品摄影，细节锐利，质感真实，适合主图副图和详情页。
+不要生成不存在的接口、屏幕内容、按钮或配件。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><section class="template-card" id="template-G07"><h3>服装与虚拟试穿：版型纹理检查</h3><p><strong>适用：</strong>支持参考图的图像编辑工具；准确商品与文字在图层软件中合成。</p><p><strong>准备：</strong>真实商品主视图、细节图、商品事实和目标画幅；标注商品/布局/风格参考角色。</p><p><strong>交付：</strong>一张无字底图、保留项检查、需要人工合成的项目。</p><p><strong>填写示例：</strong>成人外套；保持衣长和口袋</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>上传服装参考图，保持服装款式、颜色、版型、面料纹理和细节完全一致。
+一位自然健康的成年模特穿着该服装，站在简洁明亮的室内/街拍场景中，自然站姿，全身展示，时尚电商摄影风格。
+不要改变服装设计，不要过度修饰身体比例，不要生成暴露或低俗姿势，不要生成文字。
+
+先核对商品原图是否提供。未提供时列缺失素材，不生成可上架的虚构商品。
+目标画幅：[实际像素与比例]；参考图角色：[图1商品、图2细节、图3只参考环境]。上述示例只示范填写，必须替换为自己的商品事实。
+先做一张候选。保持轮廓、部件数量、比例与真实颜色；不能可靠保持时只生成空背景，原商品用图层合成。
+对照原图检查材质、Logo、标签与发货内容；失败时指出区域，只修背景或局部。
+输出实际尺寸和格式；没有生成图像时写明只完成方案。</code></pre></div></section><h2>跨境平台</h2><section class="template-card" id="template-P10"><span id="补充-P10"></span><h3>Amazon普通商品白底主图</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请用我上传的真实商品照片制作一张Amazon US普通收纳盒白底主图。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+画面：完整真实商品居中；纯白背景RGB(255,255,255)；没有额外文字、宣传标签、图框或场景道具。真实商品自身的标识不擅改。
+盒体、盖子、隔板的位置与数量以实拍和发货清单为准，不复制出多件商品；整体外观、开口、边缘和色彩保持依据。
+练习目标画布2000×2000 px、1:1，属于本次设计目标；实际导出需满足当前类目与站点要求。
+步骤：先识别主体与配件，再抠图／蒙版，放入白底，调整大小与接触阴影，最后对照原图。
+主体占幅参考Amazon公开指导并用实际规则复核，四边不裁掉真实结构；不以错误拉伸凑占幅。
+如果当前工具会重绘商品，只准备白底与合成方案，后续用真实商品层完成，不生成看似相同的替代主体。
+不要增加笔、纸夹、额外包装或未发货赠品。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P11"><span id="补充-P11"></span><h3>Amazon副图分工与逐张制作指令</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请为Amazon US商品页规划5张副图，并给每张完整可执行的制作指令。本次先交规划，不一次生成5张。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+5个任务分别是：书桌使用场景；开盖与可拆隔板；外尺寸；发货内容；使用步骤。
+每张都输出：解决的买家问题、实际素材、构图、准确英文短标签、完整制作任务词、后期排版位置、检查项与未确认内容。
+场景：白天书桌、柔和侧光、真实主体，文具仅作获准环境道具；明确不要让道具进入发货清单。
+结构：必须依据开盖和隔板实拍，缺图列补拍，不画出未知内结构。
+尺寸：L220×W150×H120 mm，保留外尺寸标签，不猜容积或内尺寸。
+配件：Box ×1, lid ×1, divider ×1；图像与清单逐项对应。
+使用：只使用已确认的打开、放置文具、合盖步骤；没有实际动作依据时列待确认。
+每张练习母版1:1，准确文字独立可编辑排版。场景、结构与尺寸分别制作，不能用一张拼贴代替5项任务。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P12"><span id="补充-P12"></span><h3>Amazon A+模块简报与图文交付</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请为Amazon US商品制作A+模块内容方案。本次以当前账户实际可用的模块为准，不假设Premium能力。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+输入还包括我提供的模块名称、图片槽位尺寸和文字字段；未提供的项目写待填，先交内容规划。
+内容单元：商品与使用场景；开盖／隔板；真实外尺寸；操作步骤；发货内容。按照实际模块合并或拆开，不强凑固定模块数。
+每个模块输出：模块用途、买家问题、所需素材、图片简报、准确英文标题与正文、原生文字字段、导出要求、核对项。
+较长说明优先用支持的文字字段；不得把长文直接嵌入一张缩小后读不清的图。
+没有其他型号和参数时，不制作虚假对比表；没有品牌历史时，不编造品牌故事。
+准确文字中可以描述“removable divider”，但不出现waterproof、food-safe等未知声明。
+最后给桌面／手机预览检查清单：裁切、字号、顺序、参数、配件、模块尺寸和文字准确性。
+未实际进入编辑器时，只写模块内容方案完成，不写上线或审核通过。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P13"><span id="补充-P13"></span><h3>Shopify产品媒体顺序与alt text</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请整理一套Shopify英文产品媒体方案，目标是让顾客从图片准确理解商品。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+计划顺序：整体识别、开盖结构、书桌场景、外尺寸、发货内容、使用步骤；可根据实际素材调整，不为凑张数生成假结构。
+每张输出：媒体位置、素材来源、构图、准确短文案、完整单图制作指令、英文alt text、检查与待补项。
+商品／集合图片与主题横幅的规格分开，引用当前对应官方说明。2048×2048可作方图练习母版，不当所有区块统一尺寸。
+准确长说明放产品文本或主题原生字段；图片标签短而清楚，手机缩小后可读。
+alt text描述实际画面，简洁且不堆关键词；没有实际结果时把候选alt text标为草稿，生成后按图核对。
+变体照片绑定实际SKU，不能将白色版本改成未提供的颜色。
+最后给产品页／集合页／手机的预览清单，尤其首图缩略、裁切、媒体顺序、放大和变体切换。
+没有进入实际商店时，不报告主题预览或上传已完成。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P14"><span id="补充-P14"></span><h3>Shopify桌面与手机横幅</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请为Shopify首页横幅准备桌面和手机两份构图。本次底图不生成文字或按钮，准确文案另排。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+练习桌面稿2400×1200 px：商品放右侧，左侧给标题与按钮留白；手机稿1200×1600 px：商品在中下部，上方保留短标题区。这是本次设计目标，不是Shopify统一规定。
+标题草稿为“Make room for everyday essentials”，不加性能、销量或优惠数字。
+背景：浅色书桌，柔和自然侧光，商品与桌面接触关系真实；道具少且不暗示发货赠品。
+先交两个布局说明并先完成桌面的一张底图；手机稿重新排构图，不只把桌面中心裁切成竖图。
+商品结构、颜色、盖子和隔板保持真实依据；底图与准确文字分层。
+核对具体主题是否支持分别上传两种素材、焦点与原生按钮；未知项保留待核，不能承诺已经配置主题。
+若工具实际输出不是目标像素，报告实际值与后期重排／裁切方案，不假称像素已经满足。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P15"><span id="补充-P15"></span><h3>Shopee SG封面与规格套图</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请为Shopee SG英文商品页准备封面和规格套图方案。本次先出逐张任务，不自行提交生成。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+市场是新加坡SG，语言en-SG；其他市场不套用本次规格或表达。
+任务：白底真实封面、开盖与隔板、外尺寸、发货清单、书桌场景；实际上传数量和文件参数以当前后台为准。
+封面：清楚展示实际商品，干净背景，不加无依据促销标识，不把文具道具当附送品。
+短标签草稿：“Desk organizer with lid”“Removable divider”“External size”“What’s included”；准确文字用可编辑层排版。
+每张输出：素材、构图、完整任务词、准确文案、后期步骤、实际参数待填字段、检查项。
+规格图保留L220×W150×H120 mm与外尺寸；配件图保持盒体1、盖子1、隔板1。
+练习母版2000方图；Shopee SG公开页面的图片建议与当前上传硬限制分别记录，不能扩展成全市场规则。
+如果有变体，必须对应独立实拍和事实记录；缺素材不自行改色造SKU。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-T01"><h3>TikTok Shop US：实拍商品图片整理</h3><p><strong>适用：</strong>实拍与图层修图；商品图和内容封面分别处理。</p><p><strong>准备：</strong>实拍正面/侧面/背面、发货清单、US后台要求。</p><p><strong>交付：</strong>商品图组、逐张问题与导出清单。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请整理我的TikTok Shop US商品实拍图组。
+商品：[品名/SKU/颜色]；发货内容：[逐项填写]；图1正面、图2侧面、图3背面；未提供角度不要补画。
+先核对当前US商品图片政策与后台要求。主图使用真实正面照片和纯白背景；保留实物原有标识，不额外叠加Logo、促销文字、边框或水印。
+正式商品图使用真实照片，不用数字渲染代替实物照片。修图只校正曝光、裁切与背景，保护结构、颜色与边缘。
+至少600×600像素是本次查到的US政策下限；练习可用1200×1200画布，必须报告实际导出像素；不要把800×800写成全球硬性规格。
+不同图片呈现不同角度和细节，最多9张；缺素材就列补拍项。视频封面是另一任务。
+逐张输出文件名、角度、像素、格式、大小、问题和补拍项；导出成功不等于审核通过。</code></pre></div></section><h2>跨境交付与本地化</h2><section class="template-card" id="template-P09"><span id="补充-P09"></span><h3>跨境商品简报与渠道任务表</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请把商品事实和素材整理成跨境视觉制作简报，本次只做规划。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+目标：Amazon US英文商品页（主图、副图、A+）；Shopify英文产品页与首页横幅；Shopee SG英文封面与规格图。
+处理步骤：
+1. 建立事实表，每项写已确认／未知与依据，商品属性和创作文案分开。
+2. 建素材表，标明每张图承担外观、细节、布局还是风格角色，以及缺少的照片。
+3. 建渠道矩阵：市场、语言、图片位置、买家问题、画面简报、准确文字、素材、导出要求、规则来源与核对日期。
+4. 给每个位置独立分工，主图展示商品，副图解释结构，A+按当前模块，Shopify按主题，Shopee按市场。
+5. 平台参数未核对时写待填；2000方图等可以作为制作建议，不能写成所有平台硬规定。
+6. 选一张真实主体母版作为首项任务，说明完成后如何扩展，不直接批量生成整套。
+
+输出：事实表、素材表、渠道任务表、首项完整制作指令、待补素材和未核要求。本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P16"><span id="补充-P16"></span><h3>英文本地化：准确文案与回译</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请把以下商品信息改写为适用于英文商品页面的准确短文案，本次不生成图片。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+目标：Amazon US副图、Shopify商品说明、Shopee SG规格图，三种位置分别输出；Amazon主图不叠营销文字。
+中文获准内容：带盖桌面收纳盒；一个可拆隔板；书桌收纳文具；外尺寸220×150×120 mm；盒体1、盖子1、隔板1。
+处理：先做中文事实→英文术语表，再写逐位置短标签与一句说明，最后提供回译及每项事实依据。
+不得把“收纳文具”改成防尘、防水、节省某个百分比空间；不能把ABS翻译成食品级塑料。
+发货与道具分开，单位和数量不能改；尺寸始终明确L／W／H，非裸数字。
+每条输出英文、中文回译、用途、依据、建议排版位置及未确定词。建议文字简短，较长说明进入网页文字字段。
+语言自然度和商业使用仍需目标语言复核，不自动声称翻译已审定或平台合规通过。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P17"><span id="补充-P17"></span><h3>日文本地化：术语、换行与事实复核</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请把商品事实整理成日文图片标签和商品说明草稿，本次不生成图像。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+目标是日本市场商品副图和详情文字；没有指定具体平台时，平台参数写待核。
+获准术语示范：ふた付きデスク収納ボックス；取り外し可能な仕切り；外寸：長さ220 × 幅150 × 高さ120 mm；本体1点、ふた1点、仕切り1点。
+请核对这些术语与本次实际商品是否吻合，再给3个短标签和一段简短说明；不要添加耐熱、防水、食品用等未知事实。
+分别输出：中文母表、日文草稿、中文回译、数值／单位／配件对照、可能歧义和适合手机的换行建议。
+长宽高标签不交换；原包装文字不擅改成不存在的日文包装版本。
+文字后期排版保留可编辑层，不使用整图模型反复改写小字；生成后的日文逐字对照确认。
+草稿未由熟悉目标语言与类目的人复核时，标为待复核，不写已经审定。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P18"><span id="补充-P18"></span><h3>尺寸图：毫米英寸换算与准确标注</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请根据尺寸记录制作外尺寸图的文案与排版计划，本次先完成计算和标注，不猜结构。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+数据：外部长L=220 mm、宽W=150 mm、高H=120 mm；没有内尺寸、容积和公差记录。
+按1 in = 25.4 mm换算，保留原值和公式；英寸标注保留两位小数并写approx.或“约”。
+输出应核算为：L约8.66 in、W约5.91 in、H约4.72 in；请逐项计算，而不是照抄结果。
+制作时以实拍为底，箭头和尺寸文字单独可编辑；选能读懂长宽高的角度，不生成未提供的背面或内部图。
+如果透视难以标示三轴，允许拆成两张已有角度图，不用拉伸商品凑图。
+最终输出：计算表、单位说明、外尺寸准确双单位文字、箭头位置、完整单图任务词、检查项。
+换算是数学处理，不等于重新测量；没有品牌尺码表时，不推导服装S/M/L或鞋码。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P19"><span id="补充-P19"></span><h3>跨境SKU任务清单与批量复用</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请制作跨境SKU批量任务清单，本次只做计划和逐项指令，不提交图像生成。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+增加一个独立虚构练习SKU DN01-G：灰色，与DN01-W白色具有相同练习外尺寸和结构；正式执行时两者各有自己的真实照片，不靠染色伪造。
+目标组合：Amazon US主图及尺寸副图；Shopify英文产品首图；Shopee SG封面。每个SKU分别生成对应任务记录。
+清单字段：task_id、sku、market、language、position、source_asset、事实记录、完整任务词、目标尺寸、准确文案版本、status、实际结果、返工说明。
+共用视觉段固定：真实主体、干净背景、清晰外观与准确文字；变量段仅使用当前SKU照片、颜色、市场位置和文案。
+先选DN01-W的一张主图完成检查，再扩展；主图与广告或详情的文字规则不得混用。
+中断时先查原task_id与结果状态，不默认任务没执行而重复提交。
+每一项都给可独立复制的任务词；计划路径标“计划”，不存在文件不能写已交付。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><section class="template-card" id="template-P20"><span id="补充-P20"></span><h3>跨境图片交付检查与定向返工</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请对跨境图片包进行逐项检查，输出具体问题与定向返工指令，本次不自行重生成整套。
+以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
+练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
+发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
+容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
+图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
+未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
+
+输入另有：我提供的结果图、文件清单、市场／图片位置、当前规则记录、审定文案和实际源文件。
+检查商品：形状、颜色、盖子、隔板、外尺寸、包装与配件数量是否和真实依据一致。
+检查内容：单位、英文／日文、L/W/H、发货内容与道具关系；删除未知性能、认证、销量或促销声明。
+检查渠道：主图／副图／A+／横幅是否分工正确；有当前站点出处才作规则判断，没有则列待核。
+检查文件：实际像素、比例、格式、可打开、命名和媒体顺序；只有看到并打开源文件，才判断文字或图层是否可编辑。
+输出表：文件／任务ID、问题位置、依据、影响、具体修改指令、需要补的素材、复查项。
+译文错只改文字层，裁切错重排对应版式，商品结构错回到真实照片合成；不要用重做全套替代定位问题。
+没有结果图或没有实际后台预览时明确未验证，不把计划、脚本PASS或本地缩略图当平台审核通过。
+本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
+实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
+目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
+最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。</code></pre></div></section><h2>其他创作与修图</h2><section class="template-card" id="template-P02"><span id="补充-P02"></span><h3>品牌主视觉KV</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请为[品牌／活动名称]设计一张[用途]主视觉。
+品牌简报：[受众、主题、视觉方向、应传达的信息]。
+品牌素材：[Logo、品牌色、字体或写暂未提供]。
+准确文字：
+- 标题：[填写]
+- 副标题：[填写或无]
+- 其他信息：[填写或无]
+画布比例／尺寸：[填写]。
+
+视觉要求：用[配色]、[光线／材质]和[主要图形／场景]表现主题，形成清楚的标题、主体与留白层级。
+Logo有原件则使用原件；未提供Logo时用可编辑品牌文字占位，不冒充既有品牌标志。
+只使用简报里的事实，不生成认证、销量、奖项、时间或地点。
+文案逐字使用，不添加未经要求的口号或英文。
+
+先完成一张主视觉，不自动扩成多张海报。
+需要继续修改文字时，提供无文字底图和文字位置／字号建议；如工具确有图层导出能力，再输出可编辑文件。
+不要承诺普通图像生成可以直接得到矢量Logo、可编辑字体或印刷刀模。
+生成后检查文字、Logo、层级和裁切；实际印刷前另按印厂要求处理尺寸、出血与色彩。</code></pre></div></section><section class="template-card" id="template-P03"><span id="补充-P03"></span><h3>内容封面与知识卡片</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请依据下面提供的内容，设计一张[封面／知识卡片]。
+原文或已确认要点：[贴入内容]。
+准确主标题：[填写]。
+补充文字：[填写，或写无]。
+渠道与使用位置：[填写]。
+比例／尺寸：[填写实际任务要求]。
+视觉方向：[填写配色、插图风格、字体倾向]。
+
+只表现原文中确实存在的信息，不新增人数、百分比、排名、效果承诺或“实测”等标签。
+安排标题、核心图形和留白，缩小到手机宽度仍应能读懂主题。
+插图可以表现概念，但不要绘制看似真实的产品界面、报告截图或实验结果来冒充证据。
+准确文字只出现一次，不生成同义标题或多余英文。
+
+本次先输出一张图。复杂文字不能可靠排入时，输出底图并给出独立文字排版方案，不牺牲内容准确性。
+如果需要做系列，在此张方向确认后沿用色板、字体与版式，再为每页安排不同的信息；不要重复同一页凑数量。
+最后检查标题与内容是否一致、字是否完整、主体是否会被目标位置裁切。</code></pre></div></section><section class="template-card" id="template-P04"><span id="补充-P04"></span><h3>信息图／教学图</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请把我提供的[内容／流程／数据]整理成一张面向[读者]的[信息图／流程图／教学图]。
+材料：[贴入正文或表格]。
+要回答的问题：[填写]。
+必须保留的节点和文字：[填写]。
+已确认的关系：[填写；未确认的关系写待确认]。
+比例／尺寸：[填写]。
+
+先列节点、关系和原文依据，检查有没有缺信息。
+原文只有并列关系时不要改画成因果；没有数字不画比例、统计图或性能曲线。
+给出清楚的视觉层级、阅读方向、节点布局与准确文字。
+
+若任务有真实数据，请优先用能够按数据绘制的工具生成图表；AI只负责布局和非数据装饰，不随意画柱高、坐标或数值。
+若当前能创建SVG、Mermaid或可编辑演示文件，请使用实际可用工具创建，并说明文件类型。
+若只能生成图片，请给出文字与结构稿，明确图片稿不等于可编辑PPT或可复算统计图。
+
+输出后逐项核对节点、箭头、文字和数据；未知项保留为待确认，不用“看起来合理”的内容填满画面。</code></pre></div></section><section class="template-card" id="template-P05"><span id="补充-P05"></span><h3>人物／IP系列的一张图</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请完成一张[人物／IP角色]的[姿势／场景]图。
+任务类型：[原创角色设计／基于我提供的参考延续]。
+设定或参考图：[贴入设定，说明每张图的身份]。
+固定特征：[脸形／发型／服装／配色／饰物／比例等]。
+允许改变：[姿势、表情、场景或具体区域]。
+比例与风格：[填写]。
+
+若是原创设计，可在明确设定范围内创作；若是参考延续，则保留看得见的固定特征，不任意更换服装、饰物或角色身份。
+本次只画指定的一张，不自动生成多宫格。
+看不到背面或隐藏区域时，说明新增部分属于概念设计；不要把它当真实人物／服装／商品的已知细节。
+如任务是服装展示，服装款式与结构来自实际素材，不生成不存在的配件或花纹。
+
+先使用工具支持的参考方式生成，再检查面部、服装、配色、肢体和饰物。
+出现明显身份漂移时，指出差异并优先局部修改，不声称提示词已保证百分之百一致。
+若以后扩展系列，保存此张和固定设定，下一张只改变已约定的条件。</code></pre></div></section><section class="template-card" id="template-P06"><span id="补充-P06"></span><h3>只改一处的局部修图</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请修改我上传的原图，只处理[蒙版／标注位置或明确区域描述]。
+要改成：[具体替换或修复内容]。
+需要保留：[对象身份、形状、颜色、文字、构图、光线及其他区域]。
+
+使用当前工具实际支持的选区／蒙版／局部编辑功能。
+保持区域边缘、透视、光线和接触阴影自然，不重新设计整张图。
+如果修改文字，旧文字为[填写]，新文字必须为[准确字符串]；区域放不下时给排版调整建议，不偷偷改字。
+
+如果工具只能重生成整图，请说明非修改区可能变化，并提供适合后期合成的局部素材或操作方案，不能报告像素完全不变。
+对已出现的文字、Logo或真实对象逐项比较；发现其他区域变化要指出。
+保存一个新版本，不覆盖原件。输出实际支持的格式，并说明修改了哪里、还有哪里需人工检查。</code></pre></div></section><section class="template-card" id="template-P07"><span id="补充-P07"></span><h3>从素材到短片分镜</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请基于我提供的素材规划一个[用途]短片。
+输入：[实际视频／图片／文案]，分别说明是什么。
+核心信息：[贴入已确认内容]。
+目标时长与比例：[填写]。
+工具／型号：[填写实际会使用的工具；未知则写未知]。
+
+如果提供视频且你确实能读取，按实际时间定位镜头，并区分画面可见、声音声明和你的解释。
+如果只有图片，不声称已逐帧拆解；从这些素材规划新的镜头。
+
+按“镜号、时长、使用素材、首帧、主体动作、镜头运动、结束画面、文字／声音、失败风险”给出分镜。
+一个短镜头先安排一个主要动作，镜头运动与主体动作分开写；不强制固定25宫格或任意拉长广告。
+真实产品的功能、结构、数量和外观只能来自提供的事实；虚构创意部分明确标示。
+人物、服装、商品和场景连续性逐镜核对。
+
+为每个镜头给可复制的关键帧生图词和简洁运镜词；模型参数放适配说明，不照抄旧型号限制到所有工具。
+工具不支持首尾帧时给单图动态或后期转场路径，保留方法区别。
+本次输出脚本与提示词，不报告已经生成视频。后续成片需要检查变形、连续性、字幕、声音与节奏。</code></pre></div></section><section class="template-card" id="template-P08"><span id="补充-P08"></span><h3>画布组织与可编辑交付</h3><p><strong>适用：</strong>按任务选择参考图编辑、文字或图层工具；仅执行已具备能力的环节。</p><p><strong>准备：</strong>下方任务词中的事实、素材和渠道字段；练习值替换成已核实记录。</p><p><strong>交付：</strong>按任务词交付；图像与仅有规划分别报告。</p><p>状态：完整模板，尚未执行图像任务；请替换为真实素材后使用。</p><div class="codebox"><div class="codebar"><span>完整任务词</span><button class="copy-btn" type="button">复制</button></div><pre><code>请帮我组织[创作任务]的画布与文件。
+目标交付：[列出图片、尺寸、文案、编辑源文件或工作流]。
+已提供素材：[逐项标注对象、布局／风格参考、Logo、文字和数据]。
+可用工具：[填写当前实际已连接的工具；没有连接则写没有]。
+
+先将内容分成：事实与原件、参考、任务与文案、创作分支、待修改、最终交付六个区。
+每张参考图说明只借什么，不把参考对象属性混进事实。
+按交付物安排步骤：规划、创作、局部修改、文字排版、尺寸适配、导出与检查。
+
+有可用接口时，仅使用真实存在的操作；没有接口时输出画布任务书或适用脚本，不报告已操作软件。
+图像生成、背景移除、图层组装和文件导出分别记录。PSD／PPTX等编辑文件要由支持的工具创建，不把平面图片更名冒充。
+无法恢复平面图里的原字体／矢量时，如实说明；文字必要时重新建立可编辑层。
+保留原件和版本，交付前重新打开实际文件，核对尺寸、图层、文字、顺序与素材身份。
+批量任务先做一件确认，再按对象／语言／尺寸矩阵复用，记录缺素材与失败项目。</code></pre></div></section></div><details id="原稿写作提示词"><summary>原稿15节文章写作与维护提示词（完整保留）</summary><div class="markdown-body"><h1 id="电商ai作图攻略完整提示词包2026年10月通用版"><a class="anchor" href="#电商ai作图攻略完整提示词包2026年10月通用版" aria-label="定位到本节">#</a>电商AI作图攻略完整提示词包｜2026年10月通用版</h1>
 <blockquote>
 <p>用途：用于生成、迭代和维护《电商AI作图出图完整攻略》。<br />
 范围：主图、详情页、A+图、场景图、Banner、API/工具/网站路线、国内与跨境平台。<br />
@@ -2724,482 +3091,7 @@ Codex不等于：
 - 不承诺AI图一定通过平台审核。
 - 强调真实产品图、人工质检和平台规则。
 </code></pre></div>
-</div>
-<div class="supplement-divider"><h2 id="作图任务提示词">补充：20条完整作图任务词</h2><p>上面的15节保留原稿写作与维护提示词；以下是独立的作图、修图与跨境任务词，可按用途复制。练习数据与实际商品资料分别处理。</p></div><section class="supplement-section" id="补充-P01"><h2>P01 商品场景图</h2>
-<p>类型：生图／合成任务。变量：真实商品图、事实表、场景、构图、比例、文案。示例填写：真实收纳盒实拍＋尺寸记录；家庭书桌场景；右侧主体、左侧留白；3:4；无文字。示例不附真实素材，不视为已执行。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请根据我上传的真实商品图，完成一张用于[图片用途]的[场景名称]视觉图。
-
-输入身份：
-- 图1：真实商品外观依据。
-- 图2（如有）：只参考背景、配色和布局，不使用其商品、Logo或参数。
-- 事实表：[贴入已核实的商品信息，未知项写未知]。
-
-画面要求：
-- 构图：[主体位置、留白和视角]；比例：[填写]。
-- 环境：[场景、背景物、光线方向和风格]。
-- 保留商品可见的形状、颜色、部件、包装文字和标志，不增加配件或功能。
-- 道具：[列出获准道具；无则写无]，不要让道具看起来属于发货套装。
-- 文字：[准确文案或写无文字]；需要文字时另留可编辑排版稿。
-
-如工具支持主体合成，请将真实主体与生成背景分开处理并匹配光影。
-如工具只能生成整图且无法保留主体像素，请只生成合适背景供后续合成，并说明未完成最终商品合成。
-不要根据照片猜尺寸、温度、性能、认证或内部结构；不补未拍摄的真实角度。
-
-本次只完成一张图。输出后核对商品、配件、比例、颜色和文字；无法核对的项目逐项说明。
-使用工具实际支持的尺寸与格式，报告实际输出像素，不把提示词中的画质词当输出尺寸。
-</code></pre></div>
-<p>检查：商品身份与配件正确，背景不遮挡主体，大小关系合理，结果实际像素符合任务。缺清晰商品图时先列需要补的素材，不凭空画正式商品。</p>
-</section>
-<section class="supplement-section" id="补充-P02"><h2>P02 品牌主视觉KV</h2>
-<p>类型：生图与设计任务。变量：品牌简报、Logo、用途、视觉方向、文案、尺寸。示例：虚构练习品牌“纸间计划”；阅读活动；温暖纸张色、几何图形；标题“把时间留给阅读”；其他文案为空；3:4。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请为[品牌／活动名称]设计一张[用途]主视觉。
-品牌简报：[受众、主题、视觉方向、应传达的信息]。
-品牌素材：[Logo、品牌色、字体或写暂未提供]。
-准确文字：
-- 标题：[填写]
-- 副标题：[填写或无]
-- 其他信息：[填写或无]
-画布比例／尺寸：[填写]。
-
-视觉要求：用[配色]、[光线／材质]和[主要图形／场景]表现主题，形成清楚的标题、主体与留白层级。
-Logo有原件则使用原件；未提供Logo时用可编辑品牌文字占位，不冒充既有品牌标志。
-只使用简报里的事实，不生成认证、销量、奖项、时间或地点。
-文案逐字使用，不添加未经要求的口号或英文。
-
-先完成一张主视觉，不自动扩成多张海报。
-需要继续修改文字时，提供无文字底图和文字位置／字号建议；如工具确有图层导出能力，再输出可编辑文件。
-不要承诺普通图像生成可以直接得到矢量Logo、可编辑字体或印刷刀模。
-生成后检查文字、Logo、层级和裁切；实际印刷前另按印厂要求处理尺寸、出血与色彩。
-</code></pre></div>
-<p>检查：文案准确、素材来源明确、主次层级可读；设计探索稿与最终可用品牌资产分别标记。</p>
-</section>
-<section class="supplement-section" id="补充-P03"><h2>P03 内容封面与知识卡片</h2>
-<p>类型：内容配图。变量：原文、主标题、要点、渠道、比例、风格。示例原文要点：资料先确认来源，再整理，再输出；标题“先整理资料，再开始创作”；练习3:4知识卡，不代表任何渠道强制尺寸。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请依据下面提供的内容，设计一张[封面／知识卡片]。
-原文或已确认要点：[贴入内容]。
-准确主标题：[填写]。
-补充文字：[填写，或写无]。
-渠道与使用位置：[填写]。
-比例／尺寸：[填写实际任务要求]。
-视觉方向：[填写配色、插图风格、字体倾向]。
-
-只表现原文中确实存在的信息，不新增人数、百分比、排名、效果承诺或“实测”等标签。
-安排标题、核心图形和留白，缩小到手机宽度仍应能读懂主题。
-插图可以表现概念，但不要绘制看似真实的产品界面、报告截图或实验结果来冒充证据。
-准确文字只出现一次，不生成同义标题或多余英文。
-
-本次先输出一张图。复杂文字不能可靠排入时，输出底图并给出独立文字排版方案，不牺牲内容准确性。
-如果需要做系列，在此张方向确认后沿用色板、字体与版式，再为每页安排不同的信息；不要重复同一页凑数量。
-最后检查标题与内容是否一致、字是否完整、主体是否会被目标位置裁切。
-</code></pre></div>
-<p>检查：标题能由原文兑现；系列页有信息增量；图示与真实截图有明确区别。</p>
-</section>
-<section class="supplement-section" id="补充-P04"><h2>P04 信息图／教学图</h2>
-<p>类型：分析与排版任务，可衔接确定性SVG／图表绘制。变量：内容、节点、关系、数据、目标读者。示例：三个节点“输入资料→整理与核对→产出”；不提供数字，因此不画百分比。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请把我提供的[内容／流程／数据]整理成一张面向[读者]的[信息图／流程图／教学图]。
-材料：[贴入正文或表格]。
-要回答的问题：[填写]。
-必须保留的节点和文字：[填写]。
-已确认的关系：[填写；未确认的关系写待确认]。
-比例／尺寸：[填写]。
-
-先列节点、关系和原文依据，检查有没有缺信息。
-原文只有并列关系时不要改画成因果；没有数字不画比例、统计图或性能曲线。
-给出清楚的视觉层级、阅读方向、节点布局与准确文字。
-
-若任务有真实数据，请优先用能够按数据绘制的工具生成图表；AI只负责布局和非数据装饰，不随意画柱高、坐标或数值。
-若当前能创建SVG、Mermaid或可编辑演示文件，请使用实际可用工具创建，并说明文件类型。
-若只能生成图片，请给出文字与结构稿，明确图片稿不等于可编辑PPT或可复算统计图。
-
-输出后逐项核对节点、箭头、文字和数据；未知项保留为待确认，不用“看起来合理”的内容填满画面。
-</code></pre></div>
-<p>检查：文字与关系来自材料；统计图可以回到数据；可编辑与平面图片的交付角色明确。</p>
-</section>
-<section class="supplement-section" id="补充-P05"><h2>P05 人物／IP系列的一张图</h2>
-<p>类型：角色创作与参考编辑。变量：虚构设定或已获准人物图、固定特征、姿势、场景、变化范围。示例：原创虚构纸艺吉祥物；圆眼、蓝色围巾、浅米色纸张纹理；站姿；室内阅读场景；3:4。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请完成一张[人物／IP角色]的[姿势／场景]图。
-任务类型：[原创角色设计／基于我提供的参考延续]。
-设定或参考图：[贴入设定，说明每张图的身份]。
-固定特征：[脸形／发型／服装／配色／饰物／比例等]。
-允许改变：[姿势、表情、场景或具体区域]。
-比例与风格：[填写]。
-
-若是原创设计，可在明确设定范围内创作；若是参考延续，则保留看得见的固定特征，不任意更换服装、饰物或角色身份。
-本次只画指定的一张，不自动生成多宫格。
-看不到背面或隐藏区域时，说明新增部分属于概念设计；不要把它当真实人物／服装／商品的已知细节。
-如任务是服装展示，服装款式与结构来自实际素材，不生成不存在的配件或花纹。
-
-先使用工具支持的参考方式生成，再检查面部、服装、配色、肢体和饰物。
-出现明显身份漂移时，指出差异并优先局部修改，不声称提示词已保证百分之百一致。
-若以后扩展系列，保存此张和固定设定，下一张只改变已约定的条件。
-</code></pre></div>
-<p>检查：原创设定可辨认，参考身份与固定特征正确；生成补全和已知事实区分。</p>
-</section>
-<section class="supplement-section" id="补充-P06"><h2>P06 只改一处的局部修图</h2>
-<p>类型：编辑提示词。变量：原图、蒙版／标注、修改内容、保护内容。示例：移除背景右下角杂物；人物、服装、前景、镜头位置和其他背景保留。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请修改我上传的原图，只处理[蒙版／标注位置或明确区域描述]。
-要改成：[具体替换或修复内容]。
-需要保留：[对象身份、形状、颜色、文字、构图、光线及其他区域]。
-
-使用当前工具实际支持的选区／蒙版／局部编辑功能。
-保持区域边缘、透视、光线和接触阴影自然，不重新设计整张图。
-如果修改文字，旧文字为[填写]，新文字必须为[准确字符串]；区域放不下时给排版调整建议，不偷偷改字。
-
-如果工具只能重生成整图，请说明非修改区可能变化，并提供适合后期合成的局部素材或操作方案，不能报告像素完全不变。
-对已出现的文字、Logo或真实对象逐项比较；发现其他区域变化要指出。
-保存一个新版本，不覆盖原件。输出实际支持的格式，并说明修改了哪里、还有哪里需人工检查。
-</code></pre></div>
-<p>检查：目标修复成功，边缘自然，保护对象未发生意外变化；严格像素保留需要真实蒙版与合成操作验证。</p>
-</section>
-<section class="supplement-section" id="补充-P07"><h2>P07 从素材到短片分镜</h2>
-<p>类型：视频规划指令。变量：素材、主题、时长、比例、事实、可用模型。示例：虚构阅读活动的15秒短片；静物素材和已确认活动标题；输出分镜，不生成视频。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请基于我提供的素材规划一个[用途]短片。
-输入：[实际视频／图片／文案]，分别说明是什么。
-核心信息：[贴入已确认内容]。
-目标时长与比例：[填写]。
-工具／型号：[填写实际会使用的工具；未知则写未知]。
-
-如果提供视频且你确实能读取，按实际时间定位镜头，并区分画面可见、声音声明和你的解释。
-如果只有图片，不声称已逐帧拆解；从这些素材规划新的镜头。
-
-按“镜号、时长、使用素材、首帧、主体动作、镜头运动、结束画面、文字／声音、失败风险”给出分镜。
-一个短镜头先安排一个主要动作，镜头运动与主体动作分开写；不强制固定25宫格或任意拉长广告。
-真实产品的功能、结构、数量和外观只能来自提供的事实；虚构创意部分明确标示。
-人物、服装、商品和场景连续性逐镜核对。
-
-为每个镜头给可复制的关键帧生图词和简洁运镜词；模型参数放适配说明，不照抄旧型号限制到所有工具。
-工具不支持首尾帧时给单图动态或后期转场路径，保留方法区别。
-本次输出脚本与提示词，不报告已经生成视频。后续成片需要检查变形、连续性、字幕、声音与节奏。
-</code></pre></div>
-<p>检查：分镜服务于主题；每条词能对应真实素材；原视频分析与新镜头创作分开。</p>
-</section>
-<section class="supplement-section" id="补充-P08"><h2>P08 画布组织与可编辑交付</h2>
-<p>类型：规划／工具指令。变量：任务、素材、实际接口、输出文件。示例：阅读活动的封面、海报和两张知识卡；有标题、文案和自有Logo；工具未知则先给任务书，不执行。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请帮我组织[创作任务]的画布与文件。
-目标交付：[列出图片、尺寸、文案、编辑源文件或工作流]。
-已提供素材：[逐项标注对象、布局／风格参考、Logo、文字和数据]。
-可用工具：[填写当前实际已连接的工具；没有连接则写没有]。
-
-先将内容分成：事实与原件、参考、任务与文案、创作分支、待修改、最终交付六个区。
-每张参考图说明只借什么，不把参考对象属性混进事实。
-按交付物安排步骤：规划、创作、局部修改、文字排版、尺寸适配、导出与检查。
-
-有可用接口时，仅使用真实存在的操作；没有接口时输出画布任务书或适用脚本，不报告已操作软件。
-图像生成、背景移除、图层组装和文件导出分别记录。PSD／PPTX等编辑文件要由支持的工具创建，不把平面图片更名冒充。
-无法恢复平面图里的原字体／矢量时，如实说明；文字必要时重新建立可编辑层。
-保留原件和版本，交付前重新打开实际文件，核对尺寸、图层、文字、顺序与素材身份。
-批量任务先做一件确认，再按对象／语言／尺寸矩阵复用，记录缺素材与失败项目。
-</code></pre></div>
-<p>检查：编辑文件能重新打开，图层或文字确实可编辑；画布模板和普通成图不是同一种产物。</p>
-</section>
-<section class="supplement-section" id="补充-P09"><h2>P09 跨境商品简报与渠道任务表</h2>
-<p>类型：规划。替换项目：商品事实、市场、图片位置、语言与素材。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-cross-border">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请把商品事实和素材整理成跨境视觉制作简报，本次只做规划。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-目标：Amazon US英文商品页（主图、副图、A+）；Shopify英文产品页与首页横幅；Shopee SG英文封面与规格图。
-处理步骤：
-1. 建立事实表，每项写已确认／未知与依据，商品属性和创作文案分开。
-2. 建素材表，标明每张图承担外观、细节、布局还是风格角色，以及缺少的照片。
-3. 建渠道矩阵：市场、语言、图片位置、买家问题、画面简报、准确文字、素材、导出要求、规则来源与核对日期。
-4. 给每个位置独立分工，主图展示商品，副图解释结构，A+按当前模块，Shopify按主题，Shopee按市场。
-5. 平台参数未核对时写待填；2000方图等可以作为制作建议，不能写成所有平台硬规定。
-6. 选一张真实主体母版作为首项任务，说明完成后如何扩展，不直接批量生成整套。
-
-输出：事实表、素材表、渠道任务表、首项完整制作指令、待补素材和未核要求。本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P10"><h2>P10 Amazon普通商品白底主图</h2>
-<p>类型：生图／合成。替换项目：真实商品照片、发货清单、当前站点类目要求。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-amazon-listing">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请用我上传的真实商品照片制作一张Amazon US普通收纳盒白底主图。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-画面：完整真实商品居中；纯白背景RGB(255,255,255)；没有额外文字、宣传标签、图框或场景道具。真实商品自身的标识不擅改。
-盒体、盖子、隔板的位置与数量以实拍和发货清单为准，不复制出多件商品；整体外观、开口、边缘和色彩保持依据。
-练习目标画布2000×2000 px、1:1，属于本次设计目标；实际导出需满足当前类目与站点要求。
-步骤：先识别主体与配件，再抠图／蒙版，放入白底，调整大小与接触阴影，最后对照原图。
-主体占幅参考Amazon公开指导并用实际规则复核，四边不裁掉真实结构；不以错误拉伸凑占幅。
-如果当前工具会重绘商品，只准备白底与合成方案，后续用真实商品层完成，不生成看似相同的替代主体。
-不要增加笔、纸夹、额外包装或未发货赠品。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P11"><h2>P11 Amazon副图分工与逐张制作指令</h2>
-<p>类型：策划＋单图任务。替换项目：真实细节图、商品事实、用途、准确短文案。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-amazon-listing">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请为Amazon US商品页规划5张副图，并给每张完整可执行的制作指令。本次先交规划，不一次生成5张。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-5个任务分别是：书桌使用场景；开盖与可拆隔板；外尺寸；发货内容；使用步骤。
-每张都输出：解决的买家问题、实际素材、构图、准确英文短标签、完整制作任务词、后期排版位置、检查项与未确认内容。
-场景：白天书桌、柔和侧光、真实主体，文具仅作获准环境道具；明确不要让道具进入发货清单。
-结构：必须依据开盖和隔板实拍，缺图列补拍，不画出未知内结构。
-尺寸：L220×W150×H120 mm，保留外尺寸标签，不猜容积或内尺寸。
-配件：Box ×1, lid ×1, divider ×1；图像与清单逐项对应。
-使用：只使用已确认的打开、放置文具、合盖步骤；没有实际动作依据时列待确认。
-每张练习母版1:1，准确文字独立可编辑排版。场景、结构与尺寸分别制作，不能用一张拼贴代替5项任务。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P12"><h2>P12 Amazon A+模块简报与图文交付</h2>
-<p>类型：模块规划。替换项目：当前可用模块、尺寸提示、真实素材、准确文案。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-amazon-a-plus">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请为Amazon US商品制作A+模块内容方案。本次以当前账户实际可用的模块为准，不假设Premium能力。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-输入还包括我提供的模块名称、图片槽位尺寸和文字字段；未提供的项目写待填，先交内容规划。
-内容单元：商品与使用场景；开盖／隔板；真实外尺寸；操作步骤；发货内容。按照实际模块合并或拆开，不强凑固定模块数。
-每个模块输出：模块用途、买家问题、所需素材、图片简报、准确英文标题与正文、原生文字字段、导出要求、核对项。
-较长说明优先用支持的文字字段；不得把长文直接嵌入一张缩小后读不清的图。
-没有其他型号和参数时，不制作虚假对比表；没有品牌历史时，不编造品牌故事。
-准确文字中可以描述“removable divider”，但不出现waterproof、food-safe等未知声明。
-最后给桌面／手机预览检查清单：裁切、字号、顺序、参数、配件、模块尺寸和文字准确性。
-未实际进入编辑器时，只写模块内容方案完成，不写上线或审核通过。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P13"><h2>P13 Shopify产品媒体顺序与alt text</h2>
-<p>类型：媒体规划。替换项目：真实照片、主题条件、媒体位置、准确文案。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-shopify-product">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请整理一套Shopify英文产品媒体方案，目标是让顾客从图片准确理解商品。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-计划顺序：整体识别、开盖结构、书桌场景、外尺寸、发货内容、使用步骤；可根据实际素材调整，不为凑张数生成假结构。
-每张输出：媒体位置、素材来源、构图、准确短文案、完整单图制作指令、英文alt text、检查与待补项。
-商品／集合图片与主题横幅的规格分开，引用当前对应官方说明。2048×2048可作方图练习母版，不当所有区块统一尺寸。
-准确长说明放产品文本或主题原生字段；图片标签短而清楚，手机缩小后可读。
-alt text描述实际画面，简洁且不堆关键词；没有实际结果时把候选alt text标为草稿，生成后按图核对。
-变体照片绑定实际SKU，不能将白色版本改成未提供的颜色。
-最后给产品页／集合页／手机的预览清单，尤其首图缩略、裁切、媒体顺序、放大和变体切换。
-没有进入实际商店时，不报告主题预览或上传已完成。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P14"><h2>P14 Shopify桌面与手机横幅</h2>
-<p>类型：生图／布局。替换项目：真实主体、主题区块、桌面与手机尺寸、准确标题。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-shopify-hero">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请为Shopify首页横幅准备桌面和手机两份构图。本次底图不生成文字或按钮，准确文案另排。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-练习桌面稿2400×1200 px：商品放右侧，左侧给标题与按钮留白；手机稿1200×1600 px：商品在中下部，上方保留短标题区。这是本次设计目标，不是Shopify统一规定。
-标题草稿为“Make room for everyday essentials”，不加性能、销量或优惠数字。
-背景：浅色书桌，柔和自然侧光，商品与桌面接触关系真实；道具少且不暗示发货赠品。
-先交两个布局说明并先完成桌面的一张底图；手机稿重新排构图，不只把桌面中心裁切成竖图。
-商品结构、颜色、盖子和隔板保持真实依据；底图与准确文字分层。
-核对具体主题是否支持分别上传两种素材、焦点与原生按钮；未知项保留待核，不能承诺已经配置主题。
-若工具实际输出不是目标像素，报告实际值与后期重排／裁切方案，不假称像素已经满足。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P15"><h2>P15 Shopee SG封面与规格套图</h2>
-<p>类型：策划＋单图任务。替换项目：市场SG、实际照片、变体、当前后台要求。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-shopee-localization">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请为Shopee SG英文商品页准备封面和规格套图方案。本次先出逐张任务，不自行提交生成。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-市场是新加坡SG，语言en-SG；其他市场不套用本次规格或表达。
-任务：白底真实封面、开盖与隔板、外尺寸、发货清单、书桌场景；实际上传数量和文件参数以当前后台为准。
-封面：清楚展示实际商品，干净背景，不加无依据促销标识，不把文具道具当附送品。
-短标签草稿：“Desk organizer with lid”“Removable divider”“External size”“What’s included”；准确文字用可编辑层排版。
-每张输出：素材、构图、完整任务词、准确文案、后期步骤、实际参数待填字段、检查项。
-规格图保留L220×W150×H120 mm与外尺寸；配件图保持盒体1、盖子1、隔板1。
-练习母版2000方图；Shopee SG公开页面的图片建议与当前上传硬限制分别记录，不能扩展成全市场规则。
-如果有变体，必须对应独立实拍和事实记录；缺素材不自行改色造SKU。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P16"><h2>P16 英文本地化：准确文案与回译</h2>
-<p>类型：文案本地化。替换项目：事实母表、目标市场、图片位置、获准中文。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-localization">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请把以下商品信息改写为适用于英文商品页面的准确短文案，本次不生成图片。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-目标：Amazon US副图、Shopify商品说明、Shopee SG规格图，三种位置分别输出；Amazon主图不叠营销文字。
-中文获准内容：带盖桌面收纳盒；一个可拆隔板；书桌收纳文具；外尺寸220×150×120 mm；盒体1、盖子1、隔板1。
-处理：先做中文事实→英文术语表，再写逐位置短标签与一句说明，最后提供回译及每项事实依据。
-不得把“收纳文具”改成防尘、防水、节省某个百分比空间；不能把ABS翻译成食品级塑料。
-发货与道具分开，单位和数量不能改；尺寸始终明确L／W／H，非裸数字。
-每条输出英文、中文回译、用途、依据、建议排版位置及未确定词。建议文字简短，较长说明进入网页文字字段。
-语言自然度和商业使用仍需目标语言复核，不自动声称翻译已审定或平台合规通过。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P17"><h2>P17 日文本地化：术语、换行与事实复核</h2>
-<p>类型：文案本地化。替换项目：商品事实、目标日本市场、准确中文与位置。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-localization">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请把商品事实整理成日文图片标签和商品说明草稿，本次不生成图像。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-目标是日本市场商品副图和详情文字；没有指定具体平台时，平台参数写待核。
-获准术语示范：ふた付きデスク収納ボックス；取り外し可能な仕切り；外寸：長さ220 × 幅150 × 高さ120 mm；本体1点、ふた1点、仕切り1点。
-请核对这些术语与本次实际商品是否吻合，再给3个短标签和一段简短说明；不要添加耐熱、防水、食品用等未知事实。
-分别输出：中文母表、日文草稿、中文回译、数值／单位／配件对照、可能歧义和适合手机的换行建议。
-长宽高标签不交换；原包装文字不擅改成不存在的日文包装版本。
-文字后期排版保留可编辑层，不使用整图模型反复改写小字；生成后的日文逐字对照确认。
-草稿未由熟悉目标语言与类目的人复核时，标为待复核，不写已经审定。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P18"><h2>P18 尺寸图：毫米英寸换算与准确标注</h2>
-<p>类型：计算＋图像规划。替换项目：真实测量记录、尺寸定义、舍入位数与实拍。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-localization">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请根据尺寸记录制作外尺寸图的文案与排版计划，本次先完成计算和标注，不猜结构。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-数据：外部长L=220 mm、宽W=150 mm、高H=120 mm；没有内尺寸、容积和公差记录。
-按1 in = 25.4 mm换算，保留原值和公式；英寸标注保留两位小数并写approx.或“约”。
-输出应核算为：L约8.66 in、W约5.91 in、H约4.72 in；请逐项计算，而不是照抄结果。
-制作时以实拍为底，箭头和尺寸文字单独可编辑；选能读懂长宽高的角度，不生成未提供的背面或内部图。
-如果透视难以标示三轴，允许拆成两张已有角度图，不用拉伸商品凑图。
-最终输出：计算表、单位说明、外尺寸准确双单位文字、箭头位置、完整单图任务词、检查项。
-换算是数学处理，不等于重新测量；没有品牌尺码表时，不推导服装S/M/L或鞋码。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P19"><h2>P19 跨境SKU任务清单与批量复用</h2>
-<p>类型：批量规划。替换项目：SKU事实、对应照片、市场、语言、位置与任务ID。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-cross-border-sku-delivery">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请制作跨境SKU批量任务清单，本次只做计划和逐项指令，不提交图像生成。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-增加一个独立虚构练习SKU DN01-G：灰色，与DN01-W白色具有相同练习外尺寸和结构；正式执行时两者各有自己的真实照片，不靠染色伪造。
-目标组合：Amazon US主图及尺寸副图；Shopify英文产品首图；Shopee SG封面。每个SKU分别生成对应任务记录。
-清单字段：task_id、sku、market、language、position、source_asset、事实记录、完整任务词、目标尺寸、准确文案版本、status、实际结果、返工说明。
-共用视觉段固定：真实主体、干净背景、清晰外观与准确文字；变量段仅使用当前SKU照片、颜色、市场位置和文案。
-先选DN01-W的一张主图完成检查，再扩展；主图与广告或详情的文字规则不得混用。
-中断时先查原task_id与结果状态，不默认任务没执行而重复提交。
-每一项都给可独立复制的任务词；计划路径标“计划”，不存在文件不能写已交付。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-<section class="supplement-section" id="补充-P20"><h2>P20 跨境图片交付检查与定向返工</h2>
-<p>类型：检查。替换项目：原商品、结果图、当前规则、准确文案与文件清单。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。</p>
-<p><a href="#%E8%A1%A5%E5%85%85-cross-border-sku-delivery">逐步教程</a></p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请对跨境图片包进行逐项检查，输出具体问题与定向返工指令，本次不自行重生成整套。
-以下DN01／DeskNest是虚构练习数据，不代表实际品牌或商品；正式任务必须换成已核实的商品记录。
-练习事实：带盖桌面收纳盒；白色ABS；外尺寸长220×宽150×高120 mm；可拆隔板1个。
-发货内容：盒体1、盖子1、隔板1。文具等场景道具不随商品发货。
-容积、耐温、承重、防水、食品接触、认证和回收属性均未知，不补相关声明。
-图片输入如有：图1是真实商品外观依据；图2是实际细节；图3仅参考背景和构图，不使用其商品、Logo或参数。
-未附实拍时先给素材清单和可执行方案；不要臆画正式商品或未拍摄结构。
-
-输入另有：我提供的结果图、文件清单、市场／图片位置、当前规则记录、审定文案和实际源文件。
-检查商品：形状、颜色、盖子、隔板、外尺寸、包装与配件数量是否和真实依据一致。
-检查内容：单位、英文／日文、L/W/H、发货内容与道具关系；删除未知性能、认证、销量或促销声明。
-检查渠道：主图／副图／A+／横幅是否分工正确；有当前站点出处才作规则判断，没有则列待核。
-检查文件：实际像素、比例、格式、可打开、命名和媒体顺序；只有看到并打开源文件，才判断文字或图层是否可编辑。
-输出表：文件／任务ID、问题位置、依据、影响、具体修改指令、需要补的素材、复查项。
-译文错只改文字层，裁切错重排对应版式，商品结构错回到真实照片合成；不要用重做全套替代定位问题。
-没有结果图或没有实际后台预览时明确未验证，不把计划、脚本PASS或本地缩略图当平台审核通过。
-本次范围按上述任务执行；没有图像能力时只交方案并写明状态。
-实际执行时保留真实商品层与准确文字，逐项核对形状、颜色、盖子、隔板、配件、单位和文字。
-目标尺寸与工具实际输出分别报告；不把画质形容词、计划路径或未创建的PSD当作已交付结果。
-最终列：已完成、需要补的素材、无法确认的项目、实际存在的文件与下一步。
-</code></pre></div>
-<p>检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。</p>
-</section>
-</article><div class="footer">正文与提示词包完整保留，补充阅读可在上方页签进入。</div><article id="supplementDoc" class="doc article hidden"><div class="markdown-body"><section class="supplement-section" id="补充-tool-routes"><h2>网站、图层、节点与API，按当前任务选择路线</h2>
+</div></details></article><div class="footer">正文与提示词包完整保留，补充阅读可在上方页签进入。</div><article id="supplementDoc" class="doc article hidden"><div class="markdown-body"><section class="supplement-section" id="补充-tool-routes"><h2>网站、图层、节点与API，按当前任务选择路线</h2>
 <p>原稿把制作分为网站版、工具版和API版。这一章保留分工，去掉计费内容和未经核实的模型排名。先看你手上有什么素材、要交什么文件，再选需要的工具，不用一开始把所有软件都装上。</p>
 <h3>一张图，先走网站与图层路线</h3>
 <p>有真实产品照片，要做场景副图，就用支持参考图的设计画布生成环境，再在PS/Photopea放回真实商品与准确文字。得到图片原文件、可编辑源文件和预览。这条路线的逐步操作、提示词与返工见<a href="#%E8%A1%A5%E5%85%85-first-image">第一张图</a>。</p>
@@ -3943,22 +3835,22 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 <li>100%查看白色商品边缘，有残灰就改蒙版，有缺口就恢复蒙版；不要直接刷白把商品边缘吃掉。</li>
 </ol>
 <p>若希望用图像工具清理背景，输入下面的任务词。工具无法保持商品像素时回图层母版处理。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">输入是本SKU真实正面商品照片。用于Amazon商品主图，只把拍摄背景清理成纯白RGB255/255/255，保留商品原有形状、颜色、标识、盖子和可见结构。商品完整清楚，不裁切，不添加任何零件。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">输入是本SKU真实正面商品照片。用于Amazon商品主图，只把拍摄背景清理成纯白RGB255/255/255，保留商品原有形状、颜色、标识、盖子和可见结构。商品完整清楚，不裁切，不添加任何零件。
 不生成标题、促销字、徽章、认证、道具或水印，不把白色ABS改成金属或陶瓷。不推测隐藏结构。若只能重绘商品而不能保留真实主体，请只输出背景处理建议，商品由原照片合成。
 </code></pre></div>
 <h3>3. 场景副图，先解释用途</h3>
 <p>DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。生成工具负责环境，盒子保不住就用真实商品层合成。不要让几支笔与收纳盒并排成“套装发货”画面。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">制作桌面收纳盒的场景副图。真实商品照片是唯一外观依据，保留白色盒体、盖子、比例和标识。明亮书桌，浅木台面，左前方柔和自然光，少量文具在背景，商品为视觉中心。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">制作桌面收纳盒的场景副图。真实商品照片是唯一外观依据，保留白色盒体、盖子、比例和标识。明亮书桌，浅木台面，左前方柔和自然光，少量文具在背景，商品为视觉中心。
 画面左上留简洁区域用于后期标题，不生成文字、数字、认证或水印，不改变商品材质，不添加新隔板，不画未提供的背面。场景道具不作为商品发货内容展示。如果无法保持商品身份，只生成没有盒子的空桌面背景。
 </code></pre></div>
 <p>合成后在独立文字层写练习标题 <code>A place for everyday stationery</code>。它描述用途，不暗示容量、承重或安全等级。缩成手机宽度，商品比装饰更显眼、标题能读，才保留这张。</p>
 <h3>4. 结构、尺寸与发货图分开做</h3>
 <p>结构图直接用开盖实拍。若一个隔板在照片中可拆，就用对应照片说明，不让模型凭空把内部分成六格。练习可用标题 <code>Removable divider</code>，正式文案需要真实结构依据。</p>
-<p>尺寸图以外尺寸为准，排 <code>220 × 150 × 120 mm</code>；US版本需要英寸时，同时保留厘米或毫米，明确L×W×H与外尺寸。不要把透视角度的斜边当长度，使用能清楚看出测量方向的照片。<a href="#%E8%A1%A5%E5%85%85-localization">尺寸与本地化操作</a>。</p>
+<p>尺寸图以外尺寸为准，排 <code>220 × 150 × 120 mm</code>；US版本需要英寸时，同时保留厘米或毫米，明确L×W×H与外尺寸。不要把透视角度的斜边当长度，使用能清楚看出测量方向的照片。<a href="#补充-localization">尺寸与本地化操作</a>。</p>
 <p>发货图用真实平铺，标题 <code>What's in the box</code>，列表 <code>1 box body / 1 lid / 1 divider</code>。文具不出现或写明不包含。没有官方认证与报告就不做认证图。</p>
 <h3>5. 使用图按实际动作排三组</h3>
 <p>第一组打开盒盖，第二组放入与商品用途一致的文具，第三组合盖。动作图用实拍或经逐项核对的结果，手和盒子的接触关系不能错。没有动作照片时，这张先用产品结构说明替代，别编一个“自动开盖”功能。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">根据本商品的真实使用说明和动作照片整理三组副图文案。每组输出准确短标题、对应照片、阅读顺序和必须看清的操作部位。只保留资料支持的打开、放入、合盖动作，缺失步骤标待补拍。不要生成产品结构、手部动作或未经确认的功能。文案供后期文字层排版。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">根据本商品的真实使用说明和动作照片整理三组副图文案。每组输出准确短标题、对应照片、阅读顺序和必须看清的操作部位。只保留资料支持的打开、放入、合盖动作，缺失步骤标待补拍。不要生成产品结构、手部动作或未经确认的功能。文案供后期文字层排版。
 </code></pre></div>
 <h3>6. 导出、排顺序与返工</h3>
 <p>每张保留PSD或等效源文件，另导出JPG。练习命名 <code>DN01_white_amazon-us_01-main_en_v01.jpg</code>，依次到06。重新打开检查像素、边缘、颜色和文字，按计划排序；实际上传后再看商品页缩略图、放大图、变体与手机裁切。</p>
@@ -3996,7 +3888,60 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 </tr>
 </tbody>
 </table>
-<p>完成后进入<a href="#%E8%A1%A5%E5%85%85-amazon-a-plus">A+模块</a>。通用白底任务模板见<a href="#%E8%A1%A5%E5%85%85-P10">P10</a>，副图职责模板见<a href="#%E8%A1%A5%E5%85%85-P11">P11</a>，本篇已给直接可复制的制作词。</p>
+<p>完成后进入<a href="#补充-amazon-a-plus">A+模块</a>。通用白底任务模板见<a href="#补充-P10">P10</a>，副图职责模板见<a href="#补充-P11">P11</a>，本篇已给直接可复制的制作词。</p>
+<h3>主图交付前的10项检查</h3>
+<p>这里采用Amazon公开摄影指导，具体类目仍以Seller Central为准。来源：<a href="https://sell.amazon.com/blog/product-photos">商品摄影官方指导</a>，核对2026-10-15。以下是人工检查动作，不是平台审核通过证明。</p>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>具体怎么查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 商品身份</td>
+<td>原实拍与导出图并排，核对型号、颜色和变体</td>
+</tr>
+<tr>
+<td>2 发货数量</td>
+<td>数清盒体、盖子、配件；道具与多件陈列不能误导</td>
+</tr>
+<tr>
+<td>3 完整外形</td>
+<td>放大检查边角、接口、缝线；蒙版没削掉产品</td>
+</tr>
+<tr>
+<td>4 背景</td>
+<td>取样检查纯白背景RGB 255/255/255；不要把白色商品高光也抹掉</td>
+</tr>
+<tr>
+<td>5 主体占比</td>
+<td>对照指导中约85%或以上的占画面要求；不裁掉商品凑比例</td>
+</tr>
+<tr>
+<td>6 附加图文</td>
+<td>清除额外促销语、水印、徽章、边框；真实包装原有文字保留</td>
+</tr>
+<tr>
+<td>7 真实照片</td>
+<td>正式主图用实物照片；AI只用于允许范围内的辅助编辑</td>
+</tr>
+<tr>
+<td>8 像素与格式</td>
+<td>看实际导出属性；本教程可用2000方图工作稿，不能据此推导所有类目硬性规格</td>
+</tr>
+<tr>
+<td>9 色彩与锐度</td>
+<td>RGB/sRGB导出，放大检查边缘；不过度锐化、漂白或改变材质</td>
+</tr>
+<tr>
+<td>10 类目和后台反馈</td>
+<td>记录站点、类目、规则入口与导出版本，逐项处理实际错误通知</td>
+</tr>
+</tbody>
+</table>
+<p>示例返工：白色盒盖在白底上消失，先回原图恢复盖沿的灰阶层次，再修蒙版；不能给盖子画黑边。产品占比不足时先等比放大产品层；原片细节已不足就重拍，不用放大工具补造商标。</p>
 </section>
 <section class="supplement-section" id="补充-amazon-a-plus"><h2>Amazon A+，从模块草图做到配图与准确文字</h2>
 <p>本节完成一份模块表、两张无字背景/配图、结构与规格资料、逐模块文案和导出清单。沿用DN01收纳盒练习，数据是虚构填写示范。A+的图片和文本槽由当前账户可用模块决定，先选模块，再制作图片；不要把国内十屏长图缩成一张A+。</p>
@@ -4037,13 +3982,13 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 <p>品牌故事有真实品牌材料才加入。练习名DeskNest没有创始人经历，不能补一个“十年匠心团队”。A+内容形式与预览方法参考<a href="https://sell.amazon.com/blog/a-plus-content-design-guide">官方设计指南</a>，提交限制按当前后台说明。</p>
 <h3>2. 做场景横图</h3>
 <p>以已经核对的真实商品层为主体。先生成空桌面环境，下载后按所选模块裁切。左边是否留白取决于文本叠加方式；模块有独立文本槽时，图片里无需塞长文。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">生成一张用于桌面收纳盒A+场景模块的无字横向背景，不生成收纳盒。明亮家庭书桌，浅木台面，奶油白墙面，窗光从左前方进入，背景少量笔记本和文具轻微虚化。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">生成一张用于桌面收纳盒A+场景模块的无字横向背景，不生成收纳盒。明亮家庭书桌，浅木台面，奶油白墙面，窗光从左前方进入，背景少量笔记本和文具轻微虚化。
 右侧台面平整无遮挡，供合成真实收纳盒，画面边缘避免放关键道具，预留不同模块裁切空间。不要人物、商品替代物、文字、数字、图标、认证、奖项、品牌标识和水印。
 </code></pre></div>
 <p>把真实盒子放进背景，底部加合理接触阴影。练习标题 <code>Keep everyday stationery in one place</code>，正文 <code>A lidded box with a removable divider for desk organization.</code>，它只描述练习已知的结构和用途。正式素材替换后逐项核对。</p>
 <h3>3. 做结构模块</h3>
 <p>开盖照、隔板照分别排，标识“盒体”“盖子”“隔板”。没有透视一致的照片时用独立小图，别硬拼成虚构爆炸图。可以让助手输出排版计划。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">根据真实开盖照、隔板照和结构说明，整理A+结构模块。每张照片仅说明它能证明的内容。给出短标题、最多两句正文、照片位置和准确标注词。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">根据真实开盖照、隔板照和结构说明，整理A+结构模块。每张照片仅说明它能证明的内容。给出短标题、最多两句正文、照片位置和准确标注词。
 只写一个可拆隔板与一个盖子，不推测密封、防水、耐温、食品接触或承重。不要生成内部结构或认证图标。输出可编辑文本与排版顺序，图片由实拍提供。
 </code></pre></div>
 <h3>4. 参数与比较表用数据做</h3>
@@ -4081,7 +4026,132 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 </tr>
 </tbody>
 </table>
-<p>交付模块表、图片、准确文本、源文件状态和后台预览记录。当前没有后台预览记录，教程不宣称提交成功。完整规划模板见<a href="#%E8%A1%A5%E5%85%85-P12">P12</a>，通用详情页思路见<a href="#%E8%A1%A5%E5%85%85-detail-page">逐屏教程</a>。</p>
+<p>交付模块表、图片、准确文本、源文件状态和后台预览记录。当前没有后台预览记录，教程不宣称提交成功。完整规划模板见<a href="#补充-P12">P12</a>，通用详情页思路见<a href="#补充-detail-page">逐屏教程</a>。</p>
+<h3>模块尺寸怎么查，怎样做成可交付文件</h3>
+<p>下表核对于2026-10-15。尺寸来自Amazon公开的Standard模块PDF及2023-05-30版Premium手册；旧官方手册是制图参考，不能代替你账户里的当前槽位。先在A+编辑器添加模块，把实际要求抄到任务表，再建画板。宽×高，单位px。</p>
+<table>
+<thead>
+<tr>
+<th>模块准确名称</th>
+<th>官方文档记录</th>
+<th>制作动作与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard Single Left Image</td>
+<td>300×300</td>
+<td>用方图细节；文字放右侧文本槽</td>
+</tr>
+<tr>
+<td>Standard Single Right Image</td>
+<td>300×300</td>
+<td>同样用方图；勿把左图直接镜像商品</td>
+</tr>
+<tr>
+<td>Standard Three Images & Text</td>
+<td>每张300×300，共3张</td>
+<td>分别回答结构、使用、配件三个问题</td>
+</tr>
+<tr>
+<td>Standard Four Images & Text</td>
+<td>旧PDF写200×200</td>
+<td>交接中的220×220未由这份文档证实；核对当前槽位再导出</td>
+</tr>
+<tr>
+<td>Standard Image & Dark/Light Text Overlay</td>
+<td>970×300</td>
+<td>横向背景；关键内容不要压在文字区</td>
+</tr>
+<tr>
+<td>Premium Full Image</td>
+<td>桌面至少1464×600；手机至少600×450</td>
+<td>两个画板分别构图，不机械裁掉商品</td>
+</tr>
+<tr>
+<td>Premium Single Image with Text</td>
+<td>至少800×600</td>
+<td>图文分开交；按实际模块选用</td>
+</tr>
+<tr>
+<td>Standard Company Logo</td>
+<td>本次一手资料未核实362×60</td>
+<td>用原始Logo，记录后台尺寸；不把猜测写成规格</td>
+</tr>
+<tr>
+<td>Standard Image Header with Text</td>
+<td>本次一手资料未核实970×600</td>
+<td>后台确认前只做可调整草图</td>
+</tr>
+<tr>
+<td>Brand Story Header</td>
+<td>本次一手资料未核实1464×620</td>
+<td>与Basic/Premium区别记录；不要借用其他模块尺寸</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf">Standard模块原始PDF</a>、<a href="https://m.media-amazon.com/images/G/01/BX_Marketing/2023/AMZ_Guide_Premium_A_Module_05b.pdf">Premium模块原始PDF，2023版</a>。交接里的“Premium Panorma”不能作为精确模块名，以上采用来源中的名称。</p>
+<h3>跟做：把DN01收纳盒拆成四个模块</h3>
+<p>DN01是虚构练习，不是已上架案例。假设你已补齐三张实拍：合盖斜侧、开盖俯视、隔板特写；外尺寸220×150×120 mm，发货盒体/盖子/隔板各1件。承重、防水、食品接触属性没有证据。</p>
+<ol>
+<li>在A+编辑器先选左图模块、三图模块、图文模块与规格模块，记录每个图片槽和文字槽。若账户没有相应模块，按同一信息职责换模块，不假装功能可用。</li>
+<li>建一个任务表：模块A讲“桌面小物收纳”，B讲盖子/隔板/开口三个真实细节，C讲实际发货内容，D写外尺寸。每一行附对应实拍文件名和文案来源。</li>
+<li>在Photopea或PS打开实拍，保留背景原件；复制工作层并加蒙版。把产品层放进目标画板，按住等比缩放，不能把220:150的外观拉成另一比例。</li>
+<li>场景需要AI时，只让它生成空台面。将真实产品放回，先对齐底部接触线，再单独处理接触阴影；阴影方向跟随原实拍，不同时出现两个主光源。</li>
+<li>三张细节图只裁已有照片。隔板没拍清就补拍；“看起来像”不能替代细节证据。三张用同一背景、视角体系和边距。</li>
+<li>文字在模块文本槽输入。示例“Removable divider”只对应已确认隔板；“Waterproof”“Food-safe”因证据缺失不进入稿件。尺寸走P18换算流程，不从外尺寸推算容量。</li>
+<li>导出每个槽位的图片，再保留独立文案表和可编辑源文件。文件名示例<code>DN01_US_APLUS_M02_DETAIL_01_en-US_v01.jpg</code>；桌面/手机版写在文件名中。</li>
+<li>在编辑器桌面和手机预览逐个看：产品完整、三图顺序正确、没有跨模块接缝设计、文字不靠图片小字支撑。提交后记录真实审核状态。</li>
+</ol>
+<p>预期产物是模块表、槽位图片、准确文案、源文件和预览记录。本文只给制作示范，未进行实际生图、后台上传或审核。</p>
+<h3>上传与预览问题：先找原因，再改局部</h3>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>先检查</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>找不到某模块</td>
+<td>当前内容类型和账户可用模块</td>
+<td>用已有模块承担同一信息职责，不伪造Premium权限</td>
+</tr>
+<tr>
+<td>上传提示尺寸不足</td>
+<td>真正导出的像素、槽位名称</td>
+<td>从母版重新导出；改DPI不会增加像素</td>
+</tr>
+<tr>
+<td>方图上传后被裁</td>
+<td>槽位比例、裁切预览</td>
+<td>改画板或留白，不能拉伸商品</td>
+</tr>
+<tr>
+<td>手机看不清字</td>
+<td>文字是否烧进图、实际显示宽度</td>
+<td>核心文案移到文本槽，必要时拆小段</td>
+</tr>
+<tr>
+<td>模块间有白缝</td>
+<td>是否把一张长图硬切成模块</td>
+<td>每块独立成图；不要靠接缝连接参数或商品</td>
+</tr>
+<tr>
+<td>图像被拒或出现宣称问题</td>
+<td>拒绝通知具体项、声明证据</td>
+<td>修改对应图文；保留原因与版本，不承诺必过</td>
+</tr>
+<tr>
+<td>改了素材前台没更新</td>
+<td>保存、提交、审核、应用ASIN状态</td>
+<td>区分处理阶段；不要反复提交相同内容掩盖问题</td>
+</tr>
+</tbody>
+</table>
+<p>需要完整指令时使用<a href="#补充-P12">Amazon A+任务模板</a>，不要只复制模块尺寸表。</p>
 </section>
 <section class="supplement-section" id="补充-shopify-product"><h2>Shopify产品页，制作媒体序列并检查变体</h2>
 <p>本节把一套商品图放进Shopify产品页的制作流程，得到媒体顺序表、准确alt text、变体对应表与桌面/手机检查记录。练习使用虚构DN01收纳盒；实际后台操作需要你的店铺账户，本项目尚未上传。</p>
@@ -4179,13 +4249,13 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 <p>本练习用2400×1200桌面图和1200×1600手机图作为设计起点。它们不是Shopify统一规定。用主题实际预览决定最终构图，原图尺寸与显示裁切是两回事。</p>
 <h3>2. 桌面图，右侧商品左侧文字</h3>
 <p>DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再放回真实商品层，避免一做大横幅就换了盒型。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">只生成桌面收纳品牌首页横幅背景，不生成收纳盒。横向2:1构图，浅木桌面、奶油白墙面，柔和左前方窗光，少量文具在远处。右半边留平整无遮挡台面供真实商品合成，左半边保持简洁，方便网页叠加标题与按钮。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">只生成桌面收纳品牌首页横幅背景，不生成收纳盒。横向2:1构图，浅木桌面、奶油白墙面，柔和左前方窗光，少量文具在远处。右半边留平整无遮挡台面供真实商品合成，左半边保持简洁，方便网页叠加标题与按钮。
 画面边缘不要放关键物件，主体预定位置在右侧中部。不要文字、数字、按钮、Logo、徽章、认证和水印，不生成替代产品。
 </code></pre></div>
 <p>在图层软件放入真实盒子，留出头顶和底部裁切余量。标题练习 <code>Make room for everyday essentials</code>，按钮 <code>Explore the organizer</code>。标题是场景表达，不能变成无依据的“Largest capacity”。准确文本单独交给主题编辑器。</p>
 <h3>3. 手机图，重新组织画面</h3>
 <p>竖图里商品放在下半部，上半部留文字。不要只把桌面图从中间裁成竖图，它可能正好裁掉右侧商品。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">生成与桌面横幅同一视觉方向的手机背景，不生成产品。竖向3:4构图，奶油白墙面、浅木台面，柔和左前方窗光。上方留简洁文字区，下半部留平整台面用于合成真实收纳盒。道具少量且远离商品区域。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">生成与桌面横幅同一视觉方向的手机背景，不生成产品。竖向3:4构图，奶油白墙面、浅木台面，柔和左前方窗光。上方留简洁文字区，下半部留平整台面用于合成真实收纳盒。道具少量且远离商品区域。
 保持同一背景色与光线，不增加新的品牌风格，不生成文字、数字、按钮、认证、Logo或水印。
 </code></pre></div>
 <p>有独立手机槽位就分别上传。只有同一图槽位时，尝试主题焦点与高度设置，让主体处于可保留区域；仍无法同时满足时选支持相应布局的section，或改成图文分开的结构。</p>
@@ -4217,7 +4287,59 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 </tr>
 </tbody>
 </table>
-<p>交付两版原图、源文件、准确文字与预览结果。当前没有真实Shopify主题实测。完整规划可复制<a href="#%E8%A1%A5%E5%85%85-P14">P14</a>。</p>
+<p>交付两版原图、源文件、准确文字与预览结果。当前没有真实Shopify主题实测。完整规划可复制<a href="#补充-P14">P14</a>。</p>
+<h3>先确认主题区块，再决定尺寸</h3>
+<p>Shopify没有一个适用于所有主题的“横幅标准尺寸”。同一张横图在不同区块高度下会裁成不同结果。官方文档的焦点兼容列表包含Dawn≥7、Craft≥5、Sense≥5、Refresh≥2、Studio≥4；安装版本低于此范围时不要假定具备相同设置。来源：<a href="https://help.shopify.com/en/manual/online-store/images/theme-images">Shopify图片与焦点说明</a>，核对2026-10-15。</p>
+<p>以下尺寸是<strong>本教程的起稿建议</strong>，不是五个主题的官方规格或已实测结果。</p>
+<table>
+<thead>
+<tr>
+<th>主题</th>
+<th>先查哪个设置</th>
+<th>练习起稿与检查动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dawn</td>
+<td>Image banner高度/图像适配/文本位置</td>
+<td>桌面2000×1000；先把商品放中间安全区，切手机检查左右裁切</td>
+</tr>
+<tr>
+<td>Craft</td>
+<td>实际使用的图文或横幅区块</td>
+<td>图文配图先用1600×1600；留材质细节，不把参数烧进背景</td>
+</tr>
+<tr>
+<td>Sense</td>
+<td>实际区块的高度和文案叠加</td>
+<td>横幅先用2000×1000；检查浅色商品是否融进浅背景</td>
+</tr>
+<tr>
+<td>Refresh</td>
+<td>商品图片区块比例、主题版本</td>
+<td>商品媒体先用2000×2000；再检查首页缩略图是否切掉包装</td>
+</tr>
+<tr>
+<td>Studio</td>
+<td>图像区块与集合卡片的比例</td>
+<td>竖图可先1600×2000；统一同一集合图片比例，避免卡片忽高忽低</td>
+</tr>
+</tbody>
+</table>
+<h3>一次完成桌面和手机两个版本</h3>
+<ol>
+<li>在主题编辑器选择真实要用的页面和区块，抄下主题名/版本、区块名、高度设置与文字位置；优先在未发布主题副本里试。</li>
+<li>用空白测试图确认裁切：在测试图四角标记1—4，上传后切桌面/手机预览，记录哪些角被裁。测试图只用于自己检查，最终替换为正式素材。</li>
+<li>确定商品的安全区域。以桌面2000×1000练习稿为例，先把主体放中央偏右，左侧留主题文字区；不要将包装关键字贴近边缘。</li>
+<li>在支持焦点的版本里把焦点设在商品关键结构上。调整区块高度后再预览；单一焦点不能保护画面所有角落。</li>
+<li>如果主题支持独立手机图，另做1000×1250练习画板，用同一个真实商品层重新构图。如果只有一个图片字段，不把第二张图冒充手机专用设置：选择共同安全构图，或换适合的区块。</li>
+<li>标题和真实按钮放在主题字段里，保持文字可编辑、链接可点击。示例文案“Keep small essentials together”只说明用途，不增加耐水/承重声明。</li>
+<li>手机预览检查商品完整、文字不压产品、按钮未被遮挡；再看桌面首屏。两端冲突时调整区块或文案，不拉伸商品。</li>
+<li>记录实际导出大小与页面表现。本项目建议的检查宽度为360、390、1440px，用于发现裁切，不能替代自己店铺主题预览。</li>
+</ol>
+<p>品牌统一用一张项目卡控制：主色/辅色、标题字体与正文回退字体、实拍白平衡、商品摆放方向、阴影方向、文字区边距。只换比例不换品牌卡；语言变长时先缩短准确文案，不改商品比例。</p>
+<p>上传上限需看对应入口。官方Files页面列20MB和20MP；图片帮助页同时出现25MP建议及20MP上传限制，存在口径差异。不要只复制“5000×5000就一定可传”；练习图先保持在20MP以内并以实际入口反馈为准。<a href="https://help.shopify.com/en/manual/sell-online/online-store/file-uploads">Files要求</a>。</p>
 </section>
 <section class="supplement-section" id="补充-shopee-localization"><h2>Shopee SG封面、规格与变体，逐张制作</h2>
 <p>本篇以新加坡站DN01收纳盒练习为例，完成封面、场景、结构、尺寸和发货图。SG官方广告学习页提供清晰商品、方形照片和简洁展示建议；这不是所有Shopee市场的统一硬性规格。<a href="https://ads.shopee.sg/learn/faq/520/172">Shopee SG官方指导</a>。</p>
@@ -4226,15 +4348,15 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 <p>准备真实正面、开盖、隔板、配件照片和外尺寸。先做一个SKU，再复制排版给下一个真实颜色。</p>
 <h3>2. 封面先让商品清楚</h3>
 <p>用真实主体放入白色或非常浅的干净背景，保持完整。促销活动信息如果允许使用，也要先核对活动、站点和时间，不能随手写“官方最低价”。本练习封面不放活动字。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">将上传的白色桌面收纳盒照片用于Shopee SG商品封面。保留真实盒体、盖子、颜色、比例和可见标识，商品完整清楚，背景干净浅色，柔和自然阴影。只处理背景和拍摄瑕疵，不重画商品结构。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">将上传的白色桌面收纳盒照片用于Shopee SG商品封面。保留真实盒体、盖子、颜色、比例和可见标识，商品完整清楚，背景干净浅色，柔和自然阴影。只处理背景和拍摄瑕疵，不重画商品结构。
 不添加文具、配件、促销文字、优惠券、认证、奖项和水印。不要把一个商品变成两件套，不添加原照片未见的隔板。无法保持外观时仅输出空背景供真实主体合成。
 </code></pre></div>
 <p>小尺寸预览时应先看见商品，再看见其他内容。主体太小就删装饰和扩大商品，不靠更艳的底色弥补。</p>
 <h3>3. 场景图说明用途</h3>
-<p>复用<a href="#%E8%A1%A5%E5%85%85-amazon-listing">Amazon场景副图</a>中真实主体与浅木桌面，换成适用于本店的短句。练习 <code>For everyday desk organization</code>，商品用途清楚即可。道具与发货清单分开，整图生成改变盒子时回空背景合成。</p>
+<p>复用<a href="#补充-amazon-listing">Amazon场景副图</a>中真实主体与浅木桌面，换成适用于本店的短句。练习 <code>For everyday desk organization</code>，商品用途清楚即可。道具与发货清单分开，整图生成改变盒子时回空背景合成。</p>
 <h3>4. 结构、尺寸与数量单独一张</h3>
 <p>结构图用开盖和隔板实拍，短句 <code>Removable divider</code>。尺寸图写 <code>External size: 220 × 150 × 120 mm (L × W × H)</code>。发货图写盒体、盖子、隔板数量，不能把场景文具算进去。</p>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">依据商品结构实拍、真实外尺寸和发货清单，整理Shopee SG三张说明图。分别输出结构图、尺寸图、发货图的短标题、准确文字、对应照片和图层顺序。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">依据商品结构实拍、真实外尺寸和发货清单，整理Shopee SG三张说明图。分别输出结构图、尺寸图、发货图的短标题、准确文字、对应照片和图层顺序。
 每张只解释一个问题；尺寸保留L/W/H顺序和单位，发货逐项写数量。没有资料支持的防水、耐温、承重、食品接触与认证不写。不要生成数字、产品细节和配件图片，文本后期排版。
 </code></pre></div>
 <p>这一步的可见结果是三张信息不同、数字准确、手机能读的说明图，不是三张重复“高品质”的海报。</p>
@@ -4268,7 +4390,73 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 </tr>
 </tbody>
 </table>
-<p>模板入口<a href="#%E8%A1%A5%E5%85%85-P15">P15</a>，其他语言处理看<a href="#%E8%A1%A5%E5%85%85-localization">本地化</a>。</p>
+<p>模板入口<a href="#补充-P15">P15</a>，其他语言处理看<a href="#补充-localization">本地化</a>。</p>
+<h3>多站点不要只改货币符号</h3>
+<p>交接文档列出的SG/MY/TH/PH/VN/TW全是800×800，既没有体现差异，也不是已经核实的统一规范。2026-10-15查到的<a href="https://ads.shopee.sg/learn/faq/520/172">Shopee Ads Singapore商品页指导</a>建议至少1024×1024、1:1、封面白底、真实商品。它是SG广告优化指导，不能外推成所有站点的硬性上架门槛。</p>
+<table>
+<thead>
+<tr>
+<th>目标站点</th>
+<th>本轮可用依据</th>
+<th>制作时具体处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SG</td>
+<td>上述官方图片建议已读</td>
+<td>英文版；练习用1200方图母版再按后台导出</td>
+</tr>
+<tr>
+<td>MY</td>
+<td>本轮未核实当地像素硬性要求</td>
+<td>单独核对当地字段；不要直接沿用SG政策或促销规则</td>
+</tr>
+<tr>
+<td>TH</td>
+<td>同上</td>
+<td>泰文需当地审稿和字体检查；不把英文手动断词照搬</td>
+</tr>
+<tr>
+<td>PH</td>
+<td>同上</td>
+<td>按目标受众确认语言、规格称呼与当地后台</td>
+</tr>
+<tr>
+<td>VN</td>
+<td>同上</td>
+<td>检查越南语变音符号、字体回退和溢出</td>
+</tr>
+<tr>
+<td>TW</td>
+<td>同上</td>
+<td>繁体、当地用语和单位核对；原大陆简体不机械转换</td>
+</tr>
+</tbody>
+</table>
+<h3>跟做：一套母版生成封面、规格、变体和活动素材</h3>
+<ol>
+<li>准备同一SKU的正面、侧面和配件实拍，建立图文事实表。DN01练习只确认白色ABS、220×150×120 mm和三件发货内容。</li>
+<li>做干净商品封面：白底、真实商品、充足边距。先检查商品是否清楚，再决定有无使用场景，不能把促销版默认用作所有站点封面。</li>
+<li>另建规格图：用实拍加可编辑尺寸线；先核对长宽高方向，再排准确单位。缺内尺寸就不写“能放多少”。</li>
+<li>每个颜色/SKU用各自实拍，不给同一照片随意换色当真实库存。对照变体字段，保证点选变体与展示图片一致。</li>
+<li>活动图单独建画板，只有平台和活动位允许时才添加批准的文案。价格、有效期与条件来自活动资料，禁止模型补优惠。</li>
+<li>在手机宽度预览：先看商品，再看一个主要信息。字体缩小才能放下时先删次要字，颜色用深浅对比，避免只靠红绿区别规格。</li>
+<li>当地审核人核对语言和实际活动条件，保留反馈；再按当前上传提示导出。封面、详情信息图、活动素材分别命名和交付。</li>
+</ol>
+<p>这里没有采用“文字必须小于某百分比”或“必须画CTA按钮”的虚构全站规则。自己的活动横幅可测试一句明确行动文案；商品图上不要画会被误认为可点击的假按钮或平台官方标识。缺当地规则时，优先交干净实拍版和待确认清单。</p>
+<p>活动文案表可直接填：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">站点：
+图位：商品封面 / 详情信息图 / 经确认的活动横幅
+SKU及变体：
+活动依据与有效期：
+允许出现的准确文案：
+优惠条件与例外：
+素材中的道具是否随货：
+当地语言审核人和意见：
+后台像素/格式/大小要求：
+实际导出文件与预览问题：
+</code></pre></div>
 </section>
 <section class="supplement-section" id="补充-localization"><h2>跨境本地化，实际改一次英文、日文和尺寸图</h2>
 <p>这节得到事实对应词表、英文和日文短文案、单位换算记录，以及两份可编辑排版稿。翻译调整表达和阅读顺序，商品参数与发货内容保持一致。沿用DN01虚构收纳盒数据演示，正式商品替换真实记录。</p>
@@ -4306,7 +4494,7 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 </table>
 <p>每个词旁边记录规格表或照片依据。日文例句是编辑草稿，正式面向客户的版本仍需熟悉当地表达的人复核；语言流畅不能证明功能真实。</p>
 <h3>2. 先翻事实，再缩短标题</h3>
-<div class="codebox"><div class="codebar"><span>text</span><button type="button" class="copy-btn">复制</button></div><pre><code class="language-text">请把下面的收纳盒事实与短文案分别整理成英文和日文。产品为带盖桌面收纳盒，白色ABS，外尺寸220×150×120mm，一个可拆隔板，发货含盒体1、盖子1、隔板1，文具不包含。这些是练习设定，正式发布会替换。
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">请把下面的收纳盒事实与短文案分别整理成英文和日文。产品为带盖桌面收纳盒，白色ABS，外尺寸220×150×120mm，一个可拆隔板，发货含盒体1、盖子1、隔板1，文具不包含。这些是练习设定，正式发布会替换。
 输出三列对照表，事实字段保留数值、数量和单位；营销标题可以简短自然，但不得添加防水、耐温、食品接触、认证、环保或容量声明。给每条短标题一个更短版本，供手机排版。尺寸写L×W×H，外尺寸与内尺寸分开。
 指出可能需要当地语言复核的词，不把翻译草稿称为已通过平台审核。
 </code></pre></div>
@@ -4366,7 +4554,59 @@ approved-copy.txt是后期文字依据，数值与单位不得改写。本轮不
 </tr>
 </tbody>
 </table>
-<p>单位错就回换算记录，文本错就改文字层，背景错就改背景。准确文字不通过整图重新生成来修。最终交付词表、审定文本、PSD状态与语言版本文件；当前没有当地语言审校或平台实际导入。英文完整模板<a href="#%E8%A1%A5%E5%85%85-P16">P16</a>，日文<a href="#%E8%A1%A5%E5%85%85-P17">P17</a>，尺寸<a href="#%E8%A1%A5%E5%85%85-P18">P18</a>。</p>
+<p>单位错就回换算记录，文本错就改文字层，背景错就改背景。准确文字不通过整图重新生成来修。最终交付词表、审定文本、PSD状态与语言版本文件；当前没有当地语言审校或平台实际导入。英文完整模板<a href="#补充-P16">P16</a>，日文<a href="#补充-P17">P17</a>，尺寸<a href="#补充-P18">P18</a>。</p>
+<h3>从一条商品事实到英文、日文和回译</h3>
+<p>练习事实：DN01为白色ABS收纳盒，有可拆隔板；外尺寸长220×宽150×高120 mm。以下只是编辑示例，不是经母语市场测试的文案。</p>
+<table>
+<thead>
+<tr>
+<th>原始事实</th>
+<th>英文候选</th>
+<th>日文候选</th>
+<th>回译与检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可拆隔板1个</td>
+<td>Includes one removable divider</td>
+<td>取り外し可能な仕切り板1枚付き</td>
+<td>均应回到“含1个可拆隔板”，不能变成多种分隔套装</td>
+</tr>
+<tr>
+<td>外尺寸220×150×120 mm</td>
+<td>External dimensions: L 220 × W 150 × H 120 mm</td>
+<td>外寸：長さ220 × 幅150 × 高さ120 mm</td>
+<td>长/宽/高分别对应实测方向；日文命名再由目标市场人员确认</td>
+</tr>
+<tr>
+<td>场景文具不随货</td>
+<td>Stationery shown is not included</td>
+<td>撮影用の文房具は付属しません</td>
+<td>只解释场景道具；主图仍按平台要求处理</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>建术语表：中文事实、准许英文/日文、禁用说法、证据文件；同一SKU在图片、标题和说明里用同一名称。</li>
+<li>翻译时锁住数字、部件数量、材质和未知项。将“防尘”译成“防水”属于新增功效，必须退回。</li>
+<li>单位换算单独计算：mm除以25.4得in，220/25.4≈8.66，150/25.4≈5.91，120/25.4≈4.72。原值保留，英寸用约值；不能由外尺寸推导容量、内径或服装尺码。</li>
+<li>让另一轮检查从译文回译，比较事实字段，而非比较句子是否漂亮。母语审核人继续检查自然度、搭配与当地用语。</li>
+<li>排版时英语按词换行；日语检查行首标点、括号和断行，不拆开数字与单位。换字体后重新看实际换行，不能只看字符数。</li>
+<li>逐张检查颜色词、件数、规格图箭头、文件语言标签。外语无误但图片上仍是旧SKU，也算交付失败。</li>
+</ol>
+<p>可复制给语言检查工具：</p>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">请检查商品图片文案，不做营销扩写。
+目标市场和语言：[填写，例如US/en-US或JP/ja-JP]。
+原始事实：[粘贴经确认的材质、尺寸、数量、使用方式]。
+禁止补充：[未知认证、承重、耐温、防水、功效]。
+中文原文：[粘贴]；译文：[粘贴]；术语表：[粘贴]。
+逐条输出：原事实、译文含义、回译、数字/单位/件数是否一致、是否新增声明、建议修订。
+不要自动把毫米换成服装尺码，不改品牌名，不把“约”改成精确保证。
+排版再列：不可分开的数字和单位、英语断词问题、日文行首行尾问题、待母语审稿项。
+保留无法确认的内容；翻译完成不代表平台审核通过。
+</code></pre></div>
+<p>最终交付：术语表、双语逐条对照、准确文字源文件、排版图、审稿意见。完整英文/日文任务模板分别见<a href="#补充-P16">P16</a>与<a href="#补充-P17">P17</a>。</p>
 </section>
 <section class="supplement-section" id="补充-cross-border-sku-delivery"><h2>跨境SKU批量，从两款商品做到交付清单</h2>
 <p>这一篇做出两款SKU、两个渠道的任务清单与文件目录。先做一款能交付的母版，再扩到多款。DN01白色、DN02灰色仅为虚构练习ID，正式商品各用真实照片与参数，不能靠改色生成不同SKU。</p>
@@ -4869,7 +5109,292 @@ JB01-02-scene,JB01_white_front.jpg,scene,JB01_white_02-scene_zh_v01.jpg,planned,
 <p>逐行核文件存在、能打开、宽高、颜色/变体、文字和图片位置。输出文件名不同不代表图像内容不同，五张重复背景也不算五种用途。交付选用版本和清单，源文件缺失明确写未交付。</p>
 <p>跨境例子与目录操作见<a href="#%E8%A1%A5%E5%85%85-cross-border-sku-delivery">SKU交付教程</a>，真实商品逐图制作见<a href="#%E8%A1%A5%E5%85%85-image-set">套图教程</a>。本节是文件与状态方法，没有提交真实图像任务。</p>
 </section>
-<h2 id="资源资料库">仓库资料与核查</h2><p>原稿的仓库表格完整保留在正文；下面是已整理的补充资料，来源核对、作者展示和本项目运行分别记录。</p><details class="resource-entry" id="resource-comfyui"><summary>Comfy-Org/ComfyUI · 节点工作流</summary><p>输入、节点、模型与输出的可复用流程。</p><p>README与文件树已读取；未安装运行</p><p>输入：图像／文字、工作流、模型与节点</p><p>输出：按工作流得到图像或其他媒体</p><p>工作流文件不证明当前依赖已跑通。</p><p><a href="https://github.com/Comfy-Org/ComfyUI">原始仓库</a> · 许可 GPL-3.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-invokeai"><summary>invoke-ai/InvokeAI · 画布与图像工作流</summary><p>作为画布与生成流程研究入口。</p><p>README与文件树已读取；未安装运行</p><p>输入：图像、生成任务与画布操作</p><p>输出：图像与项目工作流</p><p>当前版本操作和本项目运行结果尚未核验。</p><p><a href="https://github.com/invoke-ai/InvokeAI">原始仓库</a> · 许可 Apache-2.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-krita-diffusion"><summary>Acly/krita-ai-diffusion · 图层与生成协作</summary><p>图层软件与生成后端的协作路径。</p><p>README与文件树已读取；未安装运行</p><p>输入：Krita画布、选择区、提示词与兼容后端</p><p>输出：画布中的生成／编辑候选结果</p><p>需核对Krita、插件、后端与模型版本。</p><p><a href="https://github.com/Acly/krita-ai-diffusion">原始仓库</a> · 许可 GPL-3.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-rembg"><summary>danielgatis/rembg · 抠图工具</summary><p>批量或单图背景移除的研究入口。</p><p>README与文件树已读取；未安装运行</p><p>输入：真实商品或其他图像</p><p>输出：背景移除后的图像</p><p>透明物、毛发、反光边缘需要对照原图精修。</p><p><a href="https://github.com/danielgatis/rembg">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-birefnet"><summary>ZhengPeng7/BiRefNet · 前景分割</summary><p>前景分割与主体处理的研究入口。</p><p>README与文件树已读取；未安装运行</p><p>输入：输入图像、兼容环境与模型</p><p>输出：分割结果，按调用实现形成抠图素材</p><p>模型、代码、权重和调用方式需分别核对。</p><p><a href="https://github.com/ZhengPeng7/BiRefNet">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-mermaid"><summary>mermaid-js/mermaid · 可编辑信息图</summary><p>用文本表达节点、关系与流程。</p><p>README与文件树已读取；未安装运行</p><p>输入：准确节点、关系与图表定义</p><p>输出：渲染图与可编辑文本定义</p><p>结构关系必须来自准确原始资料。</p><p><a href="https://github.com/mermaid-js/mermaid">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-excalidraw"><summary>excalidraw/excalidraw · 讲解草图</summary><p>用于协作草图和讲解关系。</p><p>README与文件树已读取；未安装运行</p><p>输入：节点、草图、文字和布局</p><p>输出：可编辑白板与导出图</p><p>草图与可执行软件交付分开。</p><p><a href="https://github.com/excalidraw/excalidraw">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-footwear-skills"><summary>fanfan520dhb-star/footwear-visual-production-skills · 业务流程Skill</summary><p>鞋类简报、主图、详情与SKU生产分工。</p><p>README与文件树已读取；未安装运行</p><p>输入：真实鞋类素材、已核实事实及业务简报</p><p>输出：规划与任务组织；生成结果取决于外部实际工具</p><p>既有核查未见生成脚本与LICENSE；只提供独立方法概述，不复制其Skill。</p><p><a href="https://github.com/fanfan520dhb-star/footwear-visual-production-skills">原始仓库</a> · 许可 None · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-aihot"><summary>KKKKhazix/AIHOT · 发现方法</summary><p>借鉴来源登记、预筛、归组和增量维护。</p><p>README与文件树已读取；未安装运行</p><p>输入：来源登记、公开内容与行业主题</p><p>输出：候选、精选与主题组织，需自行实际部署验证</p><p>公开示例来源不等于线上全部信源；不复制私有配置。</p><p><a href="https://github.com/KKKKhazix/AIHOT">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-image-prompt-library"><summary>wangge-dev/wangge-gpt-image-2-5 · 独立提示词库</summary><p>按视觉任务关联完整提示词资源。</p><p>README与文件树已读取；未安装运行</p><p>输入：真实素材、用途与可替换变量</p><p>输出：完整任务词；实际生图由用户工具执行</p><p>保持独立维护；具体模型与执行状态见原卡。</p><p><a href="https://github.com/wangge-dev/wangge-gpt-image-2-5">原始仓库</a> · 许可 GitHub未自动识别；见原项目许可 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-ecommerce-skills"><summary>dlazy-ai/ecommerce-skills · 业务流程Skill</summary><p>26项电商技能覆盖商品图、修图、跨境本地化与批量；作为方法和实现候选。</p><p>README、跨境与批量Skill、脚本片段已读；未安装或运行</p><p>输入：真实商品图、商品清单、准确文案、品牌规范与目标市场</p><p>输出：任务方案、生成适配与检查脚本；运行结果依赖实际后端</p><p>本项目只读来源未执行生成。跨境规则、尺码表及区域偏好需要当前站点和真实商品依据；作者示例与本项目结果分开。</p><p><a href="https://github.com/dlazy-ai/ecommerce-skills">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-cross-border-knowledge"><summary>kangise/ecommerce-ai-skills · 跨境知识与方法</summary><p>跨境视觉章节、多语言方法、完整提示词组织与适用范围记录。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：商品事实、目标市场、任务与准确素材</p><p>输出：知识章节、模板与任务规划；运行组件是另一个实际系统</p><p>本项目只核对来源。作者的目录数量、检查通过与演示不证明所有平台规则适用于现在；运行系统的接口、约束与声明需另核，不采用其哈希或冻结规则。</p><p><a href="https://github.com/kangise/ecommerce-ai-skills">原始仓库</a> · 许可 CC0-1.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-detail-image-workflow"><summary>jovanjianga/ecommerce-detail-images · 业务流程Skill</summary><p>商品详情图的逐页规划、风格一致性、局部返工与双语说明。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实商品照片或明确标为概念的描述、事实与风格</p><p>输出：逐页方案、完整任务词与宿主图像工具的结果；源库有作者示例</p><p>当前13文件、1份Skill、0独立脚本；作者图片示例未由本项目复现，不把工作流文档当独立生图软件。</p><p><a href="https://github.com/jovanjianga/ecommerce-detail-images">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-kv-marketing-workflow"><summary>Design0809/KV-design-ecommerce-marketing · 业务流程Skill</summary><p>商品KV、广告横幅与中英文版式的素材识别和定向修改方法。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实商品、品牌素材、准确文案、用途与目标尺寸</p><p>输出：方向、任务词与依赖宿主工具的样图／延展</p><p>当前8文件、1份Skill、0独立脚本；审查和尺寸约束是来源作者流程，不作为本项目通用门禁；广告文字不自动适用于Amazon主图。</p><p><a href="https://github.com/Design0809/KV-design-ecommerce-marketing">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-ad-production-kit"><summary>oscarlora/ad-production-kit · 广告制作流程</summary><p>跨境广告的研究、角度、画面、短片与素材编辑组织。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：品牌资料、真实商品、目标受众、准确文案、获准素材</p><p>输出：广告任务方案、图像／视频适配脚本及制作界面</p><p>当前130文件、27份Skill、87脚本，是文件统计。本项目未运行；来源的服务路由、元信息清理和产物保留方式需另核，作者绩效不作为效果证明。</p><p><a href="https://github.com/oscarlora/ad-production-kit">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-ecommerce-image-toolkit"><summary>xianyu110/ecommerce-image-skills · 业务流程与脚本</summary><p>Amazon白底／A+、商品套图与后期图片检查、模块切分。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实商品、准确文案、当前平台参数与已配置工具</p><p>输出：任务词、检查／拼接脚本与依赖实际接口的图像结果</p><p>当前53文件、12份Skill、36脚本。本项目未调用；型号别名和第三方接口需另核，检查脚本的默认阈值不代替当前平台规则。</p><p><a href="https://github.com/xianyu110/ecommerce-image-skills">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-visual-copywriting"><summary>feichanggege/ecommerce-visual-copywriting-skill · 业务流程Skill</summary><p>跨境Listing／A+的逐图职责、准确文案、素材与完整生图任务词规划。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：商品事实、包装、已确认资料、目标平台与风格</p><p>输出：逐图画面简报、准确文字、任务词与待核主张</p><p>当前26文件、1份Skill、1脚本；该脚本用于检查Skill结构，不是生成引擎。来源参考规则仍需官方核对，本项目未生图。</p><p><a href="https://github.com/feichanggege/ecommerce-visual-copywriting-skill">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-background-replacement-workflow"><summary>meap158/ComfyUI-Background-Replacement · 节点工作流</summary><p>真实主体、背景替换、深度与合成的节点结构研究。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实图像、兼容ComfyUI、节点、模型与依赖</p><p>输出：背景替换／合成结果及可研究的示例工作流</p><p>当前19文件、9脚本与真实工作流JSON存在；示例采用旧SDXL-Turbo／ControlNet路径，当前兼容、边缘与主体保留未验证。代码MIT不等于模型权重同一许可。</p><p><a href="https://github.com/meap158/ComfyUI-Background-Replacement">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><h2 id="平台核查补充">平台规格核查补充</h2><details class="review-entry" id="platform-amazon"><summary>Amazon图片与A+</summary><p>Amazon公开图片指导；具体站点、类目和A+模块另核</p><p>公开指导的建议、示例与当前类目要求分开；A+像素按实际模块确定，不把普通主图要求套给所有模块。</p><p><strong>普通商品摄影指导</strong> 公开摄影文章建议白底与主体占画面85%或更多；这是指导出处，类目特殊要求仍到Seller Central核对。</p><p><strong>公开图片FAQ</strong> 文章列最长边500—10000像素，以及JPEG、TIFF、PNG、非动画GIF等格式；页面内容已读，不宣称已经完成账户端验证。</p><p><strong>A+设计指导</strong> 按模块要求安排图文；公开指南提到图像不大于2MB并强调手机文字可读。各模块实际槽位像素、可用功能以编辑器为准。</p><p><a href="https://sell.amazon.com/blog/product-photos">Amazon商品摄影指导（文章发布于2024-12-04）</a></p><p><a href="https://sell.amazon.com/blog/a-plus-content-design-guide">Amazon A+设计指导（文章发布于2025-09-24）</a></p><p><a href="https://sellercentral.amazon.com/help/hub">Seller Central当前站点帮助入口</a></p></details><details class="review-entry" id="platform-shopify"><summary>Shopify产品媒体、主题图片与alt text</summary><p>产品／集合媒体、主题通用图片与准确文字分别核对</p><p>产品媒体文档与通用上传文档列出不同像素限制；按上传位置使用，主题裁切仍需实际预览。</p><p><strong>产品／集合图片</strong> 当前该文档列最大5000×5000像素或25MP，文件小于20MB；2048×2048方图是展示建议，非所有区块强制尺寸。</p><p><strong>通用图片上传</strong> 当前该文档在上传限制段列20MP与20MB，并注明产品图片有不同限制；不要把两份说明合并成同一规则。</p><p><strong>alt text</strong> 官方说明列上限512字符，建议125字符或更少；描述实际图片内容，不堆关键词。</p><p><a href="https://help.shopify.com/en/manual/products/product-media/product-media-types">产品媒体类型</a></p><p><a href="https://help.shopify.com/en/manual/online-store/images/theme-images">通用图片上传</a></p><p><a href="https://help.shopify.com/en/manual/products/product-media/add-alt-text">媒体alt text</a></p></details><details class="review-entry" id="platform-shopee"><summary>Shopee SG商品页图片指导</summary><p>新加坡公开商品页指导；其他市场、Mall及后台限制另核</p><p>以可读取的SG官方指导替代无法请求的通用入口。指导建议不自动扩展成全市场统一硬限制，上传数量与体积等仍按当地后台核对。</p><p><strong>图片建议</strong> 该SG页面建议至少1024×1024的1:1方图、清晰实际商品和纯白封面；这是该文档指导，不填成全市场规则。</p><p><strong>内容建议</strong> 指导强调规格、配件、使用与变体信息；图片不应展示未包含在购买中的配件，也应避免水印或干扰图形。</p><p><strong>待核范围</strong> 实际文件体积、上传张数、店铺类型与其他市场要求未在本轮后台验证；不根据旧Mall PDF补齐。</p><p><a href="https://ads.shopee.sg/learn/faq/520/172">SG官方商品详情页指导</a></p><p><a href="https://seller.shopee.sg/edu/">SG Seller Education Hub（动态入口）</a></p></details><h2 id="版本核对说明">版本与来源核对</h2><p>原稿内容按原样保留。模型版本、平台规格、许可和原稿成本记录具有时间范围；这里单独记录核对情况，不将第三方展示写成本项目实测。</p><details class="review-entry"><summary>模型版本、名称与能力数字</summary><p>模型表完整保留原稿。2026-10-14曾核对部分官方来源，SD4/12B/4096等未取得对应一手依据，仍待核；未把表格完整迁移等同于所有技术主张已核实。AIHOT用于发现动态，具体能力回到原始来源核对。</p><p><a href="https://aihot.news/topics/image-gen">AIHOT图像生成线索</a></p></details><details class="review-entry"><summary>平台图片规格与本地化</summary><p>原稿尺寸表保留。补充教程中的Amazon指导、Shopify产品媒体/主题图片、Shopee SG适用范围分别说明；最终上传按当前站点、位置、类目、主题或模块核对。</p><p><a href="https://help.shopify.com/en/manual/products/product-media/product-media-types">Shopify产品媒体</a></p><p><a href="https://sell.amazon.com/blog/product-photos">Amazon产品摄影</a></p><p><a href="https://ads.shopee.sg/learn/faq/520/172">Shopee SG指导</a></p></details><details class="review-entry"><summary>原稿成本与实测措辞</summary><p>原稿中的OpenRouter数字和实测措辞按原文保留，属于原稿引用的第三方记录，不代表本项目新测量、当前报价或本次发生支出。本轮没有调用付费生成服务。</p></details><details class="review-entry"><summary>提示词与软件执行</summary><p>原稿15节写作/维护提示词和113处代码内容完整保留；补充20条作图任务词集中提供。原稿内的命令和提示词供读者阅读，不由构建器执行。生图、节点、PS源文件与后台上传未因本次迁移而获得实测状态。</p></details></div></article></main><aside id="guideIndex" class="side-index"><div class="side-index-title">正文目录</div><nav><a href="#目录"><span>00</span>目录</a>
+<section class="supplement-section" id="补充-tiktok-shop"><h2>TikTok Shop US商品图：从实拍到图组交付</h2>
+<p>本节只讨论商品图与图片封面的准备，不扩展到直播、投流或店铺运营。规则范围是US站，核对日2026-10-15。其他站点需另外核对。</p>
+<h3>先分清商品图片和内容封面</h3>
+<p>US《Product Listing Policy》要求商品图至少600×600，最多9张方图，主图白底且展示正面实物；禁止用占位图或数字渲染替代商品。图片不能额外叠加文字、Logo、水印或图形。保留实物上真实已有的包装标识，和后期叠加营销标识是两回事。<a href="https://seller-us.tiktok.com/university/essay?knowledge_id=3196690250417921&amp;role=1">US商品刊登政策</a>。</p>
+<p>US上传教程当前写单图最大10MB；旧WooCommerce接口教程为5MB。二者入口不同，不能混成全球统一限制。本节按原生Seller Center教程准备，实际后台提示优先。<a href="https://seller-us.tiktok.com/university/essay?identity=1&amp;knowledge_id=6581713858676522&amp;role=1">原生商品上传教程</a>、<a href="https://seller-us.tiktok.com/university/essay?default_language=en&amp;knowledge_id=5496161836844846">旧WooCommerce说明</a>。</p>
+<p>1080×1920可以作为竖版内容封面的制作画布，但这里没有将它认定为所有TikTok Shop商品视频封面的强制规格。商品图与视频/内容封面分别建任务、分别核对要求。</p>
+<h3>跟做：DN01收纳盒五张图</h3>
+<p>使用虚构DN01练习计划，正式执行时换成自己的商品照片。最低素材是正面、侧面、背面、开盖、随货组件五张实拍；没有背面图就先补拍。</p>
+<table>
+<thead>
+<tr>
+<th>图位</th>
+<th>使用的实拍</th>
+<th>编辑动作</th>
+<th>判断是否可进入下一步</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 正面主图</td>
+<td>合盖正面</td>
+<td>校正曝光、背景、裁切；保留真实轮廓</td>
+<td>白底、完整实物、没有促销字</td>
+</tr>
+<tr>
+<td>2 侧面</td>
+<td>左或右侧实拍</td>
+<td>统一白平衡，保留侧面真实结构</td>
+<td>不是把正面图旋转或AI补侧面</td>
+</tr>
+<tr>
+<td>3 背面</td>
+<td>实际背面</td>
+<td>清理背景杂物，不修掉结构</td>
+<td>能与原图一一对应</td>
+</tr>
+<tr>
+<td>4 开盖细节</td>
+<td>开盖俯视</td>
+<td>适度裁切，呈现真实隔板</td>
+<td>不凭外尺寸生成内部容量</td>
+</tr>
+<tr>
+<td>5 随货内容</td>
+<td>盒体/盖子/隔板同框实拍</td>
+<td>保持数量，不放未随货道具</td>
+<td>对应清单各1件</td>
+</tr>
+</tbody>
+</table>
+<h3>具体操作</h3>
+<ol>
+<li>把五张原片放在“原件”文件夹，复制到“工作稿”。先删选模糊、遮挡、颜色不一致的候选，保留原件。</li>
+<li>在Photopea/PS打开主图，复制商品层。用选择工具加蒙版，背景下面放白色层；放大到100%沿轮廓检查透白、毛边和盖沿。</li>
+<li>新建1200×1200练习画板，将商品层等比缩放，四周留出边距。1200是本教程工作尺寸，600是本次US政策查到的最低像素，二者不要混写。</li>
+<li>调整曝光与白平衡到接近实物。如果AI背景辅助改变了包装、部件或商品颜色，退回实拍与蒙版操作，不用更多提示词掩盖商品变化。</li>
+<li>其余四张用相同颜色处理和画幅。保留不同视角，不用同一张主图重复裁出五个版本；图里不烧入规格文字，准确描述放到对应商品字段。</li>
+<li>导出JPG/PNG，记录真实尺寸与文件大小；检查导出图而不只看编辑画布。超限时先适度压缩或重新导出，不连续保存低质量JPEG。</li>
+<li>在目标商品草稿里按顺序上传，核对封面、变体与预览。后台若提示不符，记录原文，改对应文件；没有真实后台权限时停在文件包交付，不虚构上传结果。</li>
+</ol>
+<p>预期交付是五个真实图像文件、源文件和检查清单。当前文稿没有附实拍、未执行修图或上架，因此是跟做教程，不是平台通过案例。</p>
+<h3>返工怎么说才具体</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>可执行返工</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>白盒边缘融掉</td>
+<td>恢复实拍灰阶，收回过度曝光和蒙版；不画粗描边</td>
+</tr>
+<tr>
+<td>商品有新接口</td>
+<td>回到原片，禁用该生成版本；未拍结构不能补画</td>
+</tr>
+<tr>
+<td>附带文具引起误解</td>
+<td>商品图片只呈现实发内容，另核场景用途</td>
+</tr>
+<tr>
+<td>变体与颜色不一致</td>
+<td>用对应SKU实拍重导出，不能仅修改文件名</td>
+</tr>
+<tr>
+<td>上传失败</td>
+<td>对照入口的像素/格式/大小提示；记录失败项后重导出</td>
+</tr>
+</tbody>
+</table>
+<p>集中指令见<a href="#template-T01">TikTok Shop US任务模板</a>。</p>
+</section>
+<section class="supplement-section" id="补充-method-lab"><h2>一张商品图的作图方法与提示词练习</h2>
+<p>本节把“通用作图方法”和“提示词方法论”放在同一个操作例子里：用真实收纳盒照片，做一张无字书桌场景图，再做准确尺寸说明。选择支持参考图的编辑工具；准确文字和商品保真需要时回PS、Photopea或Krita处理。这里提供步骤与判断，不声称已经生成了案例图片。</p>
+<h3>先把参考图分成三种角色</h3>
+<p>图1是商品正面，决定轮廓、颜色、Logo；图2是侧面和隔板细节，只补充确实拍到的结构；图3是书桌环境，仅借场景和光线，不借它的商品、参数与品牌。素材不足就先补拍。把三张都写成“参考图”容易让工具把外观与风格混在一起。</p>
+<h3>十一种操作，各在什么地方用</h3>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>这次具体做什么</th>
+<th>怎样判断和返工</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文生图</td>
+<td>先生成无商品的浅色书桌环境</td>
+<td>场景没有落脚处就先改台面，不急着放商品</td>
+</tr>
+<tr>
+<td>图生图</td>
+<td>用真实产品图换背景</td>
+<td>轮廓变了就退回“背景生成+真实商品合成”</td>
+</tr>
+<tr>
+<td>多参考图</td>
+<td>给商品、细节、背景分别命名</td>
+<td>出现图3的商品属性时，删掉混淆参考并重新约束</td>
+</tr>
+<tr>
+<td>草图控制</td>
+<td>在草图画出产品区、标题区、桌面线</td>
+<td>位置对但比例错时固定实拍商品层</td>
+</tr>
+<tr>
+<td>换背景与合成</td>
+<td>把抠出的实拍放到新台面</td>
+<td>查看接触点、透视、阴影方向是否统一</td>
+</tr>
+<tr>
+<td>局部修改</td>
+<td>蒙版只盖桌面脏点，避开商品边缘</td>
+<td>修改扩散到盖子就缩小区域并恢复原商品层</td>
+</tr>
+<tr>
+<td>抠图/消除/扩图/修瑕/降噪/放大</td>
+<td>先修原片，扩图只扩环境，放大放在最终输出前</td>
+<td>放大后的假纹理不算新增细节；模糊商标须重拍</td>
+</tr>
+<tr>
+<td>文字与Logo</td>
+<td>文案独立排版，Logo用授权原文件</td>
+<td>逐字与原件核对；字体描摹不能替代商标原件</td>
+</tr>
+<tr>
+<td>系列一致性</td>
+<td>同一商品层、光向、背景色与边距延展方/横/竖图</td>
+<td>逐张切换比对，不只看单张好看</td>
+</tr>
+<tr>
+<td>失败排查</td>
+<td>每轮只改一个变量，记录失败原因</td>
+<td>改词不解决结构问题时切换合成方案</td>
+</tr>
+<tr>
+<td>交付检查</td>
+<td>重新打开导出文件，核对像素、内容和颜色</td>
+<td>有源文件还要查图层是否真可编辑，不按扩展名猜</td>
+</tr>
+</tbody>
+</table>
+<h3>十个提示词动作，串成一轮工作</h3>
+<ol>
+<li><strong>写完整任务结构。</strong> 用“做什么—输入是什么—不能改什么—画面怎样—交什么”五句，先写目标交付，避免只堆高级感、8K等形容词。</li>
+<li><strong>选对任务种类。</strong> 分析负责读事实，策划负责图位，生图负责视觉，修图负责局部，排版负责准确文字，批量流程负责复用。不要一句话同时要求六件事而不说明先后。</li>
+<li><strong>决定语言。</strong> 中文讲清需求即可；需要英文工具提示或外语面向消费者时再改写，不假定英文必然更好。商品文案本地化走单独审稿流程。</li>
+<li><strong>给参考图分工。</strong> 写“图1是商品事实；图2是细节；图3只借光线”。若图3颜色污染商品，移除该参考，改用文字描述光线。</li>
+<li><strong>锁定关键项。</strong> 列出轮廓、数量、颜色、标签、比例，不能用“保持一致”代替具体对象检查。模板约束不保证模型做到，仍要实物对照。</li>
+<li><strong>拆复杂任务。</strong> 先读事实表，再做一张背景，合成商品，排版文字，最后导出。某步不合格就在该步修，不让错误流入整套图。</li>
+<li><strong>把短词变成完整指令。</strong> “高级收纳盒海报”补成下方示例，替换变量，并说明没有照片时如何处理。</li>
+<li><strong>适配工具。</strong> 通用自然语言不要混入另一模型的seed、denoise或JSON框字段。只有当前接口文档和节点确实支持时才设置参数；否则写普通描述。</li>
+<li><strong>对比迭代。</strong> 两个版本共用原图和商品层，只改变台面颜色。比较主体辨识、接触阴影和文案空间，记录选择原因，不虚构转化率提升。</li>
+<li><strong>入库。</strong> 保存完整指令、素材角色、工具和实际参数、结果路径、失败与修改；未生成的只标模板，不能填成功率或费用“实测”。</li>
+</ol>
+<div class="codebox"><div class="codebar"><span>text</span><button class="copy-btn" type="button">复制</button></div><pre><code class="language-text">任务：制作一张收纳盒的无字桌面场景图，用于详情页；不是正式白底主图。
+输入：图1真实商品斜侧照片；图2真实隔板细节；图3仅参考桌面环境，不借其商品。
+商品事实：[填写材质、外尺寸、颜色、部件、发货数量]；未知项：[填写]。
+画面：浅木桌面，柔和左上方日光，产品放右侧；左侧留约三分之一空白用于后期文字。
+必须保持：图1轮廓、盖子形状、颜色、Logo、标签、部件数量与比例。禁止新增接口、配件或功效。
+执行：先核对素材是否足够；先出一张候选。不能可靠保留商品时只生成空背景，并说明需把实拍商品合成回去。
+检查：与原片并排核对盖沿、隔板、标签、颜色和接触阴影；发现问题指出具体区域，不重画整套。
+输出：实际图像、像素/格式和需要返工处；不具备图像能力时交方案并明确未生成。
+</code></pre></div>
+<h3>修一次错误，而不是重跑整张</h3>
+<p>假设结果中书桌正确，但盖沿被多画了一圈。先保留当前背景；在图层软件放回原始商品层，蒙版只处理原片背景，重建脚底接触阴影。若直接再生图，模型可能连桌面和光线一起改变。修好后只再比较盖沿、接触线与主体颜色。</p>
+<p>用同样方法做尺寸图：先核真实长宽高和方向，再排线与文字。尺寸箭头、文本、商品、阴影分别成层。最终同时交准确文案与可编辑文件，尺寸文案不能只藏在一张压扁的图片里。</p>
+</section>
+<section class="supplement-section" id="补充-glossary"><h2>作图常见术语：什么时候需要知道</h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>用普通话理解</th>
+<th>在电商作图中的用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td>软件之间提交任务和取结果的接口</td>
+<td>需要批量任务时再考虑，不是模型名称</td>
+</tr>
+<tr>
+<td>API Key</td>
+<td>调用接口的凭证</td>
+<td>只放凭证配置，不能写进提示词或公开仓库</td>
+</tr>
+<tr>
+<td>模型与网站</td>
+<td>模型提供生成能力，网站提供操作入口</td>
+<td>同一模型在不同入口可用参数可能不同</td>
+</tr>
+<tr>
+<td>图生图</td>
+<td>将已有图作为生成或编辑的输入</td>
+<td>有商品实拍时用；不等于承诺完全还原</td>
+</tr>
+<tr>
+<td>蒙版/选择区</td>
+<td>指定允许修改或显示的区域</td>
+<td>改背景时保护产品；黑白含义看具体工具</td>
+</tr>
+<tr>
+<td>图层</td>
+<td>可分别修改的图像、文字或效果</td>
+<td>商品、文字、阴影分层，返工只改对应层</td>
+</tr>
+<tr>
+<td>LoRA</td>
+<td>对模型做较小范围适配的一种方法</td>
+<td>可能用于风格或对象；须匹配基础模型及许可</td>
+</tr>
+<tr>
+<td>ControlNet</td>
+<td>用姿态、边缘等条件控制生成的方法</td>
+<td>控制构图结构，不保证商品身份或尺寸真实</td>
+</tr>
+<tr>
+<td>IP-Adapter</td>
+<td>将参考图信息注入生成过程的适配方法</td>
+<td>参考风格/外观，效果依赖具体实现与模型</td>
+</tr>
+<tr>
+<td>Seed</td>
+<td>伪随机生成过程的种子</td>
+<td>记录有助复现；工具版本改变后未必相同</td>
+</tr>
+<tr>
+<td>Denoise</td>
+<td>一些图生图工作流中的噪声/重绘强度</td>
+<td>具体范围依节点，不把一套数字抄给所有工具</td>
+</tr>
+<tr>
+<td>像素与DPI</td>
+<td>像素是数字图像网格，DPI描述输出密度</td>
+<td>网页图片查像素；只改DPI不会修复分辨率不足</td>
+</tr>
+<tr>
+<td>RGB/sRGB</td>
+<td>色彩模式与常见显示色彩空间</td>
+<td>网页导出注意颜色；不用CMYK印刷文件直接当网页图</td>
+</tr>
+<tr>
+<td>PSD</td>
+<td>可保存图层的文件格式</td>
+<td>重新打开检查文字、图层；不能只看扩展名</td>
+</tr>
+<tr>
+<td>A+</td>
+<td>Amazon的模块化商品内容</td>
+<td>先选模块槽位，再做图片和准确文字</td>
+</tr>
+<tr>
+<td>SKU/ASIN</td>
+<td>商家库存标识/Amazon商品标识</td>
+<td>图片文件与实际商品、颜色和语言对应</td>
+</tr>
+</tbody>
+</table>
+<p>这些解释用于识别工作流中的角色；安装或调用前再查对应项目文档和当前接口，不在本页复制一套跨工具通用参数。</p>
+</section>
+<h2 id="资源资料库">仓库资料与核查</h2><p>原稿的仓库表格完整保留在正文；下面是已整理的补充资料，来源核对、作者展示和本项目运行分别记录。</p><details class="resource-entry" id="resource-comfyui"><summary>Comfy-Org/ComfyUI · 节点工作流</summary><p>输入、节点、模型与输出的可复用流程。</p><p>README与文件树已读取；未安装运行</p><p>输入：图像／文字、工作流、模型与节点</p><p>输出：按工作流得到图像或其他媒体</p><p>工作流文件不证明当前依赖已跑通。</p><p><a href="https://github.com/Comfy-Org/ComfyUI">原始仓库</a> · 许可 GPL-3.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-invokeai"><summary>invoke-ai/InvokeAI · 画布与图像工作流</summary><p>作为画布与生成流程研究入口。</p><p>README与文件树已读取；未安装运行</p><p>输入：图像、生成任务与画布操作</p><p>输出：图像与项目工作流</p><p>当前版本操作和本项目运行结果尚未核验。</p><p><a href="https://github.com/invoke-ai/InvokeAI">原始仓库</a> · 许可 Apache-2.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-krita-diffusion"><summary>Acly/krita-ai-diffusion · 图层与生成协作</summary><p>图层软件与生成后端的协作路径。</p><p>README与文件树已读取；未安装运行</p><p>输入：Krita画布、选择区、提示词与兼容后端</p><p>输出：画布中的生成／编辑候选结果</p><p>需核对Krita、插件、后端与模型版本。</p><p><a href="https://github.com/Acly/krita-ai-diffusion">原始仓库</a> · 许可 GPL-3.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-rembg"><summary>danielgatis/rembg · 抠图工具</summary><p>批量或单图背景移除的研究入口。</p><p>README与文件树已读取；未安装运行</p><p>输入：真实商品或其他图像</p><p>输出：背景移除后的图像</p><p>透明物、毛发、反光边缘需要对照原图精修。</p><p><a href="https://github.com/danielgatis/rembg">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-birefnet"><summary>ZhengPeng7/BiRefNet · 前景分割</summary><p>前景分割与主体处理的研究入口。</p><p>README与文件树已读取；未安装运行</p><p>输入：输入图像、兼容环境与模型</p><p>输出：分割结果，按调用实现形成抠图素材</p><p>模型、代码、权重和调用方式需分别核对。</p><p><a href="https://github.com/ZhengPeng7/BiRefNet">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-mermaid"><summary>mermaid-js/mermaid · 可编辑信息图</summary><p>用文本表达节点、关系与流程。</p><p>README与文件树已读取；未安装运行</p><p>输入：准确节点、关系与图表定义</p><p>输出：渲染图与可编辑文本定义</p><p>结构关系必须来自准确原始资料。</p><p><a href="https://github.com/mermaid-js/mermaid">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-excalidraw"><summary>excalidraw/excalidraw · 讲解草图</summary><p>用于协作草图和讲解关系。</p><p>README与文件树已读取；未安装运行</p><p>输入：节点、草图、文字和布局</p><p>输出：可编辑白板与导出图</p><p>草图与可执行软件交付分开。</p><p><a href="https://github.com/excalidraw/excalidraw">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-footwear-skills"><summary>fanfan520dhb-star/footwear-visual-production-skills · 业务流程Skill</summary><p>鞋类简报、主图、详情与SKU生产分工。</p><p>README与文件树已读取；未安装运行</p><p>输入：真实鞋类素材、已核实事实及业务简报</p><p>输出：规划与任务组织；生成结果取决于外部实际工具</p><p>既有核查未见生成脚本与LICENSE；只提供独立方法概述，不复制其Skill。</p><p><a href="https://github.com/fanfan520dhb-star/footwear-visual-production-skills">原始仓库</a> · 许可 None · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-aihot"><summary>KKKKhazix/AIHOT · 发现方法</summary><p>借鉴来源登记、预筛、归组和增量维护。</p><p>README与文件树已读取；未安装运行</p><p>输入：来源登记、公开内容与行业主题</p><p>输出：候选、精选与主题组织，需自行实际部署验证</p><p>公开示例来源不等于线上全部信源；不复制私有配置。</p><p><a href="https://github.com/KKKKhazix/AIHOT">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-image-prompt-library"><summary>wangge-dev/wangge-gpt-image-2-5 · 独立提示词库</summary><p>按视觉任务关联完整提示词资源。</p><p>README与文件树已读取；未安装运行</p><p>输入：真实素材、用途与可替换变量</p><p>输出：完整任务词；实际生图由用户工具执行</p><p>保持独立维护；具体模型与执行状态见原卡。</p><p><a href="https://github.com/wangge-dev/wangge-gpt-image-2-5">原始仓库</a> · 许可 GitHub未自动识别；见原项目许可 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-ecommerce-skills"><summary>dlazy-ai/ecommerce-skills · 业务流程Skill</summary><p>26项电商技能覆盖商品图、修图、跨境本地化与批量；作为方法和实现候选。</p><p>README、跨境与批量Skill、脚本片段已读；未安装或运行</p><p>输入：真实商品图、商品清单、准确文案、品牌规范与目标市场</p><p>输出：任务方案、生成适配与检查脚本；运行结果依赖实际后端</p><p>本项目只读来源未执行生成。跨境规则、尺码表及区域偏好需要当前站点和真实商品依据；作者示例与本项目结果分开。</p><p><a href="https://github.com/dlazy-ai/ecommerce-skills">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-cross-border-knowledge"><summary>kangise/ecommerce-ai-skills · 跨境知识与方法</summary><p>跨境视觉章节、多语言方法、完整提示词组织与适用范围记录。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：商品事实、目标市场、任务与准确素材</p><p>输出：知识章节、模板与任务规划；运行组件是另一个实际系统</p><p>本项目只核对来源。作者的目录数量、检查通过与演示不证明所有平台规则适用于现在；运行系统的接口、约束与声明需另核，不采用其哈希或冻结规则。</p><p><a href="https://github.com/kangise/ecommerce-ai-skills">原始仓库</a> · 许可 CC0-1.0 · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-detail-image-workflow"><summary>jovanjianga/ecommerce-detail-images · 业务流程Skill</summary><p>商品详情图的逐页规划、风格一致性、局部返工与双语说明。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实商品照片或明确标为概念的描述、事实与风格</p><p>输出：逐页方案、完整任务词与宿主图像工具的结果；源库有作者示例</p><p>当前13文件、1份Skill、0独立脚本；作者图片示例未由本项目复现，不把工作流文档当独立生图软件。</p><p><a href="https://github.com/jovanjianga/ecommerce-detail-images">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-kv-marketing-workflow"><summary>Design0809/KV-design-ecommerce-marketing · 业务流程Skill</summary><p>商品KV、广告横幅与中英文版式的素材识别和定向修改方法。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实商品、品牌素材、准确文案、用途与目标尺寸</p><p>输出：方向、任务词与依赖宿主工具的样图／延展</p><p>当前8文件、1份Skill、0独立脚本；审查和尺寸约束是来源作者流程，不作为本项目通用门禁；广告文字不自动适用于Amazon主图。</p><p><a href="https://github.com/Design0809/KV-design-ecommerce-marketing">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-ad-production-kit"><summary>oscarlora/ad-production-kit · 广告制作流程</summary><p>跨境广告的研究、角度、画面、短片与素材编辑组织。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：品牌资料、真实商品、目标受众、准确文案、获准素材</p><p>输出：广告任务方案、图像／视频适配脚本及制作界面</p><p>当前130文件、27份Skill、87脚本，是文件统计。本项目未运行；来源的服务路由、元信息清理和产物保留方式需另核，作者绩效不作为效果证明。</p><p><a href="https://github.com/oscarlora/ad-production-kit">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-ecommerce-image-toolkit"><summary>xianyu110/ecommerce-image-skills · 业务流程与脚本</summary><p>Amazon白底／A+、商品套图与后期图片检查、模块切分。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实商品、准确文案、当前平台参数与已配置工具</p><p>输出：任务词、检查／拼接脚本与依赖实际接口的图像结果</p><p>当前53文件、12份Skill、36脚本。本项目未调用；型号别名和第三方接口需另核，检查脚本的默认阈值不代替当前平台规则。</p><p><a href="https://github.com/xianyu110/ecommerce-image-skills">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-visual-copywriting"><summary>feichanggege/ecommerce-visual-copywriting-skill · 业务流程Skill</summary><p>跨境Listing／A+的逐图职责、准确文案、素材与完整生图任务词规划。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：商品事实、包装、已确认资料、目标平台与风格</p><p>输出：逐图画面简报、准确文字、任务词与待核主张</p><p>当前26文件、1份Skill、1脚本；该脚本用于检查Skill结构，不是生成引擎。来源参考规则仍需官方核对，本项目未生图。</p><p><a href="https://github.com/feichanggege/ecommerce-visual-copywriting-skill">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><details class="resource-entry" id="resource-background-replacement-workflow"><summary>meap158/ComfyUI-Background-Replacement · 节点工作流</summary><p>真实主体、背景替换、深度与合成的节点结构研究。</p><p>README、文件树与关键文件摘读；未安装运行或生成</p><p>输入：真实图像、兼容ComfyUI、节点、模型与依赖</p><p>输出：背景替换／合成结果及可研究的示例工作流</p><p>当前19文件、9脚本与真实工作流JSON存在；示例采用旧SDXL-Turbo／ControlNet路径，当前兼容、边缘与主体保留未验证。代码MIT不等于模型权重同一许可。</p><p><a href="https://github.com/meap158/ComfyUI-Background-Replacement">原始仓库</a> · 许可 MIT · 核对 2026-10-14</p></details><h2 id="平台核查补充">平台规格核查补充</h2><details class="review-entry" id="platform-amazon"><summary>Amazon图片与A+</summary><p>Amazon公开图片指导；具体站点、类目和A+模块另核</p><p>公开指导的建议、示例与当前类目要求分开；A+像素按实际模块确定，不把普通主图要求套给所有模块。</p><p><strong>普通商品摄影指导</strong> 公开摄影文章建议白底与主体占画面85%或更多；这是指导出处，类目特殊要求仍到Seller Central核对。</p><p><strong>公开图片FAQ</strong> 文章列最长边500—10000像素，以及JPEG、TIFF、PNG、非动画GIF等格式；页面内容已读，不宣称已经完成账户端验证。</p><p><strong>A+设计指导</strong> 按模块要求安排图文；公开指南提到图像不大于2MB并强调手机文字可读。各模块实际槽位像素、可用功能以编辑器为准。</p><p><a href="https://sell.amazon.com/blog/product-photos">Amazon商品摄影指导（文章发布于2024-12-04）</a></p><p><a href="https://sell.amazon.com/blog/a-plus-content-design-guide">Amazon A+设计指导（文章发布于2025-09-24）</a></p><p><a href="https://sellercentral.amazon.com/help/hub">Seller Central当前站点帮助入口</a></p><p><a href="https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf">Standard A+模块旧版原始PDF</a></p><p><a href="https://m.media-amazon.com/images/G/01/BX_Marketing/2023/AMZ_Guide_Premium_A_Module_05b.pdf">Premium A+模块原始PDF，2023-05-30</a></p></details><details class="review-entry" id="platform-shopify"><summary>Shopify产品媒体、主题图片与alt text</summary><p>产品／集合媒体、主题通用图片与准确文字分别核对</p><p>产品媒体文档与通用上传文档列出不同像素限制；按上传位置使用，主题裁切仍需实际预览。</p><p><strong>产品／集合图片</strong> 当前该文档列最大5000×5000像素或25MP，文件小于20MB；2048×2048方图是展示建议，非所有区块强制尺寸。</p><p><strong>通用图片上传</strong> 当前该文档在上传限制段列20MP与20MB，并注明产品图片有不同限制；不要把两份说明合并成同一规则。</p><p><strong>alt text</strong> 官方说明列上限512字符，建议125字符或更少；描述实际图片内容，不堆关键词。</p><p><strong>主题裁切与上传限制</strong> 按主题版本/区块/焦点检查裁切。官方图片页的25MP建议与20MP限制口径有冲突；本教程先按20MP内制作并以实际入口为准。</p><p><a href="https://help.shopify.com/en/manual/products/product-media/product-media-types">产品媒体类型</a></p><p><a href="https://help.shopify.com/en/manual/online-store/images/theme-images">通用图片上传</a></p><p><a href="https://help.shopify.com/en/manual/products/product-media/add-alt-text">媒体alt text</a></p></details><details class="review-entry" id="platform-shopee"><summary>Shopee SG商品页图片指导</summary><p>新加坡公开商品页指导；其他市场、Mall及后台限制另核</p><p>以可读取的SG官方指导替代无法请求的通用入口。指导建议不自动扩展成全市场统一硬限制，上传数量与体积等仍按当地后台核对。</p><p><strong>图片建议</strong> 该SG页面建议至少1024×1024的1:1方图、清晰实际商品和纯白封面；这是该文档指导，不填成全市场规则。</p><p><strong>内容建议</strong> 指导强调规格、配件、使用与变体信息；图片不应展示未包含在购买中的配件，也应避免水印或干扰图形。</p><p><strong>待核范围</strong> 实际文件体积、上传张数、店铺类型与其他市场要求未在本轮后台验证；不根据旧Mall PDF补齐。</p><p><strong>SG广告优化建议</strong> 官方SG指导建议至少1024×1024及1:1；不能外推为所有站点硬性门槛。MY/TH/PH/VN/TW当地像素要求仍待核。</p><p><a href="https://ads.shopee.sg/learn/faq/520/172">SG官方商品详情页指导</a></p><p><a href="https://seller.shopee.sg/edu/">SG Seller Education Hub（动态入口）</a></p><p><a href="https://ads.shopee.sg/learn/faq/520/172">Shopee Ads Singapore商品页指导</a></p></details><details class="review-entry" id="platform-tiktok-shop-us"><summary>TikTok Shop US商品图片</summary><p>仅US商品刊登；其他站点与内容视频封面另核</p><p>600×600最低像素、最多9方图、主图白底。真实实物照片；不把数字渲染当正式商品照片。原生入口和WooCommerce大小说明有区别。</p><p><strong>原生商品上传</strong> 当前教程列10MB；旧WooCommerce教程5MB，不能跨入口套用。</p><p><a href="https://seller-us.tiktok.com/university/essay?knowledge_id=3196690250417921&amp;role=1">US商品刊登政策</a></p><p><a href="https://seller-us.tiktok.com/university/essay?identity=1&amp;knowledge_id=6581713858676522&amp;role=1">US原生商品上传教程</a></p></details><h2 id="版本核对说明">版本与来源核对</h2><p>原稿内容按原样保留。模型版本、平台规格、许可和原稿成本记录具有时间范围；这里单独记录核对情况，不将第三方展示写成本项目实测。</p><details class="review-entry"><summary>模型版本、名称与能力数字</summary><p>模型表完整保留原稿。2026-10-14曾核对部分官方来源，SD4/12B/4096等未取得对应一手依据，仍待核；未把表格完整迁移等同于所有技术主张已核实。AIHOT用于发现动态，具体能力回到原始来源核对。</p><p><a href="https://aihot.news/topics/image-gen">AIHOT图像生成线索</a></p></details><details class="review-entry"><summary>平台图片规格与本地化</summary><p>原稿尺寸表保留。补充教程中的Amazon指导、Shopify产品媒体/主题图片、Shopee SG适用范围分别说明；最终上传按当前站点、位置、类目、主题或模块核对。</p><p><a href="https://help.shopify.com/en/manual/products/product-media/product-media-types">Shopify产品媒体</a></p><p><a href="https://sell.amazon.com/blog/product-photos">Amazon产品摄影</a></p><p><a href="https://ads.shopee.sg/learn/faq/520/172">Shopee SG指导</a></p></details><details class="review-entry"><summary>原稿成本与实测措辞</summary><p>原稿中的OpenRouter数字和实测措辞按原文保留，属于原稿引用的第三方记录，不代表本项目新测量、当前报价或本次发生支出。本轮没有调用付费生成服务。</p></details><details class="review-entry"><summary>提示词与软件执行</summary><p>原稿15节写作/维护提示词和113处代码内容完整保留；补充20条作图任务词集中提供。原稿内的命令和提示词供读者阅读，不由构建器执行。生图、节点、PS源文件与后台上传未因本次迁移而获得实测状态。</p></details></div></article></main><aside id="guideIndex" class="side-index index"><div class="side-index-title">正文目录</div><nav><a href="#目录"><span>00</span>目录</a>
 <a href="#一小白先看电商ai作图从哪里开始"><span>01</span>一、小白先看：电商AI作图从哪里开始</a>
 <a href="#二你现在手上有什么资料就按什么流程做"><span>02</span>二、你现在手上有什么资料，就按什么流程做</a>
 <a href="#三ai能做哪些电商图"><span>03</span>三、AI能做哪些电商图</a>
@@ -4890,21 +5415,7 @@ JB01-02-scene,JB01_white_front.jpg,scene,JB01_white_02-scene_zh_v01.jpg,planned,
 <a href="#十八电商ai作图提示词模板库"><span>18</span>十八、电商AI作图提示词模板库</a>
 <a href="#十九质检清单与常见问题"><span>19</span>十九、质检清单与常见问题</a>
 <a href="#二十新手与团队上手路线"><span>20</span>二十、新手与团队上手路线</a>
-<a href="#结语"><span>21</span>结语</a></nav></aside><aside id="promptIndex" class="side-index index hidden"><div class="side-index-title">原稿15节提示词</div><nav><a href="#1-总控提示词"><span>01</span>1. 总控提示词</a>
-<a href="#2-小白入口提示词"><span>02</span>2. 小白入口提示词</a>
-<a href="#3-按输入资料选择流程提示词"><span>03</span>3. 按输入资料选择流程提示词</a>
-<a href="#4-codexagent定位提示词"><span>04</span>4. Codex/Agent定位提示词</a>
-<a href="#5-api与订阅说明提示词"><span>05</span>5. API与订阅说明提示词</a>
-<a href="#6-工具选择提示词"><span>06</span>6. 工具选择提示词</a>
-<a href="#7-国内平台合规提示词"><span>07</span>7. 国内平台合规提示词</a>
-<a href="#8-跨境平台提示词"><span>08</span>8. 跨境平台提示词</a>
-<a href="#9-电商图生成sop提示词"><span>09</span>9. 电商图生成SOP提示词</a>
-<a href="#10-完整案例提示词"><span>10</span>10. 完整案例提示词</a>
-<a href="#11-提示词模板库提示词"><span>11</span>11. 提示词模板库提示词</a>
-<a href="#12-github提示词库提示词"><span>12</span>12. GitHub提示词库提示词</a>
-<a href="#13-comfyui工作流提示词"><span>13</span>13. ComfyUI工作流提示词</a>
-<a href="#14-虚拟试穿提示词"><span>14</span>14. 虚拟试穿提示词</a>
-<a href="#15-最终整合提示词"><span>15</span>15. 最终整合提示词</a></nav><div class="side-index-title" style="margin-top:24px">补充作图任务词</div><nav><a href="#补充-P01">商品场景图</a><a href="#补充-P02">品牌主视觉KV</a><a href="#补充-P03">内容封面与知识卡片</a><a href="#补充-P04">信息图／教学图</a><a href="#补充-P05">人物／IP系列的一张图</a><a href="#补充-P06">只改一处的局部修图</a><a href="#补充-P07">从素材到短片分镜</a><a href="#补充-P08">画布组织与可编辑交付</a><a href="#补充-P09">跨境商品简报与渠道任务表</a><a href="#补充-P10">Amazon普通商品白底主图</a><a href="#补充-P11">Amazon副图分工与逐张制作指令</a><a href="#补充-P12">Amazon A+模块简报与图文交付</a><a href="#补充-P13">Shopify产品媒体顺序与alt text</a><a href="#补充-P14">Shopify桌面与手机横幅</a><a href="#补充-P15">Shopee SG封面与规格套图</a><a href="#补充-P16">英文本地化：准确文案与回译</a><a href="#补充-P17">日文本地化：术语、换行与事实复核</a><a href="#补充-P18">尺寸图：毫米英寸换算与准确标注</a><a href="#补充-P19">跨境SKU任务清单与批量复用</a><a href="#补充-P20">跨境图片交付检查与定向返工</a></nav></aside><aside id="supplementIndex" class="side-index index hidden"><div class="side-index-title">补充阅读</div><nav><a href="#补充-tool-routes">网站、图层、节点与API：选择并跑通制作路线</a><a href="#补充-first-image">第一张可用图</a><a href="#补充-references">参考图与文件角色</a><a href="#补充-prompt-writing">完整提示词怎么写</a><a href="#补充-product-brief">商品事实与素材简报</a><a href="#补充-image-set">从单图到一套商品图</a><a href="#补充-detail-page">便携榨汁杯详情页：逐屏制作再拼接</a><a href="#补充-cross-border">跨境出图：从商品事实到渠道交付</a><a href="#补充-amazon-listing">Amazon主图与副图：一步一步制作</a><a href="#补充-amazon-a-plus">Amazon A+：把图片改成模块化说明</a><a href="#补充-shopify-product">Shopify产品页：媒体顺序与准确文字</a><a href="#补充-shopify-hero">Shopify横幅：桌面与手机分别排版</a><a href="#补充-shopee-localization">Shopee SG：封面、规格与变体套图</a><a href="#补充-localization">跨境本地化：英文、日文、单位与准确文字</a><a href="#补充-cross-border-sku-delivery">跨境SKU批量：从清单到交付目录</a><a href="#补充-cross-border-canvas">跨境画布：设计、节点与图层怎样衔接</a><a href="#补充-sku">SKU系列与导出检查</a><a href="#补充-category-prompts">食品、家居、美妆、3C与服装：品类提示词练习</a><a href="#补充-brand">品牌KV、包装与广告入口</a><a href="#补充-content">封面、知识卡与出版配图</a><a href="#补充-people">人物、服装与IP一致性</a><a href="#补充-space">摄影、场景与空间表现</a><a href="#补充-information">信息图、教学演示与UI</a><a href="#补充-illustration">插画、漫画与创意项目</a><a href="#补充-storyboard">从图像到短片分镜</a><a href="#补充-canvases">三类画布怎么接入电商出图</a><a href="#补充-codex-ps">用Codex协作PS作图修图</a><a href="#补充-batch">批量任务与返工记录</a><a href="#资源资料库">仓库资料与核查</a><a href="#版本核对说明">版本与来源核对</a></nav></aside></div>
+<a href="#结语"><span>21</span>结语</a></nav></aside><aside id="promptIndex" class="side-index index hidden"><div class="side-index-title">按用途找提示词</div><nav><strong>通用作图</strong><a href="#template-G01">商品场景：高端台面与真实合成</a><a href="#template-G02">生活方式：产品与使用环境</a><a href="#template-G08">详情页首屏：商品主体与文案留白</a><strong>品类作图</strong><a href="#template-G03">食品与包装：真实份量和配料</a><a href="#template-G04">家居：空间比例与落地关系</a><a href="#template-G05">美妆：包装还原与克制质感</a><a href="#template-G06">3C与科技视觉：接口和屏幕真实</a><a href="#template-G07">服装与虚拟试穿：版型纹理检查</a><strong>跨境平台</strong><a href="#template-P10">Amazon普通商品白底主图</a><a href="#template-P11">Amazon副图分工与逐张制作指令</a><a href="#template-P12">Amazon A+模块简报与图文交付</a><a href="#template-P13">Shopify产品媒体顺序与alt text</a><a href="#template-P14">Shopify桌面与手机横幅</a><a href="#template-P15">Shopee SG封面与规格套图</a><a href="#template-T01">TikTok Shop US：实拍商品图片整理</a><strong>跨境交付与本地化</strong><a href="#template-P09">跨境商品简报与渠道任务表</a><a href="#template-P16">英文本地化：准确文案与回译</a><a href="#template-P17">日文本地化：术语、换行与事实复核</a><a href="#template-P18">尺寸图：毫米英寸换算与准确标注</a><a href="#template-P19">跨境SKU任务清单与批量复用</a><a href="#template-P20">跨境图片交付检查与定向返工</a><strong>其他创作与修图</strong><a href="#template-P02">品牌主视觉KV</a><a href="#template-P03">内容封面与知识卡片</a><a href="#template-P04">信息图／教学图</a><a href="#template-P05">人物／IP系列的一张图</a><a href="#template-P06">只改一处的局部修图</a><a href="#template-P07">从素材到短片分镜</a><a href="#template-P08">画布组织与可编辑交付</a></nav><a href="#原稿写作提示词">原稿文章写作词</a></aside><aside id="supplementIndex" class="side-index index hidden"><div class="side-index-title">补充阅读</div><nav><a href="#补充-tool-routes">网站、图层、节点与API：选择并跑通制作路线</a><a href="#补充-first-image">第一张可用图</a><a href="#补充-references">参考图与文件角色</a><a href="#补充-prompt-writing">完整提示词怎么写</a><a href="#补充-product-brief">商品事实与素材简报</a><a href="#补充-image-set">从单图到一套商品图</a><a href="#补充-detail-page">便携榨汁杯详情页：逐屏制作再拼接</a><a href="#补充-cross-border">跨境出图：从商品事实到渠道交付</a><a href="#补充-amazon-listing">Amazon主图与副图：一步一步制作</a><a href="#补充-amazon-a-plus">Amazon A+：把图片改成模块化说明</a><a href="#补充-shopify-product">Shopify产品页：媒体顺序与准确文字</a><a href="#补充-shopify-hero">Shopify横幅：桌面与手机分别排版</a><a href="#补充-shopee-localization">Shopee SG：封面、规格与变体套图</a><a href="#补充-localization">跨境本地化：英文、日文、单位与准确文字</a><a href="#补充-cross-border-sku-delivery">跨境SKU批量：从清单到交付目录</a><a href="#补充-cross-border-canvas">跨境画布：设计、节点与图层怎样衔接</a><a href="#补充-sku">SKU系列与导出检查</a><a href="#补充-category-prompts">食品、家居、美妆、3C与服装：品类提示词练习</a><a href="#补充-brand">品牌KV、包装与广告入口</a><a href="#补充-content">封面、知识卡与出版配图</a><a href="#补充-people">人物、服装与IP一致性</a><a href="#补充-space">摄影、场景与空间表现</a><a href="#补充-information">信息图、教学演示与UI</a><a href="#补充-illustration">插画、漫画与创意项目</a><a href="#补充-storyboard">从图像到短片分镜</a><a href="#补充-canvases">三类画布怎么接入电商出图</a><a href="#补充-codex-ps">用Codex协作PS作图修图</a><a href="#补充-batch">批量任务与返工记录</a><a href="#补充-tiktok-shop">TikTok Shop US商品图：从实拍到图组交付</a><a href="#补充-method-lab">一张图的通用方法与提示词练习</a><a href="#补充-glossary">作图术语：什么时候需要知道</a><a href="#资源资料库">仓库资料与核查</a><a href="#版本核对说明">版本与来源核对</a></nav></aside></div>
 </div>
 
 <footer class="page footer" id="维护与贡献"><a href="https://github.com/wangge-dev/ai-visual-creation-handbook">开源仓库</a> · <a href="https://github.com/wangge-dev/ai-visual-creation-handbook/blob/main/CONTRIBUTING.md">维护与贡献</a> · 原创文档CC BY-SA 4.0，构建代码MIT。单文件可离线阅读。</footer><script>(function () {
@@ -4958,9 +5469,9 @@ JB01-02-scene,JB01_white_front.jpg,scene,JB01_white_02-scene_zh_v01.jpg,planned,
     else {const range=document.createRange();range.selectNodeContents(code);const selection=getSelection();selection.removeAllRanges();selection.addRange(range);btn.textContent='已选中，请按Ctrl+C';}
   }));
   document.getElementById('copyPromptPack')?.addEventListener('click',async function(){
-    const original=document.getElementById('promptDoc').querySelectorAll('[data-original-prompt]');
-    const text=original.length?Array.from(original).map(x=>x.textContent).join('\n\n'):Array.from(document.querySelectorAll('#promptDoc .codebox code')).slice(0,15).map(x=>x.textContent).join('\n\n');
-    const ok=await copy(text);this.textContent=ok?'原稿15节已复制':'复制失败，请逐条复制';
+    const cards=document.querySelectorAll('#promptDoc .template-card');
+    const text=Array.from(cards).map(x=>x.querySelector('h3').textContent+'\n\n'+x.querySelector('code').textContent).join('\n\n---\n\n');
+    const ok=await copy(text);this.textContent=ok?'全部'+cards.length+'项已复制':'复制失败，请逐条复制';
   });
 }());
 

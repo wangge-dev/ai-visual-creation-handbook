@@ -480,6 +480,8 @@ Amazon A+模块图
 
 ## 四、三种路线：网站版、工具版、API版
 
+[跟做练习：十一种作图操作与十个提示词动作](https://wangge-dev.github.io/ai-visual-creation-handbook/#补充-method-lab) · [术语解释](https://wangge-dev.github.io/ai-visual-creation-handbook/#补充-glossary)
+
 ### 1. 网站版：小白优先
 
 适合：运营、老板、小团队、没有技术背景的人。
@@ -927,6 +929,8 @@ AI做场景和视觉。
 
 ## 十二、跨境平台方案：Amazon、Shopee、Shopify
 
+2026-10-15补充：[新增TikTok Shop US实拍图组教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#补充-tiktok-shop)。下文保留原稿叙述，规格以当前目标站点和模块为准。
+
 ### 1. Amazon
 
 #### 主图原则
@@ -1074,6 +1078,8 @@ SKU_平台_图片类型_序号_日期
 ---
 
 ## 十四、各平台图片规格速查表
+
+2026-10-15补充：[规格更新：Shopee SG建议与各站点核对边界](https://wangge-dev.github.io/ai-visual-creation-handbook/#补充-shopee-localization)。下文保留原稿叙述，规格以当前目标站点和模块为准。
 
 做完了图，上传之前必须确认尺寸和格式。不同平台要求不同，这里整理了主流平台的核心规格。上传前对照一次，避免被压缩、裁切或拒审。
 
@@ -1255,6 +1261,8 @@ AI出的图几乎都需要二次处理。这一步很多教程不讲，但实际
 
 ## 十六、Amazon A+图AI辅助方案
 
+2026-10-15补充：[A+模块尺寸核查、四模块跟做与上传排错](https://wangge-dev.github.io/ai-visual-creation-handbook/#补充-amazon-a-plus)。下文保留原稿叙述，规格以当前目标站点和模块为准。
+
 ### 1. A+图和普通详情页的区别
 
 普通详情页更偏转化说明，A+图更偏品牌化、模块化和可信表达。
@@ -1375,6 +1383,8 @@ AI出的图几乎都需要二次处理。这一步很多教程不讲，但实际
 ---
 
 ## 十八、电商AI作图提示词模板库
+
+[跟做练习：十一种作图操作与十个提示词动作](https://wangge-dev.github.io/ai-visual-creation-handbook/#补充-method-lab) · [术语解释](https://wangge-dev.github.io/ai-visual-creation-handbook/#补充-glossary)
 
 ### 1. 通用公式
 
