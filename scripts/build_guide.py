@@ -55,7 +55,7 @@ def build():
     task_nav=library_nav
     template=read(SOURCE/'index.html')
     slots={'styles':'\n'.join(read(SOURCE/'styles'/x) for x in ['variables.css','layout.css','components.css','responsive.css','reader.css']),
-      'scripts':'\n'.join(read(SOURCE/'scripts'/x) for x in ['tabs.js','copy.js','search.js']),
+      'scripts':'\n'.join(read(SOURCE/'scripts'/x) for x in ['tabs.js','copy.js','reader.js','search.js']),
       'guide':guide,'prompts':prompts,'additions':additions+resource_html+review_html,'addition-nav':nav,'task-prompt-nav':task_nav}
     for key,value in slots.items():template=template.replace('{{'+key+'}}',value)
     page_url='https://wangge-dev.github.io/ai-visual-creation-handbook/'

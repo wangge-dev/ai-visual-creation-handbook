@@ -1,3 +1,4 @@
+// Optional reference site only. Default offline reader: python scripts/build.py.
 import { defineConfig } from 'vitepress';
 import fs from 'node:fs';
 const entries = JSON.parse(fs.readFileSync(new URL('./navigation.json', import.meta.url)));

@@ -1,5 +1,17 @@
 # 内容与维护
 
+## 本地预览：补充教程的最短修改路径
+
+1. 找到 `src/guide.json` 中对应标题，打开它的 `file`，例如 `src/supplements/detail-page.html`。
+2. 修改该 HTML 片段；表格若使用 catalog 标记，则改对应的 `data/catalogs/` JSON。
+3. 在仓库根目录运行 `python scripts/build.py`，无需安装 Python 第三方包。
+4. 双击根 `index.html`，选择“任务教程与资料”，用目录打开修改处；窄屏展开目录，检查表格、复制、搜索结果跳转。
+5. 提交源文件和生成文件。`docs/supplements.md`、`docs/handbook.md`、根 HTML 是汇总产物，不直接手改。
+
+新增教程还需在 `src/guide.json` 的 additions 中登记标题、锚点、源文件与单篇 Markdown 路径；目录会随构建更新。只有明确标注 `mobile-cards` 的简单教程表格在手机上变成卡片，多列对比表保持滚动。站点仍是同一个离线 HTML。
+
+Markdown 路径是另一种贡献入口：先编辑对应单篇，再按下文导入；不要与 HTML 主源同时改同一段。VitePress 仅用于可选参考站，默认预览不运行 npm dev。
+
 读者直接打开根目录的[index.html](index.html)，或[在线阅读](https://wangge-dev.github.io/ai-visual-creation-handbook/)。不需要安装软件或先理解仓库目录。
 
 ## 修改一处内容

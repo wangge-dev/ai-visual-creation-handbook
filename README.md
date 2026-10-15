@@ -12,6 +12,28 @@
 
 ## 1. 这是什么，适合谁
 
+### 本地构建与预览（维护者）
+
+只阅读：下载或克隆后双击根目录 `index.html`，无需安装依赖。修改内容后，在仓库目录执行：
+
+```sh
+python scripts/build.py
+```
+
+然后重新打开或刷新根目录 `index.html`。**主要构建只用 Python 3 标准库，无第三方 Python 依赖，不需要 pip install。** `build_guide.py` 是同一构建的实现文件。Node 只用于 Markdown 导入、资料维护和可选参考站；VitePress 不是默认阅读入口。
+
+| 目录 | 职责 |
+| --- | --- |
+| `src/content/`、`src/supplements/` | 原稿和补充教程的 HTML 主源 |
+| `src/styles/`、`src/scripts/`、`src/index.html` | 单页样式、交互、页面壳 |
+| `src/guide.json` | 章节顺序、标题、锚点和关联 |
+| `data/catalogs/` | 模型、工具、平台等表格的 JSON 数据源 |
+| `docs/` | 同源 Markdown 输出；单篇贡献先导入，汇总文件不直接编辑 |
+| `dist/`、根 `index.html` | 构建产物；`dist/` 在本机构建后出现 |
+| `docs/.vitepress/` | 可选多页参考站配置 |
+
+补充教程直接修改 `src/supplements/对应篇.html`，构建并检查手机目录、链接、搜索与复制；不要同时修改 `docs/supplements.md`。详细流程见 [贡献指南](CONTRIBUTING.md)。
+
 适合需要制作商品主图、详情页、Amazon A+、跨境素材的运营和卖家，也适合设计师、内容创作者，以及希望建立图片交付流程的团队负责人。新手可从第一张图开始，不必先学习 API 或节点软件。
 
 这里提供完整步骤、表格、提示词和检查清单；不提供上架、客服或经营分析系统，也不是完整的视频制作课程。品牌、人物、空间等补充专题目前以任务入门为主。

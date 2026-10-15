@@ -238,6 +238,19 @@
   ],
   "additions": [
     {
+      "file": "supplements/task-route.html",
+      "title": "按任务开始：素材到交付",
+      "anchor": "补充-task-route",
+      "former_doc": "start/task-route.md",
+      "topic": "start",
+      "metadata": {
+        "title": "按任务开始：素材到交付",
+        "status": "已公开",
+        "evidence_status": "教程导航",
+        "last_modified": "2026-10-15"
+      }
+    },
+    {
       "file": "supplements/tool-routes.html",
       "title": "网站、图层、节点与API：选择并跑通制作路线",
       "anchor": "补充-tool-routes",
