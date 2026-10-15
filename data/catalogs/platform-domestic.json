@@ -1,0 +1,86 @@
+[
+  {
+    "name": "淘宝/天猫",
+    "image_type": "主图",
+    "dimensions": "800×800 以上，建议1200×1200",
+    "format": "JPG/PNG，≤3MB",
+    "notes": "白底图更容易被搜索推荐"
+  },
+  {
+    "name": "详情页",
+    "image_type": "宽750，高度不限（单张建议≤1500）",
+    "dimensions": "JPG，单张≤500KB",
+    "format": "长图需分切，总高度不超过实际限制",
+    "_cell_count": 4
+  },
+  {
+    "name": "SKU图",
+    "image_type": "800×800",
+    "dimensions": "JPG/PNG",
+    "format": "颜色/规格差异要清晰可辨",
+    "_cell_count": 4
+  },
+  {
+    "name": "京东",
+    "image_type": "主图",
+    "dimensions": "800×800 以上，建议1200×1200",
+    "format": "JPG/PNG，≤5MB",
+    "notes": "白底图优先，第一张必须白底"
+  },
+  {
+    "name": "详情页",
+    "image_type": "宽750",
+    "dimensions": "JPG，单张≤1MB",
+    "format": "图片总数建议不超过30张",
+    "_cell_count": 4
+  },
+  {
+    "name": "主图视频",
+    "image_type": "与主图同比例",
+    "dimensions": "MP4，≤20MB，≤60秒",
+    "format": "非必须但有权重加成",
+    "_cell_count": 4
+  },
+  {
+    "name": "拼多多",
+    "image_type": "主图",
+    "dimensions": "750×750 以上",
+    "format": "JPG，≤1MB",
+    "notes": "第一张白底，不加促销文字"
+  },
+  {
+    "name": "详情页",
+    "image_type": "宽750",
+    "dimensions": "JPG",
+    "format": "简洁为主，移动端优先",
+    "_cell_count": 4
+  },
+  {
+    "name": "抖音电商",
+    "image_type": "主图",
+    "dimensions": "600×600 以上，建议800×800",
+    "format": "JPG/PNG",
+    "notes": "第一张白底，风格偏年轻化"
+  },
+  {
+    "name": "详情页",
+    "image_type": "宽750",
+    "dimensions": "JPG",
+    "format": "短视频+图片混合效果更好",
+    "_cell_count": 4
+  },
+  {
+    "name": "小红书",
+    "image_type": "商品图",
+    "dimensions": "1080×1440（3:4）或 1080×1080",
+    "format": "JPG/PNG",
+    "notes": "竖图效果更好，生活方式感"
+  },
+  {
+    "name": "种草图",
+    "image_type": "1080×1440",
+    "dimensions": "JPG/PNG",
+    "format": "真实感 > 精致感，避免过度AI痕迹",
+    "_cell_count": 4
+  }
+]

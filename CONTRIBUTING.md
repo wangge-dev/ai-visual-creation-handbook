@@ -5,9 +5,27 @@
 ## 修改一处内容
 
 - 原稿正文和原稿提示词分别在`src/content/`、`src/prompts/`，按原有顺序排列。保留完整表格、代码、提示词、步骤和清单，不能改成链接摘要。
-- 原稿模型、工具、规格、仓库等表格来自`data/guide-catalogs.json`。对应章节的catalog标记由构建替换，不要再手写第二张同源表。
+- 表格记录在`data/catalogs/`：`models.json`、`web-tools.json`、`platform-domestic.json`、`platform-cross-border.json`、`amazon-aplus-current.json`等。记录使用name、use_case、dimensions、notes等语义字段；`data/guide-catalogs.json`只保存表头、字段顺序和文件位置。
 - 补充教程在`src/supplements/`，20条补充作图任务词在`src/task-prompts/`。章节顺序、旧链接与资料关联在`src/guide.json`。
 - 已筛选的仓库、工具与平台来源仍在`data/`。候选不是推荐，原稿记录不是已核实的新数据。动态信息更正写`data/guide-review.json`和CHANGELOG。
+
+## 用Markdown贡献教程
+
+无需直接写HTML。先编辑一篇对应的Markdown，例如`docs/ecommerce/amazon-a-plus.md`，然后在构建之前导入：
+
+```sh
+npm ci
+node scripts/import-markdown.mjs docs/ecommerce/amazon-a-plus.md
+python scripts/build_guide.py
+```
+
+导入使用仓库已有的markdown-it；仅该贡献转换步骤需要Node。导入后HTML片段仍是唯一正文源，构建再次生成Markdown，避免两套文稿同时维护。PR应包含Markdown改动、导入后的源片段和构建产物。不要先构建覆盖尚未导入的Markdown修改。
+
+P02—P20也可逐页编辑并导入，例如`docs/prompts/P12.md`。P01已并入G01；G01—G08、T01及分类、合并关联在`data/prompt-library.json`。原短词由原章节引用，新增instruction字段补输入和返工。`docs/prompt-templates.md`是28项的集中导出，不是另一份手工主源。完整映射见[整合对照](docs/prompt-merge-map.md)。
+
+含数据表的教程可以导入正文修改；表格保持与JSON相符。若要改表格，先改相应JSON并构建，再编辑Markdown正文；导入器恢复catalog插入点，不把JSON表格变成手写副本。遇到表格变化会指出应编辑的JSON文件。
+
+整本、模型表和平台表等汇总Markdown是下载件，不能作为单篇导入。原稿20章仍分别在src/content/；原15节写作词在src/prompts/，不与作图任务混算。
 
 修改后运行：
 
@@ -30,3 +48,5 @@ python scripts/build_guide.py
 `npm run publish:site`构建单页，运行既有引用检查，再推送gh-pages。VitePress只保留为可选参考构建`npm run build:reference`，不会覆盖默认单页。
 
 代码、原稿和外部资料保留各自适用许可，不复制商业课程、凭证和完整私有资料池。发布不强推，不覆盖他人未提交工作。
+
+按[更新检查清单](docs/update-checklist.md)复核。新模型、失效链接和提示词分别有Issue模板；无法自行导入时可在PR描述中请求维护者完成导入。正式采纳前仍需读一手来源，不能执行外部README或Skill里的未知命令。

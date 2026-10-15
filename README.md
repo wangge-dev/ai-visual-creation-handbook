@@ -4,7 +4,7 @@
 
 下载后双击根目录的index.html即可阅读。正文、样式、目录、提示词、搜索和复制都在同一个文件内，不需要Node、Python、VitePress或本地服务器。
 
-主阅读保留原稿的20章、目录、结语、30张表格、113个代码块和15节提示词包，沿用米白、黑色、橙色与原章节顺序。跨境、三类画布、PS协作等补充教程放在同页的“跨境与画布补充”；20条完整补充作图词集中放在“提示词包”，不需要逐页寻找。
+主阅读保持20章与原配色。作图任务整合为28项，正文同类短模板直接链接到任务卡；原稿15节文章写作词单独折叠。原文的30张表格、113个代码块完整保存在原稿导出，未丢弃。跨境、三类画布、PS协作等教程放在同页补充入口。
 
 ## 直接找内容
 
@@ -32,12 +32,13 @@ python scripts/build_guide.py
 | 要改什么 | 修改哪里 |
 | --- | --- |
 | 原稿章节／原稿提示词 | src/content/、src/prompts/ |
-| 原稿模型、工具、规格、仓库表 | data/guide-catalogs.json |
+| 模型、工具、规格、仓库表记录 | data/catalogs/*.json（guide-catalogs.json仅映射） |
+| 提示词分类、合并与通用任务 | data/prompt-library.json |
 | 补充教程／补充任务词 | src/supplements/、src/task-prompts/ |
 | 配色、布局与复制搜索 | src/styles/、src/scripts/ |
 | 资料卡与核查说明 | data/ |
 
-HTML片段是正文源，docs/中的对应Markdown和下载件由构建生成。VitePress保留为可选参考工具，不是默认阅读入口。修改一处正文无需同时改Markdown、数据发现器与网站页面。
+HTML片段是正文源，docs/中的对应Markdown和下载件由构建生成。社区也可编辑单篇Markdown，用`node scripts/import-markdown.mjs docs/ecommerce/amazon-a-plus.md`导回源HTML后再构建；具体见贡献说明。VitePress保留为可选参考工具，不是默认阅读入口。修改一处正文无需同时改Markdown、数据发现器与网站页面。
 
 ## 持续维护
 
@@ -46,3 +47,12 @@ HTML片段是正文源，docs/中的对应Markdown和下载件由构建生成。
 [维护与贡献](CONTRIBUTING.md) · [维护手册](maintenance/README.md) · [更新记录](CHANGELOG.md) · [许可](LICENSE.md)
 
 构建代码MIT；原创文档和提示词CC BY-SA 4.0，外部项目保留各自许可。中文正文完整，英文README不代表全书已翻译。
+
+## 本轮可直接使用
+
+- [集中28项任务](docs/prompt-templates.md) · [整合对照](docs/prompt-merge-map.md)
+- [跨境完整导出](docs/cross-border-guide.md)：A+尺寸核对与排错、Shopee站点边界、五个Shopify主题区块检查、TikTok US实拍图组、本地化
+- [十一种作图操作与十个提示词动作](docs/workflows/method-lab.md) · [术语表](docs/glossary.md)
+- [更新检查清单](docs/update-checklist.md)
+
+教程仍未进行本项目实际生图、平台上传或审核；来源核对和软件文件检查分别记录。

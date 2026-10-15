@@ -1,12 +1,14 @@
+> 当前表格内容改data/catalogs/*.json；guide-catalogs.json仅表头映射。合并任务库改data/prompt-library.json。Markdown单篇先import-markdown.mjs再构建。完整操作见CONTRIBUTING及docs/update-checklist.md。
+
 # 维护手册
 
-主入口为单文件index.html，按原稿章节阅读。主内容源是src/的HTML片段和data/guide-catalogs.json，默认构建为python scripts/build_guide.py。读者无需构建工具，维护者只需Python标准库；VitePress不再参与默认发布。
+主入口为单文件index.html，按原稿章节阅读。主内容源是src/的HTML片段和data/catalogs/记录，默认构建为python scripts/build_guide.py。读者无需构建工具，维护者只需Python标准库；VitePress不再参与默认发布。
 
 ## 更新一处内容
 
 1. 读AGENTS、CONTRIBUTING、Git状态与本地运行状态，不覆盖未提交工作，不重复启动正常进程。
 2. 需要发现新资料时运行npm run maintain -- --discover --limit 3，读实际报告、README/文件树与原始来源。月初首次周维护保留--monthly复核。
-3. 根据src/guide.json的资料ID定位src/content/或src/supplements/。原稿表格在data/guide-catalogs.json，补充资料卡在既有data/文件；更正依据写data/guide-review.json。
+3. 根据src/guide.json的资料ID定位src/content/或src/supplements/。原稿表格记录在data/catalogs/，表头映射在data/guide-catalogs.json，补充资料卡在既有data/文件；更正依据写data/guide-review.json。
 4. 只改对应源文件，保留原文信息、完整提示词、表格、流程与清单。不要把正文改成摘要，不重建四级目录，不以页数或构建成功证明教程有效。
 5. 运行python scripts/build_guide.py，查看受影响段落和对应Markdown；涉及脚本时运行相关测试。双击HTML测试页签、搜索、复制和手机宽度。
 6. 写CHANGELOG与review。只暂存本次修改的源文件及生成件，普通提交推送main，再发布dist到gh-pages。不能强推或把原始资料池公开。

@@ -1,0 +1,100 @@
+[
+  {
+    "name": "ChatGPT / GPT Image 2.5",
+    "url": "<a href=\"https://chatgpt.com/\">chatgpt.com</a>",
+    "best_for": "对话式改图、4K输出、草图工具、虚拟试穿、多轮编辑",
+    "not_for": "大批量低成本流水线",
+    "audience": "运营、老板、设计师"
+  },
+  {
+    "name": "即梦AI",
+    "url": "<a href=\"https://jimeng.jianying.com/\">jimeng.jianying.com</a>",
+    "best_for": "中文场景图、扩图、图像编辑",
+    "not_for": "严格产品结构还原",
+    "audience": "国内运营"
+  },
+  {
+    "name": "豆包",
+    "url": "<a href=\"https://www.doubao.com/\">doubao.com</a>",
+    "best_for": "快速灵感、中文对话修图",
+    "not_for": "高强度批量生产",
+    "audience": "小白、运营"
+  },
+  {
+    "name": "通义万相",
+    "url": "<a href=\"https://tongyi.aliyun.com/wanxiang/videoCreation\">tongyi.aliyun.com/wanxiang</a>",
+    "best_for": "中文文生图/图生图",
+    "not_for": "完整详情页排版",
+    "audience": "淘系/中文用户"
+  },
+  {
+    "name": "Canva",
+    "url": "<a href=\"https://www.canva.cn/\">canva.cn</a>",
+    "best_for": "详情页、Banner、社媒排版",
+    "not_for": "精准产品重绘",
+    "audience": "运营、设计助理"
+  },
+  {
+    "name": "Liblib",
+    "url": "<a href=\"https://www.liblib.art/\">liblib.art</a>",
+    "best_for": "模型、工作流、创意图",
+    "not_for": "完全小白一步成图",
+    "audience": "设计师、进阶用户"
+  },
+  {
+    "name": "达笔",
+    "url": "<a href=\"https://dabids.cn/\">dabids.cn</a>",
+    "best_for": "电商设计、商品图、营销图",
+    "not_for": "深度系统集成",
+    "audience": "国内电商团队"
+  },
+  {
+    "name": "Pic Copilot",
+    "url": "<a href=\"https://www.piccopilot.com/zh\">piccopilot.com/zh</a>",
+    "best_for": "商品换背景、主图、AI模特",
+    "not_for": "极复杂创意控制",
+    "audience": "小白、跨境卖家"
+  },
+  {
+    "name": "美图设计室",
+    "url": "<a href=\"https://www.designkit.cn/\">designkit.cn</a>",
+    "best_for": "商拍、批量商品图、营销设计",
+    "not_for": "高度自定义工作流",
+    "audience": "运营/设计团队"
+  },
+  {
+    "name": "创客贴",
+    "url": "<a href=\"https://www.chuangkit.com/index.html\">chuangkit.com</a>",
+    "best_for": "抠图、排版、海报、详情页",
+    "not_for": "精准模型控制",
+    "audience": "国内电商运营"
+  },
+  {
+    "name": "Krea",
+    "url": "<a href=\"https://www.krea.ai/\">krea.ai</a>",
+    "best_for": "多模型创意、高清放大、品牌视觉",
+    "not_for": "纯中文小白可能有门槛",
+    "audience": "独立站/设计师"
+  },
+  {
+    "name": "TapNow",
+    "url": "<a href=\"https://app.tapnow.ai/\">app.tapnow.ai</a>",
+    "best_for": "多模型聚合、工作流创作",
+    "not_for": "只想一键白底图",
+    "audience": "进阶团队"
+  },
+  {
+    "name": "Google Pics",
+    "url": "<a href=\"https://pics.new/\">pics.new</a>",
+    "best_for": "局部对象编辑、图内文字修改翻译、多人协作",
+    "not_for": "复杂创意控制",
+    "audience": "跨境团队、设计师"
+  },
+  {
+    "name": "Grok Imagine",
+    "url": "<a href=\"https://x.com/i/grok\">x.com/i/grok</a>",
+    "best_for": "xAI图像生成、X平台集成",
+    "not_for": "中文场景",
+    "audience": "海外社媒运营"
+  }
+]

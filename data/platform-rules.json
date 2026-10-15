@@ -4,7 +4,7 @@
     "name": "Amazon图片与A+",
     "url": "https://sell.amazon.com/blog/product-photos",
     "scope": "Amazon公开图片指导；具体站点、类目和A+模块另核",
-    "last_reviewed_at": "2026-10-14",
+    "last_reviewed_at": "2026-10-15",
     "verification_status": "公开指导正文已读；未登录账户核对或上传",
     "note": "公开指导的建议、示例与当前类目要求分开；A+像素按实际模块确定，不把普通主图要求套给所有模块。",
     "details": [
@@ -33,6 +33,14 @@
       {
         "title": "Seller Central当前站点帮助入口",
         "url": "https://sellercentral.amazon.com/help/hub"
+      },
+      {
+        "title": "Standard A+模块旧版原始PDF",
+        "url": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf"
+      },
+      {
+        "title": "Premium A+模块原始PDF，2023-05-30",
+        "url": "https://m.media-amazon.com/images/G/01/BX_Marketing/2023/AMZ_Guide_Premium_A_Module_05b.pdf"
       }
     ]
   },
@@ -41,7 +49,7 @@
     "name": "Shopify产品媒体、主题图片与alt text",
     "url": "https://help.shopify.com/en/manual/products/product-media/product-media-types",
     "scope": "产品／集合媒体、主题通用图片与准确文字分别核对",
-    "last_reviewed_at": "2026-10-14",
+    "last_reviewed_at": "2026-10-15",
     "verification_status": "三个官方说明正文已读；未验证实际商店主题",
     "note": "产品媒体文档与通用上传文档列出不同像素限制；按上传位置使用，主题裁切仍需实际预览。",
     "details": [
@@ -56,6 +64,10 @@
       {
         "position": "alt text",
         "text": "官方说明列上限512字符，建议125字符或更少；描述实际图片内容，不堆关键词。"
+      },
+      {
+        "position": "主题裁切与上传限制",
+        "text": "按主题版本/区块/焦点检查裁切。官方图片页的25MP建议与20MP限制口径有冲突；本教程先按20MP内制作并以实际入口为准。"
       }
     ],
     "sources": [
@@ -78,7 +90,7 @@
     "name": "Shopee SG商品页图片指导",
     "url": "https://ads.shopee.sg/learn/faq/520/172",
     "scope": "新加坡公开商品页指导；其他市场、Mall及后台限制另核",
-    "last_reviewed_at": "2026-10-14",
+    "last_reviewed_at": "2026-10-15",
     "verification_status": "SG官方公开图片指导已读；未进入卖家后台上传",
     "note": "以可读取的SG官方指导替代无法请求的通用入口。指导建议不自动扩展成全市场统一硬限制，上传数量与体积等仍按当地后台核对。",
     "details": [
@@ -93,6 +105,10 @@
       {
         "position": "待核范围",
         "text": "实际文件体积、上传张数、店铺类型与其他市场要求未在本轮后台验证；不根据旧Mall PDF补齐。"
+      },
+      {
+        "position": "SG广告优化建议",
+        "text": "官方SG指导建议至少1024×1024及1:1；不能外推为所有站点硬性门槛。MY/TH/PH/VN/TW当地像素要求仍待核。"
       }
     ],
     "sources": [
@@ -103,6 +119,35 @@
       {
         "title": "SG Seller Education Hub（动态入口）",
         "url": "https://seller.shopee.sg/edu/"
+      },
+      {
+        "title": "Shopee Ads Singapore商品页指导",
+        "url": "https://ads.shopee.sg/learn/faq/520/172"
+      }
+    ]
+  },
+  {
+    "id": "tiktok-shop-us",
+    "name": "TikTok Shop US商品图片",
+    "url": "https://seller-us.tiktok.com/university/essay?knowledge_id=3196690250417921&role=1",
+    "scope": "仅US商品刊登；其他站点与内容视频封面另核",
+    "last_reviewed_at": "2026-10-15",
+    "verification_status": "官方公开正文已读；未登录或上传",
+    "note": "600×600最低像素、最多9方图、主图白底。真实实物照片；不把数字渲染当正式商品照片。原生入口和WooCommerce大小说明有区别。",
+    "details": [
+      {
+        "position": "原生商品上传",
+        "text": "当前教程列10MB；旧WooCommerce教程5MB，不能跨入口套用。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "US商品刊登政策",
+        "url": "https://seller-us.tiktok.com/university/essay?knowledge_id=3196690250417921&role=1"
+      },
+      {
+        "title": "US原生商品上传教程",
+        "url": "https://seller-us.tiktok.com/university/essay?identity=1&knowledge_id=6581713858676522&role=1"
       }
     ]
   }

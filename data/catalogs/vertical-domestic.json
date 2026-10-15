@@ -1,0 +1,32 @@
+[
+  {
+    "name": "WeShop唯象",
+    "url": "weshop.com",
+    "features": "AI商拍，无需模特/影棚，上传产品图即可生成模特图和场景图",
+    "audience": "服装、配饰卖家"
+  },
+  {
+    "name": "知衣科技FD+",
+    "url": "zhiyitech.cn",
+    "features": "AI服装设计+商拍全链路，从设计稿到产品图",
+    "audience": "服装品牌/设计师"
+  },
+  {
+    "name": "AI商拍DesignKit",
+    "url": "designkit.cn/aicp",
+    "features": "AI商品图生成，批量换背景",
+    "audience": "国内电商运营"
+  },
+  {
+    "name": "堆友AI",
+    "url": "duiyou.com",
+    "features": "电商AI设计，丰富模板",
+    "audience": "国内运营/设计"
+  },
+  {
+    "name": "美梦AI",
+    "url": "-",
+    "features": "电商主图生成",
+    "audience": "小团队"
+  }
+]

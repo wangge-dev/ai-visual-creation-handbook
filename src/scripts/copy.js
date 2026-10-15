@@ -18,8 +18,8 @@
     else {const range=document.createRange();range.selectNodeContents(code);const selection=getSelection();selection.removeAllRanges();selection.addRange(range);btn.textContent='已选中，请按Ctrl+C';}
   }));
   document.getElementById('copyPromptPack')?.addEventListener('click',async function(){
-    const original=document.getElementById('promptDoc').querySelectorAll('[data-original-prompt]');
-    const text=original.length?Array.from(original).map(x=>x.textContent).join('\n\n'):Array.from(document.querySelectorAll('#promptDoc .codebox code')).slice(0,15).map(x=>x.textContent).join('\n\n');
-    const ok=await copy(text);this.textContent=ok?'原稿15节已复制':'复制失败，请逐条复制';
+    const cards=document.querySelectorAll('#promptDoc .template-card');
+    const text=Array.from(cards).map(x=>x.querySelector('h3').textContent+'\n\n'+x.querySelector('code').textContent).join('\n\n---\n\n');
+    const ok=await copy(text);this.textContent=ok?'全部'+cards.length+'项已复制':'复制失败，请逐条复制';
   });
 }());

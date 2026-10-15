@@ -1,0 +1,25 @@
+name: 模型或工具更新
+description: 提供官方来源、适用范围和受影响记录
+title: "[更新] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 模型或工具名，以及当前版本
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 官方原文链接、发布日期与变化
+      description: AIHOT可作为发现入口，请同时附厂商或项目原始来源；不填推测价格。
+    validations:
+      required: true
+  - type: textarea
+    id: affected
+    attributes:
+      label: 受影响JSON记录、章节，以及修改建议
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 已阅读、实际运行和未验证的内容

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ControlNet",
+    "use_case": "精确控制姿势、布局、轮廓",
+    "ecommerce_use": "模特姿势控制、产品轮廓约束"
+  },
+  {
+    "name": "IP-Adapter",
+    "use_case": "喂入参考照片保持一致外观",
+    "ecommerce_use": "产品一致性、品牌风格统一"
+  },
+  {
+    "name": "Multi-LoRA",
+    "use_case": "叠加多个LoRA实现复杂场景",
+    "ecommerce_use": "产品+场景+风格组合"
+  },
+  {
+    "name": "Nano Banana 2.1 Subject Consistency",
+    "use_case": "最多14张参考图保持一致性",
+    "ecommerce_use": "多角度产品图、系列产品"
+  }
+]

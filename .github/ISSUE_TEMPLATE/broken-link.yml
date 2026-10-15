@@ -1,0 +1,20 @@
+name: 失效或受限链接
+description: 区分404、登录要求、限流与暂时网络故障
+title: "[链接] "
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 原链接
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 所在章节、尝试日期和实际错误
+    validations:
+      required: true
+  - type: textarea
+    id: replacement
+    attributes:
+      label: 可用替代来源（如有）

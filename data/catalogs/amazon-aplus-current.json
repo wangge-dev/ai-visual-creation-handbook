@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Standard Single Left Image",
+    "dimensions": "300×300",
+    "production_note": "用方图细节；文字放右侧文本槽",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "official_document"
+  },
+  {
+    "name": "Standard Single Right Image",
+    "dimensions": "300×300",
+    "production_note": "同样用方图；勿把左图直接镜像商品",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "official_document"
+  },
+  {
+    "name": "Standard Three Images & Text",
+    "dimensions": "每张300×300，共3张",
+    "production_note": "分别回答结构、使用、配件三个问题",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "official_document"
+  },
+  {
+    "name": "Standard Four Images & Text",
+    "dimensions": "旧PDF写200×200",
+    "production_note": "交接中的220×220未由这份文档证实；核对当前槽位再导出",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "official_document"
+  },
+  {
+    "name": "Standard Image & Dark/Light Text Overlay",
+    "dimensions": "970×300",
+    "production_note": "横向背景；关键内容不要压在文字区",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "official_document"
+  },
+  {
+    "name": "Premium Full Image",
+    "dimensions": "桌面至少1464×600；手机至少600×450",
+    "production_note": "两个画板分别构图，不机械裁掉商品",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/01/BX_Marketing/2023/AMZ_Guide_Premium_A_Module_05b.pdf",
+    "verification": "official_document"
+  },
+  {
+    "name": "Premium Single Image with Text",
+    "dimensions": "至少800×600",
+    "production_note": "图文分开交；按实际模块选用",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/01/BX_Marketing/2023/AMZ_Guide_Premium_A_Module_05b.pdf",
+    "verification": "official_document"
+  },
+  {
+    "name": "Standard Company Logo",
+    "dimensions": "本次一手资料未核实362×60",
+    "production_note": "用原始Logo，记录后台尺寸；不把猜测写成规格",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "unverified"
+  },
+  {
+    "name": "Standard Image Header with Text",
+    "dimensions": "本次一手资料未核实970×600",
+    "production_note": "后台确认前只做可调整草图",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "unverified"
+  },
+  {
+    "name": "Brand Story Header",
+    "dimensions": "本次一手资料未核实1464×620",
+    "production_note": "与Basic/Premium区别记录；不要借用其他模块尺寸",
+    "checked_at": "2026-10-15",
+    "source": "https://m.media-amazon.com/images/G/35/sp-marketing-toolkit/Sellerfacingguides/BO/Standard_A_Module_Templates.pdf",
+    "verification": "unverified"
+  }
+]

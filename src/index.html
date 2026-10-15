@@ -23,8 +23,8 @@
 <a href="#二十新手与团队上手路线"><span>20</span>二十、新手与团队上手路线</a>
 <a href="#结语"><span>21</span>结语</a></nav></aside></section>
 <div class="controls"><div class="tabs"><button class="tab active" data-target="guide">攻略正文</button><button class="tab" data-target="prompt">提示词包</button><button class="tab" data-target="supplement">跨境与画布补充</button></div><div class="search-group"><input id="searchBox" class="search" placeholder="搜索全文与提示词" aria-label="搜索全文与提示词" /><div class="search-actions"><span id="searchStatus" role="status"></span><button type="button" id="searchPrev" aria-label="上一个搜索结果">↑</button><button type="button" id="searchNext" aria-label="下一个搜索结果">↓</button></div></div></div>
-<div class="reader-links"><a href="downloads/index.html" download="电商AI作图完整攻略.html">下载单文件HTML</a><a href="downloads/handbook.md" download>下载整本Markdown</a><button type="button" id="copyPromptPack">复制原稿提示词包</button><a href="#版本核对说明">版本与核对说明</a></div><p class="reader-version">正文按2026年10月原稿保留；模型、平台与原稿成本的动态核对见<a href="#版本核对说明">核对说明</a>。</p><section class="quick-cards"><div class="quick-card"><b>START</b>小白先用真实产品图跑通一张图，不要一开始研究API。</div><div class="quick-card"><b>RULE</b>AI负责场景和效率，人工负责产品真实性和合规。</div><div class="quick-card"><b>PROMPTS</b>正文和提示词包都可复制，适合沉淀成团队模板。</div></section>
-<div class="layout"><main class="article"><article id="guideDoc" class="doc">{{guide}}</article><article id="promptDoc" class="doc hidden">{{prompts}}</article><div class="footer">正文与提示词包完整保留，补充阅读可在上方页签进入。</div><article id="supplementDoc" class="doc article hidden"><div class="markdown-body">{{additions}}</div></article></main><aside id="guideIndex" class="side-index"><div class="side-index-title">正文目录</div><nav><a href="#目录"><span>00</span>目录</a>
+<div class="reader-links"><a href="downloads/index.html" download="电商AI作图完整攻略.html">下载单文件HTML</a><a href="downloads/handbook.md" download>下载整本Markdown</a><button type="button" id="copyPromptPack">复制全部任务模板</button><a href="#版本核对说明">版本与核对说明</a></div><p class="reader-version">正文按2026年10月原稿保留；模型、平台与原稿成本的动态核对见<a href="#版本核对说明">核对说明</a>。</p><section class="quick-cards"><div class="quick-card"><b>START</b>小白先用真实产品图跑通一张图，不要一开始研究API。</div><div class="quick-card"><b>RULE</b>AI负责场景和效率，人工负责产品真实性和合规。</div><div class="quick-card"><b>PROMPTS</b>正文和提示词包都可复制，适合沉淀成团队模板。</div></section>
+<div class="layout"><main class="article"><article id="guideDoc" class="doc">{{guide}}</article><article id="promptDoc" class="doc hidden">{{prompts}}</article><div class="footer">正文与提示词包完整保留，补充阅读可在上方页签进入。</div><article id="supplementDoc" class="doc article hidden"><div class="markdown-body">{{additions}}</div></article></main><aside id="guideIndex" class="side-index index"><div class="side-index-title">正文目录</div><nav><a href="#目录"><span>00</span>目录</a>
 <a href="#一小白先看电商ai作图从哪里开始"><span>01</span>一、小白先看：电商AI作图从哪里开始</a>
 <a href="#二你现在手上有什么资料就按什么流程做"><span>02</span>二、你现在手上有什么资料，就按什么流程做</a>
 <a href="#三ai能做哪些电商图"><span>03</span>三、AI能做哪些电商图</a>
@@ -45,21 +45,7 @@
 <a href="#十八电商ai作图提示词模板库"><span>18</span>十八、电商AI作图提示词模板库</a>
 <a href="#十九质检清单与常见问题"><span>19</span>十九、质检清单与常见问题</a>
 <a href="#二十新手与团队上手路线"><span>20</span>二十、新手与团队上手路线</a>
-<a href="#结语"><span>21</span>结语</a></nav></aside><aside id="promptIndex" class="side-index index hidden"><div class="side-index-title">原稿15节提示词</div><nav><a href="#1-总控提示词"><span>01</span>1. 总控提示词</a>
-<a href="#2-小白入口提示词"><span>02</span>2. 小白入口提示词</a>
-<a href="#3-按输入资料选择流程提示词"><span>03</span>3. 按输入资料选择流程提示词</a>
-<a href="#4-codexagent定位提示词"><span>04</span>4. Codex/Agent定位提示词</a>
-<a href="#5-api与订阅说明提示词"><span>05</span>5. API与订阅说明提示词</a>
-<a href="#6-工具选择提示词"><span>06</span>6. 工具选择提示词</a>
-<a href="#7-国内平台合规提示词"><span>07</span>7. 国内平台合规提示词</a>
-<a href="#8-跨境平台提示词"><span>08</span>8. 跨境平台提示词</a>
-<a href="#9-电商图生成sop提示词"><span>09</span>9. 电商图生成SOP提示词</a>
-<a href="#10-完整案例提示词"><span>10</span>10. 完整案例提示词</a>
-<a href="#11-提示词模板库提示词"><span>11</span>11. 提示词模板库提示词</a>
-<a href="#12-github提示词库提示词"><span>12</span>12. GitHub提示词库提示词</a>
-<a href="#13-comfyui工作流提示词"><span>13</span>13. ComfyUI工作流提示词</a>
-<a href="#14-虚拟试穿提示词"><span>14</span>14. 虚拟试穿提示词</a>
-<a href="#15-最终整合提示词"><span>15</span>15. 最终整合提示词</a></nav><div class="side-index-title" style="margin-top:24px">补充作图任务词</div><nav>{{task-prompt-nav}}</nav></aside><aside id="supplementIndex" class="side-index index hidden"><div class="side-index-title">补充阅读</div><nav>{{addition-nav}}</nav></aside></div>
+<a href="#结语"><span>21</span>结语</a></nav></aside><aside id="promptIndex" class="side-index index hidden"><div class="side-index-title">按用途找提示词</div><nav>{{task-prompt-nav}}</nav><a href="#原稿写作提示词">原稿文章写作词</a></aside><aside id="supplementIndex" class="side-index index hidden"><div class="side-index-title">补充阅读</div><nav>{{addition-nav}}</nav></aside></div>
 </div>
 
 <footer class="page footer" id="维护与贡献"><a href="https://github.com/wangge-dev/ai-visual-creation-handbook">开源仓库</a> · <a href="https://github.com/wangge-dev/ai-visual-creation-handbook/blob/main/CONTRIBUTING.md">维护与贡献</a> · 原创文档CC BY-SA 4.0，构建代码MIT。单文件可离线阅读。</footer><script>{{scripts}}</script></body></html>

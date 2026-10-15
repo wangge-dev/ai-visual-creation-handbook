@@ -16,3 +16,8 @@ summary{cursor:pointer;font-weight:600;line-height:1.7}
 [id]{scroll-margin-top:140px}
 .tab:focus-visible,.copy-btn:focus-visible,a:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 @media(max-width:680px){.tabs{flex-wrap:wrap}.tab{padding:9px 10px}.search-group{justify-content:flex-start;width:100%}.search{max-width:100%}.markdown-body h1{font-size:32px;line-height:1.4}.markdown-body h2{line-height:1.25}.hero{padding-left:0;padding-right:0;min-width:0}.hero-title .cn{font-size:clamp(40px,13vw,64px)}.hero-title .en{font-size:clamp(30px,9.5vw,48px)}.markdown-body,.article,main{min-width:0}.markdown-body{overflow-wrap:anywhere}.reader-links{font-size:13px}.supplement-section h2:first-child{font-size:29px}}
+/* Task groups use the existing palette and keep navigation shallow. */
+#promptIndex nav strong{display:block;margin:18px 0 6px;color:var(--orange);font-size:14px}
+.template-card{padding:18px 0;border-bottom:1px solid var(--hair)}
+.review-note{padding:10px 14px;border-left:3px solid var(--orange);background:var(--paper2)}
+#原稿写作提示词>summary{cursor:pointer;padding:18px 0;font-weight:bold}

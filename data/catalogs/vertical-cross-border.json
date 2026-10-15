@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Photta",
+    "url": "photta.app",
+    "features": "AI产品摄影，5种风格预设",
+    "audience": "跨境卖家"
+  },
+  {
+    "name": "1min.ai",
+    "url": "1min.ai",
+    "features": "免费AI电商图生成器",
+    "audience": "低预算卖家"
+  },
+  {
+    "name": "Claid.ai",
+    "url": "claid.ai",
+    "features": "AI生活方式图生成，时尚内容制作",
+    "audience": "品牌团队"
+  },
+  {
+    "name": "Auratuner",
+    "url": "auratuner.com",
+    "features": "AI产品背景替换，漂移检测",
+    "audience": "进阶用户"
+  },
+  {
+    "name": "Skild Art",
+    "url": "-",
+    "features": "跨境电商AI视觉平台，1000+场景风格",
+    "audience": "跨境团队"
+  }
+]

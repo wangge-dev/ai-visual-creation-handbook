@@ -1,0 +1,26 @@
+[
+  {
+    "name": "TinyPNG / TinyJPG",
+    "type": "在线免费",
+    "features": "智能压缩，视觉几乎无损，支持批量",
+    "url": "tinypng.com"
+  },
+  {
+    "name": "Squoosh",
+    "type": "在线免费（Google出品）",
+    "features": "可实时对比压缩前后效果，支持WebP/AVIF",
+    "url": "squoosh.app"
+  },
+  {
+    "name": "ImageOptim",
+    "type": "Mac本地免费",
+    "features": "批量压缩，自动去除EXIF等冗余数据",
+    "url": "imageoptim.com"
+  },
+  {
+    "name": "Caesium",
+    "type": "Windows本地免费",
+    "features": "批量压缩，支持预览对比",
+    "url": "saerasoft.com/caesium"
+  }
+]

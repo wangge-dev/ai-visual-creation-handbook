@@ -1,0 +1,32 @@
+[
+  {
+    "name": "awesome-ai-product-photography-prompts",
+    "description": "电商产品摄影提示词精选集，含工作流和广告创意模板",
+    "url": "github.com/cliprise/awesome-ai-product-photography-prompts"
+  },
+  {
+    "name": "awesome-ai-image-generator-prompts",
+    "description": "1000+提示词，16种语言，含产品摄影分类",
+    "url": "github.com/cliprise/awesome-ai-image-generator-prompts"
+  },
+  {
+    "name": "aidianshanggongju",
+    "description": "AI电商生图提示词大全，一键从产品图生成",
+    "url": "github.com/newaiproxy/aidianshanggongju"
+  },
+  {
+    "name": "gpt-image-2-prompts",
+    "description": "GPT Image 2/2.5提示词合集",
+    "url": "github.com/Ryan-yang125/gpt-image-2-prompts"
+  },
+  {
+    "name": "nanobanana-trending-prompts",
+    "description": "Nano Banana Pro热门提示词",
+    "url": "github.com/jau123/nanobanana-trending-prompts"
+  },
+  {
+    "name": "AI Image Prompt Engineering Cheat Sheet",
+    "description": "跨模型提示词参考（2026年2月更新）",
+    "url": "gist.github.com/horushe93/046d7e9882ecdf13335ff2108e89e135"
+  }
+]

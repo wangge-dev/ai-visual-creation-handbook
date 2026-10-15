@@ -1,0 +1,25 @@
+name: 提示词改进或新任务
+description: 提供完整可复制指令，与已有模板的独立区别
+title: "[提示词] "
+body:
+  - type: input
+    id: task
+    attributes:
+      label: 目标任务及最接近的现有模板
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 完整提示词、输入角色、变量和填写示例
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: 期望交付、检查办法与失败返工
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 是否实际生成、工具与结果状态
+      description: 可只提交完整模板；没有运行就写未运行，勿公开凭证和未授权照片。

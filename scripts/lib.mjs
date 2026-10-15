@@ -15,11 +15,24 @@ export async function contentSources() {
 }
 export async function originalSourceLinks() {
   const catalogs=await readJSON(path.join(root,'data/guide-catalogs.json'));
+  for (const table of Object.values(catalogs)) {
+    if (table.records_file) {
+      const records = await readJSON(path.join(root,'data',table.records_file));
+      table.rows = records.map(row=>table.fields.slice(0,row._cell_count ?? table.fields.length).map(field=>row[field] ?? ''));
+    }
+  }
   const manifest=await readJSON(path.join(root,'src/guide.json'));
-  const files=await Promise.all(manifest.guide.map(async p=>({file:'src/'+p.file,text:await fs.readFile(path.join(root,'src',p.file),'utf8')})));
+  const files=await Promise.all([...manifest.guide,...manifest.additions].map(async p=>({file:'src/'+p.file,text:await fs.readFile(path.join(root,'src',p.file),'utf8')})));
   const links=new Map();
   for(const [key,table] of Object.entries(catalogs)) {
     const owners=files.filter(p=>p.text.includes('<!--catalog:'+key+'-->')).map(p=>p.file);
+    if (table.records_file) {
+      const records=await readJSON(path.join(root,'data',table.records_file));
+      for (const record of records) if (/^https?:/.test(record.source || '')) {
+        const previous=links.get(record.source);
+        links.set(record.source,{id:'guide-link:'+record.source,url:record.source,source_files:[...new Set([...(previous?.source_files || []),...owners])]});
+      }
+    }
     for(const match of table.rows.flat().join('\n').matchAll(/href="(https?:[^"\s]+)"/g)) {
       const url=match[1].replaceAll('&amp;','&');
       const previous=links.get(url);

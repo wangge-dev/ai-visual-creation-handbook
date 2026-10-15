@@ -865,6 +865,51 @@
         "order": 42,
         "content_kind": "方法说明"
       }
+    },
+    {
+      "file": "supplements/tiktok-shop.html",
+      "title": "TikTok Shop US商品图：从实拍到图组交付",
+      "anchor": "补充-tiktok-shop",
+      "former_doc": "ecommerce/tiktok-shop.md",
+      "topic": "cross-border",
+      "metadata": {
+        "title": "TikTok Shop US商品图：从实拍到图组交付",
+        "topic": "cross-border",
+        "status": "已公开",
+        "evidence_status": "制作教程；尚未执行图像任务或平台上传",
+        "last_modified": "2026-10-15",
+        "platform_rule_ids": [
+          "tiktok-shop-us"
+        ]
+      }
+    },
+    {
+      "file": "supplements/method-lab.html",
+      "title": "一张图的通用方法与提示词练习",
+      "anchor": "补充-method-lab",
+      "former_doc": "workflows/method-lab.md",
+      "topic": "methods",
+      "metadata": {
+        "title": "一张图的通用方法与提示词练习",
+        "topic": "methods",
+        "status": "已公开",
+        "evidence_status": "制作教程；尚未执行图像任务或平台上传",
+        "last_modified": "2026-10-15"
+      }
+    },
+    {
+      "file": "supplements/glossary.html",
+      "title": "作图术语：什么时候需要知道",
+      "anchor": "补充-glossary",
+      "former_doc": "glossary.md",
+      "topic": "methods",
+      "metadata": {
+        "title": "作图术语：什么时候需要知道",
+        "topic": "methods",
+        "status": "已公开",
+        "evidence_status": "制作教程；尚未执行图像任务或平台上传",
+        "last_modified": "2026-10-15"
+      }
     }
   ],
   "extra_prompts": [

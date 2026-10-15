@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Amazon",
+    "image_type": "主图",
+    "dimensions": "至少1000×1000（长边），建议2000×2000",
+    "format": "JPEG/PNG/TIFF/GIF，≤10MB",
+    "notes": "纯白背景(RGB 255,255,255)，产品占画面85%以上，无文字/徽章/水印"
+  },
+  {
+    "name": "副图",
+    "image_type": "同主图",
+    "dimensions": "同上",
+    "format": "可做场景图、信息图、尺寸图、对比图",
+    "_cell_count": 4
+  },
+  {
+    "name": "A+图",
+    "image_type": "按模块：标准970×600，精品970×300等",
+    "dimensions": "JPEG/PNG，≤300KB/张",
+    "format": "需通过Brand Registry，模块尺寸严格",
+    "_cell_count": 4
+  },
+  {
+    "name": "Shopee",
+    "image_type": "主图",
+    "dimensions": "800×800 以上，建议1000×1000",
+    "format": "JPG/PNG，≤2MB",
+    "notes": "不同站点要求略有差异，第一张不加文字"
+  },
+  {
+    "name": "详情页",
+    "image_type": "宽750-1000",
+    "dimensions": "JPG",
+    "format": "支持视频，图文混排",
+    "_cell_count": 4
+  },
+  {
+    "name": "Shopify",
+    "image_type": "产品图",
+    "dimensions": "建议2048×2048（主题不同有差异）",
+    "format": "JPG/PNG/WebP，≤20MB",
+    "notes": "比例统一（建议1:1或3:4），同系列产品风格统一"
+  },
+  {
+    "name": "Banner",
+    "image_type": "按主题，常见1920×600 或 1920×800",
+    "dimensions": "JPG/PNG/WebP",
+    "format": "需同时准备桌面端和移动端尺寸",
+    "_cell_count": 4
+  }
+]

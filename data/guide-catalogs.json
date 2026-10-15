@@ -6,84 +6,13 @@
       "适合场景",
       "注意点"
     ],
-    "rows": [
-      [
-        "GPT Image 2.5 (Flare/Sunburst)",
-        "对话式改图、4K输出、草图工具、多轮编辑、虚拟试穿",
-        "DALL-E已退役，完全替代为GPT Image 2.5"
-      ],
-      [
-        "Nano Banana 2.1",
-        "产品图编辑、多参考图一致性（最多14张）、文字渲染准确率94%、4K输出",
-        "API降价50%，支持宽全景"
-      ],
-      [
-        "Flux 3 Image",
-        "JSON边界框布局、像素级精准编辑、4K输出、最多10个参考图合成、多轮编辑不动其他像素",
-        "适合需要精准控制的电商场景"
-      ],
-      [
-        "Midjourney V8.2",
-        "高级海报、品牌氛围、Edit Model、Draft Mode（24张候选图/次）",
-        "精准产品还原仍需谨慎"
-      ],
-      [
-        "Stable Diffusion 4",
-        "开源、12B参数、4096像素输出、社区许可",
-        "适合本地部署和自定义工作流"
-      ],
-      [
-        "Ideogram 4.5",
-        "精准编辑、重复编辑不偏移、文字渲染锐利",
-        "适合需要多次迭代的产品图"
-      ],
-      [
-        "可灵3.0 (Kling)",
-        "电商Agent模式、一键产品图组+短视频、主体参考、4K直出",
-        "国内电商首选之一"
-      ],
-      [
-        "通义万相 Wan 2.7",
-        "中文语义、国内审美、Wan 3.0视频支持文档输入",
-        "产品细节仍需参考图约束"
-      ],
-      [
-        "即梦AI (Jimeng)",
-        "中文场景图、扩图、图像编辑、视频生成",
-        "字节系生态"
-      ],
-      [
-        "Qwen-Image-2.1（通义千问）",
-        "7B开源、Arena双榜开源第一、原生透明图像、10张参考图、统一生成+编辑",
-        "开源本地部署、需要透明背景的产品图"
-      ],
-      [
-        "Qwen-Image-3.0（通义千问）",
-        "通义千问最新图像模型（7月发布）",
-        "阿里系生态用户"
-      ],
-      [
-        "腾讯混元 Hy Image 3.5",
-        "文生图+图生图、5张参考图、多轮编辑、2K输出、设计师盲测胜率+30%",
-        "腾讯生态用户"
-      ],
-      [
-        "Microsoft MAI-Image-2.6",
-        "微软最强图像模型，有Flash版本（低延迟高吞吐）",
-        "Azure生态、企业级批量生成"
-      ],
-      [
-        "Meta Muse Image",
-        "Meta图像生成模型",
-        "Meta生态用户"
-      ],
-      [
-        "蚂蚁 Ming-Image-0.1-Design",
-        "6B开源、文字→UI/海报/信息图、自动拆图层（2-9层RGBA）",
-        "电商海报、详情页设计自动化"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "use_case",
+      "notes"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/models.json"
   },
   "web-tools": {
     "title": "2. 网站版工具",
@@ -94,107 +23,15 @@
       "不适合",
       "适合人群"
     ],
-    "rows": [
-      [
-        "ChatGPT / GPT Image 2.5",
-        "<a href=\"https://chatgpt.com/\">chatgpt.com</a>",
-        "对话式改图、4K输出、草图工具、虚拟试穿、多轮编辑",
-        "大批量低成本流水线",
-        "运营、老板、设计师"
-      ],
-      [
-        "即梦AI",
-        "<a href=\"https://jimeng.jianying.com/\">jimeng.jianying.com</a>",
-        "中文场景图、扩图、图像编辑",
-        "严格产品结构还原",
-        "国内运营"
-      ],
-      [
-        "豆包",
-        "<a href=\"https://www.doubao.com/\">doubao.com</a>",
-        "快速灵感、中文对话修图",
-        "高强度批量生产",
-        "小白、运营"
-      ],
-      [
-        "通义万相",
-        "<a href=\"https://tongyi.aliyun.com/wanxiang/videoCreation\">tongyi.aliyun.com/wanxiang</a>",
-        "中文文生图/图生图",
-        "完整详情页排版",
-        "淘系/中文用户"
-      ],
-      [
-        "Canva",
-        "<a href=\"https://www.canva.cn/\">canva.cn</a>",
-        "详情页、Banner、社媒排版",
-        "精准产品重绘",
-        "运营、设计助理"
-      ],
-      [
-        "Liblib",
-        "<a href=\"https://www.liblib.art/\">liblib.art</a>",
-        "模型、工作流、创意图",
-        "完全小白一步成图",
-        "设计师、进阶用户"
-      ],
-      [
-        "达笔",
-        "<a href=\"https://dabids.cn/\">dabids.cn</a>",
-        "电商设计、商品图、营销图",
-        "深度系统集成",
-        "国内电商团队"
-      ],
-      [
-        "Pic Copilot",
-        "<a href=\"https://www.piccopilot.com/zh\">piccopilot.com/zh</a>",
-        "商品换背景、主图、AI模特",
-        "极复杂创意控制",
-        "小白、跨境卖家"
-      ],
-      [
-        "美图设计室",
-        "<a href=\"https://www.designkit.cn/\">designkit.cn</a>",
-        "商拍、批量商品图、营销设计",
-        "高度自定义工作流",
-        "运营/设计团队"
-      ],
-      [
-        "创客贴",
-        "<a href=\"https://www.chuangkit.com/index.html\">chuangkit.com</a>",
-        "抠图、排版、海报、详情页",
-        "精准模型控制",
-        "国内电商运营"
-      ],
-      [
-        "Krea",
-        "<a href=\"https://www.krea.ai/\">krea.ai</a>",
-        "多模型创意、高清放大、品牌视觉",
-        "纯中文小白可能有门槛",
-        "独立站/设计师"
-      ],
-      [
-        "TapNow",
-        "<a href=\"https://app.tapnow.ai/\">app.tapnow.ai</a>",
-        "多模型聚合、工作流创作",
-        "只想一键白底图",
-        "进阶团队"
-      ],
-      [
-        "Google Pics",
-        "<a href=\"https://pics.new/\">pics.new</a>",
-        "局部对象编辑、图内文字修改翻译、多人协作",
-        "复杂创意控制",
-        "跨境团队、设计师"
-      ],
-      [
-        "Grok Imagine",
-        "<a href=\"https://x.com/i/grok\">x.com/i/grok</a>",
-        "xAI图像生成、X平台集成",
-        "中文场景",
-        "海外社媒运营"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "url",
+      "best_for",
+      "not_for",
+      "audience"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/web-tools.json"
   },
   "extra-tools": {
     "title": "3. 其他常用入口补充",
@@ -204,63 +41,14 @@
       "官网/入口",
       "适合用途"
     ],
-    "rows": [
-      [
-        "图像API",
-        "OpenAI Images API",
-        "<a href=\"https://platform.openai.com/docs/guides/images\">platform.openai.com/docs/guides/images</a>",
-        "开发者接入图像生成/编辑能力"
-      ],
-      [
-        "图像模型入口",
-        "Google Gemini",
-        "<a href=\"https://gemini.google.com/\">gemini.google.com</a>",
-        "使用Google系图像能力的网页入口"
-      ],
-      [
-        "图像开发入口",
-        "Google AI Studio",
-        "<a href=\"https://aistudio.google.com/\">aistudio.google.com</a>",
-        "测试Google系模型/API能力"
-      ],
-      [
-        "高级审美图",
-        "Midjourney",
-        "<a href=\"https://www.midjourney.com/\">midjourney.com</a>",
-        "品牌海报、创意氛围图、风格参考"
-      ],
-      [
-        "Adobe编辑",
-        "Adobe Firefly",
-        "<a href=\"https://firefly.adobe.com/\">firefly.adobe.com</a>",
-        "PS生态、扩图、局部编辑、商用设计"
-      ],
-      [
-        "开源工作流",
-        "ComfyUI",
-        "<a href=\"https://github.com/comfyanonymous/ComfyUI\">github.com/comfyanonymous/ComfyUI</a>",
-        "本地/云端节点式批量作图工作流"
-      ],
-      [
-        "开源模型",
-        "Black Forest Labs / Flux",
-        "<a href=\"https://blackforestlabs.ai/\">blackforestlabs.ai</a>",
-        "Flux模型信息和生态入口"
-      ],
-      [
-        "抠图工具",
-        "remove.bg",
-        "<a href=\"https://www.remove.bg/\">remove.bg</a>",
-        "快速抠图、透明背景"
-      ],
-      [
-        "设计排版",
-        "Canva国际版",
-        "<a href=\"https://www.canva.com/\">canva.com</a>",
-        "跨境团队、英文素材、海外模板"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "category",
+      "name",
+      "url",
+      "use_case"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/extra-tools.json"
   },
   "vertical-domestic": {
     "title": "1. 国内电商专题平台",
@@ -270,39 +58,14 @@
       "核心功能",
       "适合谁"
     ],
-    "rows": [
-      [
-        "WeShop唯象",
-        "weshop.com",
-        "AI商拍，无需模特/影棚，上传产品图即可生成模特图和场景图",
-        "服装、配饰卖家"
-      ],
-      [
-        "知衣科技FD+",
-        "zhiyitech.cn",
-        "AI服装设计+商拍全链路，从设计稿到产品图",
-        "服装品牌/设计师"
-      ],
-      [
-        "AI商拍DesignKit",
-        "designkit.cn/aicp",
-        "AI商品图生成，批量换背景",
-        "国内电商运营"
-      ],
-      [
-        "堆友AI",
-        "duiyou.com",
-        "电商AI设计，丰富模板",
-        "国内运营/设计"
-      ],
-      [
-        "美梦AI",
-        "-",
-        "电商主图生成",
-        "小团队"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "url",
+      "features",
+      "audience"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/vertical-domestic.json"
   },
   "vertical-cross-border": {
     "title": "2. 跨境电商专题平台",
@@ -312,39 +75,14 @@
       "核心功能",
       "适合谁"
     ],
-    "rows": [
-      [
-        "Photta",
-        "photta.app",
-        "AI产品摄影，5种风格预设",
-        "跨境卖家"
-      ],
-      [
-        "1min.ai",
-        "1min.ai",
-        "免费AI电商图生成器",
-        "低预算卖家"
-      ],
-      [
-        "Claid.ai",
-        "claid.ai",
-        "AI生活方式图生成，时尚内容制作",
-        "品牌团队"
-      ],
-      [
-        "Auratuner",
-        "auratuner.com",
-        "AI产品背景替换，漂移检测",
-        "进阶用户"
-      ],
-      [
-        "Skild Art",
-        "-",
-        "跨境电商AI视觉平台，1000+场景风格",
-        "跨境团队"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "url",
+      "features",
+      "audience"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/vertical-cross-border.json"
   },
   "prompt-repositories": {
     "title": "1. 提示词库精选",
@@ -353,39 +91,13 @@
       "说明",
       "链接"
     ],
-    "rows": [
-      [
-        "awesome-ai-product-photography-prompts",
-        "电商产品摄影提示词精选集，含工作流和广告创意模板",
-        "github.com/cliprise/awesome-ai-product-photography-prompts"
-      ],
-      [
-        "awesome-ai-image-generator-prompts",
-        "1000+提示词，16种语言，含产品摄影分类",
-        "github.com/cliprise/awesome-ai-image-generator-prompts"
-      ],
-      [
-        "aidianshanggongju",
-        "AI电商生图提示词大全，一键从产品图生成",
-        "github.com/newaiproxy/aidianshanggongju"
-      ],
-      [
-        "gpt-image-2-prompts",
-        "GPT Image 2/2.5提示词合集",
-        "github.com/Ryan-yang125/gpt-image-2-prompts"
-      ],
-      [
-        "nanobanana-trending-prompts",
-        "Nano Banana Pro热门提示词",
-        "github.com/jau123/nanobanana-trending-prompts"
-      ],
-      [
-        "AI Image Prompt Engineering Cheat Sheet",
-        "跨模型提示词参考（2026年2月更新）",
-        "gist.github.com/horushe93/046d7e9882ecdf13335ff2108e89e135"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "description",
+      "url"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/prompt-repositories.json"
   },
   "open-source-tools": {
     "title": "2. 电商开源工具",
@@ -394,39 +106,13 @@
       "说明",
       "链接"
     ],
-    "rows": [
-      [
-        "Fashion-AI",
-        "电商AI生图爆款流水线：平铺图→模特图，使用embedding API",
-        "github.com/liangdabiao/Fashion-AI"
-      ],
-      [
-        "product-poster-ai",
-        "电商商品AI海报生成：产品属性识别+AI提示词生成，支持参考图",
-        "github.com/chaochaoji/product-poster-ai"
-      ],
-      [
-        "ecommerce-image-suite",
-        "电商套图生成助手：完整电商图组生成+卖点分析",
-        "github.com/wzj177/ecommerce-image-suite"
-      ],
-      [
-        "banana-mall (MxPage)",
-        "开源AI电商详情页生成器：上传产品参考图，自动分析卖点",
-        "github.com/ziguishian/banana-mall"
-      ],
-      [
-        "Photoshoot",
-        "零提示词AI产品照生成器：提取参考模板，100%产品细节保留",
-        "github.com/ruanyf/weekly/issues/9559"
-      ],
-      [
-        "Lovimg",
-        "AI图像提示词库，带预览图，可搜索",
-        "github.com/ruanyf/weekly/issues/10066"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "description",
+      "url"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/open-source-tools.json"
   },
   "comfyui-workflows": {
     "title": "1. 现成电商工作流模板",
@@ -435,39 +121,13 @@
       "说明",
       "来源"
     ],
-    "rows": [
-      [
-        "虚拟试穿4合1",
-        "人物+服装平铺→Nano Banana Pro试穿效果",
-        "comfy.org官方模板"
-      ],
-      [
-        "完美换装4K",
-        "AI换装+服装转移，自动/手动蒙版，4K支持",
-        "LiblibAI"
-      ],
-      [
-        "电商服装换装+产品换背景",
-        "一站式服装自定义换装和产品背景替换",
-        "RunningHub"
-      ],
-      [
-        "一键换装",
-        "零成本模特方案",
-        "RunningHub AI"
-      ],
-      [
-        "电商产品精修+模特换装+换背景",
-        "三合一工作流",
-        "B站教程"
-      ],
-      [
-        "Flux一键换装",
-        "基于Flux的电商必备换装流程",
-        "知乎"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "description",
+      "source"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/comfyui-workflows.json"
   },
   "components": {
     "title": "2. 核心技术组件",
@@ -476,29 +136,13 @@
       "用途",
       "电商场景"
     ],
-    "rows": [
-      [
-        "ControlNet",
-        "精确控制姿势、布局、轮廓",
-        "模特姿势控制、产品轮廓约束"
-      ],
-      [
-        "IP-Adapter",
-        "喂入参考照片保持一致外观",
-        "产品一致性、品牌风格统一"
-      ],
-      [
-        "Multi-LoRA",
-        "叠加多个LoRA实现复杂场景",
-        "产品+场景+风格组合"
-      ],
-      [
-        "Nano Banana 2.1 Subject Consistency",
-        "最多14张参考图保持一致性",
-        "多角度产品图、系列产品"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "use_case",
+      "ecommerce_use"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/components.json"
   },
   "platform-domestic": {
     "title": "1. 国内电商平台",
@@ -509,86 +153,15 @@
       "格式/大小",
       "要点"
     ],
-    "rows": [
-      [
-        "淘宝/天猫",
-        "主图",
-        "800×800 以上，建议1200×1200",
-        "JPG/PNG，≤3MB",
-        "白底图更容易被搜索推荐"
-      ],
-      [
-        "详情页",
-        "宽750，高度不限（单张建议≤1500）",
-        "JPG，单张≤500KB",
-        "长图需分切，总高度不超过实际限制"
-      ],
-      [
-        "SKU图",
-        "800×800",
-        "JPG/PNG",
-        "颜色/规格差异要清晰可辨"
-      ],
-      [
-        "京东",
-        "主图",
-        "800×800 以上，建议1200×1200",
-        "JPG/PNG，≤5MB",
-        "白底图优先，第一张必须白底"
-      ],
-      [
-        "详情页",
-        "宽750",
-        "JPG，单张≤1MB",
-        "图片总数建议不超过30张"
-      ],
-      [
-        "主图视频",
-        "与主图同比例",
-        "MP4，≤20MB，≤60秒",
-        "非必须但有权重加成"
-      ],
-      [
-        "拼多多",
-        "主图",
-        "750×750 以上",
-        "JPG，≤1MB",
-        "第一张白底，不加促销文字"
-      ],
-      [
-        "详情页",
-        "宽750",
-        "JPG",
-        "简洁为主，移动端优先"
-      ],
-      [
-        "抖音电商",
-        "主图",
-        "600×600 以上，建议800×800",
-        "JPG/PNG",
-        "第一张白底，风格偏年轻化"
-      ],
-      [
-        "详情页",
-        "宽750",
-        "JPG",
-        "短视频+图片混合效果更好"
-      ],
-      [
-        "小红书",
-        "商品图",
-        "1080×1440（3:4）或 1080×1080",
-        "JPG/PNG",
-        "竖图效果更好，生活方式感"
-      ],
-      [
-        "种草图",
-        "1080×1440",
-        "JPG/PNG",
-        "真实感 > 精致感，避免过度AI痕迹"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "image_type",
+      "dimensions",
+      "format",
+      "notes"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/platform-domestic.json"
   },
   "platform-cross-border": {
     "title": "2. 跨境电商平台",
@@ -599,54 +172,15 @@
       "格式/大小",
       "要点"
     ],
-    "rows": [
-      [
-        "Amazon",
-        "主图",
-        "至少1000×1000（长边），建议2000×2000",
-        "JPEG/PNG/TIFF/GIF，≤10MB",
-        "纯白背景(RGB 255,255,255)，产品占画面85%以上，无文字/徽章/水印"
-      ],
-      [
-        "副图",
-        "同主图",
-        "同上",
-        "可做场景图、信息图、尺寸图、对比图"
-      ],
-      [
-        "A+图",
-        "按模块：标准970×600，精品970×300等",
-        "JPEG/PNG，≤300KB/张",
-        "需通过Brand Registry，模块尺寸严格"
-      ],
-      [
-        "Shopee",
-        "主图",
-        "800×800 以上，建议1000×1000",
-        "JPG/PNG，≤2MB",
-        "不同站点要求略有差异，第一张不加文字"
-      ],
-      [
-        "详情页",
-        "宽750-1000",
-        "JPG",
-        "支持视频，图文混排"
-      ],
-      [
-        "Shopify",
-        "产品图",
-        "建议2048×2048（主题不同有差异）",
-        "JPG/PNG/WebP，≤20MB",
-        "比例统一（建议1:1或3:4），同系列产品风格统一"
-      ],
-      [
-        "Banner",
-        "按主题，常见1920×600 或 1920×800",
-        "JPG/PNG/WebP",
-        "需同时准备桌面端和移动端尺寸"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "image_type",
+      "dimensions",
+      "format",
+      "notes"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/platform-cross-border.json"
   },
   "compression": {
     "title": "3. 图片压缩与优化",
@@ -656,32 +190,28 @@
       "特点",
       "链接"
     ],
-    "rows": [
-      [
-        "TinyPNG / TinyJPG",
-        "在线免费",
-        "智能压缩，视觉几乎无损，支持批量",
-        "tinypng.com"
-      ],
-      [
-        "Squoosh",
-        "在线免费（Google出品）",
-        "可实时对比压缩前后效果，支持WebP/AVIF",
-        "squoosh.app"
-      ],
-      [
-        "ImageOptim",
-        "Mac本地免费",
-        "批量压缩，自动去除EXIF等冗余数据",
-        "imageoptim.com"
-      ],
-      [
-        "Caesium",
-        "Windows本地免费",
-        "批量压缩，支持预览对比",
-        "saerasoft.com/caesium"
-      ]
+    "record_scope": "原稿记录，核查说明另列",
+    "fields": [
+      "name",
+      "type",
+      "features",
+      "url"
     ],
-    "record_scope": "原稿记录，核查说明另列"
+    "records_file": "catalogs/compression.json"
+  },
+  "amazon-aplus-current": {
+    "title": "Amazon A+模块尺寸与证据边界",
+    "columns": [
+      "模块准确名称",
+      "官方文档记录",
+      "制作动作与边界"
+    ],
+    "fields": [
+      "name",
+      "dimensions",
+      "production_note"
+    ],
+    "records_file": "catalogs/amazon-aplus-current.json",
+    "record_scope": "2026-10-15查阅旧官方PDF；当前账户槽位另核"
   }
 }

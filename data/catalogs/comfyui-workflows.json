@@ -1,0 +1,32 @@
+[
+  {
+    "name": "虚拟试穿4合1",
+    "description": "人物+服装平铺→Nano Banana Pro试穿效果",
+    "source": "comfy.org官方模板"
+  },
+  {
+    "name": "完美换装4K",
+    "description": "AI换装+服装转移，自动/手动蒙版，4K支持",
+    "source": "LiblibAI"
+  },
+  {
+    "name": "电商服装换装+产品换背景",
+    "description": "一站式服装自定义换装和产品背景替换",
+    "source": "RunningHub"
+  },
+  {
+    "name": "一键换装",
+    "description": "零成本模特方案",
+    "source": "RunningHub AI"
+  },
+  {
+    "name": "电商产品精修+模特换装+换背景",
+    "description": "三合一工作流",
+    "source": "B站教程"
+  },
+  {
+    "name": "Flux一键换装",
+    "description": "基于Flux的电商必备换装流程",
+    "source": "知乎"
+  }
+]

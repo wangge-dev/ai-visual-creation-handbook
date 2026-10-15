@@ -1,0 +1,56 @@
+[
+  {
+    "category": "图像API",
+    "name": "OpenAI Images API",
+    "url": "<a href=\"https://platform.openai.com/docs/guides/images\">platform.openai.com/docs/guides/images</a>",
+    "use_case": "开发者接入图像生成/编辑能力"
+  },
+  {
+    "category": "图像模型入口",
+    "name": "Google Gemini",
+    "url": "<a href=\"https://gemini.google.com/\">gemini.google.com</a>",
+    "use_case": "使用Google系图像能力的网页入口"
+  },
+  {
+    "category": "图像开发入口",
+    "name": "Google AI Studio",
+    "url": "<a href=\"https://aistudio.google.com/\">aistudio.google.com</a>",
+    "use_case": "测试Google系模型/API能力"
+  },
+  {
+    "category": "高级审美图",
+    "name": "Midjourney",
+    "url": "<a href=\"https://www.midjourney.com/\">midjourney.com</a>",
+    "use_case": "品牌海报、创意氛围图、风格参考"
+  },
+  {
+    "category": "Adobe编辑",
+    "name": "Adobe Firefly",
+    "url": "<a href=\"https://firefly.adobe.com/\">firefly.adobe.com</a>",
+    "use_case": "PS生态、扩图、局部编辑、商用设计"
+  },
+  {
+    "category": "开源工作流",
+    "name": "ComfyUI",
+    "url": "<a href=\"https://github.com/comfyanonymous/ComfyUI\">github.com/comfyanonymous/ComfyUI</a>",
+    "use_case": "本地/云端节点式批量作图工作流"
+  },
+  {
+    "category": "开源模型",
+    "name": "Black Forest Labs / Flux",
+    "url": "<a href=\"https://blackforestlabs.ai/\">blackforestlabs.ai</a>",
+    "use_case": "Flux模型信息和生态入口"
+  },
+  {
+    "category": "抠图工具",
+    "name": "remove.bg",
+    "url": "<a href=\"https://www.remove.bg/\">remove.bg</a>",
+    "use_case": "快速抠图、透明背景"
+  },
+  {
+    "category": "设计排版",
+    "name": "Canva国际版",
+    "url": "<a href=\"https://www.canva.com/\">canva.com</a>",
+    "use_case": "跨境团队、英文素材、海外模板"
+  }
+]
