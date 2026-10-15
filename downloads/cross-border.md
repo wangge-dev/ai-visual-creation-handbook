@@ -1,23 +1,19 @@
-# 跨境电商操作教程与完整模板
-
-包含逐步操作、提示词、排版与返工；练习数据虚构，图像任务、源文件与后台上传尚未执行。
-
-# 跨境出图，先选任务再进入逐步教程
+## 跨境出图，先选任务再进入逐步教程
 
 这页负责导航与共同练习资料。实际制作步骤、可复制提示词、排版与返工在下面各篇展开。先做一个渠道的一款商品，走完真实主体、图片与文字、导出和检查，再扩到其他市场。
 
 | 要交付什么 | 从哪里跟做 |
 | --- | --- |
-| 一张图还没有做过 | [第一张图](https://wangge-dev.github.io/ai-visual-creation-handbook/start/first-image)，先走上传、背景与图层 |
-| 主图与一套商品图 | [六张套图](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/image-set)，逐图处理素材与信息 |
-| Amazon商品页 | [主图/副图](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-listing) → [A+](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-a-plus) |
-| Shopify产品页 | [媒体与变体](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopify-product) → [两端横幅](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopify-hero) |
-| Shopee SG | [封面、规格、变体](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopee-localization) |
-| 其他语言与多款商品 | [本地化](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/localization) → [SKU交付](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/cross-border-sku-delivery) |
+| 一张图还没有做过 | [第一张图](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-first-image)，先走上传、背景与图层 |
+| 主图与一套商品图 | [六张套图](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-image-set)，逐图处理素材与信息 |
+| Amazon商品页 | [主图/副图](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-listing) → [A+](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-a-plus) |
+| Shopify产品页 | [媒体与变体](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopify-product) → [两端横幅](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopify-hero) |
+| Shopee SG | [封面、规格、变体](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopee-localization) |
+| 其他语言与多款商品 | [本地化](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-localization) → [SKU交付](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border-sku-delivery) |
 
 一套跨境图片先固定商品事实，再按市场、图片位置和语言安排表达。Amazon主图负责真实识别，副图和A+负责解释；Shopify还要适配主题裁切，Shopee需要按市场整理封面、规格与变体。先完成一条商品链路，再扩大SKU。
 
-## 这次练习准备什么
+### 这次练习准备什么
 
 以下所有DN01、DN02名称和参数均为虚构练习数据，用来示范怎么填写任务；正式商品须替换为自己的真实记录。练习未附商品照片，也未执行生图。
 
@@ -32,9 +28,9 @@
 | 未知项 | 容积、耐温、承重、防水、食品接触、认证、回收属性均未知 |
 | 实拍需求 | 正面、顶部、开盖、隔板、侧面；未提供的角度不凭空补 |
 
-把真实素材按“对象照片、风格参考、准确文案、尺寸记录”四类整理。参考图只借用背景或布局；商品照片承担外观依据，规格来自记录。复制[P09跨境简报](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P09)，先生成渠道任务表。
+把真实素材按“对象照片、风格参考、准确文案、尺寸记录”四类整理。参考图只借用背景或布局；商品照片承担外观依据，规格来自记录。复制[P09跨境简报](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P09)，先生成渠道任务表。
 
-## 第1步：建立渠道矩阵
+### 第1步：建立渠道矩阵
 
 | 任务 | 母版职责 | 后续动作 |
 | --- | --- | --- |
@@ -45,39 +41,35 @@
 | Shopify首页横幅 | 主题表达与商品引导 | 桌面和手机分别重排构图 |
 | Shopee SG | 清晰封面、规格与变体 | 按当地后台检查上传参数 |
 
-这张表是练习任务分配，不规定每个渠道必须上传固定张数。[平台资料卡](https://wangge-dev.github.io/ai-visual-creation-handbook/resources/)集中保留官方来源与适用范围；1024、2048等数字要区分官方建议、当前限制和练习母版。
+这张表是练习任务分配，不规定每个渠道必须上传固定张数。[平台资料卡](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%B5%84%E6%BA%90%E8%B5%84%E6%96%99%E5%BA%93)集中保留官方来源与适用范围；1024、2048等数字要区分官方建议、当前限制和练习母版。
 
-## 第2步：先做一张真实主体母版
+### 第2步：先做一张真实主体母版
 
 选清晰正面或45度实拍，在图层软件抠出主体。原照片、蒙版和商品层保留，记录允许修改的是背景、接触阴影和文案层。没有实拍时可以继续准备简报与版式，不把概念图写成正式商品图。
 
-先按[Amazon主图教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-listing)完成白底任务，再用同一真实主体建立场景图。模型容易改商品时，只生成背景，在PS／Krita里合成真实主体。检查商品颜色、盖子、隔板与数量后，再扩展其他图。
+先按[Amazon主图教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-listing)完成白底任务，再用同一真实主体建立场景图。模型容易改商品时，只生成背景，在PS／Krita里合成真实主体。检查商品颜色、盖子、隔板与数量后，再扩展其他图。
 
-## 第3步：按位置组织信息
+### 第3步：按位置组织信息
 
-副图不要每张重复同一句卖点。DN01可分成桌面场景、开盖结构、外尺寸、发货内容和使用顺序；“耐高温”“大容量”等未知事实不填。使用[P11副图分工](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P11)获得逐张构图和完整任务词。
+副图不要每张重复同一句卖点。DN01可分成桌面场景、开盖结构、外尺寸、发货内容和使用顺序；“耐高温”“大容量”等未知事实不填。使用[P11副图分工](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P11)获得逐张构图和完整任务词。
 
-[A+教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-a-plus)把结构、规格和使用拆模块；[Shopify产品页](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopify-product)把相同事实整理成媒体序列；[Shopee教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopee-localization)明确市场与变体。准确文字优先用可编辑图层，不反复让整图模型改小字。
+[A+教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-a-plus)把结构、规格和使用拆模块；[Shopify产品页](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopify-product)把相同事实整理成媒体序列；[Shopee教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopee-localization)明确市场与变体。准确文字优先用可编辑图层，不反复让整图模型改小字。
 
-## 第4步：本地化、SKU与交付
+### 第4步：本地化、SKU与交付
 
-先做好一份事实母表，再制作英文或日文版本。场景和表达可调整，商品尺寸、配件和功能不能随市场变化。使用[本地化与单位教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/localization)，再按[SKU交付教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/cross-border-sku-delivery)建立文件清单。
+先做好一份事实母表，再制作英文或日文版本。场景和表达可调整，商品尺寸、配件和功能不能随市场变化。使用[本地化与单位教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-localization)，再按[SKU交付教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border-sku-delivery)建立文件清单。
 
-最终交付包含：任务表、准确文案、图片、源文件状态、实际像素、检查结果和未完成项。网页上传成功、文字准确、源文件可编辑分别检查。完整流程还可以放进[三类画布](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/cross-border-canvas)。
+最终交付包含：任务表、准确文案、图片、源文件状态、实际像素、检查结果和未完成项。网页上传成功、文字准确、源文件可编辑分别检查。完整流程还可以放进[三类画布](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border-canvas)。
 
-## 完成时实际核对什么
+### 完成时实际核对什么
 
 一张图能对照真实商品核验；对应渠道位置明确；准确文字与单位无误；文件能打开且裁切适用。规划、生成、合成、源文件与后台上传各自记录完成状态。这份导航与教程文稿不表示真实商品案例已经完成。
 
-证据状态：原创教程与规划示范，尚未执行图像任务或后台上传。
-
----
-
-# Amazon主图与副图，从实拍做到可交付文件
+## Amazon主图与副图，从实拍做到可交付文件
 
 本篇带你完成一张白底主图和五张各有职责的副图。沿用跨境模板里的DN01收纳盒练习，白色ABS、外尺寸220×150×120mm、盒体1、盖子1、可拆隔板1。这些是虚构填写数据，正式使用前换成你的真实商品、实拍、尺寸和清单；此处没有生成结果，也没有Amazon上传实测。
 
-## 1. 新建任务，先确定站点和图片位置
+### 1. 新建任务，先确定站点和图片位置
 
 在任务表写“Amazon US、商品类目、主图或副图、SKU”。读取当前类目图片要求，再确定导出参数。Amazon公开摄影指南给出纯白底、完整真实商品和占幅指导；主图的广告字、场景道具与促销标签应移除。服装等特殊类目另核对应要求。[Amazon摄影指南](https://sell.amazon.com/blog/product-photos)。
 
@@ -94,7 +86,7 @@
 | 05-in-box | 发货内容 | 实际商品、盖子、隔板平铺 |
 | 06-use | 放入、收纳、合盖 | 对应动作实拍＋短标题 |
 
-## 2. 白底主图，在PS或Photopea操作
+### 2. 白底主图，在PS或Photopea操作
 
 1. 新建2000×2000白色画布，RGB模式，背景填 `#FFFFFF`。
 2. 导入正面照片为独立商品层，选主体，添加蒙版，处理边缘。主体原像素保留，蒙版只隐藏拍摄背景。[PS选择主体](https://helpx.adobe.com/photoshop/desktop/make-selections/automatic-color-based-selections/detect-subject-using-select-subject.html)。
@@ -109,7 +101,7 @@
 不生成标题、促销字、徽章、认证、道具或水印，不把白色ABS改成金属或陶瓷。不推测隐藏结构。若只能重绘商品而不能保留真实主体，请只输出背景处理建议，商品由原照片合成。
 ```
 
-## 3. 场景副图，先解释用途
+### 3. 场景副图，先解释用途
 
 DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。生成工具负责环境，盒子保不住就用真实商品层合成。不要让几支笔与收纳盒并排成“套装发货”画面。
 
@@ -120,15 +112,15 @@ DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。�
 
 合成后在独立文字层写练习标题 `A place for everyday stationery`。它描述用途，不暗示容量、承重或安全等级。缩成手机宽度，商品比装饰更显眼、标题能读，才保留这张。
 
-## 4. 结构、尺寸与发货图分开做
+### 4. 结构、尺寸与发货图分开做
 
 结构图直接用开盖实拍。若一个隔板在照片中可拆，就用对应照片说明，不让模型凭空把内部分成六格。练习可用标题 `Removable divider`，正式文案需要真实结构依据。
 
-尺寸图以外尺寸为准，排 `220 × 150 × 120 mm`；US版本需要英寸时，同时保留厘米或毫米，明确L×W×H与外尺寸。不要把透视角度的斜边当长度，使用能清楚看出测量方向的照片。[尺寸与本地化操作](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/localization)。
+尺寸图以外尺寸为准，排 `220 × 150 × 120 mm`；US版本需要英寸时，同时保留厘米或毫米，明确L×W×H与外尺寸。不要把透视角度的斜边当长度，使用能清楚看出测量方向的照片。[尺寸与本地化操作](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-localization)。
 
 发货图用真实平铺，标题 `What's in the box`，列表 `1 box body / 1 lid / 1 divider`。文具不出现或写明不包含。没有官方认证与报告就不做认证图。
 
-## 5. 使用图按实际动作排三组
+### 5. 使用图按实际动作排三组
 
 第一组打开盒盖，第二组放入与商品用途一致的文具，第三组合盖。动作图用实拍或经逐项核对的结果，手和盒子的接触关系不能错。没有动作照片时，这张先用产品结构说明替代，别编一个“自动开盖”功能。
 
@@ -136,7 +128,7 @@ DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。�
 根据本商品的真实使用说明和动作照片整理三组副图文案。每组输出准确短标题、对应照片、阅读顺序和必须看清的操作部位。只保留资料支持的打开、放入、合盖动作，缺失步骤标待补拍。不要生成产品结构、手部动作或未经确认的功能。文案供后期文字层排版。
 ```
 
-## 6. 导出、排顺序与返工
+### 6. 导出、排顺序与返工
 
 每张保留PSD或等效源文件，另导出JPG。练习命名 `DN01_white_amazon-us_01-main_en_v01.jpg`，依次到06。重新打开检查像素、边缘、颜色和文字，按计划排序；实际上传后再看商品页缩略图、放大图、变体与手机裁切。
 
@@ -149,17 +141,13 @@ DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。�
 | 文字太长读不清 | 删次要句，拆两张副图，保持准确参数 |
 | 变体白图对应灰色SKU | 修媒体对应和文件名，不能只换名字 |
 
-完成后进入[A+模块](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-a-plus)。通用白底任务模板见[P10](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P10)，副图职责模板见[P11](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P11)，本篇已给直接可复制的制作词。
+完成后进入[A+模块](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-a-plus)。通用白底任务模板见[P10](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P10)，副图职责模板见[P11](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P11)，本篇已给直接可复制的制作词。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
-
----
-
-# Amazon A+，从模块草图做到配图与准确文字
+## Amazon A+，从模块草图做到配图与准确文字
 
 本节完成一份模块表、两张无字背景/配图、结构与规格资料、逐模块文案和导出清单。沿用DN01收纳盒练习，数据是虚构填写示范。A+的图片和文本槽由当前账户可用模块决定，先选模块，再制作图片；不要把国内十屏长图缩成一张A+。
 
-## 1. 在后台记录所选模块
+### 1. 在后台记录所选模块
 
 打开当前账户的A+内容编辑入口，先确认自己能使用的内容类型和模块。给每个模块记录名称、图片槽位、实际像素要求、文本字段、可选手机素材和预览方式。不要统一填成旧文章常见的970像素宽。
 
@@ -174,7 +162,7 @@ DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。�
 
 品牌故事有真实品牌材料才加入。练习名DeskNest没有创始人经历，不能补一个“十年匠心团队”。A+内容形式与预览方法参考[官方设计指南](https://sell.amazon.com/blog/a-plus-content-design-guide)，提交限制按当前后台说明。
 
-## 2. 做场景横图
+### 2. 做场景横图
 
 以已经核对的真实商品层为主体。先生成空桌面环境，下载后按所选模块裁切。左边是否留白取决于文本叠加方式；模块有独立文本槽时，图片里无需塞长文。
 
@@ -185,7 +173,7 @@ DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。�
 
 把真实盒子放进背景，底部加合理接触阴影。练习标题 `Keep everyday stationery in one place`，正文 `A lidded box with a removable divider for desk organization.`，它只描述练习已知的结构和用途。正式素材替换后逐项核对。
 
-## 3. 做结构模块
+### 3. 做结构模块
 
 开盖照、隔板照分别排，标识“盒体”“盖子”“隔板”。没有透视一致的照片时用独立小图，别硬拼成虚构爆炸图。可以让助手输出排版计划。
 
@@ -194,13 +182,13 @@ DN01的用途是书桌收纳文具，桌面、笔和本子只作场景背景。�
 只写一个可拆隔板与一个盖子，不推测密封、防水、耐温、食品接触或承重。不要生成内部结构或认证图标。输出可编辑文本与排版顺序，图片由实拍提供。
 ```
 
-## 4. 参数与比较表用数据做
+### 4. 参数与比较表用数据做
 
 DN01练习参数 `External dimensions: 220 × 150 × 120 mm (L × W × H)`。发货列表与副图保持一致。系列对比需要每个真实SKU的记录，同一行比较同一属性；只有一个SKU时不编另两款，也不凭空写“行业更强”。
 
 选择后台文本/表格字段可放的内容，复杂参数拆行。数字、单位、符号和小数位分别检查。图里已烘焙的英文文字难以本地化，尽量把说明放在模块文本字段。
 
-## 5. 逐模块导出和预览
+### 5. 逐模块导出和预览
 
 在PS/Photopea为每个图片槽建相应尺寸的文件，保留真实商品与背景层，导出后记录宽高、体积和文件名。上传时按模块表一一对应，填入准确文字，再看桌面与手机预览。检查窄屏是否裁掉商品，结构标签是否仍可读，以及同一信息有没有在三块重复。
 
@@ -212,17 +200,13 @@ DN01练习参数 `External dimensions: 220 × 150 × 120 mm (L × W × H)`。发
 | 英寸和毫米不一致 | 回事实表重算，统一整套数据 |
 | 模块上传失败 | 对照该槽格式、实际尺寸与体积处理 |
 
-交付模块表、图片、准确文本、源文件状态和后台预览记录。当前没有后台预览记录，教程不宣称提交成功。完整规划模板见[P12](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P12)，通用详情页思路见[逐屏教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/detail-page)。
+交付模块表、图片、准确文本、源文件状态和后台预览记录。当前没有后台预览记录，教程不宣称提交成功。完整规划模板见[P12](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P12)，通用详情页思路见[逐屏教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-detail-page)。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
-
----
-
-# Shopify产品页，制作媒体序列并检查变体
+## Shopify产品页，制作媒体序列并检查变体
 
 本节把一套商品图放进Shopify产品页的制作流程，得到媒体顺序表、准确alt text、变体对应表与桌面/手机检查记录。练习使用虚构DN01收纳盒；实际后台操作需要你的店铺账户，本项目尚未上传。
 
-## 1. 先定商品媒体顺序
+### 1. 先定商品媒体顺序
 
 打开同类产品页思考读者先需要什么。封面先认商品，第二张解释用途，第三张看结构，第四张读尺寸，第五张看发货。首页大横幅另有主题裁切逻辑，不能直接拿来当商品封面。
 
@@ -236,9 +220,9 @@ DN01练习参数 `External dimensions: 220 × 150 × 120 mm (L × W × H)`。发
 
 本练习用2048×2048方形母版便于统一媒体序列，它是常见制作选择，主题可能有不同显示比例。产品媒体支持范围和限制查[官方媒体类型](https://help.shopify.com/en/manual/products/product-media/product-media-types)，不要把普通主题图片限制混为产品媒体限制。
 
-## 2. 制作场景媒体
+### 2. 制作场景媒体
 
-已经做过[Amazon副图](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-listing)可复用真实商品和适用场景，但去掉不适合主题的烘焙文字。Shopify页面标题、价格、购买按钮由网页表达，媒体负责商品与使用环境。
+已经做过[Amazon副图](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-listing)可复用真实商品和适用场景，但去掉不适合主题的烘焙文字。Shopify页面标题、价格、购买按钮由网页表达，媒体负责商品与使用环境。
 
 ```text
 为白色桌面收纳盒制作Shopify产品页场景底图。真实商品照片是唯一外观依据，保留盒体、盖子、比例、颜色和标识。明亮书桌，浅木台面，奶油白背景，柔和左侧窗光，简洁日常摄影。
@@ -247,13 +231,13 @@ DN01练习参数 `External dimensions: 220 × 150 × 120 mm (L × W × H)`。发
 
 导出原图后检查商品。不要让画布截图里的边框、节点线和选择框进入媒体。
 
-## 3. 在产品后台上传并排顺序
+### 3. 在产品后台上传并排顺序
 
 进入Products，打开目标商品，在Media区域添加文件。上传后按任务表调整顺序；官方文档说明媒体可重新排列，具体界面按当前后台。[添加产品媒体](https://help.shopify.com/en/manual/products/product-media/add-media)。
 
 先保存一款测试商品或当前授权的草稿，再查看前台。没有实际上传授权时，可以完成全部文件和媒体表，把后台步骤留给运营执行；不能用本地预览冒充上线。
 
-## 4. 逐张填写alt text
+### 4. 逐张填写alt text
 
 打开一张媒体，找到编辑alt text的入口，描述画面实际内容。DN01例子可写如下，正式使用改真实商品名和颜色。[官方alt text说明](https://help.shopify.com/en/manual/products/product-media/add-alt-text)。
 
@@ -267,7 +251,7 @@ DN01练习参数 `External dimensions: 220 × 150 × 120 mm (L × W × H)`。发
 
 alt text用于描述图片。不要每张重复堆“best cheap storage box”等关键词，也不要把同一段长广告塞进所有媒体。图中包含必要尺寸信息时，文字描述与事实表一致。
 
-## 5. 关联变体并看三个位置
+### 5. 关联变体并看三个位置
 
 白色、灰色SKU分别使用真实颜色照片。按当前后台变体媒体入口指定对应图。切换变体时看主媒体有没有一起变化，颜色名称有没有与图片相反。再查看产品页、集合卡片和手机画廊，确认主题裁切没有切掉盒盖与参数。
 
@@ -278,23 +262,19 @@ alt text用于描述图片。不要每张重复堆“best cheap storage box”�
 | 方图里文字手机很小 | 移到网页文字区，保留图像说明 |
 | 加载慢 | 保留清晰母版，另导出适当像素与压缩版本 |
 
-最终交付媒体排序CSV、图片、alt text文本和变体映射。后台实际表现另记录。完整任务模板见[P13](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P13)，首页横幅继续[桌面/手机排版](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopify-hero)。
+最终交付媒体排序CSV、图片、alt text文本和变体映射。后台实际表现另记录。完整任务模板见[P13](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P13)，首页横幅继续[桌面/手机排版](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopify-hero)。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
-
----
-
-# Shopify横幅，桌面和手机各做一版
+## Shopify横幅，桌面和手机各做一版
 
 本节完成桌面背景、手机背景、一份准确标题/按钮文字，以及主题预览检查。横幅背景里保留真实商品，标题和按钮优先由主题文字区表达，方便响应布局、翻译和编辑。
 
-## 1. 先看主题的图片区域
+### 1. 先看主题的图片区域
 
 在主题编辑器选当前横幅section，确认支持单图还是独立手机图，能否调图片高度、文本位置、焦点和遮罩。先用主题副本或预览做布局。不同主题选项不同，没有手机图槽位时不要编一个固定按钮名称。[Shopify图片说明](https://help.shopify.com/en/manual/online-store/images/theme-images)。
 
 本练习用2400×1200桌面图和1200×1600手机图作为设计起点。它们不是Shopify统一规定。用主题实际预览决定最终构图，原图尺寸与显示裁切是两回事。
 
-## 2. 桌面图，右侧商品左侧文字
+### 2. 桌面图，右侧商品左侧文字
 
 DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再放回真实商品层，避免一做大横幅就换了盒型。
 
@@ -305,7 +285,7 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 在图层软件放入真实盒子，留出头顶和底部裁切余量。标题练习 `Make room for everyday essentials`，按钮 `Explore the organizer`。标题是场景表达，不能变成无依据的“Largest capacity”。准确文本单独交给主题编辑器。
 
-## 3. 手机图，重新组织画面
+### 3. 手机图，重新组织画面
 
 竖图里商品放在下半部，上半部留文字。不要只把桌面图从中间裁成竖图，它可能正好裁掉右侧商品。
 
@@ -316,7 +296,7 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 有独立手机槽位就分别上传。只有同一图槽位时，尝试主题焦点与高度设置，让主体处于可保留区域；仍无法同时满足时选支持相应布局的section，或改成图文分开的结构。
 
-## 4. 在三个宽度看可见结果
+### 4. 在三个宽度看可见结果
 
 用主题预览检查桌面、约390像素和约360像素宽的手机画面。看商品是否完整、文字是否压在盒盖上、按钮是否有对比度、标题是否超过三行。以实际页面为准，不凭下载原图推断。
 
@@ -327,23 +307,19 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 | 字在背景上看不清 | 调背景留白或主题遮罩，别改商品颜色 |
 | 两版风格差很大 | 回同一商品层与背景色，统一光线 |
 
-交付两版原图、源文件、准确文字与预览结果。当前没有真实Shopify主题实测。完整规划可复制[P14](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P14)。
+交付两版原图、源文件、准确文字与预览结果。当前没有真实Shopify主题实测。完整规划可复制[P14](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P14)。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
-
----
-
-# Shopee SG封面、规格与变体，逐张制作
+## Shopee SG封面、规格与变体，逐张制作
 
 本篇以新加坡站DN01收纳盒练习为例，完成封面、场景、结构、尺寸和发货图。SG官方广告学习页提供清晰商品、方形照片和简洁展示建议；这不是所有Shopee市场的统一硬性规格。[Shopee SG官方指导](https://ads.shopee.sg/learn/faq/520/172)。
 
-## 1. 确定站点、用途和变体
+### 1. 确定站点、用途和变体
 
 任务表写站点SG、语言英文、商品类目、白色SKU、图片位置。查看当前卖家后台该位置允许的尺寸、格式和数量。练习采用1600×1600方形母版，实际导出按当前要求；其他市场重新核对，不能只换语言。
 
 准备真实正面、开盖、隔板、配件照片和外尺寸。先做一个SKU，再复制排版给下一个真实颜色。
 
-## 2. 封面先让商品清楚
+### 2. 封面先让商品清楚
 
 用真实主体放入白色或非常浅的干净背景，保持完整。促销活动信息如果允许使用，也要先核对活动、站点和时间，不能随手写“官方最低价”。本练习封面不放活动字。
 
@@ -354,11 +330,11 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 小尺寸预览时应先看见商品，再看见其他内容。主体太小就删装饰和扩大商品，不靠更艳的底色弥补。
 
-## 3. 场景图说明用途
+### 3. 场景图说明用途
 
-复用[Amazon场景副图](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-listing)中真实主体与浅木桌面，换成适用于本店的短句。练习 `For everyday desk organization`，商品用途清楚即可。道具与发货清单分开，整图生成改变盒子时回空背景合成。
+复用[Amazon场景副图](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-listing)中真实主体与浅木桌面，换成适用于本店的短句。练习 `For everyday desk organization`，商品用途清楚即可。道具与发货清单分开，整图生成改变盒子时回空背景合成。
 
-## 4. 结构、尺寸与数量单独一张
+### 4. 结构、尺寸与数量单独一张
 
 结构图用开盖和隔板实拍，短句 `Removable divider`。尺寸图写 `External size: 220 × 150 × 120 mm (L × W × H)`。发货图写盒体、盖子、隔板数量，不能把场景文具算进去。
 
@@ -369,11 +345,11 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 这一步的可见结果是三张信息不同、数字准确、手机能读的说明图，不是三张重复“高品质”的海报。
 
-## 5. 复制到第二个颜色SKU
+### 5. 复制到第二个颜色SKU
 
 复制源文件，换成灰色真实商品层，保留文字位置、背景和图层结构。逐项核对灰色SKU是否同尺寸、同配件；有差异就更新文字，不能只做调色。导出 `DN01_gray_shopee-sg_01-cover_en_v01.jpg`，颜色名和实际图片一致。
 
-## 6. 上传后看封面和变体
+### 6. 上传后看封面和变体
 
 按当前后台界面排序图片，核对变体对应。看搜索结果小图、手机商品页和规格选择，检查文字是否被裁切、活动角标是否遮住商品、同一颜色是否串图。没有进行后台上传时，交付清单标“待上传”，不要把本地打开文件当作平台通过。
 
@@ -384,17 +360,13 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 | 灰色SKU用白色图片 | 回商品层与变体关联检查 |
 | 手机尺寸表太密 | 拆成外尺寸与发货两张 |
 
-模板入口[P15](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P15)，其他语言处理看[本地化](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/localization)。
+模板入口[P15](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P15)，其他语言处理看[本地化](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-localization)。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
-
----
-
-# 跨境本地化，实际改一次英文、日文和尺寸图
+## 跨境本地化，实际改一次英文、日文和尺寸图
 
 这节得到事实对应词表、英文和日文短文案、单位换算记录，以及两份可编辑排版稿。翻译调整表达和阅读顺序，商品参数与发货内容保持一致。沿用DN01虚构收纳盒数据演示，正式商品替换真实记录。
 
-## 1. 给词表保留事实来源
+### 1. 给词表保留事实来源
 
 | 中文 | 英文练习 | 日文练习 |
 | --- | --- | --- |
@@ -405,7 +377,7 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 每个词旁边记录规格表或照片依据。日文例句是编辑草稿，正式面向客户的版本仍需熟悉当地表达的人复核；语言流畅不能证明功能真实。
 
-## 2. 先翻事实，再缩短标题
+### 2. 先翻事实，再缩短标题
 
 ```text
 请把下面的收纳盒事实与短文案分别整理成英文和日文。产品为带盖桌面收纳盒，白色ABS，外尺寸220×150×120mm，一个可拆隔板，发货含盒体1、盖子1、隔板1，文具不包含。这些是练习设定，正式发布会替换。
@@ -415,7 +387,7 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 先看事实列有没有被改，再挑短标题。中文两字变成英文长词时，扩文本框或拆行；不能删掉关键限制来适应版面。英语 `Removable divider` 比加上未经证实的 `Flexible large-capacity storage system` 更准确。
 
-## 3. 单位换算，算完再排版
+### 3. 单位换算，算完再排版
 
 英寸与毫米按1in＝25.4mm换算，DN01示例得到如下值。[NIST长度单位](https://www.nist.gov/pml/owm/si-units-length)。
 
@@ -427,13 +399,13 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 
 排版文字可以是 `External dimensions: 8.66 × 5.91 × 4.72 in / 220 × 150 × 120 mm (L × W × H)`。毫米仍保留原测量值，英寸是转换结果，小数位不代表实物精度提高。没有容积记录就不从外尺寸乘积计算容量。
 
-## 4. 在源文件里替换语言
+### 4. 在源文件里替换语言
 
 复制中文PSD为英文版，保留真实商品与尺寸线，逐个替换文字层。再复制日文版，选支持日文字形的字体，检查缺字、符号和换行。标题变长时先用短标题版本，再调整文本框宽度，最后考虑拆图。
 
 练习里尺寸说明可单独放在商品下方。L/W/H指引必须对应同一顺序，英文与日文数值完全一致。特殊警示、使用限制和发货例外不能放成几乎看不见的小字。
 
-## 5. 对照检查三件事
+### 5. 对照检查三件事
 
 | 检查 | 怎样实际做 |
 | --- | --- |
@@ -441,17 +413,13 @@ DN01收纳盒练习沿用浅木桌面和奶油白背景。先生成背景，再�
 | 表达 | 看是否新增“防水”“食品级”或无依据比较 |
 | 版面 | 各版缩到手机宽度，看标题、单位和例外说明 |
 
-单位错就回换算记录，文本错就改文字层，背景错就改背景。准确文字不通过整图重新生成来修。最终交付词表、审定文本、PSD状态与语言版本文件；当前没有当地语言审校或平台实际导入。英文完整模板[P16](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P16)，日文[P17](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P17)，尺寸[P18](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P18)。
+单位错就回换算记录，文本错就改文字层，背景错就改背景。准确文字不通过整图重新生成来修。最终交付词表、审定文本、PSD状态与语言版本文件；当前没有当地语言审校或平台实际导入。英文完整模板[P16](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P16)，日文[P17](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P17)，尺寸[P18](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P18)。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
-
----
-
-# 跨境SKU批量，从两款商品做到交付清单
+## 跨境SKU批量，从两款商品做到交付清单
 
 这一篇做出两款SKU、两个渠道的任务清单与文件目录。先做一款能交付的母版，再扩到多款。DN01白色、DN02灰色仅为虚构练习ID，正式商品各用真实照片与参数，不能靠改色生成不同SKU。
 
-## 1. 把任务展开成一行一张图
+### 1. 把任务展开成一行一张图
 
 一项任务用SKU、市场、语言、图片位置和版本确定。比如Amazon US主图和Shopify场景图，虽然都展示同一商品，背景、文字和裁切职责不同。
 
@@ -465,7 +433,7 @@ DN02-SHP-SCENE-v01,DN02-gray,shopify,en,scene,DN02_gray_front.jpg,DN02_gray_shop
 
 每行还应有准确文案、真实尺寸、目标像素和源文件位置。正式使用增加渠道需要的字段，先别把未安排的十几个位置全部复制成待办。
 
-## 2. 建目录，保留输入和源文件
+### 2. 建目录，保留输入和源文件
 
 ```text
 project/
@@ -482,13 +450,13 @@ project/
 
 输入原照片保留不覆盖，工作文件与输出分开。文件名中的颜色是实际SKU颜色，不只是运营希望显示的颜色。
 
-## 3. 先跑DN01的两项任务
+### 3. 先跑DN01的两项任务
 
-按[Amazon主图](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-listing)做纯白图，按[Shopify商品媒体](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopify-product)做场景图。记录实际照片、提示词、模型或软件、结果文件、裁切与人工核对结果。
+按[Amazon主图](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-listing)做纯白图，按[Shopify商品媒体](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopify-product)做场景图。记录实际照片、提示词、模型或软件、结果文件、裁切与人工核对结果。
 
 主图不需要生成时直接图层处理；场景商品被改掉就只生成背景。只有两张文件真实保存、能重新打开、对应位置正确，才开始第二款。画布显示“完成”但本地没下载的任务仍是待下载。
 
-## 4. 换第二款真实主体，不重画整套
+### 4. 换第二款真实主体，不重画整套
 
 复制DN01源文件为DN02，换成灰色实拍商品层，核对尺寸与配件是否相同。相同的背景、光线、字体和标题位置可复用；差异字段需要更新。灰色实拍与白色照片光向不同，就先调背景，不能靠把商品涂成另一种材质统一。
 
@@ -498,7 +466,7 @@ project/
 给出逐行执行顺序和返工列，失败行保留原任务ID，只更新实际状态与错误原因。
 ```
 
-## 5. 状态跟实际产物走
+### 5. 状态跟实际产物走
 
 可以用planned、generated、downloaded、composited、checked、uploaded几个状态，按实际流程选择。不是所有任务都经过生成，有的直接合成。checked只表示已经核对成品，uploaded需要实际后台记录。
 
@@ -509,21 +477,17 @@ project/
 | 两行输出同名 | 改文件映射，避免覆盖另一款 |
 | 主图带了场景标题 | 回位置要求，删除文字与道具层 |
 
-## 6. 交付时抽清文件并核每一行
+### 6. 交付时抽清文件并核每一行
 
 导出目录按渠道与语言划分，工作PSD另给位置。逐行确认文件存在、能打开、像素与图片位置正确，再把交付清单里的文件名与实际目录核对。检查的是整个矩阵，不能只看第一款的第一张图。
 
-本项目尚未执行这四项图像任务或后台上传。完整批量模板[P19](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P19)，交付检查[P20](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P20)；同一方法也适用于鞋类、服装和多规格产品，具体商品字段另改。
+本项目尚未执行这四项图像任务或后台上传。完整批量模板[P19](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P19)，交付检查[P20](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P20)；同一方法也适用于鞋类、服装和多规格产品，具体商品字段另改。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
+## 跨境画布，把一个项目交接到三个渠道
 
----
+本节把DN01跨境练习放进一个可复用项目，做出画布分区、图层结构与渠道导出表。具体生成与蒙版入口见[三类画布操作](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-canvases)，这里重点讲跨渠道交接时怎样避免串图。
 
-# 跨境画布，把一个项目交接到三个渠道
-
-本节把DN01跨境练习放进一个可复用项目，做出画布分区、图层结构与渠道导出表。具体生成与蒙版入口见[三类画布操作](https://wangge-dev.github.io/ai-visual-creation-handbook/workflows/canvases)，这里重点讲跨渠道交接时怎样避免串图。
-
-## 1. 在设计画布放四组资料
+### 1. 在设计画布放四组资料
 
 第一组是事实表与真实照片，按SKU分开；第二组是渠道任务表，列Amazon主图/副图/A+、Shopify媒体/横幅、Shopee SG封面/规格；第三组放候选背景；第四组只放已完成商品核对的图片。别让候选和交付图混在一个区域里。
 
@@ -533,13 +497,13 @@ Amazon主图只用真实主体与纯白底；副图解释用途和结构；A+按
 列出可复用背景、必须替换的商品层和文字层、尚缺的照片与参数。候选图不进入交付清单，规划任务不标为完成。
 ```
 
-## 2. 候选背景只核场景与留白
+### 2. 候选背景只核场景与留白
 
 同一桌面背景可以用于不同商品页场景，但要检查用途、尺寸关系和裁切。背景里如果已经生成了假收纳盒，不能继续放真实盒子叠在旁边；先擦除或重新生成空背景。
 
 用TapNow局部Redraw时只标假商品或多余道具，保留真实主体之外的范围；图层文件里则直接换背景。生成结果下载原文件，命名包括用途，例如 `desk_scene_no-product_v01.png`，不要写“主图已通过”。
 
-## 3. 图层文件按职责建组
+### 3. 图层文件按职责建组
 
 ```text
 DN01_scene_master.psd
@@ -555,7 +519,7 @@ DN01_main_master.psd
 
 主图文件和场景文件分开，避免误把COPY层留在Amazon主图。多个语言复制文案组，保留同一商品像素；多SKU替换真实照片，不能只改图层名称。
 
-## 4. 建渠道输出表，再裁切
+### 4. 建渠道输出表，再裁切
 
 | 渠道位置 | 使用哪份源文件 | 要调整什么 |
 | --- | --- | --- |
@@ -568,21 +532,17 @@ DN01_main_master.psd
 
 不是每行都从一张背景裁出来。A+结构图需要真实细节，尺寸图需要参数层，主图需要纯白底。源文件适合哪项任务就复用哪部分。
 
-## 5. 返工写到具体文件和层
+### 5. 返工写到具体文件和层
 
 “不好看”先拆成可处理的问题。DN01盒盖被裁，改商品位置与裁切；灰色SKU用了白色主体，换PRODUCT_REAL；日文缺字，换支持字体并重排COPY；主图多了文具，换纯白母版。
 
-每次修改给新版本，保留问题和处理。交付目录只放当前选用版本，旧候选继续保留在工作区。此教程尚未实际操作画布、节点或PS；完整交接模板见[P08](https://wangge-dev.github.io/ai-visual-creation-handbook/prompts/P08)，批量文件操作见[SKU交付](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/cross-border-sku-delivery)。
+每次修改给新版本，保留问题和处理。交付目录只放当前选用版本，旧候选继续保留在工作区。此教程尚未实际操作画布、节点或PS；完整交接模板见[P08](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P08)，批量文件操作见[SKU交付](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border-sku-delivery)。
 
-证据状态：按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传。
-
----
-
-# P09 跨境商品简报与渠道任务表
+## P09 跨境商品简报与渠道任务表
 
 类型：规划。替换项目：商品事实、市场、图片位置、语言与素材。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/cross-border)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border)
 
 ```text
 请把商品事实和素材整理成跨境视觉制作简报，本次只做规划。
@@ -610,15 +570,11 @@ DN01_main_master.psd
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P10 Amazon普通商品白底主图
+## P10 Amazon普通商品白底主图
 
 类型：生图／合成。替换项目：真实商品照片、发货清单、当前站点类目要求。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-listing)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-listing)
 
 ```text
 请用我上传的真实商品照片制作一张Amazon US普通收纳盒白底主图。
@@ -644,15 +600,11 @@ DN01_main_master.psd
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P11 Amazon副图分工与逐张制作指令
+## P11 Amazon副图分工与逐张制作指令
 
 类型：策划＋单图任务。替换项目：真实细节图、商品事实、用途、准确短文案。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-listing)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-listing)
 
 ```text
 请为Amazon US商品页规划5张副图，并给每张完整可执行的制作指令。本次先交规划，不一次生成5张。
@@ -679,15 +631,11 @@ DN01_main_master.psd
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P12 Amazon A+模块简报与图文交付
+## P12 Amazon A+模块简报与图文交付
 
 类型：模块规划。替换项目：当前可用模块、尺寸提示、真实素材、准确文案。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/amazon-a-plus)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-amazon-a-plus)
 
 ```text
 请为Amazon US商品制作A+模块内容方案。本次以当前账户实际可用的模块为准，不假设Premium能力。
@@ -714,15 +662,11 @@ DN01_main_master.psd
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P13 Shopify产品媒体顺序与alt text
+## P13 Shopify产品媒体顺序与alt text
 
 类型：媒体规划。替换项目：真实照片、主题条件、媒体位置、准确文案。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopify-product)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopify-product)
 
 ```text
 请整理一套Shopify英文产品媒体方案，目标是让顾客从图片准确理解商品。
@@ -749,15 +693,11 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P14 Shopify桌面与手机横幅
+## P14 Shopify桌面与手机横幅
 
 类型：生图／布局。替换项目：真实主体、主题区块、桌面与手机尺寸、准确标题。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopify-hero)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopify-hero)
 
 ```text
 请为Shopify首页横幅准备桌面和手机两份构图。本次底图不生成文字或按钮，准确文案另排。
@@ -783,15 +723,11 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P15 Shopee SG封面与规格套图
+## P15 Shopee SG封面与规格套图
 
 类型：策划＋单图任务。替换项目：市场SG、实际照片、变体、当前后台要求。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/shopee-localization)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-shopee-localization)
 
 ```text
 请为Shopee SG英文商品页准备封面和规格套图方案。本次先出逐张任务，不自行提交生成。
@@ -818,15 +754,11 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P16 英文本地化：准确文案与回译
+## P16 英文本地化：准确文案与回译
 
 类型：文案本地化。替换项目：事实母表、目标市场、图片位置、获准中文。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/localization)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-localization)
 
 ```text
 请把以下商品信息改写为适用于英文商品页面的准确短文案，本次不生成图片。
@@ -852,15 +784,11 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P17 日文本地化：术语、换行与事实复核
+## P17 日文本地化：术语、换行与事实复核
 
 类型：文案本地化。替换项目：商品事实、目标日本市场、准确中文与位置。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/localization)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-localization)
 
 ```text
 请把商品事实整理成日文图片标签和商品说明草稿，本次不生成图像。
@@ -886,15 +814,11 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P18 尺寸图：毫米英寸换算与准确标注
+## P18 尺寸图：毫米英寸换算与准确标注
 
 类型：计算＋图像规划。替换项目：真实测量记录、尺寸定义、舍入位数与实拍。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/localization)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-localization)
 
 ```text
 请根据尺寸记录制作外尺寸图的文案与排版计划，本次先完成计算和标注，不猜结构。
@@ -920,15 +844,11 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P19 跨境SKU任务清单与批量复用
+## P19 跨境SKU任务清单与批量复用
 
 类型：批量规划。替换项目：SKU事实、对应照片、市场、语言、位置与任务ID。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/cross-border-sku-delivery)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border-sku-delivery)
 
 ```text
 请制作跨境SKU批量任务清单，本次只做计划和逐项指令，不提交图像生成。
@@ -954,15 +874,11 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
 
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
----
-
-# P20 跨境图片交付检查与定向返工
+## P20 跨境图片交付检查与定向返工
 
 类型：检查。替换项目：原商品、结果图、当前规则、准确文案与文件清单。下面提供完整填写示范，虚构商品DN01只作练习；正式使用时替换事实与素材。示范未附照片、未执行任务。
 
-[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/ecommerce/cross-border-sku-delivery)
+[逐步教程](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border-sku-delivery)
 
 ```text
 请对跨境图片包进行逐项检查，输出具体问题与定向返工指令，本次不自行重生成整套。
@@ -988,335 +904,3 @@ alt text描述实际画面，简洁且不堆关键词；没有实际结果时把
 ```
 
 检查：输入角色清楚、事实与未知分开、输出范围明确，实际文件与后台状态据实记录。
-
-证据状态：完整模板，尚未执行图像任务或流程验证。
-
-# 资源资料卡
-
-## Comfy-Org/ComfyUI
-
-输入、节点、模型与输出的可复用流程。
-
-类型：节点工作流；证据：README与文件树已读取；未安装运行。
-
-输入：图像／文字、工作流、模型与节点；输出：按工作流得到图像或其他媒体。
-
-上手：README与官方示例；依赖需实际安装核对。
-
-限制：工作流文件不证明当前依赖已跑通。
-
-许可：GPL-3.0；核对日：2026-10-14。
-
-[原始仓库](https://github.com/Comfy-Org/ComfyUI)
-
-## invoke-ai/InvokeAI
-
-作为画布与生成流程研究入口。
-
-类型：画布与图像工作流；证据：README与文件树已读取；未安装运行。
-
-输入：图像、生成任务与画布操作；输出：图像与项目工作流。
-
-上手：README及当前安装说明，先核对后端与模型。
-
-限制：当前版本操作和本项目运行结果尚未核验。
-
-许可：Apache-2.0；核对日：2026-10-14。
-
-[原始仓库](https://github.com/invoke-ai/InvokeAI)
-
-## Acly/krita-ai-diffusion
-
-图层软件与生成后端的协作路径。
-
-类型：图层与生成协作；证据：README与文件树已读取；未安装运行。
-
-输入：Krita画布、选择区、提示词与兼容后端；输出：画布中的生成／编辑候选结果。
-
-上手：插件官方文档；核对Krita与后端兼容。
-
-限制：需核对Krita、插件、后端与模型版本。
-
-许可：GPL-3.0；核对日：2026-10-14。
-
-[原始仓库](https://github.com/Acly/krita-ai-diffusion)
-
-## danielgatis/rembg
-
-批量或单图背景移除的研究入口。
-
-类型：抠图工具；证据：README与文件树已读取；未安装运行。
-
-输入：真实商品或其他图像；输出：背景移除后的图像。
-
-上手：README里的CLI／库入口，先做一张边缘检查。
-
-限制：透明物、毛发、反光边缘需要对照原图精修。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/danielgatis/rembg)
-
-## ZhengPeng7/BiRefNet
-
-前景分割与主体处理的研究入口。
-
-类型：前景分割；证据：README与文件树已读取；未安装运行。
-
-输入：输入图像、兼容环境与模型；输出：分割结果，按调用实现形成抠图素材。
-
-上手：README推理说明；代码与权重许可分别查看。
-
-限制：模型、代码、权重和调用方式需分别核对。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/ZhengPeng7/BiRefNet)
-
-## mermaid-js/mermaid
-
-用文本表达节点、关系与流程。
-
-类型：可编辑信息图；证据：README与文件树已读取；未安装运行。
-
-输入：准确节点、关系与图表定义；输出：渲染图与可编辑文本定义。
-
-上手：README与官方编辑器，先检查逻辑再输出。
-
-限制：结构关系必须来自准确原始资料。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/mermaid-js/mermaid)
-
-## excalidraw/excalidraw
-
-用于协作草图和讲解关系。
-
-类型：讲解草图；证据：README与文件树已读取；未安装运行。
-
-输入：节点、草图、文字和布局；输出：可编辑白板与导出图。
-
-上手：官方编辑器与README。
-
-限制：草图与可执行软件交付分开。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/excalidraw/excalidraw)
-
-## fanfan520dhb-star/footwear-visual-production-skills
-
-鞋类简报、主图、详情与SKU生产分工。
-
-类型：业务流程Skill；证据：README与文件树已读取；未安装运行。
-
-输入：真实鞋类素材、已核实事实及业务简报；输出：规划与任务组织；生成结果取决于外部实际工具。
-
-上手：先读README与配置示例；既有核查未见独立生成脚本。
-
-限制：既有核查未见生成脚本与LICENSE；只提供独立方法概述，不复制其Skill。
-
-许可：待核／未见；核对日：2026-10-14。
-
-[原始仓库](https://github.com/fanfan520dhb-star/footwear-visual-production-skills)
-
-## KKKKhazix/AIHOT
-
-借鉴来源登记、预筛、归组和增量维护。
-
-类型：发现方法；证据：README与文件树已读取；未安装运行。
-
-输入：来源登记、公开内容与行业主题；输出：候选、精选与主题组织，需自行实际部署验证。
-
-上手：README与公开示例；复用方法而非复制私有来源网络。
-
-限制：公开示例来源不等于线上全部信源；不复制私有配置。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/KKKKhazix/AIHOT)
-
-## wangge-dev/wangge-gpt-image-2-5
-
-按视觉任务关联完整提示词资源。
-
-类型：独立提示词库；证据：README与文件树已读取；未安装运行。
-
-输入：真实素材、用途与可替换变量；输出：完整任务词；实际生图由用户工具执行。
-
-上手：按任务到原库选卡，保留其执行状态。
-
-限制：保持独立维护；具体模型与执行状态见原卡。
-
-许可：GitHub未自动识别；见原项目许可；核对日：2026-10-14。
-
-[原始仓库](https://github.com/wangge-dev/wangge-gpt-image-2-5)
-
-## dlazy-ai/ecommerce-skills
-
-26项电商技能覆盖商品图、修图、跨境本地化与批量；作为方法和实现候选。
-
-类型：业务流程Skill；证据：README、跨境与批量Skill、脚本片段已读；未安装或运行。
-
-输入：真实商品图、商品清单、准确文案、品牌规范与目标市场；输出：任务方案、生成适配与检查脚本；运行结果依赖实际后端。
-
-上手：先阅读对应技能，再核对shared/scripts或技能目录下的scripts路径；不直接在仓库根目录照抄相对命令。
-
-限制：本项目只读来源未执行生成。跨境规则、尺码表及区域偏好需要当前站点和真实商品依据；作者示例与本项目结果分开。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/dlazy-ai/ecommerce-skills)
-
-## kangise/ecommerce-ai-skills
-
-跨境视觉章节、多语言方法、完整提示词组织与适用范围记录。
-
-类型：跨境知识与方法；证据：README、文件树与关键文件摘读；未安装运行或生成。
-
-输入：商品事实、目标市场、任务与准确素材；输出：知识章节、模板与任务规划；运行组件是另一个实际系统。
-
-上手：从README_ZH与视觉Pipeline章节阅读；不把全套运营安装作为读教程的前提。
-
-限制：本项目只核对来源。作者的目录数量、检查通过与演示不证明所有平台规则适用于现在；运行系统的接口、约束与声明需另核，不采用其哈希或冻结规则。
-
-许可：CC0-1.0；核对日：2026-10-14。
-
-[原始仓库](https://github.com/kangise/ecommerce-ai-skills)
-
-## jovanjianga/ecommerce-detail-images
-
-商品详情图的逐页规划、风格一致性、局部返工与双语说明。
-
-类型：业务流程Skill；证据：README、文件树与关键文件摘读；未安装运行或生成。
-
-输入：真实商品照片或明确标为概念的描述、事实与风格；输出：逐页方案、完整任务词与宿主图像工具的结果；源库有作者示例。
-
-上手：先读根SKILL与README，明确任务范围和宿主实际图像能力。
-
-限制：当前13文件、1份Skill、0独立脚本；作者图片示例未由本项目复现，不把工作流文档当独立生图软件。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/jovanjianga/ecommerce-detail-images)
-
-## Design0809/KV-design-ecommerce-marketing
-
-商品KV、广告横幅与中英文版式的素材识别和定向修改方法。
-
-类型：业务流程Skill；证据：README、文件树与关键文件摘读；未安装运行或生成。
-
-输入：真实商品、品牌素材、准确文案、用途与目标尺寸；输出：方向、任务词与依赖宿主工具的样图／延展。
-
-上手：阅读根SKILL，按实际用途区分广告KV和商品主图。
-
-限制：当前8文件、1份Skill、0独立脚本；审查和尺寸约束是来源作者流程，不作为本项目通用门禁；广告文字不自动适用于Amazon主图。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/Design0809/KV-design-ecommerce-marketing)
-
-## oscarlora/ad-production-kit
-
-跨境广告的研究、角度、画面、短片与素材编辑组织。
-
-类型：广告制作流程；证据：README、文件树与关键文件摘读；未安装运行或生成。
-
-输入：品牌资料、真实商品、目标受众、准确文案、获准素材；输出：广告任务方案、图像／视频适配脚本及制作界面。
-
-上手：优先读make-image-ad和generate-image入口，确认当前实际后端与素材流程。
-
-限制：当前130文件、27份Skill、87脚本，是文件统计。本项目未运行；来源的服务路由、元信息清理和产物保留方式需另核，作者绩效不作为效果证明。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/oscarlora/ad-production-kit)
-
-## xianyu110/ecommerce-image-skills
-
-Amazon白底／A+、商品套图与后期图片检查、模块切分。
-
-类型：业务流程与脚本；证据：README、文件树与关键文件摘读；未安装运行或生成。
-
-输入：真实商品、准确文案、当前平台参数与已配置工具；输出：任务词、检查／拼接脚本与依赖实际接口的图像结果。
-
-上手：先看白底检查和A+目录，再核对源项目的服务配置。
-
-限制：当前53文件、12份Skill、36脚本。本项目未调用；型号别名和第三方接口需另核，检查脚本的默认阈值不代替当前平台规则。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/xianyu110/ecommerce-image-skills)
-
-## feichanggege/ecommerce-visual-copywriting-skill
-
-跨境Listing／A+的逐图职责、准确文案、素材与完整生图任务词规划。
-
-类型：业务流程Skill；证据：README、文件树与关键文件摘读；未安装运行或生成。
-
-输入：商品事实、包装、已确认资料、目标平台与风格；输出：逐图画面简报、准确文字、任务词与待核主张。
-
-上手：先读根SKILL，按策划、审稿和修改任务使用。
-
-限制：当前26文件、1份Skill、1脚本；该脚本用于检查Skill结构，不是生成引擎。来源参考规则仍需官方核对，本项目未生图。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/feichanggege/ecommerce-visual-copywriting-skill)
-
-## meap158/ComfyUI-Background-Replacement
-
-真实主体、背景替换、深度与合成的节点结构研究。
-
-类型：节点工作流；证据：README、文件树与关键文件摘读；未安装运行或生成。
-
-输入：真实图像、兼容ComfyUI、节点、模型与依赖；输出：背景替换／合成结果及可研究的示例工作流。
-
-上手：阅读background_replacement.py和随库工作流JSON，先核对全部依赖。
-
-限制：当前19文件、9脚本与真实工作流JSON存在；示例采用旧SDXL-Turbo／ControlNet路径，当前兼容、边缘与主体保留未验证。代码MIT不等于模型权重同一许可。
-
-许可：MIT；核对日：2026-10-14。
-
-[原始仓库](https://github.com/meap158/ComfyUI-Background-Replacement)
-
-## 工具入口
-
-- [Lovart](https://www.lovart.ai/)：官方项目文档已核对，正文说明上传素材、参考角色与按图迭代；具体可用功能按当前界面。（官方文档已读；本项目尚未操作）
-- [TapNow](https://app.tapnow.ai/)：官方图像文档已核对，正文说明Add图像节点、参考输入、Redraw与下载；具体可用工具按当前界面。（官方文档已读；本项目尚未操作）
-- [Adobe Photoshop](https://helpx.adobe.com/photoshop/desktop.html)：官方桌面手册入口已核对；文案、蒙版、主体保护与源文件按实际软件检查。（官方入口已读；本项目尚未操作）
-- [Krita](https://docs.krita.org/)：读取官方手册并按实际插件和版本检查。（本项目尚未操作）
-- [Photopea](https://www.photopea.com/)：官方打开/保存、蒙版、文字与变换资料已读，正文给出合成与排版步骤。（官方文档已读；本项目尚未操作）
-
-## 平台核对入口
-
-### Amazon图片与A+
-
-Amazon公开图片指导；具体站点、类目和A+模块另核。公开指导的建议、示例与当前类目要求分开；A+像素按实际模块确定，不把普通主图要求套给所有模块。
-
-- 普通商品摄影指导：公开摄影文章建议白底与主体占画面85%或更多；这是指导出处，类目特殊要求仍到Seller Central核对。
-- 公开图片FAQ：文章列最长边500—10000像素，以及JPEG、TIFF、PNG、非动画GIF等格式；页面内容已读，不宣称已经完成账户端验证。
-- A+设计指导：按模块要求安排图文；公开指南提到图像不大于2MB并强调手机文字可读。各模块实际槽位像素、可用功能以编辑器为准。
-
-[Amazon商品摄影指导（文章发布于2024-12-04）](https://sell.amazon.com/blog/product-photos) · [Amazon A+设计指导（文章发布于2025-09-24）](https://sell.amazon.com/blog/a-plus-content-design-guide) · [Seller Central当前站点帮助入口](https://sellercentral.amazon.com/help/hub)
-
-### Shopify产品媒体、主题图片与alt text
-
-产品／集合媒体、主题通用图片与准确文字分别核对。产品媒体文档与通用上传文档列出不同像素限制；按上传位置使用，主题裁切仍需实际预览。
-
-- 产品／集合图片：当前该文档列最大5000×5000像素或25MP，文件小于20MB；2048×2048方图是展示建议，非所有区块强制尺寸。
-- 通用图片上传：当前该文档在上传限制段列20MP与20MB，并注明产品图片有不同限制；不要把两份说明合并成同一规则。
-- alt text：官方说明列上限512字符，建议125字符或更少；描述实际图片内容，不堆关键词。
-
-[产品媒体类型](https://help.shopify.com/en/manual/products/product-media/product-media-types) · [通用图片上传](https://help.shopify.com/en/manual/online-store/images/theme-images) · [媒体alt text](https://help.shopify.com/en/manual/products/product-media/add-alt-text)
-
-### Shopee SG商品页图片指导
-
-新加坡公开商品页指导；其他市场、Mall及后台限制另核。以可读取的SG官方指导替代无法请求的通用入口。指导建议不自动扩展成全市场统一硬限制，上传数量与体积等仍按当地后台核对。
-
-- 图片建议：该SG页面建议至少1024×1024的1:1方图、清晰实际商品和纯白封面；这是该文档指导，不填成全市场规则。
-- 内容建议：指导强调规格、配件、使用与变体信息；图片不应展示未包含在购买中的配件，也应避免水印或干扰图形。
-- 待核范围：实际文件体积、上传张数、店铺类型与其他市场要求未在本轮后台验证；不根据旧Mall PDF补齐。
-
-[SG官方商品详情页指导](https://ads.shopee.sg/learn/faq/520/172) · [SG Seller Education Hub（动态入口）](https://seller.shopee.sg/edu/)
