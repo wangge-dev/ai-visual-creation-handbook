@@ -3,6 +3,7 @@ from pathlib import Path
 import json, re, html
 from urllib.parse import quote
 from html_documents import Document, markdown
+from wechat_export import inline_body, preview
 
 ROOT=Path(__file__).resolve().parent.parent
 SOURCE=ROOT/'src'
@@ -104,6 +105,9 @@ def build():
     cross+=''.join(fragment(x['file']) for x in manifest['extra_prompts'] if x.get('topic')=='cross-border')
     write(download/'cross-border.md',markdown(cross,anchor_map))
     write(download/'cross-border.html',template.replace('</body>','<script>if(!location.hash)location.hash="补充-cross-border";</script></body>'))
+    wechat=inline_body(original_guide+original_prompts+extra_prompts+additions)
+    write(download/'wechat-body.html',wechat)
+    write(download/'wechat-preview.html',preview(wechat))
     # The original text and full prompt package are also available as standalone Markdown.
     report={'guide_heading_sections':len(Document(original_guide).root.find_all('h2')),'original_prompt_sections':len(Document(original_prompts).root.find_all('h2')),
       'original_tables':len(Document(original_guide).root.find_all('table')),
