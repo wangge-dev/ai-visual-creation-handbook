@@ -910,6 +910,20 @@
         "evidence_status": "制作教程；尚未执行图像任务或平台上传",
         "last_modified": "2026-10-15"
       }
+    },
+    {
+      "file": "supplements/wechat-reading.html",
+      "title": "公众号AI作图文章：按任务补充阅读",
+      "anchor": "补充-wechat-reading",
+      "former_doc": "resources/wechat-reading.md",
+      "topic": "sources",
+      "metadata": {
+        "title": "公众号AI作图文章：按任务补充阅读",
+        "topic": "sources",
+        "status": "已公开",
+        "evidence_status": "已取得正文并重点阅读；图片及工具尚未复测",
+        "last_modified": "2026-10-15"
+      }
     }
   ],
   "extra_prompts": [
