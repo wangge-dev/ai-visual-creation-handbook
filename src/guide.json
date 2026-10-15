@@ -924,6 +924,32 @@
         "evidence_status": "已取得正文并重点阅读；图片及工具尚未复测",
         "last_modified": "2026-10-15"
       }
+    },
+    {
+      "file": "supplements/wechat-visuals.html",
+      "title": "公众号封面与正文图：从主旨到同文四图",
+      "anchor": "补充-wechat-visuals",
+      "former_doc": "brand-content/wechat-visuals.md",
+      "topic": "content",
+      "metadata": {
+        "title": "公众号封面与正文图：从主旨到同文四图",
+        "status": "已公开",
+        "evidence_status": "完整跟做指令与检查方法；未实际生图或平台上传",
+        "last_modified": "2026-10-15"
+      }
+    },
+    {
+      "file": "supplements/local-retouch.html",
+      "title": "局部修图与照片创作：修改边界与前后核对",
+      "anchor": "补充-local-retouch",
+      "former_doc": "workflows/local-retouch.md",
+      "topic": "workflow",
+      "metadata": {
+        "title": "局部修图与照片创作：修改边界与前后核对",
+        "status": "已公开",
+        "evidence_status": "完整跟做指令与检查方法；未实际生图或平台上传",
+        "last_modified": "2026-10-15"
+      }
     }
   ],
   "extra_prompts": [

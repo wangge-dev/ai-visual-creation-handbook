@@ -8,6 +8,8 @@
 
 **找公众号实操文章：** [2026年8月起的文章阅读指引](docs/resources/wechat-reading.md)，按详情页、画布、Amazon A+、封面和修图分组，标明原文日期、可学习步骤和提示词获取情况。
 
+**四项跟做教程：** [商品资料到详情页](docs/ecommerce/detail-page.md) · [高级A+简报与草稿](docs/ecommerce/amazon-a-plus.md) · [公众号封面与正文四图](docs/brand-content/wechat-visuals.md) · [局部修图与照片创作](docs/workflows/local-retouch.md)。包含完整指令、逐步产物和返工检查；实际出图与平台后台操作尚未执行。
+
 ## 1. 这是什么，适合谁
 
 适合需要制作商品主图、详情页、Amazon A+、跨境素材的运营和卖家，也适合设计师、内容创作者，以及希望建立图片交付流程的团队负责人。新手可从第一张图开始，不必先学习 API 或节点软件。
