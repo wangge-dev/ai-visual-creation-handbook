@@ -785,6 +785,16 @@ DN01_main_master.psd
 
 ### 5. 返工写到具体文件和层
 
+#### 扩成另一种画幅时，重新核对中间的原图
+
+以4:5广告扩成9:16为例，提示词写“只补上下背景”，并不能证明中间商品、Logo和文字保持原像素。2026-10-19静态核对发现，[ad-production-kit的图片广告流程](https://github.com/oscarlora/ad-production-kit/blob/main/skills/make-image-ad/SKILL.md)建议直接使用扩图结果，而其[扩图脚本](https://github.com/oscarlora/ad-production-kit/blob/main/tools/extend-to-story.mjs)说明默认路径会重绘中间区域，小字可能漂移；脚本另有将原图贴回的可选分支。这里只读了源文件，未安装或运行该工具。
+
+1. 保存已确认的4:5版本与准确文案，给9:16版另起文件名。
+2. 在新画布中标明原图位置，新增空间只安排背景；这两个比例是示例，不代替实际广告位规格。
+3. 得到扩图后，将中间区域与原稿对齐、切换可见性，逐项看商品边缘、Logo、文字和价格。
+4. 有漂移就退回图层合成：原商品与准确文字保持独立图层，使用生成背景补空白，检查接缝。即使工具提供贴回功能，也要复核缩放与羽化边缘，不能宣称整张图像素不变。
+5. 最后按目标位置查看预览，记录主体检查与文字检查，再交付新版本。
+
 “不好看”先拆成可处理的问题。DN01盒盖被裁，改商品位置与裁切；灰色SKU用了白色主体，换PRODUCT_REAL；日文缺字，换支持字体并重排COPY；主图多了文具，换纯白母版。
 
 每次修改给新版本，保留问题和处理。交付目录只放当前选用版本，旧候选继续保留在工作区。此教程尚未实际操作画布、节点或PS；完整交接模板见[P08](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-P08)，批量文件操作见[SKU交付](https://wangge-dev.github.io/ai-visual-creation-handbook/#%E8%A1%A5%E5%85%85-cross-border-sku-delivery)。
