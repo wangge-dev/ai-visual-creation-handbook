@@ -36,5 +36,19 @@
     "title": "提示词与软件执行",
     "note": "原稿15节写作/维护提示词和113处代码内容完整保留；补充20条作图任务词集中提供。原稿内的命令和提示词供读者阅读，不由构建器执行。生图、节点、PS源文件与后台上传未因本次迁移而获得实测状态。",
     "sources": []
+  },
+  {
+    "title": "跨画幅扩图的原商品与文字保持（2026-10-19）",
+    "note": "ad-production-kit的流程和扩图代码存在需要读者区分的默认路径：流程建议直接使用扩图，代码说明默认会重绘中间且小字可能漂移。跨境画布教程增加对齐核对和图层合成返工。静态阅读，不代表已运行或验证输出。",
+    "sources": [
+      {
+        "title": "图片广告流程",
+        "url": "https://github.com/oscarlora/ad-production-kit/blob/main/skills/make-image-ad/SKILL.md"
+      },
+      {
+        "title": "扩图实现",
+        "url": "https://github.com/oscarlora/ad-production-kit/blob/main/tools/extend-to-story.mjs"
+      }
+    ]
   }
 ]

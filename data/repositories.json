@@ -344,12 +344,12 @@
     "inputs": "品牌资料、真实商品、目标受众、准确文案、获准素材",
     "outputs": "广告任务方案、图像／视频适配脚本及制作界面",
     "entry": "优先读make-image-ad和generate-image入口，确认当前实际后端与素材流程",
-    "limitation": "当前130文件、27份Skill、87脚本，是文件统计。本项目未运行；来源的服务路由、元信息清理和产物保留方式需另核，作者绩效不作为效果证明。",
+    "limitation": "2026-10-19静态核对：make-image-ad要求扩图直接采用生成结果，而extend-to-story默认会重绘中间区域、文字可能漂移；可选贴回分支仍需检查缩放和接缝。本项目未运行，作者绩效不作效果证明；2026-10-14文件数量仅为历史快照。",
     "status": "实现候选",
-    "evidence": "README、文件树与关键文件摘读；未安装运行或生成",
+    "evidence": "README、图片广告流程与extend-to-story源码已读；扩图路径风险已写入跨境画布教程；未安装、调用服务或生成",
     "resource_mode": "实现候选",
     "run_verified": false,
-    "last_reviewed_at": "2026-10-14",
+    "last_reviewed_at": "2026-10-19",
     "watch": true,
     "sources": [
       {
@@ -363,6 +363,10 @@
       {
         "title": "图像适配入口",
         "url": "https://github.com/oscarlora/ad-production-kit/blob/main/tools/generate-image.mjs"
+      },
+      {
+        "title": "扩图脚本与原稿贴回分支",
+        "url": "https://github.com/oscarlora/ad-production-kit/blob/main/tools/extend-to-story.mjs"
       }
     ]
   },
