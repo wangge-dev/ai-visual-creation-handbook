@@ -62,10 +62,10 @@
     "url": "https://github.com/danielgatis/rembg",
     "type": "抠图工具",
     "use": "批量或单图背景移除的研究入口。",
-    "limitation": "透明物、毛发、反光边缘需要对照原图精修。",
+    "limitation": "透明物、毛发、反光边缘需要对照原图精修。 2026-10-26静态核对：彩边与蒙版缺边需分开处理，当前源码的去污染选项不修补覆盖；版本支持需查本机帮助，不代表本项目实测。",
     "status": "来源资料卡",
-    "evidence": "README与文件树已读取；未安装运行",
-    "last_reviewed_at": "2026-10-14",
+    "evidence": "README与抠图实现已读取；去彩边和蒙版返工已关联第一张图教程；未安装运行",
+    "last_reviewed_at": "2026-10-26",
     "watch": true,
     "github_id": 286500101,
     "branch": "main",
@@ -73,7 +73,17 @@
     "archived": false,
     "inputs": "真实商品或其他图像",
     "outputs": "背景移除后的图像",
-    "entry": "README里的CLI／库入口，先做一张边缘检查"
+    "entry": "README里的CLI／库入口，先做一张边缘检查",
+    "sources": [
+      {
+        "title": "本次核对的使用说明",
+        "url": "https://github.com/danielgatis/rembg/blob/c5b48b0417a0254df7d461efa14573597f369a83/README.md"
+      },
+      {
+        "title": "本次核对的处理实现",
+        "url": "https://github.com/danielgatis/rembg/blob/c5b48b0417a0254df7d461efa14573597f369a83/rembg/bg.py"
+      }
+    ]
   },
   {
     "id": "birefnet",

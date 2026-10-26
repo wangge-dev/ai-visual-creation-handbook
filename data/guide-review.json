@@ -50,5 +50,19 @@
         "url": "https://github.com/oscarlora/ad-production-kit/blob/main/tools/extend-to-story.mjs"
       }
     ]
+  },
+  {
+    "title": "抠图彩边与蒙版缺边的返工分流（2026-10-26）",
+    "note": "第一张图增加深浅背景检查、彩边与缺边分流和两个可选rembg命令。参数依据固定源码，安装版支持须另查；未安装、运行或实测图像。",
+    "sources": [
+      {
+        "title": "rembg说明",
+        "url": "https://github.com/danielgatis/rembg/blob/c5b48b0417a0254df7d461efa14573597f369a83/README.md"
+      },
+      {
+        "title": "处理实现",
+        "url": "https://github.com/danielgatis/rembg/blob/c5b48b0417a0254df7d461efa14573597f369a83/rembg/bg.py"
+      }
+    ]
   }
 ]
