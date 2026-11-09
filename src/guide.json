@@ -330,7 +330,10 @@
         "status": "已公开",
         "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
         "last_modified": "2026-10-14T00:00:00.000Z",
-        "resource_ids": [],
+        "resource_ids": [
+          "gpt-image-prompt-gallery",
+          "nano-banana-prompt-gallery"
+        ],
         "order": 12,
         "content_kind": "方法说明"
       }

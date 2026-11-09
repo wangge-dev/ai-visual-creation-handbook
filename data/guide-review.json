@@ -64,5 +64,19 @@
         "url": "https://github.com/danielgatis/rembg/blob/c5b48b0417a0254df7d461efa14573597f369a83/rembg/bg.py"
       }
     ]
+  },
+  {
+    "title": "外部提示词库的素材前提与改写（2026-11-09）",
+    "note": "新增两个提示词阅读入口及改写练习，区分作者样例、商品实拍角度、工具参数与本项目执行证据。未复制第三方全文和图片，未安装CLI或调用服务。",
+    "sources": [
+      {
+        "title": "wuyoscar/GPT-Image2-Skill",
+        "url": "https://github.com/wuyoscar/GPT-Image2-Skill"
+      },
+      {
+        "title": "imagineVid/Awesome-nano-banana-prompts-and-skills",
+        "url": "https://github.com/imagineVid/Awesome-nano-banana-prompts-and-skills"
+      }
+    ]
   }
 ]

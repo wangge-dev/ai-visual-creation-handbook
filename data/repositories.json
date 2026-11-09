@@ -492,5 +492,67 @@
         "url": "https://github.com/meap158/ComfyUI-Background-Replacement/blob/main/workflow_background_replacement_sdxl_turbo.json"
       }
     ]
+  },
+  {
+    "id": "gpt-image-prompt-gallery",
+    "name": "wuyoscar/GPT-Image2-Skill",
+    "url": "https://github.com/wuyoscar/GPT-Image2-Skill",
+    "github_id": 1217942969,
+    "license": "MIT",
+    "entry": "README的Product & food案例，先读任务词、素材前提与来源",
+    "use": "按商品摄影与包装展示任务查构图和提示词写法。",
+    "limitation": "README与许可已读，抽读商品案例文字；图像未逐图验真，CLI、模型名称与执行效果未验证。第三方素材另核来源。",
+    "type": "提示词阅读库",
+    "inputs": "实际商品资料、匹配角度的照片与明确用途",
+    "outputs": "外部样例阅读线索及可改写的任务草稿",
+    "status": "方法参考",
+    "evidence": "文档与许可声明静态核对；未安装运行或生成",
+    "resource_mode": "方法参考",
+    "run_verified": false,
+    "last_reviewed_at": "2026-11-09",
+    "watch": true,
+    "branch": "main",
+    "archived": false,
+    "sources": [
+      {
+        "title": "README与案例",
+        "url": "https://github.com/wuyoscar/GPT-Image2-Skill/blob/main/README.md"
+      },
+      {
+        "title": "仓库许可声明",
+        "url": "https://github.com/wuyoscar/GPT-Image2-Skill/blob/main/LICENSE"
+      }
+    ]
+  },
+  {
+    "id": "nano-banana-prompt-gallery",
+    "name": "imagineVid/Awesome-nano-banana-prompts-and-skills",
+    "url": "https://github.com/imagineVid/Awesome-nano-banana-prompts-and-skills",
+    "github_id": 1299908589,
+    "license": "CC-BY-4.0",
+    "entry": "README搜索Top-Down Editorial Product Photograph，查看参考图要求与原作者链接",
+    "use": "从有来源的商品俯拍等案例学习变量、光线和留白。",
+    "limitation": "README与许可已读，抽读俯拍案例文字；条目包含2025年来源，不当作最新模型证据。图片未逐图核验或复跑；使用按钮通向第三方服务，未调用。",
+    "type": "提示词阅读库",
+    "inputs": "实际商品资料、匹配角度的照片与明确用途",
+    "outputs": "外部样例阅读线索及可改写的任务草稿",
+    "status": "方法参考",
+    "evidence": "文档与许可声明静态核对；未安装运行或生成",
+    "resource_mode": "方法参考",
+    "run_verified": false,
+    "last_reviewed_at": "2026-11-09",
+    "watch": true,
+    "branch": "main",
+    "archived": false,
+    "sources": [
+      {
+        "title": "README与案例",
+        "url": "https://github.com/imagineVid/Awesome-nano-banana-prompts-and-skills/blob/main/README.md"
+      },
+      {
+        "title": "仓库许可声明",
+        "url": "https://github.com/imagineVid/Awesome-nano-banana-prompts-and-skills/blob/main/LICENSE"
+      }
+    ]
   }
 ]

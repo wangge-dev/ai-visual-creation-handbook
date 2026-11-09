@@ -4,7 +4,7 @@
 
 [在线阅读](https://wangge-dev.github.io/ai-visual-creation-handbook/index.html) · [下载单文件 HTML](https://wangge-dev.github.io/ai-visual-creation-handbook/downloads/index.html) · [整本 Markdown](https://wangge-dev.github.io/ai-visual-creation-handbook/downloads/handbook.md) · [集中提示词](docs/prompt-templates.md) · [English](README.en.md)
 
-**找外部提示词库推荐：** [第九章：GitHub提示词库与开源资源](docs/chapters/guide-10.md) · [提示词库与开源工具表](docs/github-repos.md) · [独立图片提示词库](https://github.com/wangge-dev/wangge-gpt-image-2-5)。本手册的[28项任务模板](docs/prompt-templates.md)也保留集中入口。
+**找外部提示词库推荐：** [第九章：GitHub提示词库与开源资源](docs/chapters/guide-10.md) · [提示词库与开源工具表](docs/github-repos.md) · [独立图片提示词库](https://github.com/wangge-dev/wangge-gpt-image-2-5)。新增阅读入口与改写练习见[外部样例怎样改成自己的商品任务](docs/start/prompt-writing.md)。本手册的[28项任务模板](docs/prompt-templates.md)也保留集中入口。
 
 **找公众号实操文章：** [2026年8月起的文章阅读指引](docs/resources/wechat-reading.md)，按详情页、画布、Amazon A+、封面和修图分组，标明原文日期、可学习步骤和提示词获取情况。
 
