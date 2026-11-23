@@ -64,5 +64,23 @@
         "url": "https://www.photopea.com/learn/text"
       }
     ]
+  },
+  {
+    "id": "w3c-bidi",
+    "name": "W3C双向文字排版说明",
+    "url": "https://www.w3.org/International/questions/qa-html-dir",
+    "type": "本地化排版参考",
+    "note": "阿语段落方向与拉丁型号、尺寸混排的官方技术参考；本地化教程附HTML练习、完整排版任务与返工表。语言、字体许可和平台实际显示需分别核对。",
+    "evidence": "W3C结构与行内混排文档已读；示例为教学草稿，非母语审校或平台实测",
+    "sources": [
+      {
+        "title": "段落方向与语言声明",
+        "url": "https://www.w3.org/International/questions/qa-html-dir"
+      },
+      {
+        "title": "混排片段与方向隔离",
+        "url": "https://www.w3.org/International/articles/inline-bidi-markup/"
+      }
+    ]
   }
 ]

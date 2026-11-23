@@ -78,5 +78,19 @@
         "url": "https://github.com/imagineVid/Awesome-nano-banana-prompts-and-skills"
       }
     ]
+  },
+  {
+    "title": "阿语商品文字方向与数字混排（2026-11-23）",
+    "note": "补充本地化教程原有英文、日文与换算内容完整保留，新增阿语文字排版练习、完整任务词及预期失败返工。依据W3C原始文档；候选阿语仓库仅用于发现选题，未安装或复制其代码、字体、模板。示例阿语标签未经母语审校，不代表商品生成、PS运行或平台验收。",
+    "sources": [
+      {
+        "title": "W3C段落方向",
+        "url": "https://www.w3.org/International/questions/qa-html-dir"
+      },
+      {
+        "title": "W3C混排片段",
+        "url": "https://www.w3.org/International/articles/inline-bidi-markup/"
+      }
+    ]
   }
 ]

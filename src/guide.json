@@ -569,17 +569,17 @@
     },
     {
       "file": "supplements/localization.html",
-      "title": "跨境本地化：英文、日文、单位与准确文字",
+      "title": "跨境本地化：英文、日文、阿语与准确文字",
       "anchor": "补充-localization",
       "former_doc": "ecommerce/localization.md",
       "metadata": {
         "id": "localization",
-        "title": "跨境本地化：英文、日文、单位与准确文字",
+        "title": "跨境本地化：英文、日文、阿语与准确文字",
         "chapter": "03",
         "topic": "cross-border",
         "status": "已公开",
         "evidence_status": "按原稿重写并核对官方操作资料；未执行生图、软件操作或平台上传",
-        "last_modified": "2026-10-14T00:00:00.000Z",
+        "last_modified": "2026-11-23T00:00:00.000Z",
         "resource_ids": [
           "ecommerce-skills",
           "visual-copywriting",
@@ -587,7 +587,10 @@
         ],
         "platform_rule_ids": [],
         "order": 23.6,
-        "content_kind": "操作教程"
+        "content_kind": "操作教程",
+        "tool_ids": [
+          "w3c-bidi"
+        ]
       },
       "topic": "cross-border"
     },
